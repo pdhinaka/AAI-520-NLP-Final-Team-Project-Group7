@@ -8,8 +8,11 @@ venv/
 .ruff_cache/
 .pytest_cache/
 
-# Secrets
+# Secrets: real keys never get committed
 .env
+.env.*
+!.env.example
+*.key
 
 # Local data and agent memory
 data/*

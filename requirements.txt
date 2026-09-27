@@ -1,13 +1,10 @@
-yfinance
+anthropic>=0.40
+yfinance>=0.2.54
 requests
 pandas
 numpy
 matplotlib
 python-dotenv
-fredapi
 jupyter
 ruff
 pytest
-# LLM / agent framework: add once the team decides
-# transformers
-# langgraph
