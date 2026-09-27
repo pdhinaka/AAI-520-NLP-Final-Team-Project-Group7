@@ -1,0 +1,19 @@
+[project]
+name = "finagent"
+version = "0.1.0"
+description = "AAI-520 multi-agent financial analysis system"
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 79
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N"]

@@ -1,0 +1,13 @@
+yfinance
+requests
+pandas
+numpy
+matplotlib
+python-dotenv
+fredapi
+jupyter
+ruff
+pytest
+# LLM / agent framework: add once the team decides
+# transformers
+# langgraph
