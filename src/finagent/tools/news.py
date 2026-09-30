@@ -21,6 +21,21 @@ log = logging.getLogger(__name__)
 
 NEWSAPI_URL = "https://newsapi.org/v2/everything"
 
+# Business and tech outlets. Searching every source returned mostly noise
+# (PyPI package pages, deal forums), so NewsAPI is queried on these first
+# and an open search only tops up the results when they return too few.
+NEWS_DOMAINS = (
+    "reuters.com", "apnews.com", "cnbc.com", "bloomberg.com", "wsj.com",
+    "ft.com", "marketwatch.com", "barrons.com", "investors.com",
+    "fool.com", "finance.yahoo.com", "seekingalpha.com", "benzinga.com",
+    "businessinsider.com", "fortune.com", "forbes.com", "axios.com",
+    "nytimes.com", "theverge.com", "techcrunch.com", "arstechnica.com",
+    "9to5mac.com", "macrumors.com", "appleinsider.com",
+)
+# Never useful for company news; excluded from the open search.
+NOISE_DOMAINS = ("pypi.org", "ozbargain.com.au", "slickdeals.net")
+MIN_DOMAIN_RESULTS = 5
+
 # Suffixes stripped from company names to build a better search query
 _NAME_SUFFIXES = (
     ", Inc.", " Inc.", " Inc", " Corporation", " Corp.", " Corp",
@@ -70,29 +85,44 @@ def parse_newsapi(payload: dict, ticker: str) -> list[dict]:
 
 
 def fetch_newsapi(ticker: str, days: int = 7, limit: int = 20,
-                  query: str | None = None) -> list[dict]:
+                  query: str | None = None,
+                  domains: tuple = NEWS_DOMAINS) -> list[dict]:
+    """Most relevant NewsAPI articles, from NEWS_DOMAINS first.
+
+    If those outlets return fewer than MIN_DOMAIN_RESULTS articles, an
+    open search (minus NOISE_DOMAINS) fills in the rest.
+    """
     key = config.require("NEWSAPI_KEY")
     days = min(days, 29)  # free plan only goes back about a month
     if query is None:
         name = _company_name(ticker)
         query = f'"{name}" OR {ticker}' if name else ticker
-    params = {
+    base = {
         "q": query,
         "from": _since(days).strftime("%Y-%m-%d"),
         "language": "en",
-        "sortBy": "publishedAt",
+        "sortBy": "relevancy",
         "searchIn": "title,description",
         "pageSize": min(limit, 100),
     }
 
-    def fetch():
-        payload = get_json(
-            NEWSAPI_URL, params=params, headers={"X-Api-Key": key}
-        )
-        return parse_newsapi(payload, ticker)
+    def search(params):
+        def fetch():
+            payload = get_json(
+                NEWSAPI_URL, params=params, headers={"X-Api-Key": key}
+            )
+            return parse_newsapi(payload, ticker)
 
-    return cached("newsapi", {"ticker": ticker, **params}, fetch,
-                  ttl_hours=3)
+        return cached("newsapi", {"ticker": ticker, **params}, fetch,
+                      ttl_hours=3)
+
+    out = search({**base, "domains": ",".join(domains)}) if domains \
+        else []
+    if len(out) < MIN_DOMAIN_RESULTS:
+        seen = {a["url"] for a in out}
+        more = search({**base, "excludeDomains": ",".join(NOISE_DOMAINS)})
+        out += [a for a in more if a["url"] not in seen]
+    return out[:limit]
 
 
 def parse_yahoo(items: list[dict], ticker: str) -> list[dict]:
@@ -132,11 +162,27 @@ def parse_yahoo(items: list[dict], ticker: str) -> list[dict]:
     return [a for a in out if a["title"]]
 
 
-def fetch_yahoo(ticker: str) -> list[dict]:
-    def fetch():
-        return parse_yahoo(yf.Ticker(ticker).news, ticker)
+def fetch_yahoo(ticker: str, count: int = 20) -> list[dict]:
+    """Yahoo Finance news for the ticker.
 
-    return cached("yahoo_news", {"ticker": ticker}, fetch, ttl_hours=3)
+    Ticker.news has come back empty for every ticker since late Sep 2026
+    (Yahoo's news endpoint errors; yfinance 1.4.1 and 1.7.0 both hit
+    it), so when it is empty this falls back to Yahoo's search endpoint,
+    keeping only items tagged with the ticker. Empty results are not
+    cached, so the next call tries again.
+    """
+    def fetch():
+        items = parse_yahoo(yf.Ticker(ticker).news, ticker)
+        if not items:
+            found = yf.Search(ticker, max_results=1,
+                              news_count=count).news or []
+            found = [i for i in found
+                     if ticker in (i.get("relatedTickers") or [ticker])]
+            items = parse_yahoo(found, ticker)
+        return items
+
+    return cached("yahoo_news", {"ticker": ticker}, fetch, ttl_hours=3,
+                  cache_empty=False)
 
 
 _COLUMN_ALIASES = {
@@ -237,5 +283,20 @@ def get_news(ticker: str, days: int = 7, limit: int = 20,
         if key not in seen:
             seen.add(key)
             unique.append(a)
-    unique.sort(key=lambda a: a["published_at"] or "", reverse=True)
-    return unique[:limit]
+    # Share the limit across providers (round robin, newest first within
+    # each), so a feed with more recent timestamps can't crowd the other
+    # out, then return the picks newest first.
+    by_provider: dict[str, list] = {}
+    for a in unique:
+        by_provider.setdefault(a.get("provider", ""), []).append(a)
+    queues = [
+        sorted(q, key=lambda a: a["published_at"] or "", reverse=True)
+        for q in by_provider.values()
+    ]
+    picked = []
+    while len(picked) < limit and any(queues):
+        for q in queues:
+            if q and len(picked) < limit:
+                picked.append(q.pop(0))
+    picked.sort(key=lambda a: a["published_at"] or "", reverse=True)
+    return picked
