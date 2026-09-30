@@ -1,0 +1,20 @@
+# Conda environment for the AAI-520 final project.
+#
+#   conda env create -f environment.yml
+#   conda activate aai520-finagent
+#   python -m ipykernel install --user --name aai520-finagent \
+#       --display-name "Python (aai520-finagent)"
+#
+# Python packages come from requirements.txt, and the finagent package is
+# installed in editable mode, so code changes show up without reinstalling.
+# After changing requirements.txt: conda env update -f environment.yml --prune
+name: aai520-finagent
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - ipykernel
+  - pip:
+      - -r requirements.txt
+      - -e .
