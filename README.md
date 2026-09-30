@@ -33,15 +33,17 @@ and iteration.
 .
 ├── README.md
 ├── requirements.txt
+├── environment.yml         # conda environment (aai520-finagent)
 ├── pyproject.toml          # ruff config (PEP 8, 79 char lines)
 ├── .env.example            # copy to .env and add your API keys
 ├── scripts/
-│   └── check_setup.py      # verifies your keys and every data source
+│   ├── check_setup.py      # verifies your keys and every data source
+│   └── run_chain.py        # runs the prompt chain, prints each step
 ├── src/finagent/
 │   ├── config.py           # settings and API key loading (reads .env)
 │   ├── llm.py              # single entry point for Claude calls
 │   ├── cache.py            # disk cache for API responses
-│   ├── schemas.py          # shared data shapes (Article)
+│   ├── schemas.py          # shared data shapes (Article, NewsDigest)
 │   ├── tools/              # Workstream A: data sources + registry
 │   ├── workflows/          # Workstreams A and C: the three patterns
 │   └── agent/              # Workstream B: the research agent
@@ -59,9 +61,19 @@ Python 3.10 or newer.
 ```bash
 git clone https://github.com/pdhinaka/AAI-520-NLP-Final-Team-Project-Group7.git
 cd AAI-520-NLP-Final-Team-Project-Group7
-python -m venv .venv && source .venv/bin/activate   # or use conda
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 pip install -e .
+cp .env.example .env
+```
+
+Or with conda (installs the same requirements plus the package):
+
+```bash
+conda env create -f environment.yml
+conda activate aai520-finagent
+python -m ipykernel install --user --name aai520-finagent \
+    --display-name "Python (aai520-finagent)"
 cp .env.example .env
 ```
 
@@ -114,7 +126,9 @@ API responses are cached as JSON under `data/cache/` so repeated runs
 don't burn free-tier limits. Delete that folder to force fresh data.
 Set `CACHE_MODE=offline` in `.env` to read only from the cache, which
 is what we will use for the final notebook run so the numbers don't
-change between runs.
+change between runs. LLM replies made through
+`llm.complete_json_cached` are cached too (under `data/cache/llm/`),
+so an offline run replays them exactly.
 
 To use a Kaggle financial news dataset as an offline fallback, save it
 as `data/local_news.csv`. It needs a `title` (or `headline`) column and
@@ -178,18 +192,22 @@ Data tools (`src/finagent/tools/`)
       agent
 
 Prompt chaining (`src/finagent/workflows/prompt_chain.py`)
-- [ ] Ingest: pull news articles for a ticker
-- [ ] Preprocess: clean text, dedupe, trim to length
-- [ ] Classify: label each article (earnings, product, legal, macro,
+- [x] Ingest: pull news articles for a ticker
+- [x] Preprocess: clean text, dedupe, trim to length
+- [x] Classify: label each article (earnings, product, legal, macro,
       analyst rating, other) and sentiment
-- [ ] Extract: pull entities, numbers, dates, and key events
-- [ ] Summarize: produce a short news digest for the ticker
-- [ ] Log the intermediate output of every step so the notebook can show
+- [x] Extract: pull entities, numbers, dates, and key events
+- [x] Summarize: produce a short news digest for the ticker
+- [x] Log the intermediate output of every step so the notebook can show
       the chain
+
+Try it with `python scripts/run_chain.py AAPL`. Each run is saved to
+`data/runs/`; the agent can call the whole chain as the
+`get_news_digest` tool.
 
 ### Workstream B: The Investment Research Agent (agent functions)
 
-**Owner:** _unclaimed_
+**Owner:** Eric Hernandez
 
 Covers all four Agent Functions (120 pts).
 
@@ -209,7 +227,7 @@ Covers all four Agent Functions (120 pts).
 
 ### Workstream C: Routing, evaluator-optimizer, and the final notebook
 
-**Owner:** _unclaimed_
+**Owner:** Nolan Robbins
 
 Covers Workflow Patterns 2 and 3 and most of the Code rubric (115 pts).
 
@@ -259,6 +277,7 @@ specs = registry.tool_specs()        # pass as tools= to the LLM
 registry.call("get_price_summary", {"ticker": "AAPL"})
 llm.complete("...", system="...")    # plain text reply
 llm.complete_json("...")             # parsed JSON, retries on bad JSON
+llm.complete_json_cached("...")      # same, reply cached on disk
 llm.create_message(messages, tools=specs)  # raw call for tool-use loops
 llm.USAGE                            # running token totals
 ```
@@ -270,6 +289,7 @@ llm.USAGE                            # running token totals
 | `get_price_history` | OHLCV rows for charts |
 | `get_financials` | Key income, balance sheet, and cash flow lines |
 | `get_news` | Recent articles (NewsAPI + Yahoo, local CSV fallback) |
+| `get_news_digest` | The prompt chain's digest: headline, cited summary, catalysts, risks, sentiment and topic counts |
 | `get_macro_snapshot` | Fed funds, 10y yield, CPI YoY, unemployment, VIX |
 | `get_series` | Any FRED series |
 | `get_recent_filings` | Recent 10-K, 10-Q, 8-K with document links |

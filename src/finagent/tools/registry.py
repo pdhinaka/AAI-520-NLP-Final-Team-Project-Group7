@@ -15,6 +15,7 @@ import types
 import typing
 
 from finagent.tools import earnings, filings, macro, market_data, news
+from finagent.workflows import prompt_chain
 
 TOOLS = {
     fn.__name__: fn
@@ -24,6 +25,7 @@ TOOLS = {
         market_data.get_price_history,
         market_data.get_financials,
         news.get_news,
+        prompt_chain.get_news_digest,
         macro.get_macro_snapshot,
         macro.get_series,
         filings.get_recent_filings,

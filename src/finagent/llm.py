@@ -17,6 +17,7 @@ from typing import Any
 import anthropic
 
 from finagent import config
+from finagent.cache import cached
 
 # Running token totals, handy for reporting cost in the notebook.
 USAGE = {"calls": 0, "input_tokens": 0, "output_tokens": 0}
@@ -160,3 +161,31 @@ def complete_json(
                 },
             ]
     raise ValueError(f"Model did not return valid JSON: {last_err}")
+
+
+def complete_json_cached(
+    prompt: str,
+    system: str | None = None,
+    namespace: str = "llm",
+    ttl_hours: float = 24 * 365,
+    **kwargs,
+) -> Any:
+    """complete_json() with the reply saved to the disk cache.
+
+    The cache key is the model, prompt, system prompt, and settings, so
+    the same input returns the same output without another API call.
+    With CACHE_MODE=offline this replays earlier replies, which keeps
+    the final notebook run reproducible.
+    """
+    params = {
+        "model": kwargs.get("model") or config.LLM_MODEL,
+        "system": system,
+        "prompt": prompt,
+        **{k: v for k, v in kwargs.items() if k != "model"},
+    }
+    return cached(
+        namespace,
+        params,
+        lambda: complete_json(prompt, system=system, **kwargs),
+        ttl_hours=ttl_hours,
+    )

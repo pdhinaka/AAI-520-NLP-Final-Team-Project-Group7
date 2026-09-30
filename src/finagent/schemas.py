@@ -22,3 +22,28 @@ class Article:
 
     def to_dict(self) -> dict:
         return asdict(self)
+
+
+@dataclass
+class NewsDigest:
+    """Output of the prompt chain (Workstream A), also returned by the
+    get_news_digest tool. Proposed shape; the team can still change it.
+
+    summary cites articles as [id]; sources maps those ids to titles and
+    URLs. Counts are computed in Python from the classify step, not
+    written by the model.
+    """
+
+    ticker: str
+    n_articles: int = 0
+    headline: str = ""
+    summary: str = ""  # markdown, cites articles as [id]
+    catalysts: list = field(default_factory=list)
+    risks: list = field(default_factory=list)
+    sentiment_counts: dict = field(default_factory=dict)
+    topic_counts: dict = field(default_factory=dict)
+    sources: list = field(default_factory=list)  # [{id, title, url}]
+    unknown_citations: list = field(default_factory=list)
+
+    def to_dict(self) -> dict:
+        return asdict(self)
