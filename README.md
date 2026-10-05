@@ -38,7 +38,8 @@ and iteration.
 ├── .env.example            # copy to .env and add your API keys
 ├── scripts/
 │   ├── check_setup.py      # verifies your keys and every data source
-│   └── run_chain.py        # runs the prompt chain, prints each step
+│   ├── run_chain.py        # runs the prompt chain, prints each step
+│   └── run_workflows.py    # runs routing + evaluator-optimizer
 ├── src/finagent/
 │   ├── config.py           # settings and API key loading (reads .env)
 │   ├── llm.py              # single entry point for Claude calls
@@ -232,23 +233,33 @@ Covers all four Agent Functions (120 pts).
 Covers Workflow Patterns 2 and 3 and most of the Code rubric (115 pts).
 
 Routing (`src/finagent/workflows/routing.py`)
-- [ ] Router that sends each piece of content to the right specialist
-- [ ] Specialists: earnings analyzer, news analyzer, market or technical
+- [x] Router that sends each piece of content to the right specialist
+      (rules on data kind and chain topic labels first; LLM router,
+      batched, only for articles labeled "other")
+- [x] Specialists: earnings analyzer, news analyzer, market or technical
       analyzer (at least three)
-- [ ] Log the routing decision and reason for each item
+- [x] Log the routing decision and reason for each item
 
 Evaluator-optimizer (`src/finagent/workflows/evaluator_optimizer.py`)
-- [ ] Generator produces an analysis
-- [ ] Evaluator scores it with a rubric and returns written feedback
-- [ ] Optimizer revises using the feedback; loop until the score passes
+- [x] Generator produces an analysis
+- [x] Evaluator scores it with a rubric and returns written feedback
+      (five LLM-graded criteria plus a Python check that every number
+      in the brief appears in the source facts)
+- [x] Optimizer revises using the feedback; loop until the score passes
       or a max iteration count is hit
-- [ ] Record the score for each iteration so we can plot improvement
+- [x] Record the score for each iteration so we can plot improvement
+
+Try both with `python scripts/run_workflows.py AAPL`. Runs are saved to
+`data/runs/`. The agent can use `routing.run_routing(ticker)` for the
+specialist views and `evaluator_optimizer.run_loop(context)` to polish
+its final report.
 
 Final notebook (`notebooks/final_notebook.ipynb`)
 - [ ] Section per requirement with markdown explaining design choices
 - [ ] Visualizations: agent flow diagram, price chart, routing
-      distribution, evaluator scores across iterations
-- [ ] Repository link at the top
+      distribution, evaluator scores across iterations (all but the
+      flow diagram are in the notebook)
+- [x] Repository link at the top
 - [ ] Clean top-to-bottom run, then export to PDF
 - [ ] Final PEP 8 / ruff pass on the whole repo
 
