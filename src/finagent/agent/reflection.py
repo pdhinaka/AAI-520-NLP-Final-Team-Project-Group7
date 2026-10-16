@@ -2,10 +2,43 @@
 
 from finagent import llm
 
+PLACEHOLDER_TEXT = (
+    "research completed",
+    "based on gathered data",
+    "hold pending full analysis",
+    "no clear catalyst",
+)
+
+
+def _heuristic_gaps(report: dict) -> list[str]:
+    """Add concrete checklist-style gaps even if the LLM is weak."""
+    gaps: list[str] = []
+    text = "\n".join(
+        str(report.get(key, ""))
+        for key in ("summary", "investment_thesis", "recommendation", "upside", "risks", "catalysts", "outlook")
+    ).lower()
+
+    if any(token in text for token in PLACEHOLDER_TEXT):
+        gaps.append("Missing a clear investment thesis and explicit recommendation")
+    if not report.get("catalysts"):
+        gaps.append("No concrete catalyst path was identified")
+    if not report.get("recommendation"):
+        gaps.append("Recommendation is missing or not explicit")
+    if not report.get("investment_thesis"):
+        gaps.append("Investment thesis is not written out")
+    if not report.get("upside") or report.get("upside") == ["Based on gathered data"]:
+        gaps.append("Upside section is too generic to be actionable")
+    if not report.get("risks") or report.get("risks") == ["Based on gathered data"]:
+        gaps.append("Risk section is too generic to be actionable")
+
+    return gaps
+
+
 def reflect(report: dict) -> dict:
-    """Score the report against a rubric."""
-    
-    # Prepare report summary for Claude
+    """Score the report against a rubric and add concrete gaps."""
+
+    report = dict(report)
+
     report_text = f"""
         Ticker: {report.get('ticker', 'Unknown')}
         Summary: {report.get('summary', 'N/A')}
@@ -14,7 +47,7 @@ def reflect(report: dict) -> dict:
         Risks: {report.get('risks', [])}
         Catalysts: {report.get('catalysts', [])}
     """
-            
+
     prompt = f"""Score this investment research report on 4 criteria (0-10 each):
         1. **Coverage**: Does it address company, market, and macro factors?
         2. **Evidence**: Are claims backed by data (specific numbers, sources)?
@@ -36,21 +69,33 @@ def reflect(report: dict) -> dict:
         }}"""
 
     system = "You are a critical evaluator of investment research. Be constructive but honest."
-    
-    result = llm.complete_json(prompt, system=system)
-    
+
+    try:
+        result = llm.complete_json(prompt, system=system)
+    except Exception:
+        result = {}
+
+    heuristic_gaps = _heuristic_gaps(report)
+    if not isinstance(result, dict):
+        result = {}
+
     # Compute overall from components if not provided
+    scores = [
+        result.get("coverage_score", 6),
+        result.get("evidence_score", 6),
+        result.get("recency_score", 6),
+        result.get("balance_score", 6),
+    ]
     if "overall_score" not in result or result["overall_score"] == 0:
-        scores = [
-            result.get("coverage_score", 5),
-            result.get("evidence_score", 5),
-            result.get("recency_score", 5),
-            result.get("balance_score", 5)
-        ]
         result["overall_score"] = sum(scores) / len(scores)
-    
+
+    result["gaps"] = list(result.get("gaps", [])) + heuristic_gaps
+    result["gaps"] = list(dict.fromkeys(result["gaps"]))
+
     return {
-        "score": result.get("overall_score", 5.0),
+        "score": result["overall_score"],
+        # Use empty string as default to indicate "no LLM feedback available"
+        # Heuristic gaps still provide actionable feedback
         "feedback": result.get("feedback", ""),
-        "gaps": result.get("gaps", [])
+        "gaps": result["gaps"],
     }
