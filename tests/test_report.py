@@ -88,3 +88,26 @@ def test_report_is_fact_driven(monkeypatch):
     assert report["risks"] != ["Based on gathered data"]
     assert report["catalysts"]
     assert report["outlook"] != "Hold pending full analysis"
+
+
+def test_report_handles_missing_1y_return():
+    """Reports should skip missing 1Y returns instead of crashing on None."""
+
+    facts = {
+        "ticker": "AAPL",
+        "price_summary": {
+            "last_close": 220.5,
+            "return_1y": None,
+            "market_cap": "$3.0T",
+        },
+    }
+
+    stats = research_agent._fact_stats(facts)
+    summary = research_agent._build_summary("AAPL", facts)
+    upside = research_agent._build_upside(facts)
+    outlook = research_agent._build_outlook(facts)
+
+    assert any("last close" in s for s in stats)
+    assert "AAPL" in summary
+    assert isinstance(upside, list)
+    assert outlook in {"Neutral", "Moderately bullish"}

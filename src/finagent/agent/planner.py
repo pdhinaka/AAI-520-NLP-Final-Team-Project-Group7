@@ -63,3 +63,8 @@ def make_plan(ticker: str, notes: list[str] | None = None) -> list[str]:
     if steps:
         return steps[:7]
     return DEFAULT_PLAN[:]
+
+
+def plan(ticker: str, notes: list[str] | None = None) -> list[str]:
+    """Backward-compatible alias for older notebook calls."""
+    return make_plan(ticker, notes)

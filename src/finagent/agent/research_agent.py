@@ -20,8 +20,9 @@ def _fact_stats(facts: dict) -> list[str]:
 
         if "last_close" in value:
             stats.append(f"last close: {value['last_close']}")
-        if "return_1y" in value:
-            stats.append(f"1-year return: {value['return_1y']:+.1%}")
+        ret_1y = value.get("return_1y")
+        if ret_1y is not None:
+            stats.append(f"1-year return: {ret_1y:+.1%}")
         if "market_cap" in value:
             stats.append(f"market cap: {value['market_cap']}")
         if "revenue_growth" in value:
@@ -57,8 +58,9 @@ def _build_upside(facts: dict) -> list[str]:
     for key, value in facts.items():
         if not isinstance(value, dict):
             continue
-        if "return_1y" in value:
-            upside.append(f"Price momentum is positive at {value['return_1y']:+.1%} over the last year.")
+        ret_1y = value.get("return_1y")
+        if ret_1y is not None:
+            upside.append(f"Price momentum is positive at {ret_1y:+.1%} over the last year.")
         if "market_cap" in value:
             upside.append(f"The market profile remains large, with market cap at {value['market_cap']}.")
         if "revenue_growth" in value:
@@ -95,13 +97,19 @@ def _build_outlook(facts: dict) -> str:
     for key, value in facts.items():
         if not isinstance(value, dict):
             continue
-        if "return_1y" in value:
-            return "Moderately bullish" if value["return_1y"] > 0 else "Neutral"
+        ret_1y = value.get("return_1y")
+        if ret_1y is not None:
+            return "Moderately bullish" if ret_1y > 0 else "Neutral"
     return "Neutral"
 
 
 def _build_recommendation(facts: dict) -> str:
-    if any(isinstance(value, dict) and "return_1y" in value and value["return_1y"] > 0 for value in facts.values()):
+    if any(
+        isinstance(value, dict)
+        and value.get("return_1y") is not None
+        and value["return_1y"] > 0
+        for value in facts.values()
+    ):
         return "Moderate Buy"
     return "Hold"
 
