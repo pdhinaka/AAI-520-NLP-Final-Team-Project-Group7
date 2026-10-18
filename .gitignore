@@ -24,3 +24,6 @@ memory/*
 .DS_Store
 .vscode/
 .idea/
+
+# Claude Code notes and settings (local only, never committed)
+.claude/
