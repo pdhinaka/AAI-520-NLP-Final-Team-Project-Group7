@@ -105,15 +105,35 @@ def _score(raw) -> int:
         return DEFAULT_SCORE
 
 
-def reflect(report: dict, facts: dict | None = None) -> dict:
+def _previous_part(previous: list[str] | None) -> str:
+    """The fixable gaps on the draft this one revises. Without them the
+    critic found new small items each round and revisions never
+    settled (same fix as the evaluator-optimizer's grader)."""
+    if not previous:
+        return ""
+    lines = "\n".join(f"- {g}" for g in previous)
+    return (
+        "\n\nThis is a revision. The fixable gaps you listed on the "
+        f"previous draft were:\n{lines}\nFirst check whether each was "
+        "fixed. List a fixable gap only if one of these is still open or "
+        "the revision introduced an error.")
+
+
+def reflect(report: dict, facts: dict | None = None,
+            previous: list[str] | None = None) -> dict:
     """Score the report against a rubric and add concrete gaps.
 
     facts are the data the report was written from (the agent passes
     its compact facts). With facts, the critic sees them and every
-    number the model wrote is checked against them.
+    number the model wrote is checked against them. previous is the
+    fixable list from the review of the draft this one revises.
 
     Returns {score, coverage_score, evidence_score, recency_score,
-    balance_score, grounding, feedback, gaps}; scores are 0-10.
+    balance_score, grounding, feedback, gaps, fixable, needs_data};
+    scores are 0-10. fixable gaps can be fixed from the facts (the
+    agent revises for them); needs_data gaps need data the run didn't
+    gather (the agent saves them as lessons for the next run). gaps is
+    both lists together.
     """
     report = dict(report)
     facts_part = ""
@@ -131,14 +151,25 @@ Give each an integer from 0 to 10.
 4. balance: Does it give both upside and downside fair weight?
 
 Report:
-{report_text(report)}{facts_part}
+{report_text(report)}{facts_part}{_previous_part(previous)}
+
+Check each number's period and unit against the facts (quarter over
+quarter vs year over year, a percentage vs a multiple). Then sort the
+problems you find into two lists:
+- fixable: the fix uses only the facts above, and you name the fact
+  (a number with the wrong period or unit, a claim the facts
+  contradict, a point the facts support but the report leaves out).
+- needs_data: anything that needs data not in the facts (a filing
+  detail, an estimate, a peer comparison, verification elsewhere).
+Leave fixable empty if the report already uses the facts well.
 
 Respond as JSON:
 {{"coverage_score": <int 0-10>, "evidence_score": <int 0-10>,
   "recency_score": <int 0-10>, "balance_score": <int 0-10>,
   "feedback": "<main observations, 2-3 sentences>",
-  "gaps": ["<specific missing item and the data that would fill it>",
-           ...]}}"""
+  "fixable": ["<the problem and how to fix it from the facts>", ...],
+  "needs_data": ["<missing item and the data that would fill it>",
+                 ...]}}"""
 
     try:
         result = llm.complete_json_cached(prompt, system=REFLECT_SYSTEM,
@@ -152,12 +183,16 @@ Respond as JSON:
     grounding = (grounding_check(_written_text(report), facts)
                  if facts else None)
 
-    gaps = [str(g) for g in result.get("gaps") or []]
+    # "gaps" is the older single list; it counts as fixable.
+    fixable = [str(g) for g in
+               (result.get("fixable") or result.get("gaps") or [])]
+    needs_data = [str(g) for g in result.get("needs_data") or []]
     if grounding and grounding["ungrounded"]:
         shown = ", ".join(grounding["ungrounded"][:8])
-        gaps.insert(0, "These numbers are not in the gathered facts; "
-                       f"correct or remove them: {shown}")
-    gaps = list(dict.fromkeys(gaps + _heuristic_gaps(report)))
+        fixable.insert(0, "These numbers are not in the gathered facts; "
+                          f"correct or remove them: {shown}")
+    fixable = list(dict.fromkeys(fixable + _heuristic_gaps(report)))
+    gaps = list(dict.fromkeys(fixable + needs_data))
 
     return {
         "score": round(sum(scores.values()) / len(scores), 2),
@@ -166,4 +201,6 @@ Respond as JSON:
         # Empty when the LLM gave no feedback; gaps still apply.
         "feedback": str(result.get("feedback", "")),
         "gaps": gaps,
+        "fixable": fixable,
+        "needs_data": needs_data,
     }
