@@ -15,20 +15,26 @@ def _heuristic_gaps(report: dict) -> list[str]:
     gaps: list[str] = []
     text = "\n".join(
         str(report.get(key, ""))
-        for key in ("summary", "investment_thesis", "recommendation", "upside", "risks", "catalysts", "outlook")
+        for key in (
+            "summary", "investment_thesis", "recommendation", "upside",
+            "risks", "catalysts", "outlook",
+        )
     ).lower()
 
     if any(token in text for token in PLACEHOLDER_TEXT):
-        gaps.append("Missing a clear investment thesis and explicit recommendation")
+        gaps.append(
+            "Missing a clear investment thesis and explicit recommendation"
+        )
     if not report.get("catalysts"):
         gaps.append("No concrete catalyst path was identified")
     if not report.get("recommendation"):
         gaps.append("Recommendation is missing or not explicit")
     if not report.get("investment_thesis"):
         gaps.append("Investment thesis is not written out")
-    if not report.get("upside") or report.get("upside") == ["Based on gathered data"]:
+    generic = ["Based on gathered data"]
+    if not report.get("upside") or report.get("upside") == generic:
         gaps.append("Upside section is too generic to be actionable")
-    if not report.get("risks") or report.get("risks") == ["Based on gathered data"]:
+    if not report.get("risks") or report.get("risks") == generic:
         gaps.append("Risk section is too generic to be actionable")
 
     return gaps
@@ -48,7 +54,8 @@ def reflect(report: dict) -> dict:
         Catalysts: {report.get('catalysts', [])}
     """
 
-    prompt = f"""Score this investment research report on 4 criteria (0-10 each):
+    prompt = f"""Score this investment research report on 4 criteria
+        (0-10 each):
         1. **Coverage**: Does it address company, market, and macro factors?
         2. **Evidence**: Are claims backed by data (specific numbers, sources)?
         3. **Recency**: Are facts fresh (last quarter or month)?
@@ -68,7 +75,10 @@ def reflect(report: dict) -> dict:
             "gaps": ["<gap 1>", "<gap 2>", ...]
         }}"""
 
-    system = "You are a critical evaluator of investment research. Be constructive but honest."
+    system = (
+        "You are a critical evaluator of investment research. Be "
+        "constructive but honest."
+    )
 
     try:
         result = llm.complete_json(prompt, system=system)

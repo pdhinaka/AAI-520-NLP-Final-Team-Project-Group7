@@ -45,7 +45,11 @@ _NAME_SUFFIXES = (
 
 
 def _since(days: int) -> datetime:
-    return datetime.now(timezone.utc) - timedelta(days=days)
+    # Only the date part is used (NewsAPI "from"), and config.today()
+    # can pin it so the cache key is stable across days.
+    start = datetime.combine(config.today(), datetime.min.time(),
+                             tzinfo=timezone.utc)
+    return start - timedelta(days=days)
 
 
 def _company_name(ticker: str) -> str:

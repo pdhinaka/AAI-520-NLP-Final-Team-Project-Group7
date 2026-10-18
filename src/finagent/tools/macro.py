@@ -43,7 +43,7 @@ def get_series(series_id: str, start: str | None = None) -> dict:
     """
     key = config.require("FRED_API_KEY")
     series_id = series_id.upper()
-    start = start or (date.today() - timedelta(days=730)).isoformat()
+    start = start or (config.today() - timedelta(days=730)).isoformat()
     base = {"series_id": series_id, "api_key": key, "file_type": "json"}
 
     def fetch():
