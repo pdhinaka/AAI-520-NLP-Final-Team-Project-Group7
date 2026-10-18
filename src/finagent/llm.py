@@ -7,6 +7,7 @@ switching models is a one-line change to LLM_MODEL in .env.
     text = llm.complete("Summarize ...", system="You are ...")
     data = llm.complete_json("Classify ... Return {\"label\": ...}")
     msg = llm.create_message(messages, tools=specs)  # raw, for tool use
+    reply = llm.create_message_cached(messages, tools=specs)  # dict form
 """
 
 import json
@@ -82,8 +83,84 @@ def create_message(
     return msg
 
 
+def _block_dict(block) -> dict:
+    """One content block as the minimal dict the API accepts back."""
+    if not isinstance(block, dict):
+        block = block.model_dump(mode="json")
+    if block.get("type") == "text":
+        return {"type": "text", "text": block["text"]}
+    if block.get("type") == "tool_use":
+        return {
+            "type": "tool_use",
+            "id": block["id"],
+            "name": block["name"],
+            "input": block["input"],
+        }
+    return block
+
+
+def _plain_messages(messages: list[dict]) -> list[dict]:
+    """Messages with any SDK content objects turned into dicts."""
+    plain = []
+    for m in messages:
+        content = m["content"]
+        if isinstance(content, list):
+            content = [_block_dict(b) for b in content]
+        plain.append({"role": m["role"], "content": content})
+    return plain
+
+
+def create_message_cached(
+    messages: list[dict],
+    system: str | None = None,
+    tools: list[dict] | None = None,
+    model: str | None = None,
+    max_tokens: int = 1024,
+    namespace: str = "llm_tools",
+    ttl_hours: float = 24 * 365,
+) -> dict:
+    """create_message() with the reply saved to the disk cache.
+
+    Returns a dict, not a Message: {"stop_reason", "content", "usage"},
+    where content is a list of {"type": "text"|"tool_use", ...} blocks
+    that can be appended to messages as the assistant turn. The cache
+    key is the model, system prompt, messages, tools and max_tokens, so
+    a tool-use loop with the same inputs replays offline.
+    """
+    messages = _plain_messages(messages)
+    model = model or config.LLM_MODEL
+    params = {
+        "model": model,
+        "system": system,
+        "messages": messages,
+        "tools": tools,
+        "max_tokens": max_tokens,
+    }
+
+    def fetch() -> dict:
+        msg = create_message(
+            messages, system=system, tools=tools, model=model,
+            max_tokens=max_tokens,
+        )
+        return {
+            "stop_reason": msg.stop_reason,
+            "content": [_block_dict(b) for b in msg.content],
+            "usage": {
+                "input_tokens": msg.usage.input_tokens,
+                "output_tokens": msg.usage.output_tokens,
+            },
+        }
+
+    return cached(namespace, params, fetch, ttl_hours=ttl_hours)
+
+
 def text_of(msg) -> str:
-    """Join the text blocks of a Message."""
+    """Join the text blocks of a Message or a create_message_cached
+    reply."""
+    if isinstance(msg, dict):
+        return "".join(
+            b["text"] for b in msg["content"] if b["type"] == "text"
+        )
     return "".join(b.text for b in msg.content if b.type == "text")
 
 
