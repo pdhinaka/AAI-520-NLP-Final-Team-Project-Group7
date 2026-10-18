@@ -43,6 +43,13 @@ def test_summarize_prices():
     assert s["high_52w"] == 130 and s["low_52w"] == 101
 
 
+def test_summarize_prices_one_year_of_closes():
+    # yfinance period="1y" returns about 251 daily closes
+    records = [{"date": str(i), "close": 100 + i} for i in range(251)]
+    s = market_data.summarize_prices(records)
+    assert s["return_1y"] == round(350 / 100 - 1, 4)
+
+
 def test_parse_newsapi():
     payload = {"status": "ok", "articles": [
         {"source": {"name": "Reuters"}, "title": "Apple beats",

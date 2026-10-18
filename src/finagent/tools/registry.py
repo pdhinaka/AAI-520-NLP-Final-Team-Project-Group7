@@ -92,10 +92,16 @@ def call(name: str, args: dict | None = None) -> dict | list:
         return {"error": f"{type(err).__name__}: {err}"}
 
 
-def call_json(name: str, args: dict | None = None,
-              max_chars: int = 20000) -> str:
-    """call(), serialized and truncated for a tool_result message."""
-    text = json.dumps(call(name, args), default=str)
+def to_json(result, max_chars: int = 20000) -> str:
+    """A tool result serialized and truncated for a tool_result
+    message."""
+    text = json.dumps(result, default=str)
     if len(text) > max_chars:
         text = text[:max_chars] + ' ..."[truncated]"'
     return text
+
+
+def call_json(name: str, args: dict | None = None,
+              max_chars: int = 20000) -> str:
+    """call(), serialized and truncated for a tool_result message."""
+    return to_json(call(name, args), max_chars=max_chars)

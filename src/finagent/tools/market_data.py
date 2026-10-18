@@ -107,7 +107,9 @@ def summarize_prices(records: list[dict]) -> dict:
         "return_1m": ret(21),
         "return_3m": ret(63),
         "return_6m": ret(126),
-        "return_1y": ret(251),
+        # period="1y" gives about 251 closes, so 250 steps back is the
+        # first one; ret(251) needed 252 closes and was always None.
+        "return_1y": ret(250),
         "high_52w": max(closes[-252:]),
         "low_52w": min(closes[-252:]),
         "volatility_annualized": round(math.sqrt(var * 252), 4),
