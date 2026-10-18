@@ -399,3 +399,20 @@ def test_grounded_draft_beats_higher_scoring_ungrounded_one(monkeypatch):
     best = out["best_index"]
     assert not ungrounded[best]
     assert scores[best] < max(s for s, u in zip(scores, ungrounded) if u)
+
+
+def test_compact_facts_drop_free_cash_flow_for_a_bank():
+    statements = {
+        "quarterly": False,
+        "income_statement": {"2025-12-31": {"Total Revenue": 181.8,
+                                            "Net Income": 57.0}},
+        "cash_flow": {"2025-12-31": {"Free Cash Flow": -147.8}},
+    }
+    bank = research_agent.compact_facts({
+        "get_company_info": {"sector": "Financial Services"},
+        "get_financials": statements})
+    assert bank["get_financials"]["free_cash_flow"] is None
+    tech = research_agent.compact_facts({
+        "get_company_info": {"sector": "Technology"},
+        "get_financials": statements})
+    assert tech["get_financials"]["free_cash_flow"] == -147.8

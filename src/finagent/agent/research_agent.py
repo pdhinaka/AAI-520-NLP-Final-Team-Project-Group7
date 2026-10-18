@@ -20,6 +20,7 @@ from datetime import datetime
 from finagent import config, llm
 from finagent.tools import registry
 from finagent.workflows.routing import (
+    FINANCIAL_SECTORS,
     _eps_facts,
     _fundamental_facts,
     _pct_change,
@@ -170,13 +171,15 @@ def _fact_stats(facts: dict) -> list[str]:
     return stats[:10]
 
 
-def _financial_facts(value: dict) -> dict:
+def _financial_facts(value: dict, sector: str | None = None) -> dict:
     """Routing's fundamentals summary, with the growth period named.
 
     _fundamental_facts compares the two latest periods, which for
     quarterly statements is quarter over quarter. Left as
     "revenue_growth", the report writer called it year over year.
     """
+    if sector in FINANCIAL_SECTORS:
+        value = {**value, "sector": sector}
     out = _fundamental_facts(value)
     if not out:
         return value
@@ -205,6 +208,9 @@ def compact_facts(facts: dict) -> dict:
     added so the report can cite them and grounding can find them.
     """
     out: dict = {}
+    sector = next((v.get("sector") for k, v in facts.items()
+                   if _base(k) == "get_company_info"
+                   and isinstance(v, dict)), None)
     for key, value in facts.items():
         if key in {"ticker", "gathered_at"}:
             continue
@@ -213,7 +219,7 @@ def compact_facts(facts: dict) -> dict:
             out[key] = {"summary": _eps_facts(value),
                         "recent_quarters": value[:4]}
         elif name == "get_financials" and isinstance(value, dict):
-            out[key] = _financial_facts(value)
+            out[key] = _financial_facts(value, sector)
         elif name == "get_company_info" and isinstance(value, dict):
             info = dict(value)
             info["longBusinessSummary"] = (
