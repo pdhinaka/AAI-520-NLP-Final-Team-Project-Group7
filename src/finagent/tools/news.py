@@ -63,7 +63,9 @@ def _company_name(ticker: str) -> str:
     for suffix in _NAME_SUFFIXES:
         if name.endswith(suffix):
             name = name[: -len(suffix)]
-    return name.strip()
+    # " Co." can match before " & Co." does: "JP Morgan Chase & Co."
+    # would leave a dangling "&".
+    return name.strip().rstrip(" &,")
 
 
 def parse_newsapi(payload: dict, ticker: str) -> list[dict]:

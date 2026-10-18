@@ -165,3 +165,27 @@ def test_preprocess_caps_articles_per_source(monkeypatch):
     assert [a["published_at"][:10] for a in out] == ["2026-09-23",
                                                      "2026-09-22"]
     assert [d["reason"] for d in dropped] == ["over 2 from MacRumors"] * 2
+
+
+def test_name_variants_cover_how_news_spells_names():
+    assert pc.name_variants("Apple") == ["Apple"]
+    assert "Nvidia" in pc.name_variants("NVIDIA")
+    jpm = pc.name_variants("JP Morgan Chase")
+    assert {"JP Morgan", "JPMorgan"} <= set(jpm)
+    assert pc.name_variants("Bank of America") == [
+        "Bank of America"]
+    assert pc.name_variants("") == []
+
+
+def test_preprocess_keeps_articles_that_spell_the_name_differently():
+    arts = [{"title": "Apple or Nvidia: which to own?", "text": "",
+             "ticker": "NVDA", "source": "A", "url": "u1",
+             "published_at": "2026-10-18"},
+            {"title": "Chipmakers rally", "text": "No names here.",
+             "ticker": "NVDA", "source": "B", "url": "u2",
+             "published_at": "2026-10-18"}]
+    dropped = []
+    kept = pc.preprocess(arts, company="NVIDIA",
+                                   dropped=dropped)
+    assert [a["title"] for a in kept] == ["Apple or Nvidia: which to own?"]
+    assert dropped[0]["reason"] == "does not mention the company"

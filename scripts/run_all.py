@@ -6,16 +6,17 @@ Run from the repo root:
     python scripts/run_all.py AAPL --offline   # cache only
 
 The agent plans, calls tools, writes and reflects on a report, and
-saves notes to memory/. Then the prompt chain (replayed from the
-agent's news tool), routing, and the evaluator-optimizer run, and the
-two recommendations are compared. Each stage is saved to data/runs/.
-Set AS_OF_DATE=YYYY-MM-DD to replay a run from an earlier day.
+saves notes to memory/. Then the prompt chain, routing, and the
+evaluator-optimizer run, and the two recommendations are compared.
+Prints a short summary of each stage; --verbose adds the step logs.
+Live runs are saved to data/runs/. Set AS_OF_DATE=YYYY-MM-DD to replay
+a run from an earlier day.
 """
 
 import argparse
 import logging
 
-from finagent import config, pipeline
+from finagent import config, llm, pipeline
 
 
 def main():
@@ -27,9 +28,12 @@ def main():
                         help="notes folder (default: memory/)")
     parser.add_argument("--offline", action="store_true",
                         help="read only from the cache")
+    parser.add_argument("--verbose", action="store_true",
+                        help="also print each step's log lines")
     args = parser.parse_args()
 
-    logging.basicConfig(level=logging.INFO, format="%(name)s: %(message)s")
+    level = logging.INFO if args.verbose else logging.WARNING
+    logging.basicConfig(level=level, format="%(name)s: %(message)s")
     for name in ("httpx", "yfinance", "urllib3", "anthropic"):
         logging.getLogger(name).setLevel(logging.WARNING)
     if args.offline:
@@ -37,28 +41,16 @@ def main():
 
     out = pipeline.run_all(args.ticker, memory_dir=args.memory_dir,
                            threshold=args.threshold,
-                           max_iters=args.max_iters)
-    a = out["agent"]
-    print(f"\n== agent {a['ticker']} ({a['plan']['source']} plan, "
-          f"{a['turns']} turns, stopped: {a['stopped']})")
-    for i, step in enumerate(a["plan"]["steps"], 1):
-        print(f"  {i}. {step}")
-    for t in a["trace"]:
-        status = "ok" if t["ok"] else f"error: {t['error'][:60]}"
-        print(f"  turn {t['turn']}: {t['tool']} {status}")
-    for r in a["reflection_history"]:
-        print(f"  draft {r['draft']}: score {r['score']} "
-              f"grounding {(r['grounding'] or {}).get('ratio')}")
-    print(f"recommendation: {a['recommendation']}")
-    print(f"notes saved: {len(a['notes_saved'])}")
-
-    loop = out["loop"]
-    print(f"\n== evaluator-optimizer: best iteration "
-          f"{loop['best_iteration']} (passed: {loop['passed']})")
-    print(f"\n== comparison\n{out['comparison']}")
-    for stage in ("agent", "chain", "routing", "loop"):
-        print(f"{stage}: usage {out[stage]['usage']}, "
-              f"saved to {out[stage]['saved_to']}")
+                           max_iters=args.max_iters,
+                           save=not args.offline)
+    print(pipeline.format_summary(out))
+    calls = llm.USAGE["calls"]
+    print(f"\nLive LLM calls this run: {calls}"
+          + (" (everything replayed from the cache)" if not calls else
+             f" ({llm.USAGE['input_tokens']:,} input, "
+             f"{llm.USAGE['output_tokens']:,} output tokens)"))
+    if not args.offline:
+        print(f"Agent run saved to {out['agent']['saved_to']}")
 
 
 if __name__ == "__main__":

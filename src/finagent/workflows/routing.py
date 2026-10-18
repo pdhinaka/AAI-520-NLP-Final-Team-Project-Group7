@@ -281,6 +281,11 @@ def _eps_facts(quarters: list[dict]) -> dict:
     }
 
 
+# Free cash flow swings with deposits and trading assets at banks and
+# insurers, so it says nothing about their health (JPM showed -$148B).
+FINANCIAL_SECTORS = ("Financial Services",)
+
+
 def _fundamental_facts(data: dict) -> dict:
     income = data.get("income_statement") or {}
     cash = data.get("cash_flow") or {}
@@ -302,7 +307,16 @@ def _fundamental_facts(data: dict) -> dict:
         "diluted_eps": latest.get("Diluted EPS"),
         "free_cash_flow": (cash.get(periods[0]) or {}).get(
             "Free Cash Flow"),
-    }
+    } | _financial_sector_note(data)
+
+
+def _financial_sector_note(data: dict) -> dict:
+    """For a bank or insurer, replace free cash flow with a note."""
+    if data.get("sector") not in FINANCIAL_SECTORS:
+        return {}
+    return {"free_cash_flow": None,
+            "note": "free cash flow omitted: not meaningful for a "
+                    "financial company"}
 
 
 def earnings_facts(items: list[dict]) -> dict:
@@ -487,6 +501,7 @@ def run_routing(ticker: str, chain: dict | None = None,
                                    chain["steps"].get("extract"))
     errors: list = []
     items = articles + items_from_tools(ticker, errors)
+    _tag_financial_sector(items)
     timings["collect"] = round(time.perf_counter() - start, 2)
 
     start = time.perf_counter()
@@ -524,6 +539,19 @@ def run_routing(ticker: str, chain: dict | None = None,
     if save:
         result["saved_to"] = _save(result, f"routing_{ticker}")
     return result
+
+
+def _tag_financial_sector(items: list[dict]) -> None:
+    """Copy a financial company's sector onto its financials item so
+    the earnings specialist's facts leave out free cash flow."""
+    sector = next((it["data"].get("sector") for it in items
+                   if it["kind"] == "company_info"
+                   and isinstance(it.get("data"), dict)), None)
+    if sector not in FINANCIAL_SECTORS:
+        return
+    for it in items:
+        if it["kind"] == "financials" and isinstance(it.get("data"), dict):
+            it["data"] = {**it["data"], "sector": sector}
 
 
 def _save(result: dict, name: str) -> str:
