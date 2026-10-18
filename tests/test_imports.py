@@ -19,6 +19,7 @@ MODULES = [
     "finagent.agent.reflection",
     "finagent.agent.memory",
     "finagent.agent.research_agent",
+    "finagent.pipeline",
 ]
 
 
