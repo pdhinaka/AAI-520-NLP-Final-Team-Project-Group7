@@ -118,3 +118,10 @@ def test_get_news_shares_limit_across_providers(monkeypatch):
     providers = [a["provider"] for a in out]
     assert providers.count("newsapi") == 3 and providers.count("yahoo") == 3
     assert out[0]["published_at"] > out[-1]["published_at"]
+
+
+def test_company_name_drops_dangling_ampersand(monkeypatch):
+    from finagent.tools import market_data
+    monkeypatch.setattr(market_data, "get_company_info",
+                        lambda t: {"shortName": "JP Morgan Chase & Co."})
+    assert news._company_name("JPM") == "JP Morgan Chase"

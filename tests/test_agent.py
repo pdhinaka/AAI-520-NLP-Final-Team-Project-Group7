@@ -376,3 +376,26 @@ def test_tool_lesson_names_the_substitute_for_failed_earnings():
     notes = research_agent.lessons("AAPL", {}, {"gaps": []}, run)
     assert notes["general"][0]["note"].endswith(
         "get_financials worked instead.")
+
+
+def test_grounded_draft_beats_higher_scoring_ungrounded_one(monkeypatch):
+    rounds = iter([(7, 7, 7, 7), (9, 9, 8, 8), (8, 8, 8, 8)])
+
+    def complete_json(prompt, system=None, **kwargs):
+        if system == reflection.REFLECT_SYSTEM:
+            s = next(rounds)
+            return {**dict(zip(("coverage_score", "evidence_score",
+                                "recency_score", "balance_score"), s)),
+                    "fixable": ["still something"]}
+        return {**REPORT, "summary": "Margin is 99.9% now."}
+
+    monkeypatch.setattr(llm, "complete_json", complete_json)
+    draft = research_agent._finish("AAPL", REPORT, TOOL_DATA)
+    out = research_agent.reflect_and_revise("AAPL", draft, TOOL_DATA)
+    scores = [h["score"] for h in out["history"]]
+    ungrounded = [bool(h["grounding"]["ungrounded"])
+                  for h in out["history"]]
+    assert all(h["revise"] for h in out["history"])
+    best = out["best_index"]
+    assert not ungrounded[best]
+    assert scores[best] < max(s for s, u in zip(scores, ungrounded) if u)

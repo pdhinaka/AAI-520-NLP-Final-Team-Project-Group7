@@ -577,9 +577,13 @@ def reflect_and_revise(ticker: str, report: dict, facts: dict,
             drafts[-1], compact, previous=history[-1].get("fixable")))
 
     def rank(i):
+        # A draft that needs no revision wins, then one with no
+        # ungrounded numbers (an NVDA run kept a higher-scoring draft
+        # with an invented figure), then the score.
         r = history[i]
-        ratio = (r.get("grounding") or {}).get("ratio", 1.0)
-        return (not _needs_revision(r), r["score"], ratio)
+        grounding = r.get("grounding") or {}
+        return (not _needs_revision(r), not grounding.get("ungrounded"),
+                r["score"], grounding.get("ratio", 1.0))
 
     best = max(range(len(drafts)), key=rank)
     for i, review in enumerate(history):
