@@ -28,7 +28,8 @@ def _fact_stats(facts: dict) -> list[str]:
         if "revenue_growth" in value:
             stats.append(f"revenue growth: {value['revenue_growth']}")
         if "risk_factors" in value and value["risk_factors"]:
-            stats.append(f"risk factors: {', '.join(value['risk_factors'])}")
+            joined = ", ".join(value["risk_factors"])
+            stats.append(f"risk factors: {joined}")
 
     return stats[:5]
 
@@ -37,7 +38,10 @@ def _build_summary(ticker: str, facts: dict) -> str:
     """Build a concise summary from the facts we actually gathered."""
     facts_list = _fact_stats(facts)
     if not facts_list:
-        return f"{ticker} research is in progress; no tool facts have been collected yet."
+        return (
+            f"{ticker} research is in progress; no tool facts have been "
+            "collected yet."
+        )
 
     return f"{ticker} research indicates: {'; '.join(facts_list)}."
 
@@ -46,7 +50,10 @@ def _build_thesis(ticker: str, facts: dict) -> str:
     """Create a simple investment thesis from the collected facts."""
     summary = _fact_stats(facts)
     if not summary:
-        return f"{ticker} has not yet generated a thesis because no tool facts were collected."
+        return (
+            f"{ticker} has not yet generated a thesis because no tool "
+            "facts were collected."
+        )
     return (
         f"{ticker} remains constructive as long as the recent operating facts "
         f"hold up: {summary[0]}."
@@ -60,12 +67,23 @@ def _build_upside(facts: dict) -> list[str]:
             continue
         ret_1y = value.get("return_1y")
         if ret_1y is not None:
-            upside.append(f"Price momentum is positive at {ret_1y:+.1%} over the last year.")
+            upside.append(
+                f"Price momentum is positive at {ret_1y:+.1%} over the "
+                "last year."
+            )
         if "market_cap" in value:
-            upside.append(f"The market profile remains large, with market cap at {value['market_cap']}.")
+            upside.append(
+                "The market profile remains large, with market cap at "
+                f"{value['market_cap']}."
+            )
         if "revenue_growth" in value:
-            upside.append(f"Revenue growth remains supportive at {value['revenue_growth']}.")
-    return upside[:3] or ["The latest tool facts suggest a constructive setup."]
+            upside.append(
+                "Revenue growth remains supportive at "
+                f"{value['revenue_growth']}."
+            )
+    return upside[:3] or [
+        "The latest tool facts suggest a constructive setup."
+    ]
 
 
 def _build_risks(facts: dict) -> list[str]:
@@ -76,7 +94,9 @@ def _build_risks(facts: dict) -> list[str]:
         if "risk_factors" in value and value["risk_factors"]:
             for item in value["risk_factors"]:
                 risks.append(str(item))
-    return risks or ["Macro or competitive pressure remains the main watch item."]
+    return risks or [
+        "Macro or competitive pressure remains the main watch item."
+    ]
 
 
 def _build_catalysts(facts: dict) -> list[str]:
@@ -85,12 +105,24 @@ def _build_catalysts(facts: dict) -> list[str]:
         if not isinstance(value, dict):
             continue
         if "last_close" in value:
-            catalysts.append("Recent price action indicates the market is still pricing in a live setup.")
+            catalysts.append(
+                "Recent price action indicates the market is still "
+                "pricing in a live setup."
+            )
         if "revenue_growth" in value:
-            catalysts.append("Operating momentum is a near-term catalyst if growth continues.")
+            catalysts.append(
+                "Operating momentum is a near-term catalyst if growth "
+                "continues."
+            )
         if "market_cap" in value:
-            catalysts.append("Large-cap scale gives the company flexibility to absorb short-term volatility.")
-    return catalysts[:3] or ["The next earnings or product update is the main catalyst to watch."]
+            catalysts.append(
+                "Large-cap scale gives the company flexibility to absorb "
+                "short-term volatility."
+            )
+    return catalysts[:3] or [
+        "The next earnings or product update is the main catalyst to "
+        "watch."
+    ]
 
 
 def _build_outlook(facts: dict) -> str:
@@ -148,11 +180,14 @@ def run(ticker: str) -> dict:
         "gathered_at": datetime.now().isoformat(),
     }
 
+    # Built outside the f-string: a backslash inside {} is a
+    # SyntaxError before Python 3.12.
+    plan_text = "\n".join(f"- {step}" for step in plan)
     messages = [
         {
             "role": "user",
             "content": f"""Research {ticker}. Follow this plan:
-            {"\n".join(f"- {step}" for step in plan)}
+            {plan_text}
 
             Available tools:
             {registry.describe()}
@@ -204,7 +239,10 @@ def run(ticker: str) -> dict:
             tool_results.append({
                 "type": "tool_result",
                 "tool_use_id": tool_call.id,
-                "content": json.dumps(result) if not isinstance(result, str) else result,
+                "content": (
+                    result if isinstance(result, str)
+                    else json.dumps(result, default=str)
+                ),
             })
 
         # Add results back to conversation
@@ -238,7 +276,8 @@ def run(ticker: str) -> dict:
 
     # Phase 6: Save to memory
     learnings = [
-        f"Plan had {len(plan)} steps, completed in {max_iterations} iterations",
+        f"Plan had {len(plan)} steps, completed in {max_iterations} "
+        "iterations",
         f"Score: {score_result['score']}/10",
     ]
     learnings.extend(score_result["gaps"][:2])

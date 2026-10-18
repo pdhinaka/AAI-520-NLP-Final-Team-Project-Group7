@@ -10,7 +10,9 @@ def test_reflection_flags_missing_thesis_and_catalysts(monkeypatch):
             "evidence_score": 6,
             "recency_score": 8,
             "balance_score": 5,
-            "feedback": "The report is weak on the investment thesis and catalysts.",
+            "feedback": (
+                "The report is weak on the investment thesis and catalysts."
+            ),
             "gaps": [],
         }
 
@@ -34,7 +36,7 @@ def test_reflection_flags_missing_thesis_and_catalysts(monkeypatch):
 
 
 def test_memory_persists_and_deduplicates_ticker_notes(tmp_path, monkeypatch):
-    """Memory should be durable and avoid repeating the same lesson across runs."""
+    """Memory should be durable and not repeat a lesson across runs."""
 
     monkeypatch.setattr(memory, "MEMORY_DIR", tmp_path)
 

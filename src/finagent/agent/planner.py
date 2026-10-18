@@ -1,6 +1,10 @@
 """Plans research steps for a ticker."""
 
+import logging
+
 from finagent import llm
+
+log = logging.getLogger(__name__)
 
 DEFAULT_PLAN = [
     "Check the latest price trend and 52-week context",
@@ -27,7 +31,9 @@ def _normalize_plan(raw) -> list[str] | None:
                     return item
 
     if isinstance(raw, str):
-        cleaned = [piece.strip() for piece in raw.splitlines() if piece.strip()]
+        cleaned = [
+            piece.strip() for piece in raw.splitlines() if piece.strip()
+        ]
         if cleaned:
             return cleaned
 
@@ -39,11 +45,11 @@ def make_plan(ticker: str, notes: list[str] | None = None) -> list[str]:
 
     context = ""
     if notes:
-        context = "\n\nPrior knowledge from previous runs:\n" + "\n".join(
-            f"- {n}" for n in notes
-        )
+        context = "\n\nPrior knowledge from previous runs:\n"
+        context += "\n".join(f"- {n}" for n in notes)
 
-    prompt = f"""You are an investment research planner. Create a concise research plan for {ticker}.
+    prompt = f"""You are an investment research planner. Create a concise
+    research plan for {ticker}.
     The plan should have 5-7 steps covering:
         - Price and momentum
         - Company fundamentals
@@ -52,16 +58,21 @@ def make_plan(ticker: str, notes: list[str] | None = None) -> list[str]:
         - Catalysts and risks
     Format as a JSON array of strings (steps).{context}"""
 
-    system = """You are an expert investment researcher. Plans should be specific and actionable."""
+    system = (
+        "You are an expert investment researcher. Plans should be "
+        "specific and actionable."
+    )
 
     try:
-        result = llm.complete_json(prompt, system=system, temperature=0.2)
-    except Exception:
+        result = llm.complete_json(prompt, system=system)
+    except Exception as err:  # noqa: BLE001 - logged, then fall back
+        log.warning("Planner LLM call failed, using DEFAULT_PLAN: %r", err)
         return DEFAULT_PLAN[:]
 
     steps = _normalize_plan(result)
     if steps:
         return steps[:7]
+    log.warning("Planner reply had no usable steps, using DEFAULT_PLAN")
     return DEFAULT_PLAN[:]
 
 

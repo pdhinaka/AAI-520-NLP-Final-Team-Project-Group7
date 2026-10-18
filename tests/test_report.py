@@ -3,8 +3,11 @@ from types import SimpleNamespace
 from finagent.agent import planner, research_agent
 
 
-def test_make_plan_falls_back_to_default_when_llm_reply_is_invalid(monkeypatch):
-    """The planner should still return a usable research plan if the model is noisy."""
+def test_make_plan_falls_back_to_default_when_llm_reply_is_invalid(
+    monkeypatch,
+):
+    """The planner should still return a usable plan if the model is
+    noisy."""
 
     monkeypatch.setattr(
         planner.llm,
@@ -21,7 +24,7 @@ def test_make_plan_falls_back_to_default_when_llm_reply_is_invalid(monkeypatch):
 
 
 def test_report_is_fact_driven(monkeypatch):
-    """The final brief should synthesize actual tool facts, not placeholders."""
+    """The final brief should use actual tool facts, not placeholders."""
 
     responses = iter([
         SimpleNamespace(
@@ -51,7 +54,9 @@ def test_report_is_fact_driven(monkeypatch):
     monkeypatch.setattr(
         research_agent.planner,
         "make_plan",
-        lambda ticker, notes: ["Get latest price data", "Summarize investment case"],
+        lambda ticker, notes: [
+            "Get latest price data", "Summarize investment case",
+        ],
     )
     monkeypatch.setattr(
         research_agent.llm,
@@ -72,7 +77,9 @@ def test_report_is_fact_driven(monkeypatch):
     monkeypatch.setattr(
         research_agent.reflection,
         "reflect",
-        lambda report: {"score": 8.0, "feedback": "Good evidence base", "gaps": []},
+        lambda report: {
+            "score": 8.0, "feedback": "Good evidence base", "gaps": [],
+        },
     )
 
     report = research_agent.run("AAPL")

@@ -61,12 +61,13 @@ def create_message(
     tools: list[dict] | None = None,
     model: str | None = None,
     max_tokens: int = 1024,
-    temperature: float | None = None,
 ):
     """Raw Messages API call. Use this for tool-use loops.
 
     Returns the anthropic Message object (check .stop_reason and
-    .content for tool_use blocks).
+    .content for tool_use blocks). There is no temperature argument:
+    the installed SDK's messages.create doesn't accept one, so passing
+    it raises TypeError here instead of failing somewhere quieter.
     """
     kwargs: dict[str, Any] = {
         "model": model or config.LLM_MODEL,
@@ -76,8 +77,6 @@ def create_message(
     }
     if tools:
         kwargs["tools"] = tools
-    if temperature is not None:
-        kwargs["temperature"] = temperature
     msg = _client().messages.create(**kwargs)
     _track(msg)
     return msg
@@ -93,7 +92,6 @@ def complete(
     system: str | None = None,
     model: str | None = None,
     max_tokens: int = 1024,
-    temperature: float | None = None,
 ) -> str:
     """Send one user prompt and return the reply text."""
     msg = create_message(
@@ -101,7 +99,6 @@ def complete(
         system=system,
         model=model,
         max_tokens=max_tokens,
-        temperature=temperature,
     )
     return text_of(msg)
 
