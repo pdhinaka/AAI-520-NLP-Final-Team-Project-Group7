@@ -192,15 +192,16 @@ def test_reflect_flags_numbers_missing_from_facts(monkeypatch):
 
 
 def test_revision_runs_until_the_critique_passes(monkeypatch):
-    rounds = iter([(5, 5, 5, 5), (9, 8, 8, 8)])
+    rounds = iter([((5, 5, 5, 5), ["add risks"]), ((9, 8, 8, 8), [])])
     writes = []
 
     def complete_json(prompt, system=None, **kwargs):
         if system == reflection.REFLECT_SYSTEM:
-            s = next(rounds)
+            s, fixable = next(rounds)
             return dict(zip(("coverage_score", "evidence_score",
                              "recency_score", "balance_score"), s),
-                        feedback="thin", gaps=["add risks"])
+                        feedback="thin", fixable=fixable,
+                        needs_data=["peer multiples"])
         writes.append(prompt)
         return {**REPORT, "outlook": "Revised."}
 
@@ -211,8 +212,58 @@ def test_revision_runs_until_the_critique_passes(monkeypatch):
     assert [h["score"] for h in out["history"]] == [5.0, 8.25]
     assert out["best_index"] == 1
     assert out["best"]["outlook"] == "Revised."
-    assert "- add risks" in writes[0]  # gaps go to the reviser
+    assert "- add risks" in writes[0]  # fixable gaps go to the reviser
+    assert "peer multiples" not in writes[0]
     assert [h["revise"] for h in out["history"]] == [True, False]
+
+
+def test_fixable_gap_triggers_revision_despite_high_score(monkeypatch):
+    calls = iter([["The -1.6% is quarter over quarter, not yoy"], []])
+
+    def complete_json(prompt, system=None, **kwargs):
+        if system == reflection.REFLECT_SYSTEM:
+            return {"coverage_score": 8, "evidence_score": 8,
+                    "recency_score": 8, "balance_score": 8,
+                    "fixable": next(calls),
+                    "needs_data": ["segment revenue"]}
+        return {**REPORT, "outlook": "Revised."}
+
+    monkeypatch.setattr(llm, "complete_json", complete_json)
+    draft = research_agent._finish("AAPL", REPORT, TOOL_DATA)
+    out = research_agent.reflect_and_revise("AAPL", draft, TOOL_DATA)
+    assert [h["revise"] for h in out["history"]] == [True, False]
+    assert out["best_index"] == 1
+    assert out["history"][1]["gaps"] == ["segment revenue"]
+
+
+def test_lessons_prefer_missing_data_over_fixed_gaps():
+    review = {"gaps": ["x", "segment revenue"], "fixable": [],
+              "needs_data": ["segment revenue"]}
+    run = {"coverage": {a: True for a in research_agent.AREAS},
+           "errors": [], "trace": []}
+    notes = research_agent.lessons("AAPL", REPORT, review, run)
+    lessons = [n["note"] for n in notes["ticker"]
+               if n["category"] == "lesson"]
+    assert lessons == ["Earlier report gap: segment revenue"]
+
+
+def test_compact_facts_name_growth_period_and_debt_unit():
+    income = {d: {"Total Revenue": r} for d, r in (
+        ("2026-06-30", 99.0), ("2026-03-31", 100.6),
+        ("2025-12-31", 120.0), ("2025-09-30", 95.0),
+        ("2025-06-30", 90.0))}
+    facts = {"get_financials": {"quarterly": True,
+                                "income_statement": income,
+                                "cash_flow": {}},
+             "get_company_info": {"debtToEquity": 78.4}}
+    out = research_agent.compact_facts(facts)
+    fin = out["get_financials"]
+    assert "revenue_growth" not in fin
+    assert fin["period_type"] == "quarter"
+    assert fin["revenue_growth_qoq"] == round(99.0 / 100.6 - 1, 4)
+    assert fin["revenue_growth_yoy"] == round(99.0 / 90.0 - 1, 4)
+    assert out["get_company_info"]["debtToEquity_pct"] == 78.4
+    assert "debtToEquity" not in out["get_company_info"]
 
 
 def test_revision_stops_after_max_revisions(monkeypatch):
@@ -295,3 +346,33 @@ def test_second_run_plans_with_first_runs_notes(monkeypatch, tmp_path):
     assert "Earlier run gathered no macro data" in prompts[1]
     assert len(run2["notes_loaded"]) == len(run1["notes_saved"])
     assert len(run1["drafts"]) == 1 + research_agent.MAX_REVISIONS
+
+
+def test_rereflection_sees_previous_fixable_gaps(monkeypatch):
+    prompts = []
+    fixable = iter([["name the EPS period"], []])
+
+    def complete_json(prompt, system=None, **kwargs):
+        if system == reflection.REFLECT_SYSTEM:
+            prompts.append(prompt)
+            return {"coverage_score": 8, "evidence_score": 8,
+                    "recency_score": 8, "balance_score": 8,
+                    "fixable": next(fixable)}
+        return {**REPORT, "outlook": "Revised."}
+
+    monkeypatch.setattr(llm, "complete_json", complete_json)
+    draft = research_agent._finish("AAPL", REPORT, TOOL_DATA)
+    research_agent.reflect_and_revise("AAPL", draft, TOOL_DATA)
+    assert "This is a revision" not in prompts[0]
+    assert "- name the EPS period" in prompts[1]
+
+
+def test_tool_lesson_names_the_substitute_for_failed_earnings():
+    err = {"turn": 1, "tool": "get_earnings", "ok": False,
+           "error": "RuntimeError: Alpha Vantage rate limit"}
+    trace = [err, {"turn": 2, "tool": "get_financials", "ok": True}]
+    run = {"coverage": {a: True for a in research_agent.AREAS},
+           "errors": [err], "trace": trace}
+    notes = research_agent.lessons("AAPL", {}, {"gaps": []}, run)
+    assert notes["general"][0]["note"].endswith(
+        "get_financials worked instead.")

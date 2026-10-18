@@ -210,6 +210,18 @@ def grounding_check(analysis: str, context: dict) -> dict:
             "ungrounded": ungrounded}
 
 
+SCORE_CALIBRATION = (
+    "Score scale, the same for every criterion:\n"
+    "5 = nothing to improve.\n"
+    "4 = no errors and nothing required is missing; any remaining "
+    "suggestions are optional.\n"
+    "3 = something is missing, mislabeled, or not backed by the facts "
+    "(for example a number given the wrong period, a risk without "
+    "evidence, a trigger without a level).\n"
+    "2 = several such problems.\n"
+    "1 = the criterion is not addressed."
+)
+
 EVALUATOR_SYSTEM = (
     "You are a strict research director reviewing an analyst's "
     "investment brief before it goes to a portfolio manager. You grade "
@@ -218,9 +230,37 @@ EVALUATOR_SYSTEM = (
 )
 
 
-def evaluate(analysis: str, context: dict,
-             model: str | None = None) -> dict:
+def _previous_part(previous: list[str] | None) -> str:
+    """Earlier feedback for a revised draft. Without it the grader
+    judged each revision from scratch and kept raising new optional
+    points, so revisions grew longer and never passed."""
+    if not previous:
+        return ""
+    notes = "\n".join(f"- {f}" for f in previous)
+    return (
+        "This is a revision. Your feedback on the previous draft was:\n"
+        f"{notes}\n"
+        "First check whether each point was addressed. Raise a new point "
+        "only for an error or a missing required element, not for an "
+        "optional addition.\n\n"
+    )
+
+
+def _feedback_text(item) -> str:
+    """The grader sometimes returns a feedback item as a dict
+    ({"type", "priority", "text"}); keep only the text."""
+    if isinstance(item, dict):
+        for key in ("text", "fix", "feedback", "description"):
+            if item.get(key):
+                return str(item[key])
+    return str(item)
+
+
+def evaluate(analysis: str, context: dict, model: str | None = None,
+             previous: list[str] | None = None) -> dict:
     """Score the brief against the rubric and return feedback.
+
+    previous is the feedback on the draft this one revised, if any.
 
     Returns {scores: {criterion: 1-5}, overall: 0-1, feedback: [str],
     strengths: [str], grounding: {ratio, checked, ungrounded}}.
@@ -235,6 +275,10 @@ def evaluate(analysis: str, context: dict,
         "strengths: 1-3 short strings\n"
         "feedback: up to 5 specific fixes, most important first, each "
         "saying exactly what to add, cut, or change\n\n"
+        # Without anchors the grader gave 4s and passed a draft whose
+        # own feedback named a vague trigger and a missing element.
+        + SCORE_CALIBRATION +
+        "\n\n"
         # Without this the grader flags "6.43%" against 0.0643 as a
         # mismatch and evidence never improves; exact number checks are
         # done in code (grounding_check).
@@ -243,7 +287,8 @@ def evaluate(analysis: str, context: dict,
         "$416.16B); treat those as matching. Number accuracy is checked "
         "separately, so judge evidence on whether claims are backed by "
         "facts, not on number formatting.\n\n"
-        f"Brief:\n{analysis}\n\n"
+        + _previous_part(previous)
+        + f"Brief:\n{analysis}\n\n"
         f"Source facts:\n{_context_json(context)}"
     )
     reply = llm.complete_json_cached(prompt, system=EVALUATOR_SYSTEM,
@@ -260,7 +305,7 @@ def evaluate(analysis: str, context: dict,
     grounding = grounding_check(analysis, context)
     scores[GROUNDING] = round(1 + 4 * grounding["ratio"], 2)
 
-    feedback = [str(f) for f in reply.get("feedback") or []]
+    feedback = [_feedback_text(f) for f in reply.get("feedback") or []]
     if grounding["ungrounded"]:
         shown = ", ".join(grounding["ungrounded"][:8])
         feedback.insert(0, "These numbers do not appear in the source "
@@ -294,6 +339,13 @@ def refine(analysis: str, feedback: list[str] | str, context: dict,
     prompt = (
         f"Revise this investment brief for {ticker}.\n\n"
         f"Reviewer feedback to address:\n{notes}\n\n"
+        # The reviewer sometimes asks for data the findings don't have;
+        # following it literally produced invented numbers.
+        "If a point asks for data that is not in the findings, do not "
+        "invent it: drop or soften the claim instead. Give every "
+        "trigger under 'What would change our view' a measurable "
+        "level. Stay within the word limit: cut lower-value points to "
+        "make room for fixes.\n\n"
         f"Current brief:\n{analysis}\n\n"
         + BRIEF_FORMAT.format(ticker=ticker)
         + "\nReturn only the revised brief."
@@ -335,7 +387,9 @@ def run_loop(context: dict, max_iters: int = 3, threshold: float = 0.8,
 
     analysis = generate(context, model=model)
     for i in range(1, max_iters + 1):
-        review = evaluate(analysis, context, model=evaluator_model)
+        previous = history[-1]["feedback"] if history else None
+        review = evaluate(analysis, context, model=evaluator_model,
+                          previous=previous)
         review["passed"] = passes(review, threshold, min_score)
         history.append({"iteration": i, "analysis": analysis,
                         "words": len(analysis.split()), **review})

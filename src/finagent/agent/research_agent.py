@@ -19,7 +19,11 @@ from datetime import datetime
 
 from finagent import config, llm
 from finagent.tools import registry
-from finagent.workflows.routing import _eps_facts, _fundamental_facts
+from finagent.workflows.routing import (
+    _eps_facts,
+    _fundamental_facts,
+    _pct_change,
+)
 
 from . import memory, planner, reflection
 
@@ -37,7 +41,9 @@ CONVICTIONS = ("low", "medium", "high")
 AREAS = {
     "price": ("get_price_summary", "get_price_history"),
     "fundamentals": ("get_company_info", "get_financials"),
-    "earnings": ("get_earnings",),
+    # Statements carry reported EPS and net income, so they stand in
+    # for get_earnings (without the analyst estimate) when it fails.
+    "earnings": ("get_earnings", "get_financials"),
     "news": ("get_news_digest", "get_news"),
     "macro": ("get_macro_snapshot", "get_series"),
     "filings": ("get_recent_filings", "get_filing_text"),
@@ -164,6 +170,29 @@ def _fact_stats(facts: dict) -> list[str]:
     return stats[:10]
 
 
+def _financial_facts(value: dict) -> dict:
+    """Routing's fundamentals summary, with the growth period named.
+
+    _fundamental_facts compares the two latest periods, which for
+    quarterly statements is quarter over quarter. Left as
+    "revenue_growth", the report writer called it year over year.
+    """
+    out = _fundamental_facts(value)
+    if not out:
+        return value
+    if not value.get("quarterly"):
+        return {**out, "period_type": "fiscal year"}
+    out["period_type"] = "quarter"
+    out["revenue_growth_qoq"] = out.pop("revenue_growth")
+    income = value.get("income_statement") or {}
+    periods = sorted(income, reverse=True)
+    if len(periods) >= 5:
+        out["revenue_growth_yoy"] = _pct_change(
+            income[periods[0]].get("Total Revenue"),
+            income[periods[4]].get("Total Revenue"))
+    return out
+
+
 def _base(key: str) -> str:
     return key.split("(")[0]
 
@@ -184,11 +213,15 @@ def compact_facts(facts: dict) -> dict:
             out[key] = {"summary": _eps_facts(value),
                         "recent_quarters": value[:4]}
         elif name == "get_financials" and isinstance(value, dict):
-            out[key] = _fundamental_facts(value) or value
+            out[key] = _financial_facts(value)
         elif name == "get_company_info" and isinstance(value, dict):
             info = dict(value)
             info["longBusinessSummary"] = (
                 info.get("longBusinessSummary") or "")[:300]
+            # yfinance reports debt/equity in percent (78.4 = 0.784x);
+            # the writer read it as a multiple.
+            if "debtToEquity" in info:
+                info["debtToEquity_pct"] = info.pop("debtToEquity")
             out[key] = info
         elif name == "get_news_digest" and isinstance(value, dict):
             out[key] = {k: value.get(k) for k in (
@@ -497,8 +530,9 @@ def _written_part(report: dict) -> dict:
 
 def revise_report(ticker: str, report: dict, review: dict,
                   facts: dict) -> dict:
-    """Rewrite the report to address the reflection's gaps."""
-    gaps = "\n".join(f"- {g}" for g in review["gaps"])
+    """Rewrite the report to fix the gaps the facts can fix."""
+    todo = review.get("fixable") or review["gaps"]
+    gaps = "\n".join(f"- {g}" for g in todo)
     prompt = (
         f"Revise this investment research report on {ticker}.\n\n"
         f"Critique: {review['feedback']}\n\n"
@@ -521,8 +555,9 @@ def revise_report(ticker: str, report: dict, review: dict,
 
 def _needs_revision(review: dict) -> bool:
     grounding = review.get("grounding") or {}
-    return review["score"] < REVISE_BELOW or bool(
-        grounding.get("ungrounded"))
+    return (review["score"] < REVISE_BELOW
+            or bool(grounding.get("ungrounded"))
+            or bool(review.get("fixable")))
 
 
 def reflect_and_revise(ticker: str, report: dict, facts: dict,
@@ -538,7 +573,8 @@ def reflect_and_revise(ticker: str, report: dict, facts: dict,
     while _needs_revision(history[-1]) and len(drafts) <= max_revisions:
         drafts.append(revise_report(ticker, drafts[-1], history[-1],
                                     facts))
-        history.append(reflection.reflect(drafts[-1], compact))
+        history.append(reflection.reflect(
+            drafts[-1], compact, previous=history[-1].get("fixable")))
 
     def rank(i):
         r = history[i]
@@ -582,8 +618,10 @@ def lessons(ticker: str, report: dict, review: dict, run: dict) -> dict:
                              "note": "Prior key numbers: "
                                      + "; ".join(numbers)})
 
-    # lesson: gaps the reflection flagged, and areas with no evidence
-    for gap in review.get("gaps", [])[:3]:
+    # lesson: data the report lacked (what the next run should fetch),
+    # then gaps left unfixed, and areas with no evidence
+    left = review.get("needs_data", []) + review.get("fixable", [])
+    for gap in (left or review.get("gaps", []))[:3]:
         ticker_notes.append({"category": "lesson",
                              "note": f"Earlier report gap: {gap}"})
     for area, covered in run["coverage"].items():
