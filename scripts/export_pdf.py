@@ -8,7 +8,8 @@ nbconvert's LaTeX route prints DataFrames as their plain-text repr,
 which wraps badly on a page. This script works on an in-memory copy of
 the notebook: every HTML table output gets a LaTeX longtable with
 wrapped columns, and the preamble gets a smaller monospace font and
-slimmer margins so 100-column text output fits without re-wrapping.
+slimmer margins so 100-column text output fits without re-wrapping,
+and symbols the default font lacks (>= and <=) are mapped to math.
 Section numbers come from the headings, so LaTeX numbering is off. The
 notebook file itself is not changed. Writes reports/final_notebook.pdf.
 """
@@ -31,6 +32,9 @@ TITLE = "Multi-Agent Financial Analysis System"
 AUTHORS = ["Eric Hernandez", "Nolan Robbins", "Pranav Dhinakar"]
 
 PREAMBLE = r"""
+\usepackage{newunicodechar}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≤}{\ensuremath{\leq}}
 \setcounter{secnumdepth}{0}
 \fvset{fontsize=\footnotesize}
 \renewcommand{\arraystretch}{1.15}
