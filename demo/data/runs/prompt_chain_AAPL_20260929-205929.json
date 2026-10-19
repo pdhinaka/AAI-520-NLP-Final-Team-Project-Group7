@@ -1,0 +1,1076 @@
+{
+  "ticker": "AAPL",
+  "model": "claude-haiku-4-5",
+  "run_at": "2026-09-30T03:59:29+00:00",
+  "digest": {
+    "ticker": "AAPL",
+    "n_articles": 8,
+    "headline": "Apple faces mixed outlook amid product expansion plans, cost pressures, and legal challenges as new CEO John Ternus takes helm.",
+    "summary": "- **Product launches and expansion:** Apple Pay launching in India with Axis Bank [5], with 12 new products expected in October including iPhone Duo and Mac Studio [9]. Vision Pro headset undergoing complete redesign with four concepts under consideration, unlikely before late 2028/early 2029 [10].\n- **Cost and operational pressures:** New CEO John Ternus reportedly planning layoffs as memory chip costs rise [4]. Apple betting $1,999 on consumer readiness for unspecified shift [1].\n- **Competitive and revenue threats:** Meta's Muse product puts Apple's 30% revenue share model on notice [6]. Broader market headwinds with S&P 500 and Dow extending losses amid elevated yield pressure [2].\n- **Legal challenges:** U.S. District Judge Jeffrey S. White certified class-action lawsuit accusing Apple of charging inflated fees to payment card issuers for Apple Pay transactions [13].",
+    "catalysts": [
+      "Apple Pay India launch with Axis Bank [5]",
+      "12 new products in October including iPhone Duo and Mac Studio [9]",
+      "Revamped Vision Pro development [10]",
+      "Next-gen product category rollout [1]"
+    ],
+    "risks": [
+      "CEO-planned layoffs amid rising memory chip costs [4]",
+      "Meta competition threatening Apple's 30% revenue share [6]",
+      "Macroeconomic headwinds from elevated yields [2]",
+      "Class-action lawsuit over Apple Pay card issuer fees [13]"
+    ],
+    "sentiment_counts": {
+      "positive": 2,
+      "neutral": 2,
+      "negative": 4
+    },
+    "topic_counts": {
+      "product": 5,
+      "macro": 1,
+      "other": 1,
+      "legal": 1
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Apple is betting $1,999 that consumers are ready for this shift",
+        "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html"
+      },
+      {
+        "id": 2,
+        "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html"
+      },
+      {
+        "id": 4,
+        "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html"
+      },
+      {
+        "id": 5,
+        "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html"
+      },
+      {
+        "id": 6,
+        "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html"
+      },
+      {
+        "id": 9,
+        "title": "12 New Things to Expect From Apple This October",
+        "url": "https://www.macrumors.com/2026/09/28/12-new-things-from-apple-this-october/"
+      },
+      {
+        "id": 10,
+        "title": "New Vision Pro Headset: Apple Considering Four Different Concepts",
+        "url": "https://www.macrumors.com/2026/09/28/apple-working-on-four-new-vision-pro-concepts/"
+      },
+      {
+        "id": 13,
+        "title": "Apple faces class action over Apple Pay fees charged to card issuers",
+        "url": "https://9to5mac.com/2026/09/25/apple-faces-class-action-over-apple-pay-fees-charged-to-card-issuers/"
+      }
+    ],
+    "unknown_citations": []
+  },
+  "steps": {
+    "ingest": [
+      {
+        "title": "Land of Startups: What ICTWeek Uzbekistan Revealed About Central Asia's Tech Rise",
+        "source": "ACCESS Newswire",
+        "published_at": "2026-09-30T03:32:00+00:00",
+        "url": "https://finance.yahoo.com/small-business/articles/land-startups-ictweek-uzbekistan-revealed-033200402.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "T-Mobile raises another fee customers pay each month",
+        "source": "TheStreet",
+        "published_at": "2026-09-30T02:17:00+00:00",
+        "url": "https://finance.yahoo.com/economy/policy/articles/t-mobile-raises-another-fee-021700147.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "History Says Nvidia's Record $150 Billion Buyback Is Good News for the Stock",
+        "source": "Motley Fool",
+        "published_at": "2026-09-30T01:03:01+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/history-says-nvidias-record-150-010301431.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "S&P 500 investors may have more tech exposure than they think: Here's how one wealth manager mitigates concentration risk",
+        "source": "TheStreet",
+        "published_at": "2026-09-30T00:21:07+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-investors-may-more-002107367.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Apple is betting $1,999 that consumers are ready for this shift",
+        "source": "TheStreet",
+        "published_at": "2026-09-29T23:37:00+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "source": "Stocktwits",
+        "published_at": "2026-09-29T22:30:08+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+        "source": "Barrons.com",
+        "published_at": "2026-09-29T20:52:00+00:00",
+        "url": "https://finance.yahoo.com/m/e4c63816-8d5f-3cc4-a06f-9cc7458d4a95/apple%2C-meta%2C-iovance%2C.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Stock Market Today: Dow, Nasdaq Finish In The Red; AI Play Offers Entry",
+        "source": "Investor's Business Daily",
+        "published_at": "2026-09-29T20:49:02+00:00",
+        "url": "https://finance.yahoo.com/m/8757314c-41ab-383f-89ee-51177c4ae956/stock-market-today%3A-dow%2C.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "source": "Yahoo Finance",
+        "published_at": "2026-09-29T20:46:13+00:00",
+        "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Has MSFT Stock Run Out Of Steam?",
+        "source": "Trefis",
+        "published_at": "2026-09-29T20:32:17+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/msft-stock-run-steam-203217202.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "source": "MT Newswires",
+        "published_at": "2026-09-29T19:51:43+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "source": "TIKR",
+        "published_at": "2026-09-29T19:32:36+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "What Is The One Risk Every Google Stock Investor Should Know?",
+        "source": "Trefis",
+        "published_at": "2026-09-29T19:20:20+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/one-risk-every-google-stock-192020925.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Wells Fargo Spots Unexpected Winner in TSMC's 2nm Race",
+        "source": "GuruFocus.com",
+        "published_at": "2026-09-29T19:11:01+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/wells-fargo-spots-unexpected-winner-191101346.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Why Muse is Winning the Agentic AI Race",
+        "source": "Zacks",
+        "published_at": "2026-09-29T19:07:00+00:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/why-muse-winning-agentic-ai-190700974.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "watchOS 27.0.1 is now available for all compatible Apple Watch models",
+        "source": "9to5Mac",
+        "published_at": "2026-09-28T21:10:42Z",
+        "url": "https://9to5mac.com/2026/09/28/watchos-27-0-1-is-now-available-for-all-compatible-apple-watch-models/",
+        "text": "Apple today expanded the availability of watchOS 27.0.1 to more Apple Watch models, following last week\u2019s initial release for Apple Watch Series 12 and Apple Watch Ultra 4. Here are the details.\n\n\n\n more\u2026 Apple today expanded the availability of watchOS 27.0.1 to more Apple Watch models, following last weeks initial release for Apple Watch Series 12 and Apple Watch Ultra 4. Here are the details.\r\nLast\u2026 [+1065 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple Releases macOS Golden Gate 27.0.1 With Bug Fixes",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T17:13:46Z",
+        "url": "https://www.macrumors.com/2026/09/28/apple-releases-macos-27-0-1/",
+        "text": "Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. \n\n\n\n\n\nMac users can download the new \u200cmacOS Golden Gate\u200c software by using the Software Update section in System Settings. \n\n\n\nApple \u2026 Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. \r\nMac users can download the new \u200cmacOS Golden Gate\u200c software by using th\u2026 [+180 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "12 New Things to Expect From Apple This October",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T14:13:01Z",
+        "url": "https://www.macrumors.com/2026/09/28/12-new-things-from-apple-this-october/",
+        "text": "October will be an especially busy month for Apple this year, with the company set to release the iPhone Duo, both iOS 27.1 and iOS 27.2, and a new Mac Studio configuration with 512GB of RAM. In addition, up to six more Apple products may be unveiled next mon\u2026 October will be an especially busy month for Apple this year, with the company set to release the iPhone Duo, both iOS 27.1 and iOS 27.2, and a new Mac Studio configuration with 512GB of RAM. In addi\u2026 [+1618 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "New Vision Pro Headset: Apple Considering Four Different Concepts",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T10:52:51Z",
+        "url": "https://www.macrumors.com/2026/09/28/apple-working-on-four-new-vision-pro-concepts/",
+        "text": "Apple is working on a \"completely revamped\" Vision Pro headset that could go in any of four directions and likely won't arrive before late 2028 or early 2029, according to Bloomberg's Mark Gurman.\n\n\n\n\n\nWriting in his latest Power On newsletter, Gurman said Ap\u2026 Apple is working on a \"completely revamped\" Vision Pro headset that could go in any of four directions and likely won't arrive before late 2028 or early 2029, according to Bloomberg's Mark Gurman.\r\nW\u2026 [+1507 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Amazon Just Knocked $900 Off Apple's Latest 16-Inch MacBook Pro",
+        "source": "MacRumors",
+        "published_at": "2026-09-27T15:30:35Z",
+        "url": "https://www.macrumors.com/2026/09/27/2026-macbook-pro-900-off/",
+        "text": "Amazon has introduced a major discount on the 16-inch MacBook Pro with the M5 Max chip, 32-Core GPU, 36GB RAM, and 2TB SSD, now available for $3,499.00, down from $4,399.00. This is a massive $900 markdown on the high-end MacBook Pro, and it's joining a few o\u2026 Amazon has introduced a major discount on the 16-inch MacBook Pro with the M5 Max chip, 32-Core GPU, 36GB RAM, and 2TB SSD, now available for $3,499.00, down from $4,399.00. This is a massive $900 ma\u2026 [+860 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Top Stories: Apple Leaks, Siri AI Settlement, and More",
+        "source": "MacRumors",
+        "published_at": "2026-09-26T13:00:12Z",
+        "url": "https://www.macrumors.com/2026/09/26/top-stories-apple-leaks-siri-ai-settlement/",
+        "text": "The Apple rumor mill never stops, and this week MacRumors was able to break the news of details on several upcoming products.\n\n\n\n\n\nWe're also still learning more about the just-released iPhone 18 Pro and Pro Max plus the upcoming iPhone Duo, while this week s\u2026 The Apple rumor mill never stops, and this week MacRumors was able to break the news of details on several upcoming products.\r\nWe're also still learning more about the just-released iPhone 18 Pro and\u2026 [+5634 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple @ Work: The enterprise needs to kill the SSO tax, and it\u2019s an opportunity for Apple",
+        "source": "9to5Mac",
+        "published_at": "2026-09-26T13:00:00Z",
+        "url": "https://9to5mac.com/2026/09/26/apple-work-the-enterprise-needs-to-kill-the-sso-tax-and-its-an-opportunity-for-apple/",
+        "text": "Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary to seamlessly and automatically deploy, manage, and protect \u2026 Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary \u2026 [+5587 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "watchOS 27: 12 New Things To Check Out on Your Apple Watch",
+        "source": "MacRumors",
+        "published_at": "2026-09-26T07:30:06Z",
+        "url": "https://www.macrumors.com/guide/watchos-27-new-things-apple-watch/",
+        "text": "Apple released watchOS 27 on September 14. The features and changes aren't limited to owners of new Apple Watch Series 12 and Apple Watch Ultra 4 models. If you have an Apple Watch model that supports the latest update, here are 12 features and changes to che\u2026 Apple released watchOS 27 on September 14. The features and changes aren't limited to owners of new Apple Watch Series 12 and Apple Watch Ultra 4 models. If you have an Apple Watch model that support\u2026 [+4852 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple faces class action over Apple Pay fees charged to card issuers",
+        "source": "9to5Mac",
+        "published_at": "2026-09-25T21:01:42Z",
+        "url": "https://9to5mac.com/2026/09/25/apple-faces-class-action-over-apple-pay-fees-charged-to-card-issuers/",
+        "text": "U.S. District Judge Jeffrey S. White has certified a class-action lawsuit accusing Apple of charging payment card issuers inflated fees for Apple Pay transactions. Here are the details.\n\n\n\n more\u2026 U.S. District Judge Jeffrey S. White has certified a class-action lawsuit accusing Apple of charging payment card issuers inflated fees for Apple Pay transactions. Here are the details.\r\nAs first spo\u2026 [+1884 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Banks and Credit Unions to Team Up Against Apple Pay Fees",
+        "source": "MacRumors",
+        "published_at": "2026-09-25T19:22:29Z",
+        "url": "https://www.macrumors.com/2026/09/25/apple-pay-antitrust-lawsuit-advances/",
+        "text": "An antitrust lawsuit accusing Apple of blocking tap-to-pay competition is moving forward and will see banks and credit unions able to band together to sue Apple.\n\n\n\n\n\nU.S. District Judge Jeffrey White this week certified a class in the lawsuit. It will includ\u2026 An antitrust lawsuit accusing Apple of blocking tap-to-pay competition is moving forward and will see banks and credit unions able to band together to sue Apple.\r\nU.S. District Judge Jeffrey White th\u2026 [+1703 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Launch Week Deals Hit Latest Macs, Apple Watch Ultra 4, and Apple Accessories",
+        "source": "MacRumors",
+        "published_at": "2026-09-25T16:54:19Z",
+        "url": "https://www.macrumors.com/2026/09/25/best-apple-deals-of-the-week-9-25-26/",
+        "text": "This week saw the launch of the new Mac mini and Mac Studio, plus the new Beats 360 headphones. You'll find launch discounts on the Macs below, alongside big markdowns on cushion kits for the Beats 360 headphones, AirPods Pro 3, and more.\n\n\n\nNote: MacRumors i\u2026 This week saw the launch of the new Mac mini and Mac Studio, plus the new Beats 360 headphones. You'll find launch discounts on the Macs below, alongside big markdowns on cushion kits for the Beats 3\u2026 [+2882 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Ron Johnson worked with Steve Jobs for 11 years. This lesson stuck with him.",
+        "source": "Business Insider",
+        "published_at": "2026-09-25T16:41:00Z",
+        "url": "https://www.businessinsider.com/apple-former-retail-chief-ron-johnson-lesson-steve-jobs-2026-9#article",
+        "text": "Ron Johnson oversaw the creation of 350 Apple stores \u2014 but success didn't happen overnight. Ron Johnson worked with Steve Jobs for more than a decade.Visual China Group via Getty Images\r\n<ul><li>In a live Q&A with Business Insider, Apple's former head of retail shared what he learned from S\u2026 [+2550 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "TestFlight App Gets New iOS 27 Features",
+        "source": "MacRumors",
+        "published_at": "2026-09-24T22:28:23Z",
+        "url": "https://www.macrumors.com/2026/09/24/testflight-ios-27-update/",
+        "text": "Apple today updated its TestFlight app for iOS, iPadOS, macOS, and visionOS to version 4.4.0, adding support for features introduced in the latest software updates and products.\n\n\n\n\n\nTestFlight for iPhone supports landscape orientation ahead of the iPhone Duo\u2026 Apple today updated its TestFlight app for iOS, iPadOS, macOS, and visionOS to version 4.4.0, adding support for features introduced in the latest software updates and products.\r\nTestFlight for iPhon\u2026 [+322 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "M6 Mac mini review, Apple fitness band rumors, Apple AI servers",
+        "source": "9to5Mac",
+        "published_at": "2026-09-24T20:43:14Z",
+        "url": "https://9to5mac.com/2026/09/24/happy-hour-609/",
+        "text": "Benjamin and Chance cover the week in Apple news, including hands-on with the new M6 Mac mini and AirPods 5, the first round of bug fixes for the new operating systems, Apple Music Hall, and more.\u00a0\n\n\n\nAnd in Happy Hour Plus, we reflect on how Siri AI has fare\u2026 Benjamin and Chance cover the week in Apple news, including hands-on with the new M6 Mac mini and AirPods 5, the first round of bug fixes for the new operating systems, Apple Music Hall, and more.\u00a0\r\n\u2026 [+648 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Beats 360 Headphones Now Available in Apple Stores",
+        "source": "MacRumors",
+        "published_at": "2026-09-24T17:14:22Z",
+        "url": "https://www.macrumors.com/2026/09/24/beats-360-apple-store-launch/",
+        "text": "The new Beats 360 headphones are available for purchase at many Apple Stores around the world as of today. Retailers like Best Buy and Target also have some stock available in stores.\n\n\n\n\n\nApple's Beats brand announced the headphones earlier this week after t\u2026 The new Beats 360 headphones are available for purchase at many Apple Stores around the world as of today. Retailers like Best Buy and Target also have some stock available in stores.\r\nApple's Beats \u2026 [+1185 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      }
+    ],
+    "preprocess": {
+      "company": "Apple",
+      "articles": [
+        {
+          "title": "Apple is betting $1,999 that consumers are ready for this shift",
+          "source": "TheStreet",
+          "published_at": "2026-09-29T23:37:00+00:00",
+          "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html",
+          "text": "Apple is betting $1,999 that consumers are ready for this shift",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 1
+        },
+        {
+          "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+          "source": "Stocktwits",
+          "published_at": "2026-09-29T22:30:08+00:00",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html",
+          "text": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 2
+        },
+        {
+          "title": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+          "source": "Barrons.com",
+          "published_at": "2026-09-29T20:52:00+00:00",
+          "url": "https://finance.yahoo.com/m/e4c63816-8d5f-3cc4-a06f-9cc7458d4a95/apple%2C-meta%2C-iovance%2C.html",
+          "text": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 3
+        },
+        {
+          "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+          "source": "Yahoo Finance",
+          "published_at": "2026-09-29T20:46:13+00:00",
+          "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html",
+          "text": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 4
+        },
+        {
+          "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+          "source": "MT Newswires",
+          "published_at": "2026-09-29T19:51:43+00:00",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html",
+          "text": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 5
+        },
+        {
+          "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+          "source": "TIKR",
+          "published_at": "2026-09-29T19:32:36+00:00",
+          "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html",
+          "text": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 6
+        },
+        {
+          "title": "watchOS 27.0.1 is now available for all compatible Apple Watch models",
+          "source": "9to5Mac",
+          "published_at": "2026-09-28T21:10:42Z",
+          "url": "https://9to5mac.com/2026/09/28/watchos-27-0-1-is-now-available-for-all-compatible-apple-watch-models/",
+          "text": "Apple today expanded the availability of watchOS 27.0.1 to more Apple Watch models, following last week\u2019s initial release for Apple Watch Series 12 and Apple Watch Ultra 4. Here are the details. more\u2026 Apple today expanded the availability of watchOS 27.0.1 to more Apple Watch models, following last weeks initial release for Apple Watch Series 12 and Apple Watch Ultra 4. Here are the details. Last\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 7
+        },
+        {
+          "title": "Apple Releases macOS Golden Gate 27.0.1 With Bug Fixes",
+          "source": "MacRumors",
+          "published_at": "2026-09-28T17:13:46Z",
+          "url": "https://www.macrumors.com/2026/09/28/apple-releases-macos-27-0-1/",
+          "text": "Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. Mac users can download the new \u200cmacOS Golden Gate\u200c software by using the Software Update section in System Settings. Apple \u2026 Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. Mac users can download the new \u200cmacOS Golden Gate\u200c software by using th\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 8
+        },
+        {
+          "title": "12 New Things to Expect From Apple This October",
+          "source": "MacRumors",
+          "published_at": "2026-09-28T14:13:01Z",
+          "url": "https://www.macrumors.com/2026/09/28/12-new-things-from-apple-this-october/",
+          "text": "October will be an especially busy month for Apple this year, with the company set to release the iPhone Duo, both iOS 27.1 and iOS 27.2, and a new Mac Studio configuration with 512GB of RAM. In addition, up to six more Apple products may be unveiled next mon\u2026 October will be an especially busy month for Apple this year, with the company set to release the iPhone Duo, both iOS 27.1 and iOS 27.2, and a new Mac Studio configuration with 512GB of RAM. In addi\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 9
+        },
+        {
+          "title": "New Vision Pro Headset: Apple Considering Four Different Concepts",
+          "source": "MacRumors",
+          "published_at": "2026-09-28T10:52:51Z",
+          "url": "https://www.macrumors.com/2026/09/28/apple-working-on-four-new-vision-pro-concepts/",
+          "text": "Apple is working on a \"completely revamped\" Vision Pro headset that could go in any of four directions and likely won't arrive before late 2028 or early 2029, according to Bloomberg's Mark Gurman. Writing in his latest Power On newsletter, Gurman said Ap\u2026 Apple is working on a \"completely revamped\" Vision Pro headset that could go in any of four directions and likely won't arrive before late 2028 or early 2029, according to Bloomberg's Mark Gurman. W\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 10
+        },
+        {
+          "title": "Amazon Just Knocked $900 Off Apple's Latest 16-Inch MacBook Pro",
+          "source": "MacRumors",
+          "published_at": "2026-09-27T15:30:35Z",
+          "url": "https://www.macrumors.com/2026/09/27/2026-macbook-pro-900-off/",
+          "text": "Amazon has introduced a major discount on the 16-inch MacBook Pro with the M5 Max chip, 32-Core GPU, 36GB RAM, and 2TB SSD, now available for $3,499.00, down from $4,399.00. This is a massive $900 markdown on the high-end MacBook Pro, and it's joining a few o\u2026 Amazon has introduced a major discount on the 16-inch MacBook Pro with the M5 Max chip, 32-Core GPU, 36GB RAM, and 2TB SSD, now available for $3,499.00, down from $4,399.00. This is a massive $900 ma\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 11
+        },
+        {
+          "title": "Apple @ Work: The enterprise needs to kill the SSO tax, and it\u2019s an opportunity for Apple",
+          "source": "9to5Mac",
+          "published_at": "2026-09-26T13:00:00Z",
+          "url": "https://9to5mac.com/2026/09/26/apple-work-the-enterprise-needs-to-kill-the-sso-tax-and-its-an-opportunity-for-apple/",
+          "text": "Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary to seamlessly and automatically deploy, manage, and protect \u2026 Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary \u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 12
+        },
+        {
+          "title": "Apple faces class action over Apple Pay fees charged to card issuers",
+          "source": "9to5Mac",
+          "published_at": "2026-09-25T21:01:42Z",
+          "url": "https://9to5mac.com/2026/09/25/apple-faces-class-action-over-apple-pay-fees-charged-to-card-issuers/",
+          "text": "U.S. District Judge Jeffrey S. White has certified a class-action lawsuit accusing Apple of charging payment card issuers inflated fees for Apple Pay transactions. Here are the details. more\u2026 U.S. District Judge Jeffrey S. White has certified a class-action lawsuit accusing Apple of charging payment card issuers inflated fees for Apple Pay transactions. Here are the details. As first spo\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 13
+        },
+        {
+          "title": "Ron Johnson worked with Steve Jobs for 11 years. This lesson stuck with him.",
+          "source": "Business Insider",
+          "published_at": "2026-09-25T16:41:00Z",
+          "url": "https://www.businessinsider.com/apple-former-retail-chief-ron-johnson-lesson-steve-jobs-2026-9#article",
+          "text": "Ron Johnson oversaw the creation of 350 Apple stores \u2014 but success didn't happen overnight. Ron Johnson worked with Steve Jobs for more than a decade.Visual China Group via Getty Images In a live Q&A with Business Insider, Apple's former head of retail shared what he learned from S\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 14
+        },
+        {
+          "title": "M6 Mac mini review, Apple fitness band rumors, Apple AI servers",
+          "source": "9to5Mac",
+          "published_at": "2026-09-24T20:43:14Z",
+          "url": "https://9to5mac.com/2026/09/24/happy-hour-609/",
+          "text": "Benjamin and Chance cover the week in Apple news, including hands-on with the new M6 Mac mini and AirPods 5, the first round of bug fixes for the new operating systems, Apple Music Hall, and more. And in Happy Hour Plus, we reflect on how Siri AI has fare\u2026 Benjamin and Chance cover the week in Apple news, including hands-on with the new M6 Mac mini and AirPods 5, the first round of bug fixes for the new operating systems, Apple Music Hall, and more. \u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 15
+        }
+      ],
+      "dropped": [
+        {
+          "title": "Land of Startups: What ICTWeek Uzbekistan Revealed About Central Asia's Tech Rise",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "T-Mobile raises another fee customers pay each month",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "History Says Nvidia's Record $150 Billion Buyback Is Good News for the Stock",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "S&P 500 investors may have more tech exposure than they think: Here's how one wealth manager mitigates concentration risk",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "Stock Market Today: Dow, Nasdaq Finish In The Red; AI Play Offers Entry",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "Has MSFT Stock Run Out Of Steam?",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "What Is The One Risk Every Google Stock Investor Should Know?",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "Wells Fargo Spots Unexpected Winner in TSMC's 2nm Race",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "Why Muse is Winning the Agentic AI Race",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "Top Stories: Apple Leaks, Siri AI Settlement, and More",
+          "reason": "over 4 from MacRumors"
+        },
+        {
+          "title": "watchOS 27: 12 New Things To Check Out on Your Apple Watch",
+          "reason": "over 4 from MacRumors"
+        },
+        {
+          "title": "Banks and Credit Unions to Team Up Against Apple Pay Fees",
+          "reason": "over 4 from MacRumors"
+        },
+        {
+          "title": "Launch Week Deals Hit Latest Macs, Apple Watch Ultra 4, and Apple Accessories",
+          "reason": "over 4 from MacRumors"
+        },
+        {
+          "title": "TestFlight App Gets New iOS 27 Features",
+          "reason": "over 4 from MacRumors"
+        },
+        {
+          "title": "Beats 360 Headphones Now Available in Apple Stores",
+          "reason": "over 4 from MacRumors"
+        }
+      ]
+    },
+    "classify": [
+      {
+        "title": "Apple is betting $1,999 that consumers are ready for this shift",
+        "source": "TheStreet",
+        "published_at": "2026-09-29T23:37:00+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html",
+        "text": "Apple is betting $1,999 that consumers are ready for this shift",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": true,
+          "reason": "Apple is launching a product at $1,999, indicating new product strategy but lacking detail on market reception."
+        },
+        "id": 1
+      },
+      {
+        "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "source": "Stocktwits",
+        "published_at": "2026-09-29T22:30:08+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html",
+        "text": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "macro",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "Elevated yield pressure is causing market-wide losses including AAPL, negatively impacting shareholder returns."
+        },
+        "id": 2
+      },
+      {
+        "title": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+        "source": "Barrons.com",
+        "published_at": "2026-09-29T20:52:00+00:00",
+        "url": "https://finance.yahoo.com/m/e4c63816-8d5f-3cc4-a06f-9cc7458d4a95/apple%2C-meta%2C-iovance%2C.html",
+        "text": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "This is a generic market roundup with only a passing mention of Apple without specific news."
+        },
+        "id": 3
+      },
+      {
+        "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "source": "Yahoo Finance",
+        "published_at": "2026-09-29T20:46:13+00:00",
+        "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html",
+        "text": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "other",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "New CEO planning layoffs due to rising memory chip costs signals operational challenges and expense pressures."
+        },
+        "id": 4
+      },
+      {
+        "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "source": "MT Newswires",
+        "published_at": "2026-09-29T19:51:43+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html",
+        "text": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "product",
+          "sentiment": "positive",
+          "relevant": true,
+          "reason": "Apple Pay expansion into India represents geographic growth and revenue diversification for the services business."
+        },
+        "id": 5
+      },
+      {
+        "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "source": "TIKR",
+        "published_at": "2026-09-29T19:32:36+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html",
+        "text": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "product",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "Meta's competing product threatens Apple's lucrative 30% app store revenue share model."
+        },
+        "id": 6
+      },
+      {
+        "title": "watchOS 27.0.1 is now available for all compatible Apple Watch models",
+        "source": "9to5Mac",
+        "published_at": "2026-09-28T21:10:42Z",
+        "url": "https://9to5mac.com/2026/09/28/watchos-27-0-1-is-now-available-for-all-compatible-apple-watch-models/",
+        "text": "Apple today expanded the availability of watchOS 27.0.1 to more Apple Watch models, following last week\u2019s initial release for Apple Watch Series 12 and Apple Watch Ultra 4. Here are the details. more\u2026 Apple today expanded the availability of watchOS 27.0.1 to more Apple Watch models, following last weeks initial release for Apple Watch Series 12 and Apple Watch Ultra 4. Here are the details. Last\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Routine watchOS software update release is standard maintenance, not material to shareholders."
+        },
+        "id": 7
+      },
+      {
+        "title": "Apple Releases macOS Golden Gate 27.0.1 With Bug Fixes",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T17:13:46Z",
+        "url": "https://www.macrumors.com/2026/09/28/apple-releases-macos-27-0-1/",
+        "text": "Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. Mac users can download the new \u200cmacOS Golden Gate\u200c software by using the Software Update section in System Settings. Apple \u2026 Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. Mac users can download the new \u200cmacOS Golden Gate\u200c software by using th\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Minor macOS bug fix update is standard product maintenance without material impact."
+        },
+        "id": 8
+      },
+      {
+        "title": "12 New Things to Expect From Apple This October",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T14:13:01Z",
+        "url": "https://www.macrumors.com/2026/09/28/12-new-things-from-apple-this-october/",
+        "text": "October will be an especially busy month for Apple this year, with the company set to release the iPhone Duo, both iOS 27.1 and iOS 27.2, and a new Mac Studio configuration with 512GB of RAM. In addition, up to six more Apple products may be unveiled next mon\u2026 October will be an especially busy month for Apple this year, with the company set to release the iPhone Duo, both iOS 27.1 and iOS 27.2, and a new Mac Studio configuration with 512GB of RAM. In addi\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "positive",
+          "relevant": true,
+          "reason": "Multiple planned October product releases including new iPhone Duo and Mac Studio demonstrate active product roadmap."
+        },
+        "id": 9
+      },
+      {
+        "title": "New Vision Pro Headset: Apple Considering Four Different Concepts",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T10:52:51Z",
+        "url": "https://www.macrumors.com/2026/09/28/apple-working-on-four-new-vision-pro-concepts/",
+        "text": "Apple is working on a \"completely revamped\" Vision Pro headset that could go in any of four directions and likely won't arrive before late 2028 or early 2029, according to Bloomberg's Mark Gurman. Writing in his latest Power On newsletter, Gurman said Ap\u2026 Apple is working on a \"completely revamped\" Vision Pro headset that could go in any of four directions and likely won't arrive before late 2028 or early 2029, according to Bloomberg's Mark Gurman. W\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": true,
+          "reason": "Vision Pro revamp in development but delayed to late 2028/2029 shows commitment to category but near-term revenue impact is minimal."
+        },
+        "id": 10
+      },
+      {
+        "title": "Amazon Just Knocked $900 Off Apple's Latest 16-Inch MacBook Pro",
+        "source": "MacRumors",
+        "published_at": "2026-09-27T15:30:35Z",
+        "url": "https://www.macrumors.com/2026/09/27/2026-macbook-pro-900-off/",
+        "text": "Amazon has introduced a major discount on the 16-inch MacBook Pro with the M5 Max chip, 32-Core GPU, 36GB RAM, and 2TB SSD, now available for $3,499.00, down from $4,399.00. This is a massive $900 markdown on the high-end MacBook Pro, and it's joining a few o\u2026 Amazon has introduced a major discount on the 16-inch MacBook Pro with the M5 Max chip, 32-Core GPU, 36GB RAM, and 2TB SSD, now available for $3,499.00, down from $4,399.00. This is a massive $900 ma\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Third-party retailer discount on existing product is not material to shareholder value."
+        },
+        "id": 11
+      },
+      {
+        "title": "Apple @ Work: The enterprise needs to kill the SSO tax, and it\u2019s an opportunity for Apple",
+        "source": "9to5Mac",
+        "published_at": "2026-09-26T13:00:00Z",
+        "url": "https://9to5mac.com/2026/09/26/apple-work-the-enterprise-needs-to-kill-the-sso-tax-and-its-an-opportunity-for-apple/",
+        "text": "Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary to seamlessly and automatically deploy, manage, and protect \u2026 Apple @ Work is exclusively brought to you by Mosyle, the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary \u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "This is a sponsored content piece about enterprise solutions with no material company news."
+        },
+        "id": 12
+      },
+      {
+        "title": "Apple faces class action over Apple Pay fees charged to card issuers",
+        "source": "9to5Mac",
+        "published_at": "2026-09-25T21:01:42Z",
+        "url": "https://9to5mac.com/2026/09/25/apple-faces-class-action-over-apple-pay-fees-charged-to-card-issuers/",
+        "text": "U.S. District Judge Jeffrey S. White has certified a class-action lawsuit accusing Apple of charging payment card issuers inflated fees for Apple Pay transactions. Here are the details. more\u2026 U.S. District Judge Jeffrey S. White has certified a class-action lawsuit accusing Apple of charging payment card issuers inflated fees for Apple Pay transactions. Here are the details. As first spo\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "legal",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "Certified class-action lawsuit over inflated Apple Pay fees to card issuers creates legal and financial liability risk."
+        },
+        "id": 13
+      },
+      {
+        "title": "Ron Johnson worked with Steve Jobs for 11 years. This lesson stuck with him.",
+        "source": "Business Insider",
+        "published_at": "2026-09-25T16:41:00Z",
+        "url": "https://www.businessinsider.com/apple-former-retail-chief-ron-johnson-lesson-steve-jobs-2026-9#article",
+        "text": "Ron Johnson oversaw the creation of 350 Apple stores \u2014 but success didn't happen overnight. Ron Johnson worked with Steve Jobs for more than a decade.Visual China Group via Getty Images In a live Q&A with Business Insider, Apple's former head of retail shared what he learned from S\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Historical interview with former Apple retail executive is not material company news."
+        },
+        "id": 14
+      },
+      {
+        "title": "M6 Mac mini review, Apple fitness band rumors, Apple AI servers",
+        "source": "9to5Mac",
+        "published_at": "2026-09-24T20:43:14Z",
+        "url": "https://9to5mac.com/2026/09/24/happy-hour-609/",
+        "text": "Benjamin and Chance cover the week in Apple news, including hands-on with the new M6 Mac mini and AirPods 5, the first round of bug fixes for the new operating systems, Apple Music Hall, and more. And in Happy Hour Plus, we reflect on how Siri AI has fare\u2026 Benjamin and Chance cover the week in Apple news, including hands-on with the new M6 Mac mini and AirPods 5, the first round of bug fixes for the new operating systems, Apple Music Hall, and more. \u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Podcast review of new M6 Mac mini and AirPods is commentary rather than material company news."
+        },
+        "id": 15
+      }
+    ],
+    "extract": [
+      {
+        "id": 1,
+        "ticker": "AAPL",
+        "title": "Apple is betting $1,999 that consumers are ready for this shift",
+        "source": "TheStreet",
+        "published_at": "2026-09-29T23:37:00+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html",
+        "topic": "product",
+        "sentiment": "neutral",
+        "companies": [
+          "Apple"
+        ],
+        "people": [],
+        "products": [],
+        "figures": [
+          {
+            "value": "$1,999",
+            "context": "Apple betting amount on consumer readiness for shift"
+          }
+        ],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "Apple is betting $1,999 that consumers are ready for a shift."
+      },
+      {
+        "id": 2,
+        "ticker": "AAPL",
+        "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "source": "Stocktwits",
+        "published_at": "2026-09-29T22:30:08+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html",
+        "topic": "macro",
+        "sentiment": "negative",
+        "companies": [
+          "S&P 500",
+          "Dow",
+          "SPCX",
+          "TGT",
+          "AAPL",
+          "MU",
+          "NTAP"
+        ],
+        "people": [],
+        "products": [],
+        "figures": [],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "S&P 500 and Dow extended losses from elevated yield pressure with focus on several stocks."
+      },
+      {
+        "id": 4,
+        "ticker": "AAPL",
+        "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "source": "Yahoo Finance",
+        "published_at": "2026-09-29T20:46:13+00:00",
+        "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html",
+        "topic": "other",
+        "sentiment": "negative",
+        "companies": [
+          "Apple"
+        ],
+        "people": [
+          "John Ternus"
+        ],
+        "products": [],
+        "figures": [],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise."
+      },
+      {
+        "id": 5,
+        "ticker": "AAPL",
+        "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "source": "MT Newswires",
+        "published_at": "2026-09-29T19:51:43+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html",
+        "topic": "product",
+        "sentiment": "positive",
+        "companies": [
+          "Apple",
+          "Axis Bank"
+        ],
+        "people": [],
+        "products": [
+          "Apple Pay"
+        ],
+        "figures": [],
+        "dates": [
+          "Tuesday",
+          "2026-09-29"
+        ],
+        "event": "Apple Pay is set to launch in India on Tuesday with Axis Bank."
+      },
+      {
+        "id": 6,
+        "ticker": "AAPL",
+        "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "source": "TIKR",
+        "published_at": "2026-09-29T19:32:36+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html",
+        "topic": "product",
+        "sentiment": "negative",
+        "companies": [
+          "Meta",
+          "Apple"
+        ],
+        "people": [],
+        "products": [
+          "Meta's Muse"
+        ],
+        "figures": [
+          {
+            "value": "30%",
+            "context": "Apple's revenue share"
+          }
+        ],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "A billionaire investor states that Meta's Muse puts Apple's 30% revenue share on notice."
+      },
+      {
+        "id": 9,
+        "ticker": "AAPL",
+        "title": "12 New Things to Expect From Apple This October",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T14:13:01Z",
+        "url": "https://www.macrumors.com/2026/09/28/12-new-things-from-apple-this-october/",
+        "topic": "product",
+        "sentiment": "positive",
+        "companies": [
+          "Apple"
+        ],
+        "people": [],
+        "products": [
+          "iPhone Duo",
+          "iOS 27.1",
+          "iOS 27.2",
+          "Mac Studio"
+        ],
+        "figures": [
+          {
+            "value": "512GB",
+            "context": "Mac Studio configuration RAM"
+          }
+        ],
+        "dates": [
+          "October",
+          "2026-09-28"
+        ],
+        "event": "Apple is set to release the iPhone Duo, iOS 27.1 and 27.2, and a new Mac Studio configuration with 512GB of RAM in October."
+      },
+      {
+        "id": 10,
+        "ticker": "AAPL",
+        "title": "New Vision Pro Headset: Apple Considering Four Different Concepts",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T10:52:51Z",
+        "url": "https://www.macrumors.com/2026/09/28/apple-working-on-four-new-vision-pro-concepts/",
+        "topic": "product",
+        "sentiment": "neutral",
+        "companies": [
+          "Apple",
+          "Bloomberg"
+        ],
+        "people": [
+          "Mark Gurman"
+        ],
+        "products": [
+          "Vision Pro"
+        ],
+        "figures": [],
+        "dates": [
+          "late 2028 or early 2029",
+          "2026-09-28"
+        ],
+        "event": "Apple is working on a completely revamped Vision Pro headset that could go in four directions and likely won't arrive before late 2028 or early 2029."
+      },
+      {
+        "id": 13,
+        "ticker": "AAPL",
+        "title": "Apple faces class action over Apple Pay fees charged to card issuers",
+        "source": "9to5Mac",
+        "published_at": "2026-09-25T21:01:42Z",
+        "url": "https://9to5mac.com/2026/09/25/apple-faces-class-action-over-apple-pay-fees-charged-to-card-issuers/",
+        "topic": "legal",
+        "sentiment": "negative",
+        "companies": [
+          "Apple"
+        ],
+        "people": [
+          "Jeffrey S. White"
+        ],
+        "products": [
+          "Apple Pay"
+        ],
+        "figures": [],
+        "dates": [
+          "2026-09-25"
+        ],
+        "event": "U.S. District Judge Jeffrey S. White certified a class-action lawsuit accusing Apple of charging payment card issuers inflated fees for Apple Pay transactions."
+      }
+    ]
+  },
+  "timings": {
+    "ingest": 0.26,
+    "preprocess": 0.01,
+    "classify": 8.2,
+    "extract": 4.94,
+    "summarize": 4.61
+  },
+  "usage": {
+    "calls": 3,
+    "input_tokens": 4737,
+    "output_tokens": 2222
+  },
+  "saved_to": "/Users/pranavdhinakar/Documents/NLP/AAI-520-NLP-Final-Team-Project-Group7/data/runs/prompt_chain_AAPL_20260929-205929.json"
+}

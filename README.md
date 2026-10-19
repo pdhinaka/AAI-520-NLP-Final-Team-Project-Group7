@@ -39,7 +39,9 @@ and iteration.
 ├── scripts/
 │   ├── check_setup.py      # verifies your keys and every data source
 │   ├── run_chain.py        # runs the prompt chain, prints each step
-│   └── run_workflows.py    # runs routing + evaluator-optimizer
+│   ├── run_workflows.py    # runs routing + evaluator-optimizer
+│   ├── run_all.py          # agent + all three workflows end to end
+│   └── restore_demo_data.py  # copies demo/data/ into data/
 ├── src/finagent/
 │   ├── config.py           # settings and API key loading (reads .env)
 │   ├── llm.py              # single entry point for Claude calls
@@ -50,6 +52,7 @@ and iteration.
 │   └── agent/              # Workstream B: the research agent
 ├── notebooks/
 │   └── final_notebook.ipynb  # the graded deliverable
+├── demo/data/              # replay snapshot for running without keys
 ├── data/                   # API cache and local datasets (git-ignored)
 ├── memory/                 # agent notes across runs (git-ignored)
 └── tests/                  # offline tests, no keys needed
@@ -130,6 +133,28 @@ is what we will use for the final notebook run so the numbers don't
 change between runs. LLM replies made through
 `llm.complete_json_cached` are cached too (under `data/cache/llm/`),
 so an offline run replays them exactly.
+
+### Replay without API keys
+
+`demo/data/` holds a snapshot of every cached API and LLM reply the
+notebook needs, plus the saved runs it reads, from our live AAPL run on
+2026-10-18 (about 3 MB, no keys or personal data). With it you can
+execute the notebook offline, with no real keys and no network calls,
+and get the same outputs as the PDF:
+
+```bash
+cp .env.example .env    # then put any non-empty value in each key
+python scripts/restore_demo_data.py    # copies demo/data/ into data/
+CACHE_MODE=offline jupyter nbconvert --to notebook --execute \
+    --inplace notebooks/final_notebook.ipynb
+```
+
+The keys must be non-empty placeholders such as `ANTHROPIC_API_KEY=x`,
+`NEWSAPI_KEY=x`, `FRED_API_KEY=x` and `ALPHAVANTAGE_API_KEY=x`. Offline
+mode never sends them anywhere, but the data tools check that a key is
+set before they look in the cache (and the news tool skips NewsAPI when
+its key is empty), so empty keys change the results and miss the cache.
+The restore script never overwrites files already in `data/`.
 
 To use a Kaggle financial news dataset as an offline fallback, save it
 as `data/local_news.csv`. It needs a `title` (or `headline`) column and

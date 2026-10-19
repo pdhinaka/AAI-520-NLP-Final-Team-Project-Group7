@@ -1,0 +1,781 @@
+{
+  "ticker": "AAPL",
+  "model": "claude-haiku-4-5",
+  "run_at": "2026-09-30T03:55:10+00:00",
+  "digest": {
+    "ticker": "AAPL",
+    "n_articles": 7,
+    "headline": "Apple faces mixed signals with India expansion offset by cost pressures, competitive threats, and broader market headwinds.",
+    "summary": "- **Geographic Expansion**: Apple Pay launched in India with Axis Bank, marking expansion into a key market [5, 8].\n- **Product Strategy**: Apple is betting $1,999 on a consumer shift [1], but faces competitive pressure from Meta's Muse challenging its 30% revenue share model [6] and potential AI competitive disadvantages despite iPhone strength [7].\n- **Cost & Operational Pressures**: New CEO John Ternus is reportedly planning layoffs amid rising memory chip costs [4], while broader market conditions show S&P 500 and Dow extending losses from elevated yield pressure [2].",
+    "catalysts": [
+      "Apple Pay India launch with Axis Bank partnership [5, 8]",
+      "New consumer shift hypothesis from $1,999 product bet [1]"
+    ],
+    "risks": [
+      "Meta's Muse platform threatens Apple's app store revenue share model [6]",
+      "Potential loss in key AI competitive battle despite iPhone sales strength [7]",
+      "Rising memory chip costs driving planned layoffs under new CEO [4]",
+      "Elevated yield pressure impacting broader market and AAPL valuation [2]"
+    ],
+    "sentiment_counts": {
+      "positive": 2,
+      "neutral": 1,
+      "negative": 4
+    },
+    "topic_counts": {
+      "product": 5,
+      "macro": 1,
+      "other": 1
+    },
+    "sources": [
+      {
+        "id": 1,
+        "title": "Apple is betting $1,999 that consumers are ready for this shift",
+        "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html"
+      },
+      {
+        "id": 2,
+        "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html"
+      },
+      {
+        "id": 4,
+        "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html"
+      },
+      {
+        "id": 5,
+        "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html"
+      },
+      {
+        "id": 6,
+        "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html"
+      },
+      {
+        "id": 7,
+        "title": "Apple Could Keep Selling iPhones and Still Lose a Key AI Battle",
+        "url": "https://finance.yahoo.com/technology/ai/articles/apple-could-keep-selling-iphones-184730158.html"
+      },
+      {
+        "id": 8,
+        "title": "Apple Pay set to launch in India with Axis Bank today, sources say",
+        "url": "https://finance.yahoo.com/technology/articles/apple-pay-set-launch-india-184500796.html"
+      }
+    ],
+    "unknown_citations": []
+  },
+  "steps": {
+    "ingest": [
+      {
+        "title": "Land of Startups: What ICTWeek Uzbekistan Revealed About Central Asia's Tech Rise",
+        "source": "ACCESS Newswire",
+        "published_at": "2026-09-30T03:32:00+00:00",
+        "url": "https://finance.yahoo.com/small-business/articles/land-startups-ictweek-uzbekistan-revealed-033200402.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "T-Mobile raises another fee customers pay each month",
+        "source": "TheStreet",
+        "published_at": "2026-09-30T02:17:00+00:00",
+        "url": "https://finance.yahoo.com/economy/policy/articles/t-mobile-raises-another-fee-021700147.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "History Says Nvidia's Record $150 Billion Buyback Is Good News for the Stock",
+        "source": "Motley Fool",
+        "published_at": "2026-09-30T01:03:01+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/history-says-nvidias-record-150-010301431.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "S&P 500 investors may have more tech exposure than they think: Here's how one wealth manager mitigates concentration risk",
+        "source": "TheStreet",
+        "published_at": "2026-09-30T00:21:07+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-investors-may-more-002107367.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Apple is betting $1,999 that consumers are ready for this shift",
+        "source": "TheStreet",
+        "published_at": "2026-09-29T23:37:00+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "source": "Stocktwits",
+        "published_at": "2026-09-29T22:30:08+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+        "source": "Barrons.com",
+        "published_at": "2026-09-29T20:52:00+00:00",
+        "url": "https://finance.yahoo.com/m/e4c63816-8d5f-3cc4-a06f-9cc7458d4a95/apple%2C-meta%2C-iovance%2C.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Stock Market Today: Dow, Nasdaq Finish In The Red; AI Play Offers Entry",
+        "source": "Investor's Business Daily",
+        "published_at": "2026-09-29T20:49:02+00:00",
+        "url": "https://finance.yahoo.com/m/8757314c-41ab-383f-89ee-51177c4ae956/stock-market-today%3A-dow%2C.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "source": "Yahoo Finance",
+        "published_at": "2026-09-29T20:46:13+00:00",
+        "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Has MSFT Stock Run Out Of Steam?",
+        "source": "Trefis",
+        "published_at": "2026-09-29T20:32:17+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/msft-stock-run-steam-203217202.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "source": "MT Newswires",
+        "published_at": "2026-09-29T19:51:43+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "source": "TIKR",
+        "published_at": "2026-09-29T19:32:36+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "What Is The One Risk Every Google Stock Investor Should Know?",
+        "source": "Trefis",
+        "published_at": "2026-09-29T19:20:20+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/one-risk-every-google-stock-192020925.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Wells Fargo Spots Unexpected Winner in TSMC's 2nm Race",
+        "source": "GuruFocus.com",
+        "published_at": "2026-09-29T19:11:01+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/wells-fargo-spots-unexpected-winner-191101346.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Why Muse is Winning the Agentic AI Race",
+        "source": "Zacks",
+        "published_at": "2026-09-29T19:07:00+00:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/why-muse-winning-agentic-ai-190700974.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Apple Could Keep Selling iPhones and Still Lose a Key AI Battle",
+        "source": "GuruFocus.com",
+        "published_at": "2026-09-29T18:47:30+00:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/apple-could-keep-selling-iphones-184730158.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Apple Pay set to launch in India with Axis Bank today, sources say",
+        "source": "TechCrunch",
+        "published_at": "2026-09-29T18:45:00+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/apple-pay-set-launch-india-184500796.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Cramer Says Nvidia\u2019s $150 Billion Buyback Only Matters If It Copies One Apple Executive",
+        "source": "24/7 Wall St.",
+        "published_at": "2026-09-29T18:25:00+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/cramer-says-nvidia-150-billion-182500970.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "TSMC's 2nm Push Could Create a New Winner in the AI Chip Boom",
+        "source": "GuruFocus.com",
+        "published_at": "2026-09-29T18:21:10+00:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/tsmcs-2nm-push-could-create-182110589.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Apple Releases macOS Golden Gate 27.0.1 With Bug Fixes",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T17:13:46Z",
+        "url": "https://www.macrumors.com/2026/09/28/apple-releases-macos-27-0-1/",
+        "text": "Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. \n\n\n\n\n\nMac users can download the new \u200cmacOS Golden Gate\u200c software by using the Software Update section in System Settings. \n\n\n\nApple \u2026 Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. \r\nMac users can download the new \u200cmacOS Golden Gate\u200c software by using th\u2026 [+180 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      }
+    ],
+    "preprocess": {
+      "company": "Apple",
+      "articles": [
+        {
+          "title": "Apple is betting $1,999 that consumers are ready for this shift",
+          "source": "TheStreet",
+          "published_at": "2026-09-29T23:37:00+00:00",
+          "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html",
+          "text": "Apple is betting $1,999 that consumers are ready for this shift",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 1
+        },
+        {
+          "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+          "source": "Stocktwits",
+          "published_at": "2026-09-29T22:30:08+00:00",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html",
+          "text": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 2
+        },
+        {
+          "title": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+          "source": "Barrons.com",
+          "published_at": "2026-09-29T20:52:00+00:00",
+          "url": "https://finance.yahoo.com/m/e4c63816-8d5f-3cc4-a06f-9cc7458d4a95/apple%2C-meta%2C-iovance%2C.html",
+          "text": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 3
+        },
+        {
+          "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+          "source": "Yahoo Finance",
+          "published_at": "2026-09-29T20:46:13+00:00",
+          "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html",
+          "text": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 4
+        },
+        {
+          "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+          "source": "MT Newswires",
+          "published_at": "2026-09-29T19:51:43+00:00",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html",
+          "text": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 5
+        },
+        {
+          "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+          "source": "TIKR",
+          "published_at": "2026-09-29T19:32:36+00:00",
+          "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html",
+          "text": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 6
+        },
+        {
+          "title": "Apple Could Keep Selling iPhones and Still Lose a Key AI Battle",
+          "source": "GuruFocus.com",
+          "published_at": "2026-09-29T18:47:30+00:00",
+          "url": "https://finance.yahoo.com/technology/ai/articles/apple-could-keep-selling-iphones-184730158.html",
+          "text": "Apple Could Keep Selling iPhones and Still Lose a Key AI Battle",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 7
+        },
+        {
+          "title": "Apple Pay set to launch in India with Axis Bank today, sources say",
+          "source": "TechCrunch",
+          "published_at": "2026-09-29T18:45:00+00:00",
+          "url": "https://finance.yahoo.com/technology/articles/apple-pay-set-launch-india-184500796.html",
+          "text": "Apple Pay set to launch in India with Axis Bank today, sources say",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 8
+        },
+        {
+          "title": "Cramer Says Nvidia\u2019s $150 Billion Buyback Only Matters If It Copies One Apple Executive",
+          "source": "24/7 Wall St.",
+          "published_at": "2026-09-29T18:25:00+00:00",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/cramer-says-nvidia-150-billion-182500970.html",
+          "text": "Cramer Says Nvidia\u2019s $150 Billion Buyback Only Matters If It Copies One Apple Executive",
+          "ticker": "AAPL",
+          "provider": "yahoo",
+          "labels": {},
+          "id": 9
+        },
+        {
+          "title": "Apple Releases macOS Golden Gate 27.0.1 With Bug Fixes",
+          "source": "MacRumors",
+          "published_at": "2026-09-28T17:13:46Z",
+          "url": "https://www.macrumors.com/2026/09/28/apple-releases-macos-27-0-1/",
+          "text": "Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. Mac users can download the new \u200cmacOS Golden Gate\u200c software by using the Software Update section in System Settings. Apple \u2026 Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. Mac users can download the new \u200cmacOS Golden Gate\u200c software by using th\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 10
+        }
+      ],
+      "dropped": [
+        {
+          "title": "Land of Startups: What ICTWeek Uzbekistan Revealed About Central Asia's Tech Rise",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "T-Mobile raises another fee customers pay each month",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "History Says Nvidia's Record $150 Billion Buyback Is Good News for the Stock",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "S&P 500 investors may have more tech exposure than they think: Here's how one wealth manager mitigates concentration risk",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "Stock Market Today: Dow, Nasdaq Finish In The Red; AI Play Offers Entry",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "Has MSFT Stock Run Out Of Steam?",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "What Is The One Risk Every Google Stock Investor Should Know?",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "Wells Fargo Spots Unexpected Winner in TSMC's 2nm Race",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "Why Muse is Winning the Agentic AI Race",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "TSMC's 2nm Push Could Create a New Winner in the AI Chip Boom",
+          "reason": "does not mention the company"
+        }
+      ]
+    },
+    "classify": [
+      {
+        "title": "Apple is betting $1,999 that consumers are ready for this shift",
+        "source": "TheStreet",
+        "published_at": "2026-09-29T23:37:00+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html",
+        "text": "Apple is betting $1,999 that consumers are ready for this shift",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": true,
+          "reason": "Apple's pricing strategy on a new product indicates company confidence but requires consumer validation."
+        },
+        "id": 1
+      },
+      {
+        "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "source": "Stocktwits",
+        "published_at": "2026-09-29T22:30:08+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html",
+        "text": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "macro",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "Rising yields are putting pressure on AAPL stock along with broader market losses."
+        },
+        "id": 2
+      },
+      {
+        "title": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+        "source": "Barrons.com",
+        "published_at": "2026-09-29T20:52:00+00:00",
+        "url": "https://finance.yahoo.com/m/e4c63816-8d5f-3cc4-a06f-9cc7458d4a95/apple%2C-meta%2C-iovance%2C.html",
+        "text": "Apple, Meta, Iovance, Carnival, Fair Isaac, Bloom Energy, SpaceX, and More Stocks That Explain Today\u2019s Market",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Passing mention of Apple in a list of stocks moving the market without specific news."
+        },
+        "id": 3
+      },
+      {
+        "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "source": "Yahoo Finance",
+        "published_at": "2026-09-29T20:46:13+00:00",
+        "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html",
+        "text": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "other",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "Planned layoffs by new CEO and rising input costs signal operational challenges ahead."
+        },
+        "id": 4
+      },
+      {
+        "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "source": "MT Newswires",
+        "published_at": "2026-09-29T19:51:43+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html",
+        "text": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "product",
+          "sentiment": "positive",
+          "relevant": true,
+          "reason": "Apple Pay expansion into India's market represents growth in services revenue."
+        },
+        "id": 5
+      },
+      {
+        "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "source": "TIKR",
+        "published_at": "2026-09-29T19:32:36+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html",
+        "text": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "product",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "Meta's competing service threatens Apple's lucrative 30% app store revenue model."
+        },
+        "id": 6
+      },
+      {
+        "title": "Apple Could Keep Selling iPhones and Still Lose a Key AI Battle",
+        "source": "GuruFocus.com",
+        "published_at": "2026-09-29T18:47:30+00:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/apple-could-keep-selling-iphones-184730158.html",
+        "text": "Apple Could Keep Selling iPhones and Still Lose a Key AI Battle",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "product",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "Analysis suggests Apple risks losing competitive advantage in AI despite strong device sales."
+        },
+        "id": 7
+      },
+      {
+        "title": "Apple Pay set to launch in India with Axis Bank today, sources say",
+        "source": "TechCrunch",
+        "published_at": "2026-09-29T18:45:00+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/apple-pay-set-launch-india-184500796.html",
+        "text": "Apple Pay set to launch in India with Axis Bank today, sources say",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "product",
+          "sentiment": "positive",
+          "relevant": true,
+          "reason": "Apple Pay's launch in India expands the company's financial services reach in a major market."
+        },
+        "id": 8
+      },
+      {
+        "title": "Cramer Says Nvidia\u2019s $150 Billion Buyback Only Matters If It Copies One Apple Executive",
+        "source": "24/7 Wall St.",
+        "published_at": "2026-09-29T18:25:00+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/cramer-says-nvidia-150-billion-182500970.html",
+        "text": "Cramer Says Nvidia\u2019s $150 Billion Buyback Only Matters If It Copies One Apple Executive",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Commentary on Nvidia's strategy with only a passing comparison reference to Apple."
+        },
+        "id": 9
+      },
+      {
+        "title": "Apple Releases macOS Golden Gate 27.0.1 With Bug Fixes",
+        "source": "MacRumors",
+        "published_at": "2026-09-28T17:13:46Z",
+        "url": "https://www.macrumors.com/2026/09/28/apple-releases-macos-27-0-1/",
+        "text": "Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. Mac users can download the new \u200cmacOS Golden Gate\u200c software by using the Software Update section in System Settings. Apple \u2026 Apple today released macOS 27.0.1, the first update to the macOS Golden Gate operating system that came out in mid-September. Mac users can download the new \u200cmacOS Golden Gate\u200c software by using th\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Routine software update and bug fixes are standard product maintenance, not material to shareholders."
+        },
+        "id": 10
+      }
+    ],
+    "extract": [
+      {
+        "id": 1,
+        "ticker": "AAPL",
+        "title": "Apple is betting $1,999 that consumers are ready for this shift",
+        "source": "TheStreet",
+        "published_at": "2026-09-29T23:37:00+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/apple-betting-1-999-consumers-233700549.html",
+        "topic": "product",
+        "sentiment": "neutral",
+        "companies": [
+          "Apple"
+        ],
+        "people": [],
+        "products": [],
+        "figures": [
+          {
+            "value": "$1,999",
+            "context": "Apple betting amount on consumer shift"
+          }
+        ],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "Apple is betting $1,999 that consumers are ready for a shift."
+      },
+      {
+        "id": 2,
+        "ticker": "AAPL",
+        "title": "S&P 500, Dow Extend Losses From Elevated Yield Pressure \u2014 SPCX, TGT, AAPL, MU, NTAP In Focus",
+        "source": "Stocktwits",
+        "published_at": "2026-09-29T22:30:08+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-extend-losses-223008654.html",
+        "topic": "macro",
+        "sentiment": "negative",
+        "companies": [
+          "S&P 500",
+          "Dow",
+          "SPCX",
+          "TGT",
+          "AAPL",
+          "MU",
+          "NTAP"
+        ],
+        "people": [],
+        "products": [],
+        "figures": [],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "S&P 500 and Dow extend losses from elevated yield pressure with several stocks in focus."
+      },
+      {
+        "id": 4,
+        "ticker": "AAPL",
+        "title": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise",
+        "source": "Yahoo Finance",
+        "published_at": "2026-09-29T20:46:13+00:00",
+        "url": "https://finance.yahoo.com/technology/article/new-apple-ceo-john-ternus-is-reportedly-planning-layoffs-as-memory-chip-costs-rise-194734002.html",
+        "topic": "other",
+        "sentiment": "negative",
+        "companies": [
+          "Apple"
+        ],
+        "people": [
+          "John Ternus"
+        ],
+        "products": [
+          "memory chip"
+        ],
+        "figures": [],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "New Apple CEO John Ternus is reportedly planning layoffs as memory chip costs rise."
+      },
+      {
+        "id": 5,
+        "ticker": "AAPL",
+        "title": "Market Chatter: Apple Pay to Launch in India Tuesday With Axis Bank",
+        "source": "MT Newswires",
+        "published_at": "2026-09-29T19:51:43+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-apple-pay-launch-195143721.html",
+        "topic": "product",
+        "sentiment": "positive",
+        "companies": [
+          "Apple",
+          "Axis Bank"
+        ],
+        "people": [],
+        "products": [
+          "Apple Pay"
+        ],
+        "figures": [],
+        "dates": [
+          "2026-09-29",
+          "Tuesday"
+        ],
+        "event": "Apple Pay is set to launch in India Tuesday with Axis Bank."
+      },
+      {
+        "id": 6,
+        "ticker": "AAPL",
+        "title": "Billionaire Investor: Meta\u2019s Muse Puts Apple\u2019s \u201c30% Rev Share on Notice\u201d",
+        "source": "TIKR",
+        "published_at": "2026-09-29T19:32:36+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/billionaire-investor-meta-muse-puts-193236553.html",
+        "topic": "product",
+        "sentiment": "negative",
+        "companies": [
+          "Meta",
+          "Apple"
+        ],
+        "people": [
+          "Billionaire Investor"
+        ],
+        "products": [
+          "Muse"
+        ],
+        "figures": [
+          {
+            "value": "30%",
+            "context": "Apple's revenue share"
+          }
+        ],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "A billionaire investor reports that Meta's Muse puts Apple's 30% revenue share on notice."
+      },
+      {
+        "id": 7,
+        "ticker": "AAPL",
+        "title": "Apple Could Keep Selling iPhones and Still Lose a Key AI Battle",
+        "source": "GuruFocus.com",
+        "published_at": "2026-09-29T18:47:30+00:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/apple-could-keep-selling-iphones-184730158.html",
+        "topic": "product",
+        "sentiment": "negative",
+        "companies": [
+          "Apple"
+        ],
+        "people": [],
+        "products": [
+          "iPhones"
+        ],
+        "figures": [],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "Apple could keep selling iPhones and still lose a key AI battle."
+      },
+      {
+        "id": 8,
+        "ticker": "AAPL",
+        "title": "Apple Pay set to launch in India with Axis Bank today, sources say",
+        "source": "TechCrunch",
+        "published_at": "2026-09-29T18:45:00+00:00",
+        "url": "https://finance.yahoo.com/technology/articles/apple-pay-set-launch-india-184500796.html",
+        "topic": "product",
+        "sentiment": "positive",
+        "companies": [
+          "Apple",
+          "Axis Bank"
+        ],
+        "people": [],
+        "products": [
+          "Apple Pay"
+        ],
+        "figures": [],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "Apple Pay is set to launch in India today with Axis Bank."
+      }
+    ]
+  },
+  "timings": {
+    "ingest": 1.18,
+    "preprocess": 0.0,
+    "classify": 5.13,
+    "extract": 3.98,
+    "summarize": 4.09
+  },
+  "usage": {
+    "calls": 3,
+    "input_tokens": 3164,
+    "output_tokens": 1589
+  },
+  "saved_to": "/Users/pranavdhinakar/Documents/NLP/AAI-520-NLP-Final-Team-Project-Group7/data/runs/prompt_chain_AAPL_20260929-205510.json"
+}
