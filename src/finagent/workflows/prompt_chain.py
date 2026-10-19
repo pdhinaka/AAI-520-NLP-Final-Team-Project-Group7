@@ -75,6 +75,27 @@ def _norm_url(url: str) -> str:
     return url.split("?")[0].rstrip("/").lower()
 
 
+def name_variants(company: str) -> list[str]:
+    """Ways news writes a company name that Yahoo spells differently.
+
+    "NVIDIA" is written "Nvidia", and "JP Morgan Chase" is "JPMorgan"
+    or "JP Morgan". Multi-word names add their first two words, joined
+    and spaced, only when both are capitalized ("Bank of America" adds
+    nothing, since "Bank of" would match other banks).
+    """
+    if not company:
+        return []
+    names = [company]
+    if company.isupper() and len(company) > 4:
+        names.append(company.title())
+    words = company.split()
+    if len(words) > 2 and words[1][:1].isupper():
+        names += [" ".join(words[:2]), "".join(words[:2])]
+    elif len(words) == 2 and words[1][:1].isupper():
+        names.append("".join(words))
+    return list(dict.fromkeys(names))
+
+
 def _mentions(article: dict, names: list[str]) -> bool:
     """True if the title or text names the company as a whole word.
 
@@ -146,7 +167,7 @@ def preprocess(articles: list[dict], company: str = "",
     """
     dropped = dropped if dropped is not None else []
     ticker = articles[0].get("ticker", "") if articles else ""
-    names = [n for n in (company, ticker) if n]
+    names = name_variants(company) + ([ticker] if ticker else [])
 
     cleaned = []
     for a in articles:

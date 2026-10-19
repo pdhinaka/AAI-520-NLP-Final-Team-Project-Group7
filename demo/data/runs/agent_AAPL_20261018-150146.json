@@ -1,0 +1,1279 @@
+{
+  "ticker": "AAPL",
+  "summary": "Apple delivered an 8-quarter earnings beat streak with 7.45% surprise on the latest quarter (ended June 27, 2026, reported July 30, 2026), driving 36.64% one-year total return to $343.46 as of October 16, 2026. The company's $5.01 trillion market capitalization reflects premium valuation (39.4x trailing P/E, 35.9x forward P/E), supported by strong iPhone Duo foldable demand and emerging AI services monetization, though leadership transition and HomeView ecosystem risks warrant caution.",
+  "key_facts": [
+    "last close: 343.46 (as of 2026-10-16)",
+    "1-year return: +36.6%",
+    "52-week range: 246.03 to 343.46",
+    "market cap: $5.01T",
+    "trailing P/E: 39.4",
+    "revenue growth (yoy): +16.4%",
+    "analyst mean target: 329.38 (39 analysts)",
+    "Effective federal funds rate (%): 3.75%",
+    "10-year Treasury yield (%): 5.1%",
+    "latest EPS: 2.02 vs 1.88 estimated (+7.45% surprise), quarter ending 2026-06-30"
+  ],
+  "investment_thesis": "Apple's consistent earnings delivery (100% beat rate, 4.78% average surprise across 8 quarters) and momentum in premium foldable hardware (iPhone Duo at $1,999 sold out with January 2027 delivery slips) provide near-term upside, while services growth and AI monetization potential (Siri premium capabilities) offer structural offset to hardware cycles. Valuation remains elevated at 39.4x trailing and 35.9x forward P/E despite 16.4% revenue growth and 28.7% earnings growth, pricing in significant execution. New CEO John Ternus leadership transition and HomeView ecosystem risks tied to $250M Siri settlement create execution uncertainty, though specific HomeView revenue exposure and margin impact data are not yet available to quantify materiality.",
+  "recommendation": "Hold (medium conviction)",
+  "rating": "Hold",
+  "conviction": "medium",
+  "upside": [
+    "iPhone Duo foldable sold out at $1,999 with January 2027 deliveries, signaling strong premium demand and multi-quarter revenue visibility",
+    "Eight consecutive earnings beats with latest 7.45% surprise (Q3 FY2026, ended June 27, 2026, reported July 30, 2026) and year-over-year EPS growth from $1.57 to $2.02",
+    "Services revenue growth potential via premium Siri AI monetization ahead of November 2, 2026 earnings report, addressing hardware cycle dependency",
+    "JP Morgan raised price target to $360, providing 5% upside from October 16, 2026 close of $343.46"
+  ],
+  "risks": [
+    "Valuation premium at 39.4x trailing P/E and 35.9x forward P/E leaves limited margin for error; stock already at 52-week high of $343.46 as of October 16, 2026",
+    "HomeView device faces app compatibility questions and operates on Siri AI tied to $250M settlement, creating adoption headwinds; specific HomeView revenue exposure data not available",
+    "New CEO John Ternus leadership transition signals management uncertainty, with partner choice (Tim Cook's former rival) raising execution risk",
+    "10-year Treasury yield at 5.1% as of October 15, 2026 (up 105 basis points year-over-year from 4.05%) pressures discount rates and multiple compression risk"
+  ],
+  "catalysts": [
+    "November 2, 2026 earnings report and forward guidance will clarify iPhone Duo production ramp, gross margins, and services monetization trajectory",
+    "January 2027 iPhone Duo delivery fulfillment and consumer demand validation post-launch; production volume guidance critical for Q1 FY2027 forecasts",
+    "Premium AI services pricing announcement and Siri upgrade adoption rates critical for HomeView ecosystem credibility narrative"
+  ],
+  "outlook": "Apple warrants a Hold rating with medium conviction given premium valuation (39.4x P/E) offsetting strong execution (8-quarter beat streak, iPhone Duo sellout) and emerging AI services growth, pending clarity on CEO Ternus leadership effectiveness and HomeView ecosystem viability.",
+  "source": "llm",
+  "timestamp": "2026-10-18T15:01:46",
+  "reflection_score": 7.5,
+  "reflection_feedback": "The report provides solid coverage of company performance, market position, and macro context with specific numbers and current facts (latest Q3 FY2026 ended June 27, 2026). However, balance tilts toward upside\u2014risks around HomeView and CEO transition lack specificity and quantification, while the Hold recommendation feels somewhat misaligned with the weight given to positive catalysts.",
+  "plan": {
+    "steps": [
+      "Establish current price momentum and recent performance to validate the 36.6% 1-year return baseline and assess if momentum has accelerated or stalled since the prior Hold view.",
+      "Validate company fundamentals and valuation metrics against the prior snapshot, including market cap, P/E, and forward multiples, to determine if valuation has expanded or contracted and whether the stock remains fairly valued.",
+      "Assess the most recent earnings results to confirm whether the 8-quarter beat streak continues, quantify the latest surprise percentage, and evaluate revenue growth trajectory\u2014especially iPhone segment performance and gross margin trends.",
+      "Extract specific iPhone Duo foldable pre-order numbers, initial production volume guidance, and gross margin impact from the latest 10-Q or earnings call transcript to quantify hardware cycle upside and address the earlier gap on foldable momentum.",
+      "Quantify HomeView/AI services addressable market size, current penetration rates, and services revenue growth contribution from recent filings and earnings commentary to model services offset against iPhone hardware cycle dependency and address the earlier gap.",
+      "Research John Ternus' background, his prior roles at Apple, leadership transition timeline, and sell-side analyst sentiment on the appointment to contextualize management risk and address the earlier gap on leadership transition severity.",
+      "Evaluate the macroeconomic backdrop (interest rates, consumer spending, tech sector momentum, China exposure risk) and cross-reference with recent news sentiment to identify catalysts (new product launches, services growth, margin expansion, competitive threats) and risks (iPhone demand weakness, services saturation, regulatory headwinds) that drive the final Buy/Hold/Sell call."
+    ],
+    "step_tools": [
+      [
+        "get_price_summary",
+        "get_price_history"
+      ],
+      [
+        "get_company_info"
+      ],
+      [
+        "get_earnings",
+        "get_recent_filings"
+      ],
+      [
+        "get_filing_text"
+      ],
+      [
+        "get_filing_text"
+      ],
+      [
+        "get_news",
+        "get_news_digest"
+      ],
+      [
+        "get_macro_snapshot",
+        "get_news_digest"
+      ]
+    ],
+    "memory_used": [
+      {
+        "note": "Earlier report gap: iPhone Duo pre-order numbers, initial production volume, and gross margin profile",
+        "effect": "Added Step 4 to extract foldable-specific data from recent 10-Q filings and earnings call transcripts using get_filing_text, positioned early to quantify revenue and earnings upside before final recommendation."
+      },
+      {
+        "note": "Earlier report gap: HomeView/AI services addressable market size and penetration rates",
+        "effect": "Added Step 5 to retrieve services metrics from filings and earnings commentary using get_filing_text, placed after foldable analysis to model services contribution and validate offset against hardware cycle dependency."
+      },
+      {
+        "note": "Earlier report gap: John Ternus' background, prior role at Apple, and sell-side analyst commentary on his appointment",
+        "effect": "Added Step 6 using get_news and get_news_digest to research leadership transition context, positioned before final macro/catalyst assessment to surface management risk factors that may influence conviction level on the Hold call."
+      },
+      {
+        "note": "Prior view was Hold with medium conviction on 8-quarter beat streak and 16.4% YoY revenue growth",
+        "effect": "Step 3 re-validates earnings beat streak and revenue trends to confirm fundamentals remain intact; subsequent steps on foldable, services, and leadership directly inform whether conviction should increase (upgrade to Buy) or decrease (downgrade to Sell)."
+      }
+    ],
+    "source": "llm",
+    "error": null
+  },
+  "trace": [
+    {
+      "turn": 1,
+      "tool": "get_price_summary",
+      "args": {
+        "ticker": "AAPL"
+      },
+      "ok": true,
+      "chars": 221,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 1,
+      "tool": "get_company_info",
+      "args": {
+        "ticker": "AAPL"
+      },
+      "ok": true,
+      "chars": 1882,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 1,
+      "tool": "get_macro_snapshot",
+      "args": {},
+      "ok": true,
+      "chars": 687,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 1,
+      "tool": "get_earnings",
+      "args": {
+        "ticker": "AAPL",
+        "quarters": 8
+      },
+      "ok": true,
+      "chars": 1246,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "tool": "get_recent_filings",
+      "args": {
+        "ticker": "AAPL",
+        "form": "10-Q,10-K",
+        "limit": 3
+      },
+      "ok": true,
+      "chars": 690,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "tool": "get_news_digest",
+      "args": {
+        "ticker": "AAPL",
+        "days": 30,
+        "limit": 30
+      },
+      "ok": true,
+      "chars": 4472,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "tool": "get_price_history",
+      "args": {
+        "ticker": "AAPL",
+        "period": "1y",
+        "interval": "1mo"
+      },
+      "ok": true,
+      "chars": 1378,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "tool": "get_filing_text",
+      "args": {
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+        "section": "Results of Operations",
+        "max_chars": 15000
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "tool": "get_filing_text",
+      "args": {
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+        "section": "Management's Discussion",
+        "max_chars": 15000
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "tool": "get_financials",
+      "args": {
+        "ticker": "AAPL",
+        "quarterly": true,
+        "periods": 4
+      },
+      "ok": true,
+      "chars": 2123,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "tool": "get_filing_text",
+      "args": {
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+        "section": "Net Sales by Product Category",
+        "max_chars": 12000
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "tool": "get_filing_text",
+      "args": {
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+        "section": "Product Category Performance",
+        "max_chars": 12000
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    },
+    {
+      "turn": 4,
+      "tool": "get_news",
+      "args": {
+        "ticker": "AAPL",
+        "days": 30,
+        "limit": 15
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "tool": "get_filing_text",
+      "args": {
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+        "section": "Item 2",
+        "max_chars": 20000
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    },
+    {
+      "turn": 5,
+      "tool": "get_filing_text",
+      "args": {
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+        "section": "Net Sales by Geographic Region",
+        "max_chars": 10000
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    }
+  ],
+  "turns": 6,
+  "stopped": "model_finished",
+  "agent_note": "Based on my comprehensive research, I now have sufficient information to prepare the investment report. Let me compile my findings.\n\n---\n\n## **APPLE INC. (AAPL) \u2014 INVESTMENT REPORT**\n\n### **EXECUTIVE SUMMARY**\nApple presents a **STRONG BUY** case driven by accelerating product momentum (iPhone Duo foldable sellout), robust earnings beats across 8 consecutive quarters, expanding services revenue, and improving valuation metrics relative to growth. The 36.6% 1-year return validates price momentum, which has **accelerated sharply** in recent months, particularly since July 2026. However, elevated valuations, leadership transition risks, and macro headwinds (tariffs, component costs, rising Treasury yields) warrant measured caution.\n\n---\n\n### **STEP 1: PRICE MOMENTUM & PERFORMANCE VALIDATION**\n\n**Key Metrics (as of October 16, 2026):**\n- **Current Price:** $343.46 | **52-week Range:** $243.42 \u2013 $348.15\n- **1-Year Return:** 36.64% \u2713 (validates baseline)\n- **6-Month Return:** 27.33% | **3-Month Return:** 5.26% | **1-Month Return:** 1.92%\n- **Annualized Volatility:** 24.47%\n\n**Momentum Assessment:**\nThe 1-year return of 36.64% confirms the prior baseline. However, **momentum has recently accelerated sharply**:\n- Stock rallied 14.8% from May low ($274.62) to October high ($348.15) \u2014 a **26% surge in just 5 months**\n- July-September 2026 saw explosive +11.6% and +8.4% monthly gains, signaling **momentum acceleration, not stall**\n- Current price is at 52-week high, indicating strong conviction and no momentum stalling\n- VIX at 16.46 (down 4.18 YoY) supports risk-off positioning favorable to mega-cap tech\n\n**Verdict:** Momentum has **accelerated since prior Hold view**, not stalled.\n\n---\n\n### **STEP 2: VALUATION & FUNDAMENTALS VALIDATION**\n\n**Valuation Metrics (Current):**\n- **Market Cap:** $5.01 trillion (historic milestone under Tim Cook's 15-year tenure)\n- **Trailing P/E:** 39.39x | **Forward P/E:** 35.86x\n- **Price-to-Book:** 46.67x | **Dividend Yield:** 0.31%\n- **Analyst Consensus:** **BUY** (39 analysts, mean price target $329.38)\n\n**Fundamental Health:**\n- **Gross Margin (Q3 2026):** 50.0% (up from 46.5% YoY) \u2014 **significant margin expansion**\n- **Revenue Growth (9M 2026):** +16.1% YoY ($364.4B vs $313.7B)\n- **Net Income Growth:** +20.0% YoY ($101.5B vs $84.5B)\n- **Operating Leverage:** R&D spending up 32.5% YoY (indicating aggressive AI/innovation investment)\n- **Debt-to-Equity:** 78.45x (elevated, reflects aggressive buyback program)\n\n**Valuation Assessment:**\n- Forward P/E of 35.86x is **premium but justified** by 28.7% earnings growth and services expansion\n- Stock trades near 52-week high; valuation has **expanded modestly** from prior snapshot\n- **Fair value estimate:** 35\u201338x forward multiple suggests stock is **fairly valued to slightly overvalued** at current $343.46\n- JP Morgan upgraded to $360 price target, implying limited upside; analyst remain cautiously optimistic despite \"iPhone demand concerns\"\n\n**Verdict:** Valuation has **mildly expanded**; stock remains **fairly valued to premium** given growth trajectory and margin expansion.\n\n---\n\n### **STEP 3: EARNINGS RESULTS & BEAT STREAK**\n\n**8-Quarter Beat Streak Validation:**\n| Fiscal Period | Reported EPS | Estimated EPS | Surprise | Surprise % |\n|---|---|---|---|---|\n| Q3 2026 (Jun) | $2.02 | $1.88 | +$0.14 ",
+  "facts_used": [
+    "get_price_summary",
+    "get_company_info",
+    "get_macro_snapshot",
+    "get_earnings",
+    "get_recent_filings",
+    "get_news_digest",
+    "get_price_history",
+    "get_filing_text",
+    "get_filing_text(max_chars=15000,section=Management's Discussion,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)",
+    "get_financials",
+    "get_filing_text(max_chars=12000,section=Net Sales by Product Category,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)",
+    "get_filing_text(max_chars=12000,section=Product Category Performance,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)",
+    "get_news",
+    "get_filing_text(max_chars=20000,section=Item 2,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)",
+    "get_filing_text(max_chars=10000,section=Net Sales by Geographic Region,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)"
+  ],
+  "facts": {
+    "get_price_summary": {
+      "ticker": "AAPL",
+      "as_of": "2026-10-16",
+      "last_close": 343.46,
+      "return_1m": 0.0192,
+      "return_3m": 0.0526,
+      "return_6m": 0.2733,
+      "return_1y": 0.3664,
+      "high_52w": 343.46,
+      "low_52w": 246.0303,
+      "volatility_annualized": 0.2447
+    },
+    "get_company_info": {
+      "shortName": "Apple Inc.",
+      "longName": "Apple Inc.",
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "country": "United States",
+      "website": "https://www.apple.com",
+      "currency": "USD",
+      "marketCap": 5012516765696,
+      "enterpriseValue": 5034461888512,
+      "fullTimeEmployees": 150000,
+      "trailingPE": 39.3876,
+      "forwardPE": 35.8598,
+      "priceToBook": 46.6658,
+      "dividendYield": 0.31,
+      "beta": 1.069,
+      "profitMargins": 0.2762,
+      "revenueGrowth": 0.164,
+      "earningsGrowth": 0.287,
+      "debtToEquity": 78.445,
+      "fiftyTwoWeekHigh": 348.15,
+      "fiftyTwoWeekLow": 243.42,
+      "recommendationKey": "buy",
+      "targetMeanPrice": 329.3759,
+      "numberOfAnalystOpinions": 39.0,
+      "longBusinessSummary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download applications and digital content, such as books, music, video, games, and podcasts, as well as advertising services include third-party licensing arrangements and its own advertising platforms. In addition, the company offers various subscription-based services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV, which offers original content and live sports; Apple Card, a co-branded credit card; and A",
+      "ticker": "AAPL"
+    },
+    "get_macro_snapshot": {
+      "FEDFUNDS": {
+        "label": "Effective federal funds rate (%)",
+        "latest": 3.75,
+        "as_of": "2026-09-01",
+        "year_ago": 4.22,
+        "change_vs_year_ago": -0.47
+      },
+      "DGS10": {
+        "label": "10-year Treasury yield (%)",
+        "latest": 5.1,
+        "as_of": "2026-10-15",
+        "year_ago": 4.05,
+        "change_vs_year_ago": 1.05
+      },
+      "CPIAUCSL": {
+        "label": "CPI, all urban consumers (index)",
+        "latest": 336.298,
+        "as_of": "2026-09-01",
+        "year_ago": 324.245,
+        "yoy_pct_change": 3.72
+      },
+      "UNRATE": {
+        "label": "Unemployment rate (%)",
+        "latest": 4.2,
+        "as_of": "2026-09-01",
+        "year_ago": 4.4,
+        "change_vs_year_ago": -0.2
+      },
+      "VIXCLS": {
+        "label": "VIX volatility index",
+        "latest": 16.46,
+        "as_of": "2026-10-15",
+        "year_ago": 20.64,
+        "change_vs_year_ago": -4.18
+      }
+    },
+    "get_earnings": [
+      {
+        "fiscal_date_ending": "2026-06-30",
+        "reported_date": "2026-07-30",
+        "reported_eps": 2.02,
+        "estimated_eps": 1.88,
+        "surprise": 0.14,
+        "surprise_pct": 7.4468
+      },
+      {
+        "fiscal_date_ending": "2026-03-31",
+        "reported_date": "2026-04-30",
+        "reported_eps": 2.01,
+        "estimated_eps": 1.94,
+        "surprise": 0.07,
+        "surprise_pct": 3.6082
+      },
+      {
+        "fiscal_date_ending": "2025-12-31",
+        "reported_date": "2026-01-29",
+        "reported_eps": 2.84,
+        "estimated_eps": 2.67,
+        "surprise": 0.17,
+        "surprise_pct": 6.367
+      },
+      {
+        "fiscal_date_ending": "2025-09-30",
+        "reported_date": "2025-10-30",
+        "reported_eps": 1.85,
+        "estimated_eps": 1.77,
+        "surprise": 0.08,
+        "surprise_pct": 4.5198
+      },
+      {
+        "fiscal_date_ending": "2025-06-30",
+        "reported_date": "2025-07-31",
+        "reported_eps": 1.57,
+        "estimated_eps": 1.43,
+        "surprise": 0.14,
+        "surprise_pct": 9.7902
+      },
+      {
+        "fiscal_date_ending": "2025-03-31",
+        "reported_date": "2025-05-01",
+        "reported_eps": 1.65,
+        "estimated_eps": 1.62,
+        "surprise": 0.03,
+        "surprise_pct": 1.8519
+      },
+      {
+        "fiscal_date_ending": "2024-12-31",
+        "reported_date": "2025-01-30",
+        "reported_eps": 2.4,
+        "estimated_eps": 2.34,
+        "surprise": 0.06,
+        "surprise_pct": 2.5641
+      },
+      {
+        "fiscal_date_ending": "2024-09-30",
+        "reported_date": "2024-10-31",
+        "reported_eps": 0.97,
+        "estimated_eps": 0.95,
+        "surprise": 0.02,
+        "surprise_pct": 2.1053
+      }
+    ],
+    "get_recent_filings": [
+      {
+        "form": "10-Q",
+        "filing_date": "2026-07-31",
+        "report_date": "2026-06-27",
+        "accession": "0000320193-26-000020",
+        "description": "10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+      },
+      {
+        "form": "10-Q",
+        "filing_date": "2026-05-01",
+        "report_date": "2026-03-28",
+        "accession": "0000320193-26-000013",
+        "description": "10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm"
+      },
+      {
+        "form": "10-Q",
+        "filing_date": "2026-01-30",
+        "report_date": "2025-12-27",
+        "accession": "0000320193-26-000006",
+        "description": "10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm"
+      }
+    ],
+    "get_news_digest": {
+      "ticker": "AAPL",
+      "n_articles": 12,
+      "headline": "Apple reaches record valuations and sells out premium foldables, but faces product execution risks as new CEO takes helm.",
+      "summary": "- **Valuation & Stock Performance**: Apple achieved $5 trillion market valuation under Tim Cook's 15-year tenure and continues hitting record highs, positioning favorably against competitors like Nvidia [1][2][4]. JP Morgan raised its price target to $360 despite iPhone demand concerns [15].\n- **Product Momentum**: The $1,999 Foldable iPhone (iPhone Duo) sold out in minutes with deliveries slipping to January/late January 2027, indicating strong consumer demand [9][14]. The iPhone Duo features a 5.4-inch outer and 7.6-inch inner display with Touch ID [11].\n- **AI & Services**: Apple hit record close ahead of November 2 earnings report, with potential monetization from charging for extra Siri AI capabilities [10]. However, the new HomeView device uses the same Siri AI technology tied to a $250 million iPhone settlement [5].\n- **Operational Challenges**: HomeView faces app compatibility questions [13], and new CEO John Ternus has partnered with Tim Cook's former rival, signaling leadership transitions [4][6].",
+      "catalysts": [
+        "Foldable iPhone demand surge and production sellout [9][14]",
+        "Premium AI services monetization potential from Siri upgrades [10]",
+        "November 2 earnings report and forward guidance [10]",
+        "Historical 14x valuation growth trajectory continuation [4]",
+        "JP Morgan $360 price target despite production concerns [15]"
+      ],
+      "risks": [
+        "Siri AI reputational risk tied to $250M settlement affecting HomeView adoption [5]",
+        "HomeView app ecosystem fragmentation and compatibility issues [13]",
+        "iPhone demand concerns despite analyst optimism [15]",
+        "Leadership transition uncertainty under new CEO John Ternus [4][6]"
+      ],
+      "sentiment_counts": {
+        "positive": 8,
+        "neutral": 3,
+        "negative": 1
+      },
+      "topic_counts": {
+        "product": 6,
+        "analyst_rating": 4,
+        "other": 2
+      },
+      "sources": [
+        {
+          "id": 1,
+          "title": "The $5 Trillion Club: Which Is the Better Stock to Own, Apple or Nvidia?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/5-trillion-club-better-stock-202000459.html"
+        },
+        {
+          "id": 2,
+          "title": "Apple Keeps Hitting Record Highs. Bitcoin Hasn\u2019t Set One All Year. Which Is the Better Buy?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-keeps-hitting-record-highs-180002614.html"
+        },
+        {
+          "id": 4,
+          "title": "Apple's Market Value Grew From $350 Billion to $5 Trillion During Tim Cook's 15 Years as CEO. Here's What That Growth Curve Means for Apple's Next Chapter Under John Ternus.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apples-market-value-grew-350-200700602.html"
+        },
+        {
+          "id": 5,
+          "title": "Apple bets on the same Siri AI technology with new HomeView device that led to a $250M settlement for iPhone users",
+          "url": "https://finance.yahoo.com/technology/ai/articles/apple-bets-same-siri-ai-183000417.html"
+        },
+        {
+          "id": 6,
+          "title": "Apple's new CEO just teamed up with Tim Cook's old rival",
+          "url": "https://finance.yahoo.com/technology/ai/articles/apples-ceo-just-teamed-tim-161700129.html"
+        },
+        {
+          "id": 7,
+          "title": "$10,000 Invested in Apple Could Be Worth This Much by 2031",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/10-000-invested-apple-could-154902770.html"
+        },
+        {
+          "id": 9,
+          "title": "Apple\u2019s $1,999 Foldable iPhone Sold Out in Minutes. Deliveries Now Slip to January",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-1-999-foldable-iphone-145018158.html"
+        },
+        {
+          "id": 10,
+          "title": "Apple Hit a Record Close Ahead of Its November 2 Report. Here\u2019s What Charging for Extra Siri AI Could Mean for the Stock",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-hit-record-close-ahead-144812244.html"
+        },
+        {
+          "id": 11,
+          "title": "All the news about the iPhone Duo",
+          "url": "https://www.theverge.com/tech/1010131/apple-iphone-duo-news-announcements"
+        },
+        {
+          "id": 13,
+          "title": "Apple\u2019s HomeView has an app problem",
+          "url": "https://www.theverge.com/podcast/1012911/apple-homeview-apps-carplay-vergecast"
+        },
+        {
+          "id": 14,
+          "title": "iPhone Duo orders are already delayed into 2027",
+          "url": "https://www.theverge.com/tech/1012805/apple-iphone-duo-preorder-delay"
+        },
+        {
+          "id": 15,
+          "title": "Apple gets a $360 price target from JP Morgan despite iPhone demand concerns",
+          "url": "https://9to5mac.com/2026/10/12/apple-gets-a-360-price-target-from-jp-morgan-despite-iphone-demand-concerns/"
+        }
+      ],
+      "unknown_citations": []
+    },
+    "get_price_history": [
+      {
+        "date": "2025-11-01",
+        "open": 269.6859,
+        "high": 279.6189,
+        "low": 264.5997,
+        "close": 278.093,
+        "volume": 877578200
+      },
+      {
+        "date": "2025-12-01",
+        "open": 277.2553,
+        "high": 287.8365,
+        "low": 266.2254,
+        "close": 271.122,
+        "volume": 924528800
+      },
+      {
+        "date": "2026-01-01",
+        "open": 271.5209,
+        "high": 277.0858,
+        "low": 242.7592,
+        "close": 258.7756,
+        "volume": 1040017300
+      },
+      {
+        "date": "2026-02-01",
+        "open": 259.5668,
+        "high": 280.4096,
+        "low": 254.995,
+        "close": 263.7094,
+        "volume": 988921000
+      },
+      {
+        "date": "2026-03-01",
+        "open": 261.9426,
+        "high": 266.0552,
+        "low": 245.0727,
+        "close": 253.3379,
+        "volume": 900035700
+      },
+      {
+        "date": "2026-04-01",
+        "open": 253.6274,
+        "high": 275.5083,
+        "low": 245.2623,
+        "close": 270.8666,
+        "volume": 907538500
+      },
+      {
+        "date": "2026-05-01",
+        "open": 278.6197,
+        "high": 314.7286,
+        "low": 274.6231,
+        "close": 311.7911,
+        "volume": 981286400
+      },
+      {
+        "date": "2026-06-01",
+        "open": 309.3632,
+        "high": 317.1265,
+        "low": 273.5141,
+        "close": 289.1107,
+        "volume": 1401170100
+      },
+      {
+        "date": "2026-07-01",
+        "open": 293.1872,
+        "high": 344.2731,
+        "low": 288.9508,
+        "close": 308.6438,
+        "volume": 1198861200
+      },
+      {
+        "date": "2026-08-01",
+        "open": 309.58,
+        "high": 322.37,
+        "low": 300.57,
+        "close": 316.85,
+        "volume": 902409200
+      },
+      {
+        "date": "2026-09-01",
+        "open": 316.98,
+        "high": 345.34,
+        "low": 309.9,
+        "close": 333.02,
+        "volume": 899301900
+      },
+      {
+        "date": "2026-10-01",
+        "open": 330.0,
+        "high": 348.15,
+        "low": 325.81,
+        "close": 343.46,
+        "volume": 516350768
+      }
+    ],
+    "get_filing_text": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "section": "Results of Operations",
+      "section_found": true,
+      "total_chars": 82882,
+      "text": "Results of Operations This Item and other sections of this Quarterly Report on Form 10-Q (\u201cForm 10-Q\u201d) contain forward-looking statements, within the meaning of the Private Securities Litigation Reform Act of 1995, that involve risks and uncertainties. Forward-looking statements provide current expectations of future events based on certain assumptions and include any statement that does not directly relate to any historical or current fact. For example, statements in this Form 10-Q regarding the potential future impact of macroeconomic conditions and tariffs and other measures on the Company\u2019s business and results of operations are forward-looking statements . Forward-looking statements can also be identified by words such as \u201cfuture,\u201d \u201canticipates,\u201d \u201cbelieves,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cplans,\u201d \u201cpredicts,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201ccould,\u201d \u201ccan,\u201d \u201cmay,\u201d and similar terms. Forward-looking statements are not guarantees of future performance and the Company\u2019s actual results may differ significantly from the results discussed in the forward-looking statements. Factors that might cause such differences include, but are not limited to, those discussed in Part I, Item 1A of the 2025 Form 10-K and Part II, Item 1A of this Form 10-Q, in each case under the heading \u201cRisk Factors.\u201d The Company assumes no obligation to revise or update any forward-looking statements for any reason, except as required by law. Unless otherwise stated, all information presented herein is based on the Company\u2019s fiscal calendar, and references to particular years, quarters, months or periods refer to the Company\u2019s fiscal years ended in September and the associated quarters, months and periods of those fiscal years. The following discussion should be read in conjunction with the 2025 Form 10-K filed with the U.S. Securities and Exchange Commission (\u201cSEC\u201d) and the condensed consolidated financial statements and accompanying notes included in Part I, Item 1 of this Form 10-Q. Available Information The Company periodically provides certain information for investors on its corporate website, www.apple.com, and its investor relations website, investor.apple.com. This includes press releases and other information about financial performance, information on corporate governance, and details related to the Company\u2019s annual meeting of shareholders. The information contained on the websites referenced in this Form 10-Q is not incorporated by reference into this filing. Further, the Company\u2019s references to website URLs are intended to be inactive textual references only. Business Seasonality and Product Introductions The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand. Additionally, new product and service introductions can significantly impact net sales, cost of sales and operating expenses. The timing of product introductions can also impact the Company\u2019s net sales to its indirect distribution channels as these channels are filled with new inventory following a product launch, and channel inventory of an older product often declines as the launch of a newer product approaches. Net sales can also be affected when consumers and distributors anticipate a product introduction. During the third quarter of 2026, the Company announced iOS 27, macOS \u00ae 27 Golden Gate, iPadOS \u00ae 27, watchOS \u00ae 27, visionOS \u00ae 27 and tvOS \u00ae 27, and introduced Siri AI. Macroeconomic Conditions Macroeconomic conditions, including inflation, interest rates, component pricing and currency fluctuations, have directly and indirectly impacted, and could in the future materially impact, the Company\u2019s results of operations and financial condition. The Company is experiencing a period of supply constraints and increasing costs for components driven by factors such as industry supply-demand imbalances for components, including advanced semiconductors, storage (NAND) and memory (DRAM). The Company expects these trends to intensify, which may materially negatively impact the Company\u2019s revenue, costs, gross margin, results of operations and financial condition. Actions, such as price increases, that have been and may in the future be taken by the Company may not effectively mitigate these negative impacts, and may also reduce demand for the Company\u2019s products and materially adversely affect the Company\u2019s revenue, costs, gross margin, results of operations and financial condition. Apple Inc. | Q3 2026 Form 10-Q | 13 Tariffs and Other Measures Beginning in the second quarter of 2025, new tariffs were announced on imports to the U.S., including additional tariffs on imports from China, India, Japan, South Korea, Taiwan, Vietnam and the European Union (\u201cEU\u201d), among others. In response, several countries have imposed, or threatened to impose, reciprocal tariffs on imports from the U.S. and other retaliatory measures. On January 14, 2026, initial results were published of the previously announced U.S. Department of Commerce investigation under Section 232 of the Trade Expansion Act of 1962, as amended, into imports of semiconductors, semiconductor manufacturing equipment, and their derivative products, including downstream products that contain semiconductors. The announcement of the initial results of the investigation did not impose any additional tariffs affecting the Company\u2019s products. Separately, on February 20, 2026, the U.S. Supreme Court (\u201cSupreme Court\u201d) issued a ruling striking down certain tariffs previously imposed under the International Emergency Economic Powers Act of 1977. The Company has applied for a refund of tariffs paid, following the processes established by U.S. Customs and Border Protection, and has recognized any refunds received as a reduction of products cost of sales. Various modifications to U.S. tariffs have been announced, including the recent imposition of tariffs under Section 301 of the Trade Act of 1974, and further changes could be made in the future, which may include additional measures under the Section 232 semiconductor sector investigation, additional sector-based tariffs, further actions under Section 301, or other measures. Tariffs and other measures that are applied to the Company\u2019s products or their components can have a material adverse impact on the Company\u2019s business, results of operations and financial condition, including impacting the Company\u2019s supply chain, the availability of rare earths and other raw materials and components, pricing and gross margin. The ultimate impact remains uncertain and will depend on several factors, including whether additional or incremental U.S. tariffs or other measures are announced or imposed, to what extent other countries implement tariffs or other retaliatory measures in response, and the overall magnitude and duration of these measures. Trade and other international disputes can have an adverse impact on the overall macroeconomic environment and result in shifts and reductions in consumer spending and negative consumer sentiment for the Company\u2019s products and services, all of which can further adversely affect the Company\u2019s business and results of operations. Segment Operating Performance The following table shows net sales by reportable segment for the three- and nine-month periods ended June 27, 2026 and June 28, 2025 (dollars in millions): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 Change June 27, 2026 June 28, 2025 Change Americas $ 45,781 $ 41,198 11% $ 149,403 $ 134,161 11% Europe 29,395 24,014 22% 95,596 82,329 16% Greater China 18,816 15,369 22% 64,839 49,884 30% Japan 6,554 5,782 13% 24,368 22,067 10% Rest of Asia Pacific 8,871 7,673 16% 30,151 25,254 19% Total net sales $ 109,417 $ 94,036 16% $ 364,357 $ 313,695 16% Americas Americas net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher net sales of iPhone, Services and Mac. Europe Europe net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher net sales of iPhone, Services and Mac. The strength in foreign currencies relative to the U.S. dollar had a net favorable year-over-year impact on Europe net sales during the first nine months of 2026. Greater China Greater China net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher net sales of iPhone. The strength in the renminbi relative to the U.S. dollar had a favorable year-over-year impact on Greater China net sales during the third quarter and first nine months of 2026. Apple Inc. | Q3 2026 Form 10-Q | 14 Japan Japan net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 due to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during the third quarter and first nine months of 2026. Rest of Asia Pacific Rest of Asia Pacific net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher net sales of iPhone, Services and Mac. The strength in foreign currencies relative to the U.S. dollar had a net favorable year-over-year impact on Rest of Asia Pacific net sales during the third quarter of 2026. Products and Services Performance The following table shows net sales by category for the three- and nine-month periods ended June 27, 2026 and June 28, 2025 (dollars in millions): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 Change June 27, 2026 June 28, 2025 Change iPhone $ 54,252 $ 44,582 22% $ 196,515 $ 160,561 22% Mac 10,352 8,046 29% 27,137 24,982 9% iPad 6,191 6,581 (6) % 21,700 21,071 3% Wearables, Home and Accessories 7,883 7,404 6% 27,277 26,673 2% Services 30,739 27,423 12% 91,728 80,408 14% Total net sales $ 109,417 $ 94,036 16% $ 364,357 $ 313,695 16% iPhone iPhone net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher net sales of Pro models. Mac Mac net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 due to higher net sales of laptops. iPad iPad net sales decreased during the third quarter of 2026 compared to the third quarter of 2025 primarily due to lower net sales of iPad mini \u00ae and iPad Air \u00ae . Year-over-year iPad net sales increased during the first nine months of 2026 primarily due to higher net sales of iPad, partially offset by lower net sales of iPad mini. Wearables, Home and Accessories Wearables, Home and Accessories net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 due to higher net sales of Accessories and Wearables. Services Services net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher net sales from advertising and cloud services. Apple Inc. | Q3 2026 Form 10-Q | 15 Gross Margin Products and Services gross margin and gross margin percentage for the three- and nine-month periods ended June 27, 2026 and June 28, 2025, were as follows (dollars in millions): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Gross margin: Products $ 31,525 $ 22,993 $ 108,819 $ 86,190 Services 23,245 20,725 69,963 60,670 Total gross margin $ 54,770 $ 43,718 $ 178,782 $ 146,860 Gross margin percentage: Products 40.1 % 34.5 % 39.9 % 36.9 % Services 75.6 % 75.6 % 76.3 % 75.5 % Total gross margin percentage 50.1 % 46.5 % 49.1 % 46.8 % Products Gross Margin Products gross margin and gross margin percentage increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to a different mix of products and tariff refunds, partially offset by higher costs, including memory. Services Gross Margin Services gross margin increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher Services net sales and a different mix of services, partially offset by higher costs. Services gross margin percentage was flat during the third quarter of 2026 compared to the third quarter of 2025. Year-over-year Services gross margin percentage increased during the first nine months of 2026 primarily due to a different mix of services, partially offset by higher costs. The Company\u2019s future gross margins can be impacted by a variety of factors, as discussed in Part I, Item 1A of the 2025 Form 10-K and Part II, Item 1A of this Form 10-Q, in each case under the heading \u201cRisk Factors.\u201d As a result, the Company believes, in general, gross margins will be subject to volatility and downward pressure. Apple Inc. | Q3 2026 Form 10-Q | 16 Operating Expenses Operating expenses for the three- and nine-month periods ended June 27, 2026 and June 28, 2025, were as follows (dollars in millions): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 Change June 27, 2026 June 28, 2025 Change Research and development $ 11,729 $ 8,866 32 % $ 34,035 $ 25,684 33 % Percentage of total net sales 11 % 9 % 9 % 8 % Selling, general and administrative $ 7,346 $ 6,650 10 % $ 22,315 $ 20,553 9 % Percentage of total net sales 7 % 7 % 6 % 7 % Total operating expenses $ 19,075 $ 15,516 23 % $ 56,350 $ 46,237 22 % Percentage of total net sales 17 % 17 % 15 % 15 % Research and Development Research and development (\u201cR&D\u201d) expense increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher infrastructure-related costs, including investments in artificial intelligence, and headcount-related expenses. Selling, General and Administrative Selling, general and administrative expense increased during the third quarter and first nine months of 2026 compared to the same periods in 2025. The increases were driven by various factors, none of which were significant individually or in the aggregate. Provision for Income Taxes Provision for income taxes, effective tax rate and statutory federal income tax rate for the three- and nine-month periods ended June 27, 2026 and June 28, 2025, were as follows (dollars in millions): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Provision for income taxes $ 6,478 $ 4,597 $ 21,638 $ 15,381 Effective tax rate 17.9 % 16.4 % 17.6 % 15.4 % Statutory federal income tax rate 21 % 21 % 21 % 21 % The Company\u2019s effective tax rate for the third quarter and first nine months of 2026 was lower than the statutory federal income tax rate primarily due to a lower effective tax rate on foreign earnings, including the impact of changes in unrecognized tax benefits, the impact of the U.S. federal R&D credit"
+    },
+    "get_filing_text(max_chars=15000,section=Management's Discussion,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "section": "Management's Discussion",
+      "section_found": false,
+      "total_chars": 82882,
+      "text": "aapl-20260627 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 10-Q (Mark One) \u2612 QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the quarterly period ended June 27, 2026 or \u2610 TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the transition period from to . Commission File Number: 001-36743 Apple Inc. (Exact name of Registrant as specified in its charter) California 94-2404110 (State or other jurisdiction of incorporation or organization) (I.R.S. Employer Identification No.) One Apple Park Way Cupertino , California 95014 (Address of principal executive offices) (Zip Code) ( 408 ) 996-1010 (Registrant\u2019s telephone number, including area code) Securities registered pursuant to Section 12(b) of the Act: Title of each class Trading symbol(s) Name of each exchange on which registered Common Stock, $0.00001 par value per share AAPL The Nasdaq Stock Market LLC 1.625% Notes due 2026 \u2014 The Nasdaq Stock Market LLC 2.000% Notes due 2027 \u2014 The Nasdaq Stock Market LLC 1.375% Notes due 2029 \u2014 The Nasdaq Stock Market LLC 3.050% Notes due 2029 \u2014 The Nasdaq Stock Market LLC 0.500% Notes due 2031 \u2014 The Nasdaq Stock Market LLC 3.600% Notes due 2042 \u2014 The Nasdaq Stock Market LLC Indicate by check mark whether the Registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the Registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes \u2612 No \u2610 Indicate by check mark whether the Registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (\u00a7232.405 of this chapter) during the preceding 12 months (or for such shorter period that the Registrant was required to submit such files). Yes \u2612 No \u2610 Indicate by check mark whether the Registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of \u201clarge accelerated filer,\u201d \u201caccelerated filer,\u201d \u201csmaller reporting company,\u201d and \u201cemerging growth company\u201d in Rule 12b-2 of the Exchange Act. Large accelerated filer \u2612 Accelerated filer \u2610 Non-accelerated filer \u2610 Smaller reporting company \u2610 Emerging growth company \u2610 If an emerging growth company, indicate by check mark if the Registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u2610 Indicate by check mark whether the Registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act). Yes \u2610 No \u2612 14,594,180,000 shares of common stock were issued and outstanding as of July 17, 2026 . Apple Inc. Form 10-Q For the Fiscal Quarter Ended June 27, 2026 TABLE OF CONTENTS Page Part I Item 1. Financial Statements 1 Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations 13 Item 3. Quantitative and Qualitative Disclosures About Market Risk 19 Item 4. Controls and Procedures 19 Part II Item 1. Legal Proceedings 20 Item 1A. Risk Factors 21 Item 2. Unregistered Sales of Equity Securities and Use of Proceeds 24 Item 3. Defaults Upon Senior Securities 24 Item 4. Mine Safety Disclosures 24 Item 5. Other Information 25 Item 6. Exhibits 25 PART I \u2014 FINANCIAL INFORMATION Item 1. Financial Statements Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net sales: Products $ 78,678 $ 66,613 $ 272,629 $ 233,287 Services 30,739 27,423 91,728 80,408 Total net sales 109,417 94,036 364,357 313,695 Cost of sales: Products 47,153 43,620 163,810 147,097 Services 7,494 6,698 21,765 19,738 Total cost of sales 54,647 50,318 185,575 166,835 Gross margin 54,770 43,718 178,782 146,860 Operating expenses: Research and development 11,729 8,866 34,035 25,684 Selling, general and administrative 7,346 6,650 22,315 20,553 Total operating expenses 19,075 15,516 56,350 46,237 Operating income 35,695 28,202 122,432 100,623 Other income/(expense), net 572 ( 171 ) 670 ( 698 ) Income before provision for income taxes 36,267 28,031 123,102 99,925 Provision for income taxes 6,478 4,597 21,638 15,381 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Earnings per share: Basic $ 2.03 $ 1.57 $ 6.91 $ 5.64 Diluted $ 2.02 $ 1.57 $ 6.88 $ 5.62 Shares used in computing earnings per share: Basic 14,656,110 14,902,886 14,692,515 14,992,898 Diluted 14,714,676 14,948,179 14,750,302 15,051,726 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 1 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Unaudited) (In millions) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Other comprehensive income/(loss): Change in foreign currency translation, net of tax ( 24 ) 449 ( 116 ) ( 86 ) Change in unrealized gains/losses on derivative instruments, net of tax: Change in fair value of derivative instruments 356 ( 523 ) 729 810 Adjustment for net (gains)/losses realized and included in net income 67 ( 571 ) 348 ( 415 ) Total change in unrealized gains/losses on derivative instruments 423 ( 1,094 ) 1,077 395 Change in unrealized gains/losses on marketable debt securities, net of tax: Change in fair value of marketable debt securities 441 640 57 90 Adjustment for net (gains)/losses realized and included in net income 27 ( 1 ) 45 404 Total change in unrealized gains/losses on marketable debt securities 468 639 102 494 Total other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Total comprehensive income $ 30,656 $ 23,428 $ 102,527 $ 85,347 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 2 Apple Inc. CONDENSED CONSOLIDATED BALANCE SHEETS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and par value) June 27, 2026 September 27, 2025 ASSETS: Current assets: Cash and cash equivalents $ 39,544 $ 35,934 Marketable securities 22,855 18,763 Accounts receivable, net 31,398 39,777 Vendor non-trade receivables 27,509 33,180 Inventories 11,092 5,718 Other current assets 17,420 14,585 Total current assets 149,818 147,957 Non-current assets: Marketable securities 84,118 77,723 Property, plant and equipment, net 51,431 49,834 Intangible assets, net 20,342 11,093 Other non-current assets 77,557 72,634 Total non-current assets 233,448 211,284 Total assets $ 383,266 $ 359,241 LIABILITIES AND SHAREHOLDERS\u2019 EQUITY: Current liabilities: Accounts payable $ 64,525 $ 69,860 Other current liabilities 62,259 66,387 Deferred revenue 9,538 9,055 Commercial paper 1,997 7,979 Term debt 11,007 12,350 Total current liabilities 149,326 165,631 Non-current liabilities: Term debt 71,340 78,328 Other non-current liabilities 55,080 41,549 Total non-current liabilities 126,420 119,877 Total liabilities 275,746 285,508 Commitments and contingencies Shareholders\u2019 equity: Common stock and additional paid-in capital, $ 0.00001 par value: 50,400,000 shares authorized; 14,608,963 and 14,773,260 shares issued and outstanding, respectively 100,702 93,568 Retained earnings/(Accumulated deficit) 11,326 ( 14,264 ) Accumulated other comprehensive loss ( 4,508 ) ( 5,571 ) Total shareholders\u2019 equity 107,520 73,733 Total liabilities and shareholders\u2019 equity $ 383,266 $ 359,241 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 3 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF SHAREHOLDERS\u2019 EQUITY (Unaudited) (In millions, except per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Total shareholders\u2019 equity, beginning balances $ 106,491 $ 66,796 $ 73,733 $ 56,950 Common stock and additional paid-in capital: Beginning balances 99,507 88,711 93,568 83,276 Common stock issued \u2014 \u2014 878 825 Common stock withheld related to net share settlement of equity awards ( 2,396 ) ( 2,163 ) ( 4,704 ) ( 4,260 ) Share-based compensation 3,591 3,258 10,960 9,965 Ending balances 100,702 89,806 100,702 89,806 Retained earnings/(Accumulated deficit): Beginning balances 12,359 ( 15,552 ) ( 14,264 ) ( 19,154 ) Net income 29,789 23,434 101,464 84,544 Dividends and dividend equivalents declared ( 3,998 ) ( 3,912 ) ( 11,733 ) ( 11,525 ) Common stock withheld related to net share settlement of equity awards ( 875 ) ( 411 ) ( 1,899 ) ( 1,598 ) Common stock repurchased ( 25,949 ) ( 21,166 ) ( 62,242 ) ( 69,874 ) Ending balances 11,326 ( 17,607 ) 11,326 ( 17,607 ) Accumulated other comprehensive loss: Beginning balances ( 5,375 ) ( 6,363 ) ( 5,571 ) ( 7,172 ) Other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Ending balances ( 4,508 ) ( 6,369 ) ( 4,508 ) ( 6,369 ) Total shareholders\u2019 equity, ending balances $ 107,520 $ 65,830 $ 107,520 $ 65,830 Dividends and dividend equivalents declared per share or RSU $ 0.27 $ 0.26 $ 0.79 $ 0.76 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 4 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited) (In millions) Nine Months Ended June 27, 2026 June 28, 2025 Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances $ 35,934 $ 29,943 Operating activities: Net income 101,464 84,544 Adjustments to reconcile net income to cash generated by operating activities: Depreciation and amortization 9,973 8,571 Share-based compensation expense 10,523 9,680 Other ( 2,037 ) ( 1,748 ) Changes in operating assets and liabilities: Accounts receivable, net 8,316 5,685 Vendor non-trade receivables 5,671 13,555 Inventories ( 5,461 ) 1,223 Other current and non-current assets ( 16,266 ) ( 6,116 ) Accounts payable ( 5,203 ) ( 18,479 ) Other current and non-current liabilities 10,016 ( 15,161 ) Cash generated by operating activities 116,996 81,754 Investing activities: Purchases of marketable securities ( 48,752 ) ( 17,591 ) Proceeds from maturities of marketable securities 26,504 35,036 Proceeds from sales of marketable securities 12,016 10,785 Payments for acquisition of property, plant and equipment ( 6,799 ) ( 9,473 ) Other ( 1,780 ) ( 975 ) Cash generated by/(used in) investing activities ( 18,811 ) 17,782 Financing activities: Payments for taxes related to net share settlement of equity awards ( 6,462 ) ( 5,719 ) Payments for dividends and dividend equivalents ( 11,778 ) ( 11,559 ) Repurchases of common stock ( 62,094 ) ( 70,579 ) Proceeds from issuance of term debt, net \u2014 4,481 Repayments of term debt ( 8,146 ) ( 9,682 ) Repayments of commercial paper, net ( 5,911 ) ( 65 ) Other ( 184 ) ( 87 ) Cash used in financing activities ( 94,575 ) ( 93,210 ) Increase in cash, cash equivalents, and restricted cash and cash equivalents 3,610 6,326 Cash, cash equivalents, and restricted cash and cash equivalents, ending balances $ 39,544 $ 36,269 Supplemental cash flow disclosure: Cash paid for income taxes, net $ 26,555 $ 37,332 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 5 Apple Inc. Notes to Condensed Consolidated Financial Statements (Unaudited) Note 1 \u2013 Summary of Significant Accounting Policies Basis of Presentation and Preparation The condensed consolidated financial statements include the accounts of Apple Inc. and its wholly owned subsidiaries (collectively \u201cApple\u201d or the \u201cCompany\u201d). In the opinion of the Company\u2019s management, the condensed consolidated financial statements reflect all adjustments, which are normal and recurring in nature, necessary for fair financial statement presentation. The preparation of these condensed consolidated financial statements and accompanying notes in conformity with U.S. generally accepted accounting principles (\u201cGAAP\u201d) requires the use of management estimates. Certain prior period amounts in the condensed consolidated financial statements and accompanying notes have been reclassified to conform to the current period\u2019s presentation. These condensed consolidated financial statements and accompanying notes should be read in conjunction with the Company\u2019s annual consolidated financial statements and accompanying notes included in its Annual Report on Form 10-K for the fiscal year ended September 27, 2025 (the \u201c2025 Form 10-K\u201d). The Company\u2019s fiscal year is the 52- or 53-week period that ends on the last Saturday of September. An additional week is included in the first fiscal quarter every five or six years to realign the Company\u2019s fiscal quarters with calendar quarters. The Company\u2019s fiscal years 2026 and 2025 span 52 weeks each. Unless otherwise stated, references to particular years, quarters, months and periods refer to the Company\u2019s fiscal years ended in September and the associated quarters, months and periods of those fiscal years. Note 2 \u2013 Revenue The following table shows disaggregated net sales, as well as the portion of total net sales that was previously deferred, for the three- and nine-month periods ended June 27, 2026 and June 28, 2025 (in millions): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 iPhone \u00ae $ 54,252 $ 44,582 $ 196,515 $ 160,561 Mac \u00ae 10,352 8,046 27,137 24,982 iPad \u00ae 6,191 6,581 21,700 21,071 Wearables, Home and Accessories 7,883 7,404 27,277 26,673 Services 30,739 27,423 91,728 80,408 Total net sales $ 109,417 $ 94,036 $ 364,357 $ 313,695 Portion of total net sales that was included in deferred revenue as of the beginning of the period $ 4,086 $ 4,015 $ 7,260 $ 6,958 The Company\u2019s proportion of net sales by disaggregated revenue source was generally consistent for each reportable segment in Note 10, \u201cSegment Information\u201d for the three- and nine-month periods ended June 27, 2026 and June 28, 2025, except in Greater China, where iPhone revenue represented a moderately higher proportion of net sales. As of June 27, 2026 and September 27, 2025, the Company had total deferred revenue of $ 14.9 billion and $ 13.7 billion, respectively. As of June 27, 2026, the Company expects 64 % of total deferred revenue to be realized in less than a year, 23 % within one-to-two years, 11 % within two-to-three years and 2 % in greater than three years. Apple Inc. | Q3 2026 Form 10-Q | 6 Note 3 \u2013 Earnings Per Share The following table shows the computation of basic and diluted earnings per share for the three- and nine-month periods ended June 27, 2026 and June 28, 2025 (net income in millions and shares in thousands): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Numerator: Net income $ 29,789 $ "
+    },
+    "get_financials": {
+      "ticker": "AAPL",
+      "quarterly": true,
+      "income_statement": {
+        "2026-06-30": {
+          "Total Revenue": 109417000000,
+          "Gross Profit": 54770000000,
+          "Operating Income": 35695000000,
+          "Net Income": 29789000000,
+          "Diluted EPS": 2.02,
+          "EBITDA": 39015000000
+        },
+        "2026-03-31": {
+          "Total Revenue": 111184000000,
+          "Gross Profit": 54781000000,
+          "Operating Income": 35885000000,
+          "Net Income": 29578000000,
+          "Diluted EPS": 2.01,
+          "EBITDA": 39324000000
+        },
+        "2025-12-31": {
+          "Total Revenue": 143756000000,
+          "Gross Profit": 69231000000,
+          "Operating Income": 50852000000,
+          "Net Income": 42097000000,
+          "Diluted EPS": 2.84,
+          "EBITDA": 54066000000
+        },
+        "2025-09-30": {
+          "Total Revenue": 102466000000,
+          "Gross Profit": 48341000000,
+          "Operating Income": 32427000000,
+          "Net Income": 27466000000,
+          "Diluted EPS": 1.85,
+          "EBITDA": 35554000000
+        }
+      },
+      "balance_sheet": {
+        "2026-06-30": {
+          "Total Assets": 383266000000,
+          "Total Liabilities Net Minority Interest": 275746000000,
+          "Stockholders Equity": 107520000000,
+          "Cash And Cash Equivalents": 39544000000,
+          "Total Debt": 84344000000
+        },
+        "2026-03-31": {
+          "Total Assets": 371082000000,
+          "Total Liabilities Net Minority Interest": 264591000000,
+          "Stockholders Equity": 106491000000,
+          "Cash And Cash Equivalents": 45572000000,
+          "Total Debt": 84711000000
+        },
+        "2025-12-31": {
+          "Total Assets": 379297000000,
+          "Total Liabilities Net Minority Interest": 291107000000,
+          "Stockholders Equity": 88190000000,
+          "Cash And Cash Equivalents": 45317000000,
+          "Total Debt": 90509000000
+        },
+        "2025-09-30": {
+          "Total Assets": 359241000000,
+          "Total Liabilities Net Minority Interest": 285508000000,
+          "Stockholders Equity": 73733000000,
+          "Cash And Cash Equivalents": 35934000000,
+          "Total Debt": 98657000000
+        }
+      },
+      "cash_flow": {
+        "2026-06-30": {
+          "Operating Cash Flow": 34369000000,
+          "Capital Expenditure": -2455000000,
+          "Free Cash Flow": 31914000000
+        },
+        "2026-03-31": {
+          "Operating Cash Flow": 28702000000,
+          "Capital Expenditure": -1971000000,
+          "Free Cash Flow": 26731000000
+        },
+        "2025-12-31": {
+          "Operating Cash Flow": 53925000000,
+          "Capital Expenditure": -2373000000,
+          "Free Cash Flow": 51552000000
+        },
+        "2025-09-30": {
+          "Operating Cash Flow": 29728000000,
+          "Capital Expenditure": -3242000000,
+          "Free Cash Flow": 26486000000
+        }
+      }
+    },
+    "get_filing_text(max_chars=12000,section=Net Sales by Product Category,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "section": "Net Sales by Product Category",
+      "section_found": false,
+      "total_chars": 82882,
+      "text": "aapl-20260627 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 10-Q (Mark One) \u2612 QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the quarterly period ended June 27, 2026 or \u2610 TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the transition period from to . Commission File Number: 001-36743 Apple Inc. (Exact name of Registrant as specified in its charter) California 94-2404110 (State or other jurisdiction of incorporation or organization) (I.R.S. Employer Identification No.) One Apple Park Way Cupertino , California 95014 (Address of principal executive offices) (Zip Code) ( 408 ) 996-1010 (Registrant\u2019s telephone number, including area code) Securities registered pursuant to Section 12(b) of the Act: Title of each class Trading symbol(s) Name of each exchange on which registered Common Stock, $0.00001 par value per share AAPL The Nasdaq Stock Market LLC 1.625% Notes due 2026 \u2014 The Nasdaq Stock Market LLC 2.000% Notes due 2027 \u2014 The Nasdaq Stock Market LLC 1.375% Notes due 2029 \u2014 The Nasdaq Stock Market LLC 3.050% Notes due 2029 \u2014 The Nasdaq Stock Market LLC 0.500% Notes due 2031 \u2014 The Nasdaq Stock Market LLC 3.600% Notes due 2042 \u2014 The Nasdaq Stock Market LLC Indicate by check mark whether the Registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the Registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes \u2612 No \u2610 Indicate by check mark whether the Registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (\u00a7232.405 of this chapter) during the preceding 12 months (or for such shorter period that the Registrant was required to submit such files). Yes \u2612 No \u2610 Indicate by check mark whether the Registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of \u201clarge accelerated filer,\u201d \u201caccelerated filer,\u201d \u201csmaller reporting company,\u201d and \u201cemerging growth company\u201d in Rule 12b-2 of the Exchange Act. Large accelerated filer \u2612 Accelerated filer \u2610 Non-accelerated filer \u2610 Smaller reporting company \u2610 Emerging growth company \u2610 If an emerging growth company, indicate by check mark if the Registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u2610 Indicate by check mark whether the Registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act). Yes \u2610 No \u2612 14,594,180,000 shares of common stock were issued and outstanding as of July 17, 2026 . Apple Inc. Form 10-Q For the Fiscal Quarter Ended June 27, 2026 TABLE OF CONTENTS Page Part I Item 1. Financial Statements 1 Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations 13 Item 3. Quantitative and Qualitative Disclosures About Market Risk 19 Item 4. Controls and Procedures 19 Part II Item 1. Legal Proceedings 20 Item 1A. Risk Factors 21 Item 2. Unregistered Sales of Equity Securities and Use of Proceeds 24 Item 3. Defaults Upon Senior Securities 24 Item 4. Mine Safety Disclosures 24 Item 5. Other Information 25 Item 6. Exhibits 25 PART I \u2014 FINANCIAL INFORMATION Item 1. Financial Statements Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net sales: Products $ 78,678 $ 66,613 $ 272,629 $ 233,287 Services 30,739 27,423 91,728 80,408 Total net sales 109,417 94,036 364,357 313,695 Cost of sales: Products 47,153 43,620 163,810 147,097 Services 7,494 6,698 21,765 19,738 Total cost of sales 54,647 50,318 185,575 166,835 Gross margin 54,770 43,718 178,782 146,860 Operating expenses: Research and development 11,729 8,866 34,035 25,684 Selling, general and administrative 7,346 6,650 22,315 20,553 Total operating expenses 19,075 15,516 56,350 46,237 Operating income 35,695 28,202 122,432 100,623 Other income/(expense), net 572 ( 171 ) 670 ( 698 ) Income before provision for income taxes 36,267 28,031 123,102 99,925 Provision for income taxes 6,478 4,597 21,638 15,381 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Earnings per share: Basic $ 2.03 $ 1.57 $ 6.91 $ 5.64 Diluted $ 2.02 $ 1.57 $ 6.88 $ 5.62 Shares used in computing earnings per share: Basic 14,656,110 14,902,886 14,692,515 14,992,898 Diluted 14,714,676 14,948,179 14,750,302 15,051,726 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 1 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Unaudited) (In millions) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Other comprehensive income/(loss): Change in foreign currency translation, net of tax ( 24 ) 449 ( 116 ) ( 86 ) Change in unrealized gains/losses on derivative instruments, net of tax: Change in fair value of derivative instruments 356 ( 523 ) 729 810 Adjustment for net (gains)/losses realized and included in net income 67 ( 571 ) 348 ( 415 ) Total change in unrealized gains/losses on derivative instruments 423 ( 1,094 ) 1,077 395 Change in unrealized gains/losses on marketable debt securities, net of tax: Change in fair value of marketable debt securities 441 640 57 90 Adjustment for net (gains)/losses realized and included in net income 27 ( 1 ) 45 404 Total change in unrealized gains/losses on marketable debt securities 468 639 102 494 Total other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Total comprehensive income $ 30,656 $ 23,428 $ 102,527 $ 85,347 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 2 Apple Inc. CONDENSED CONSOLIDATED BALANCE SHEETS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and par value) June 27, 2026 September 27, 2025 ASSETS: Current assets: Cash and cash equivalents $ 39,544 $ 35,934 Marketable securities 22,855 18,763 Accounts receivable, net 31,398 39,777 Vendor non-trade receivables 27,509 33,180 Inventories 11,092 5,718 Other current assets 17,420 14,585 Total current assets 149,818 147,957 Non-current assets: Marketable securities 84,118 77,723 Property, plant and equipment, net 51,431 49,834 Intangible assets, net 20,342 11,093 Other non-current assets 77,557 72,634 Total non-current assets 233,448 211,284 Total assets $ 383,266 $ 359,241 LIABILITIES AND SHAREHOLDERS\u2019 EQUITY: Current liabilities: Accounts payable $ 64,525 $ 69,860 Other current liabilities 62,259 66,387 Deferred revenue 9,538 9,055 Commercial paper 1,997 7,979 Term debt 11,007 12,350 Total current liabilities 149,326 165,631 Non-current liabilities: Term debt 71,340 78,328 Other non-current liabilities 55,080 41,549 Total non-current liabilities 126,420 119,877 Total liabilities 275,746 285,508 Commitments and contingencies Shareholders\u2019 equity: Common stock and additional paid-in capital, $ 0.00001 par value: 50,400,000 shares authorized; 14,608,963 and 14,773,260 shares issued and outstanding, respectively 100,702 93,568 Retained earnings/(Accumulated deficit) 11,326 ( 14,264 ) Accumulated other comprehensive loss ( 4,508 ) ( 5,571 ) Total shareholders\u2019 equity 107,520 73,733 Total liabilities and shareholders\u2019 equity $ 383,266 $ 359,241 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 3 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF SHAREHOLDERS\u2019 EQUITY (Unaudited) (In millions, except per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Total shareholders\u2019 equity, beginning balances $ 106,491 $ 66,796 $ 73,733 $ 56,950 Common stock and additional paid-in capital: Beginning balances 99,507 88,711 93,568 83,276 Common stock issued \u2014 \u2014 878 825 Common stock withheld related to net share settlement of equity awards ( 2,396 ) ( 2,163 ) ( 4,704 ) ( 4,260 ) Share-based compensation 3,591 3,258 10,960 9,965 Ending balances 100,702 89,806 100,702 89,806 Retained earnings/(Accumulated deficit): Beginning balances 12,359 ( 15,552 ) ( 14,264 ) ( 19,154 ) Net income 29,789 23,434 101,464 84,544 Dividends and dividend equivalents declared ( 3,998 ) ( 3,912 ) ( 11,733 ) ( 11,525 ) Common stock withheld related to net share settlement of equity awards ( 875 ) ( 411 ) ( 1,899 ) ( 1,598 ) Common stock repurchased ( 25,949 ) ( 21,166 ) ( 62,242 ) ( 69,874 ) Ending balances 11,326 ( 17,607 ) 11,326 ( 17,607 ) Accumulated other comprehensive loss: Beginning balances ( 5,375 ) ( 6,363 ) ( 5,571 ) ( 7,172 ) Other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Ending balances ( 4,508 ) ( 6,369 ) ( 4,508 ) ( 6,369 ) Total shareholders\u2019 equity, ending balances $ 107,520 $ 65,830 $ 107,520 $ 65,830 Dividends and dividend equivalents declared per share or RSU $ 0.27 $ 0.26 $ 0.79 $ 0.76 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 4 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited) (In millions) Nine Months Ended June 27, 2026 June 28, 2025 Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances $ 35,934 $ 29,943 Operating activities: Net income 101,464 84,544 Adjustments to reconcile net income to cash generated by operating activities: Depreciation and amortization 9,973 8,571 Share-based compensation expense 10,523 9,680 Other ( 2,037 ) ( 1,748 ) Changes in operating assets and liabilities: Accounts receivable, net 8,316 5,685 Vendor non-trade receivables 5,671 13,555 Inventories ( 5,461 ) 1,223 Other current and non-current assets ( 16,266 ) ( 6,116 ) Accounts payable ( 5,203 ) ( 18,479 ) Other current and non-current liabilities 10,016 ( 15,161 ) Cash generated by operating activities 116,996 81,754 Investing activities: Purchases of marketable securities ( 48,752 ) ( 17,591 ) Proceeds from maturities of marketable securities 26,504 35,036 Proceeds from sales of marketable securities 12,016 10,785 Payments for acquisition of property, plant and equipment ( 6,799 ) ( 9,473 ) Other ( 1,780 ) ( 975 ) Cash generated by/(used in) investing activities ( 18,811 ) 17,782 Financing activities: Payments for taxes related to net share settlement of equity awards ( 6,462 ) ( 5,719 ) Payments for dividends and dividend equivalents ( 11,778 ) ( 11,559 ) Repurchases of common stock ( 62,094 ) ( 70,579 ) Proceeds from issuance of term debt, net \u2014 4,481 Repayments of term debt ( 8,146 ) ( 9,682 ) Repayments of commercial paper, net ( 5,911 ) ( 65 ) Other ( 184 ) ( 87 ) Cash used in financing activities ( 94,575 ) ( 93,210 ) Increase in cash, cash equivalents, and restricted cash and cash equivalents 3,610 6,326 Cash, cash equivalents, and restricted cash and cash equivalents, ending balances $ 39,544 $ 36,269 Supplemental cash flow disclosure: Cash paid for income taxes, net $ 26,555 $ 37,332 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 5 Apple Inc. Notes to Condensed Consolidated Financial Statements (Unaudited) Note 1 \u2013 Summary of Significant Accounting Policies Basis of Presentation and Preparation The condensed consolidated financial statements include the accounts of Apple Inc. and its wholly owned subsidiaries (collectively \u201cApple\u201d or the \u201cCompany\u201d). In the opinion of the Company\u2019s management, the condensed consolidated financial statements reflect all adjustments, which are normal and recurring in nature, necessary for fair financial statement presentat"
+    },
+    "get_filing_text(max_chars=12000,section=Product Category Performance,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "section": "Product Category Performance",
+      "section_found": false,
+      "total_chars": 82882,
+      "text": "aapl-20260627 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 10-Q (Mark One) \u2612 QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the quarterly period ended June 27, 2026 or \u2610 TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the transition period from to . Commission File Number: 001-36743 Apple Inc. (Exact name of Registrant as specified in its charter) California 94-2404110 (State or other jurisdiction of incorporation or organization) (I.R.S. Employer Identification No.) One Apple Park Way Cupertino , California 95014 (Address of principal executive offices) (Zip Code) ( 408 ) 996-1010 (Registrant\u2019s telephone number, including area code) Securities registered pursuant to Section 12(b) of the Act: Title of each class Trading symbol(s) Name of each exchange on which registered Common Stock, $0.00001 par value per share AAPL The Nasdaq Stock Market LLC 1.625% Notes due 2026 \u2014 The Nasdaq Stock Market LLC 2.000% Notes due 2027 \u2014 The Nasdaq Stock Market LLC 1.375% Notes due 2029 \u2014 The Nasdaq Stock Market LLC 3.050% Notes due 2029 \u2014 The Nasdaq Stock Market LLC 0.500% Notes due 2031 \u2014 The Nasdaq Stock Market LLC 3.600% Notes due 2042 \u2014 The Nasdaq Stock Market LLC Indicate by check mark whether the Registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the Registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes \u2612 No \u2610 Indicate by check mark whether the Registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (\u00a7232.405 of this chapter) during the preceding 12 months (or for such shorter period that the Registrant was required to submit such files). Yes \u2612 No \u2610 Indicate by check mark whether the Registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of \u201clarge accelerated filer,\u201d \u201caccelerated filer,\u201d \u201csmaller reporting company,\u201d and \u201cemerging growth company\u201d in Rule 12b-2 of the Exchange Act. Large accelerated filer \u2612 Accelerated filer \u2610 Non-accelerated filer \u2610 Smaller reporting company \u2610 Emerging growth company \u2610 If an emerging growth company, indicate by check mark if the Registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u2610 Indicate by check mark whether the Registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act). Yes \u2610 No \u2612 14,594,180,000 shares of common stock were issued and outstanding as of July 17, 2026 . Apple Inc. Form 10-Q For the Fiscal Quarter Ended June 27, 2026 TABLE OF CONTENTS Page Part I Item 1. Financial Statements 1 Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations 13 Item 3. Quantitative and Qualitative Disclosures About Market Risk 19 Item 4. Controls and Procedures 19 Part II Item 1. Legal Proceedings 20 Item 1A. Risk Factors 21 Item 2. Unregistered Sales of Equity Securities and Use of Proceeds 24 Item 3. Defaults Upon Senior Securities 24 Item 4. Mine Safety Disclosures 24 Item 5. Other Information 25 Item 6. Exhibits 25 PART I \u2014 FINANCIAL INFORMATION Item 1. Financial Statements Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net sales: Products $ 78,678 $ 66,613 $ 272,629 $ 233,287 Services 30,739 27,423 91,728 80,408 Total net sales 109,417 94,036 364,357 313,695 Cost of sales: Products 47,153 43,620 163,810 147,097 Services 7,494 6,698 21,765 19,738 Total cost of sales 54,647 50,318 185,575 166,835 Gross margin 54,770 43,718 178,782 146,860 Operating expenses: Research and development 11,729 8,866 34,035 25,684 Selling, general and administrative 7,346 6,650 22,315 20,553 Total operating expenses 19,075 15,516 56,350 46,237 Operating income 35,695 28,202 122,432 100,623 Other income/(expense), net 572 ( 171 ) 670 ( 698 ) Income before provision for income taxes 36,267 28,031 123,102 99,925 Provision for income taxes 6,478 4,597 21,638 15,381 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Earnings per share: Basic $ 2.03 $ 1.57 $ 6.91 $ 5.64 Diluted $ 2.02 $ 1.57 $ 6.88 $ 5.62 Shares used in computing earnings per share: Basic 14,656,110 14,902,886 14,692,515 14,992,898 Diluted 14,714,676 14,948,179 14,750,302 15,051,726 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 1 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Unaudited) (In millions) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Other comprehensive income/(loss): Change in foreign currency translation, net of tax ( 24 ) 449 ( 116 ) ( 86 ) Change in unrealized gains/losses on derivative instruments, net of tax: Change in fair value of derivative instruments 356 ( 523 ) 729 810 Adjustment for net (gains)/losses realized and included in net income 67 ( 571 ) 348 ( 415 ) Total change in unrealized gains/losses on derivative instruments 423 ( 1,094 ) 1,077 395 Change in unrealized gains/losses on marketable debt securities, net of tax: Change in fair value of marketable debt securities 441 640 57 90 Adjustment for net (gains)/losses realized and included in net income 27 ( 1 ) 45 404 Total change in unrealized gains/losses on marketable debt securities 468 639 102 494 Total other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Total comprehensive income $ 30,656 $ 23,428 $ 102,527 $ 85,347 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 2 Apple Inc. CONDENSED CONSOLIDATED BALANCE SHEETS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and par value) June 27, 2026 September 27, 2025 ASSETS: Current assets: Cash and cash equivalents $ 39,544 $ 35,934 Marketable securities 22,855 18,763 Accounts receivable, net 31,398 39,777 Vendor non-trade receivables 27,509 33,180 Inventories 11,092 5,718 Other current assets 17,420 14,585 Total current assets 149,818 147,957 Non-current assets: Marketable securities 84,118 77,723 Property, plant and equipment, net 51,431 49,834 Intangible assets, net 20,342 11,093 Other non-current assets 77,557 72,634 Total non-current assets 233,448 211,284 Total assets $ 383,266 $ 359,241 LIABILITIES AND SHAREHOLDERS\u2019 EQUITY: Current liabilities: Accounts payable $ 64,525 $ 69,860 Other current liabilities 62,259 66,387 Deferred revenue 9,538 9,055 Commercial paper 1,997 7,979 Term debt 11,007 12,350 Total current liabilities 149,326 165,631 Non-current liabilities: Term debt 71,340 78,328 Other non-current liabilities 55,080 41,549 Total non-current liabilities 126,420 119,877 Total liabilities 275,746 285,508 Commitments and contingencies Shareholders\u2019 equity: Common stock and additional paid-in capital, $ 0.00001 par value: 50,400,000 shares authorized; 14,608,963 and 14,773,260 shares issued and outstanding, respectively 100,702 93,568 Retained earnings/(Accumulated deficit) 11,326 ( 14,264 ) Accumulated other comprehensive loss ( 4,508 ) ( 5,571 ) Total shareholders\u2019 equity 107,520 73,733 Total liabilities and shareholders\u2019 equity $ 383,266 $ 359,241 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 3 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF SHAREHOLDERS\u2019 EQUITY (Unaudited) (In millions, except per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Total shareholders\u2019 equity, beginning balances $ 106,491 $ 66,796 $ 73,733 $ 56,950 Common stock and additional paid-in capital: Beginning balances 99,507 88,711 93,568 83,276 Common stock issued \u2014 \u2014 878 825 Common stock withheld related to net share settlement of equity awards ( 2,396 ) ( 2,163 ) ( 4,704 ) ( 4,260 ) Share-based compensation 3,591 3,258 10,960 9,965 Ending balances 100,702 89,806 100,702 89,806 Retained earnings/(Accumulated deficit): Beginning balances 12,359 ( 15,552 ) ( 14,264 ) ( 19,154 ) Net income 29,789 23,434 101,464 84,544 Dividends and dividend equivalents declared ( 3,998 ) ( 3,912 ) ( 11,733 ) ( 11,525 ) Common stock withheld related to net share settlement of equity awards ( 875 ) ( 411 ) ( 1,899 ) ( 1,598 ) Common stock repurchased ( 25,949 ) ( 21,166 ) ( 62,242 ) ( 69,874 ) Ending balances 11,326 ( 17,607 ) 11,326 ( 17,607 ) Accumulated other comprehensive loss: Beginning balances ( 5,375 ) ( 6,363 ) ( 5,571 ) ( 7,172 ) Other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Ending balances ( 4,508 ) ( 6,369 ) ( 4,508 ) ( 6,369 ) Total shareholders\u2019 equity, ending balances $ 107,520 $ 65,830 $ 107,520 $ 65,830 Dividends and dividend equivalents declared per share or RSU $ 0.27 $ 0.26 $ 0.79 $ 0.76 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 4 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited) (In millions) Nine Months Ended June 27, 2026 June 28, 2025 Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances $ 35,934 $ 29,943 Operating activities: Net income 101,464 84,544 Adjustments to reconcile net income to cash generated by operating activities: Depreciation and amortization 9,973 8,571 Share-based compensation expense 10,523 9,680 Other ( 2,037 ) ( 1,748 ) Changes in operating assets and liabilities: Accounts receivable, net 8,316 5,685 Vendor non-trade receivables 5,671 13,555 Inventories ( 5,461 ) 1,223 Other current and non-current assets ( 16,266 ) ( 6,116 ) Accounts payable ( 5,203 ) ( 18,479 ) Other current and non-current liabilities 10,016 ( 15,161 ) Cash generated by operating activities 116,996 81,754 Investing activities: Purchases of marketable securities ( 48,752 ) ( 17,591 ) Proceeds from maturities of marketable securities 26,504 35,036 Proceeds from sales of marketable securities 12,016 10,785 Payments for acquisition of property, plant and equipment ( 6,799 ) ( 9,473 ) Other ( 1,780 ) ( 975 ) Cash generated by/(used in) investing activities ( 18,811 ) 17,782 Financing activities: Payments for taxes related to net share settlement of equity awards ( 6,462 ) ( 5,719 ) Payments for dividends and dividend equivalents ( 11,778 ) ( 11,559 ) Repurchases of common stock ( 62,094 ) ( 70,579 ) Proceeds from issuance of term debt, net \u2014 4,481 Repayments of term debt ( 8,146 ) ( 9,682 ) Repayments of commercial paper, net ( 5,911 ) ( 65 ) Other ( 184 ) ( 87 ) Cash used in financing activities ( 94,575 ) ( 93,210 ) Increase in cash, cash equivalents, and restricted cash and cash equivalents 3,610 6,326 Cash, cash equivalents, and restricted cash and cash equivalents, ending balances $ 39,544 $ 36,269 Supplemental cash flow disclosure: Cash paid for income taxes, net $ 26,555 $ 37,332 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 5 Apple Inc. Notes to Condensed Consolidated Financial Statements (Unaudited) Note 1 \u2013 Summary of Significant Accounting Policies Basis of Presentation and Preparation The condensed consolidated financial statements include the accounts of Apple Inc. and its wholly owned subsidiaries (collectively \u201cApple\u201d or the \u201cCompany\u201d). In the opinion of the Company\u2019s management, the condensed consolidated financial statements reflect all adjustments, which are normal and recurring in nature, necessary for fair financial statement presentat"
+    },
+    "get_news": [
+      {
+        "title": "The $5 Trillion Club: Which Is the Better Stock to Own, Apple or Nvidia?",
+        "source": "Motley Fool",
+        "published_at": "2026-10-18T20:20:00+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/5-trillion-club-better-stock-202000459.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Apple Keeps Hitting Record Highs. Bitcoin Hasn\u2019t Set One All Year. Which Is the Better Buy?",
+        "source": "24/7 Wall St.",
+        "published_at": "2026-10-18T18:00:02+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/apple-keeps-hitting-record-highs-180002614.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "What Does Broadcom (AVGO) Face As AI Chip Supply Turns Into A Bottleneck?",
+        "source": "Simply Wall St.",
+        "published_at": "2026-10-18T16:09:33+00:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/does-broadcom-avgo-face-ai-160933871.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Spy Games in Silicon Valley",
+        "source": "The Wall Street Journal",
+        "published_at": "2026-10-18T14:55:00+00:00",
+        "url": "https://finance.yahoo.com/m/34e6da13-bbd5-3447-bdca-37413fc48bbc/spy-games-in-silicon-valley.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Taiwan Semiconductor\u2019s (TSM) Profit Rose 69% Last Quarter. Is the Stock Still Cheap?",
+        "source": "Insider Monkey",
+        "published_at": "2026-10-18T14:34:21+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-tsm-profit-rose-143421492.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Own VGT? Here's How Much of It Is Really Nvidia, Apple, Microsoft, and Broadcom.",
+        "source": "Motley Fool",
+        "published_at": "2026-10-18T13:28:00+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/own-vgt-heres-much-really-132800227.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "iPhone Duo Preorders Sell Out Rapidly As Delivery Estimates Slip Into January",
+        "source": "TIKR",
+        "published_at": "2026-10-18T13:12:12+00:00",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/iphone-duo-preorders-sell-rapidly-131212401.html",
+        "text": "",
+        "ticker": "AAPL",
+        "provider": "yahoo",
+        "labels": {}
+      },
+      {
+        "title": "Meta and Apple team up to make Muse AI models run better on Macs",
+        "source": "The Verge",
+        "published_at": "2026-10-15T18:15:36Z",
+        "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+        "text": "Meta announced the Muse Spark Open AI model today, claiming that it's the \"most capable US open-weight model to date.\" But the company also says that it's the \"the first model in its class\" that can \"run on your desktop using two Apple M5 Ultra Mac Studios wi\u2026 <ul><li></li><li></li><li></li></ul>\r\nMeta and Apples CEOs are publicly supporting each companys work on Muse Spark Open.\r\nMeta and Apples CEOs are publicly supporting each companys work on Muse Spar\u2026 [+2455 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "The best feature of Apple\u2019s HomeView might be its simplicity",
+        "source": "The Verge",
+        "published_at": "2026-10-14T22:00:02Z",
+        "url": "https://www.theverge.com/tech/1011431/apple-homeview-smart-display-best-feature",
+        "text": "I'm just going to come right out and say it. I love the approach Apple has taken with the HomeView. I think it's the shared, always-available household interface that my family might finally use. Is Apple's first smart display my dream smart home dashboard? N\u2026 <ul><li></li><li></li><li></li></ul>\r\nIf Apples first smart display finally gets my family to actually use my smart home, Ill consider it a win.\r\nIf Apples first smart display finally gets my family \u2026 [+8492 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Hands-on with the Apple Home Collection",
+        "source": "The Verge",
+        "published_at": "2026-10-13T16:11:00Z",
+        "url": "https://www.theverge.com/tech/1009899/apple-home-collection-hands-on",
+        "text": "We've just gotten a closer look at Apple's new video doorbell, security cameras, a door lock, and thermostats following the company's \"Welcome Home\" event on Tuesday. The six new devices are part of a new Apple Home Collection, which the company co-developed \u2026 <ul><li></li><li></li><li></li></ul>\r\nA first look at Apples new video doorbell, security cameras, thermostats, and more.\r\nA first look at Apples new video doorbell, security cameras, thermostats, an\u2026 [+2939 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple\u2019s HomeView display is now available to preorder",
+        "source": "The Verge",
+        "published_at": "2026-10-13T14:29:04Z",
+        "url": "https://www.theverge.com/gadgets/1010054/apple-homeview-display-preorder-buy",
+        "text": "Apple is getting into smart displays with its new HomeView. It has a seven-inch squircle design, looking similar to a gargantuan Apple Watch mounted to a speaker base. The $299 HomeView is meant to be the centerpiece for Apple's big push into the home, as it'\u2026 <ul><li></li><li></li><li></li></ul>\r\nIts the centerpiece for Apples new push into the home, and it also seems like a great smart display.\r\nIts the centerpiece for Apples new push into the home, and \u2026 [+2340 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "How Apple can win the smart home",
+        "source": "The Verge",
+        "published_at": "2026-10-12T11:42:06Z",
+        "url": "https://www.theverge.com/tech/1009324/how-apple-can-win-the-smart-home",
+        "text": "This week, Apple is hosting its first-ever dedicated smart home event. While the company hasn't shared details about what it will reveal at the \"Welcome Home experience\" in New York City on Tuesday, October 13th, it doesn't take an army of internet sleuths to\u2026 <ul><li></li><li></li><li></li></ul>\r\nNew hardware could put Apple back in the race, but software will determine whether it wins.\r\nNew hardware could put Apple back in the race, but software will det\u2026 [+9794 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple and LG leak shows new \u2018tap to control\u2019 HomeKit features",
+        "source": "The Verge",
+        "published_at": "2026-10-09T16:45:31Z",
+        "url": "https://www.theverge.com/tech/1008812/apple-lg-homekit-tap-to-control-rumor",
+        "text": "A post on X from \"pdfu,\" who has previously posted leaks and renders of suspected Apple features and LG smart home gear, shows new details of rumored Apple Home accessories from LG. According to the new leak, they could include an NFC-based \"Proximity Control\u2026 <ul><li></li><li></li><li></li></ul>\r\nLGs rumored Apple Home accessories might have a controls shortcut in the Dynamic Island.\r\nLGs rumored Apple Home accessories might have a controls shortcut in th\u2026 [+2220 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple will reportedly debut its first touchscreen MacBook in three weeks",
+        "source": "The Verge",
+        "published_at": "2026-10-08T20:32:21Z",
+        "url": "https://www.theverge.com/tech/1008422/apple-macbook-pro-touchscreen-ipad-mini-rumor",
+        "text": "Apple is set to introduce a new MacBook Pro with a touchscreen and an updated iPad Mini \"on or around\" October 27th, Bloomberg reports. If true, that would put the event just two weeks after the October 13th event Apple announced today, which is rumored to fo\u2026 <ul><li></li><li></li><li></li></ul>\r\nThe rumored late-October event will also include a new iPad Mini, Bloomberg reports.\r\nThe rumored late-October event will also include a new iPad Mini, Bloomberg\u2026 [+2072 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Tim Cook says \u2018I\u2019m not meddling\u2019 in the new Apple CEO\u2019s business",
+        "source": "The Verge",
+        "published_at": "2026-10-08T18:48:36Z",
+        "url": "https://www.theverge.com/news/1008279/apple-tim-cook-not-meddling-john-ternus-ceo",
+        "text": "Tim Cook stepped down as Apple CEO in September, handing over the top job to former hardware chief John Ternus and taking an executive chairman role. Cook's still a visible representative of the company, having been recently photographed attending a state din\u2026 <ul><li></li><li></li><li></li></ul>\r\nCook, who recently stepped down, says hes helping new CEO John Ternus in any way he sees fit.\r\nCook, who recently stepped down, says hes helping new CEO John Ter\u2026 [+2660 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      }
+    ],
+    "get_filing_text(max_chars=20000,section=Item 2,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "section": "Item 2",
+      "section_found": true,
+      "total_chars": 82882,
+      "text": "Item 2. Unregistered Sales of Equity Securities and Use of Proceeds 24 Item 3. Defaults Upon Senior Securities 24 Item 4. Mine Safety Disclosures 24 Item 5. Other Information 25 Item 6. Exhibits 25 PART I \u2014 FINANCIAL INFORMATION Item 1. Financial Statements Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net sales: Products $ 78,678 $ 66,613 $ 272,629 $ 233,287 Services 30,739 27,423 91,728 80,408 Total net sales 109,417 94,036 364,357 313,695 Cost of sales: Products 47,153 43,620 163,810 147,097 Services 7,494 6,698 21,765 19,738 Total cost of sales 54,647 50,318 185,575 166,835 Gross margin 54,770 43,718 178,782 146,860 Operating expenses: Research and development 11,729 8,866 34,035 25,684 Selling, general and administrative 7,346 6,650 22,315 20,553 Total operating expenses 19,075 15,516 56,350 46,237 Operating income 35,695 28,202 122,432 100,623 Other income/(expense), net 572 ( 171 ) 670 ( 698 ) Income before provision for income taxes 36,267 28,031 123,102 99,925 Provision for income taxes 6,478 4,597 21,638 15,381 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Earnings per share: Basic $ 2.03 $ 1.57 $ 6.91 $ 5.64 Diluted $ 2.02 $ 1.57 $ 6.88 $ 5.62 Shares used in computing earnings per share: Basic 14,656,110 14,902,886 14,692,515 14,992,898 Diluted 14,714,676 14,948,179 14,750,302 15,051,726 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 1 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Unaudited) (In millions) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Other comprehensive income/(loss): Change in foreign currency translation, net of tax ( 24 ) 449 ( 116 ) ( 86 ) Change in unrealized gains/losses on derivative instruments, net of tax: Change in fair value of derivative instruments 356 ( 523 ) 729 810 Adjustment for net (gains)/losses realized and included in net income 67 ( 571 ) 348 ( 415 ) Total change in unrealized gains/losses on derivative instruments 423 ( 1,094 ) 1,077 395 Change in unrealized gains/losses on marketable debt securities, net of tax: Change in fair value of marketable debt securities 441 640 57 90 Adjustment for net (gains)/losses realized and included in net income 27 ( 1 ) 45 404 Total change in unrealized gains/losses on marketable debt securities 468 639 102 494 Total other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Total comprehensive income $ 30,656 $ 23,428 $ 102,527 $ 85,347 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 2 Apple Inc. CONDENSED CONSOLIDATED BALANCE SHEETS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and par value) June 27, 2026 September 27, 2025 ASSETS: Current assets: Cash and cash equivalents $ 39,544 $ 35,934 Marketable securities 22,855 18,763 Accounts receivable, net 31,398 39,777 Vendor non-trade receivables 27,509 33,180 Inventories 11,092 5,718 Other current assets 17,420 14,585 Total current assets 149,818 147,957 Non-current assets: Marketable securities 84,118 77,723 Property, plant and equipment, net 51,431 49,834 Intangible assets, net 20,342 11,093 Other non-current assets 77,557 72,634 Total non-current assets 233,448 211,284 Total assets $ 383,266 $ 359,241 LIABILITIES AND SHAREHOLDERS\u2019 EQUITY: Current liabilities: Accounts payable $ 64,525 $ 69,860 Other current liabilities 62,259 66,387 Deferred revenue 9,538 9,055 Commercial paper 1,997 7,979 Term debt 11,007 12,350 Total current liabilities 149,326 165,631 Non-current liabilities: Term debt 71,340 78,328 Other non-current liabilities 55,080 41,549 Total non-current liabilities 126,420 119,877 Total liabilities 275,746 285,508 Commitments and contingencies Shareholders\u2019 equity: Common stock and additional paid-in capital, $ 0.00001 par value: 50,400,000 shares authorized; 14,608,963 and 14,773,260 shares issued and outstanding, respectively 100,702 93,568 Retained earnings/(Accumulated deficit) 11,326 ( 14,264 ) Accumulated other comprehensive loss ( 4,508 ) ( 5,571 ) Total shareholders\u2019 equity 107,520 73,733 Total liabilities and shareholders\u2019 equity $ 383,266 $ 359,241 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 3 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF SHAREHOLDERS\u2019 EQUITY (Unaudited) (In millions, except per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Total shareholders\u2019 equity, beginning balances $ 106,491 $ 66,796 $ 73,733 $ 56,950 Common stock and additional paid-in capital: Beginning balances 99,507 88,711 93,568 83,276 Common stock issued \u2014 \u2014 878 825 Common stock withheld related to net share settlement of equity awards ( 2,396 ) ( 2,163 ) ( 4,704 ) ( 4,260 ) Share-based compensation 3,591 3,258 10,960 9,965 Ending balances 100,702 89,806 100,702 89,806 Retained earnings/(Accumulated deficit): Beginning balances 12,359 ( 15,552 ) ( 14,264 ) ( 19,154 ) Net income 29,789 23,434 101,464 84,544 Dividends and dividend equivalents declared ( 3,998 ) ( 3,912 ) ( 11,733 ) ( 11,525 ) Common stock withheld related to net share settlement of equity awards ( 875 ) ( 411 ) ( 1,899 ) ( 1,598 ) Common stock repurchased ( 25,949 ) ( 21,166 ) ( 62,242 ) ( 69,874 ) Ending balances 11,326 ( 17,607 ) 11,326 ( 17,607 ) Accumulated other comprehensive loss: Beginning balances ( 5,375 ) ( 6,363 ) ( 5,571 ) ( 7,172 ) Other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Ending balances ( 4,508 ) ( 6,369 ) ( 4,508 ) ( 6,369 ) Total shareholders\u2019 equity, ending balances $ 107,520 $ 65,830 $ 107,520 $ 65,830 Dividends and dividend equivalents declared per share or RSU $ 0.27 $ 0.26 $ 0.79 $ 0.76 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 4 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited) (In millions) Nine Months Ended June 27, 2026 June 28, 2025 Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances $ 35,934 $ 29,943 Operating activities: Net income 101,464 84,544 Adjustments to reconcile net income to cash generated by operating activities: Depreciation and amortization 9,973 8,571 Share-based compensation expense 10,523 9,680 Other ( 2,037 ) ( 1,748 ) Changes in operating assets and liabilities: Accounts receivable, net 8,316 5,685 Vendor non-trade receivables 5,671 13,555 Inventories ( 5,461 ) 1,223 Other current and non-current assets ( 16,266 ) ( 6,116 ) Accounts payable ( 5,203 ) ( 18,479 ) Other current and non-current liabilities 10,016 ( 15,161 ) Cash generated by operating activities 116,996 81,754 Investing activities: Purchases of marketable securities ( 48,752 ) ( 17,591 ) Proceeds from maturities of marketable securities 26,504 35,036 Proceeds from sales of marketable securities 12,016 10,785 Payments for acquisition of property, plant and equipment ( 6,799 ) ( 9,473 ) Other ( 1,780 ) ( 975 ) Cash generated by/(used in) investing activities ( 18,811 ) 17,782 Financing activities: Payments for taxes related to net share settlement of equity awards ( 6,462 ) ( 5,719 ) Payments for dividends and dividend equivalents ( 11,778 ) ( 11,559 ) Repurchases of common stock ( 62,094 ) ( 70,579 ) Proceeds from issuance of term debt, net \u2014 4,481 Repayments of term debt ( 8,146 ) ( 9,682 ) Repayments of commercial paper, net ( 5,911 ) ( 65 ) Other ( 184 ) ( 87 ) Cash used in financing activities ( 94,575 ) ( 93,210 ) Increase in cash, cash equivalents, and restricted cash and cash equivalents 3,610 6,326 Cash, cash equivalents, and restricted cash and cash equivalents, ending balances $ 39,544 $ 36,269 Supplemental cash flow disclosure: Cash paid for income taxes, net $ 26,555 $ 37,332 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 5 Apple Inc. Notes to Condensed Consolidated Financial Statements (Unaudited) Note 1 \u2013 Summary of Significant Accounting Policies Basis of Presentation and Preparation The condensed consolidated financial statements include the accounts of Apple Inc. and its wholly owned subsidiaries (collectively \u201cApple\u201d or the \u201cCompany\u201d). In the opinion of the Company\u2019s management, the condensed consolidated financial statements reflect all adjustments, which are normal and recurring in nature, necessary for fair financial statement presentation. The preparation of these condensed consolidated financial statements and accompanying notes in conformity with U.S. generally accepted accounting principles (\u201cGAAP\u201d) requires the use of management estimates. Certain prior period amounts in the condensed consolidated financial statements and accompanying notes have been reclassified to conform to the current period\u2019s presentation. These condensed consolidated financial statements and accompanying notes should be read in conjunction with the Company\u2019s annual consolidated financial statements and accompanying notes included in its Annual Report on Form 10-K for the fiscal year ended September 27, 2025 (the \u201c2025 Form 10-K\u201d). The Company\u2019s fiscal year is the 52- or 53-week period that ends on the last Saturday of September. An additional week is included in the first fiscal quarter every five or six years to realign the Company\u2019s fiscal quarters with calendar quarters. The Company\u2019s fiscal years 2026 and 2025 span 52 weeks each. Unless otherwise stated, references to particular years, quarters, months and periods refer to the Company\u2019s fiscal years ended in September and the associated quarters, months and periods of those fiscal years. Note 2 \u2013 Revenue The following table shows disaggregated net sales, as well as the portion of total net sales that was previously deferred, for the three- and nine-month periods ended June 27, 2026 and June 28, 2025 (in millions): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 iPhone \u00ae $ 54,252 $ 44,582 $ 196,515 $ 160,561 Mac \u00ae 10,352 8,046 27,137 24,982 iPad \u00ae 6,191 6,581 21,700 21,071 Wearables, Home and Accessories 7,883 7,404 27,277 26,673 Services 30,739 27,423 91,728 80,408 Total net sales $ 109,417 $ 94,036 $ 364,357 $ 313,695 Portion of total net sales that was included in deferred revenue as of the beginning of the period $ 4,086 $ 4,015 $ 7,260 $ 6,958 The Company\u2019s proportion of net sales by disaggregated revenue source was generally consistent for each reportable segment in Note 10, \u201cSegment Information\u201d for the three- and nine-month periods ended June 27, 2026 and June 28, 2025, except in Greater China, where iPhone revenue represented a moderately higher proportion of net sales. As of June 27, 2026 and September 27, 2025, the Company had total deferred revenue of $ 14.9 billion and $ 13.7 billion, respectively. As of June 27, 2026, the Company expects 64 % of total deferred revenue to be realized in less than a year, 23 % within one-to-two years, 11 % within two-to-three years and 2 % in greater than three years. Apple Inc. | Q3 2026 Form 10-Q | 6 Note 3 \u2013 Earnings Per Share The following table shows the computation of basic and diluted earnings per share for the three- and nine-month periods ended June 27, 2026 and June 28, 2025 (net income in millions and shares in thousands): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Numerator: Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Denominator: Weighted-average basic shares outstanding 14,656,110 14,902,886 14,692,515 14,992,898 Effect of dilutive share-based awards 58,566 45,293 57,787 58,828 Weighted-average diluted shares 14,714,676 14,948,179 14,750,302 15,051,726 Basic earnings per share $ 2.03 $ 1.57 $ 6.91 $ 5.64 Diluted earnings per share $ 2.02 $ 1.57 $ 6.88 $ 5.62 Note 4 \u2013 Financial Instruments Cash, Cash Equivalents and Marketable Securities The following tables show the Company\u2019s cash, cash equivalents and marketable securities by significant investment category as of June 27, 2026 and September 27, 2025 (in millions): June 27, 2026 Adjusted Cost Unrealized Gains Unrealized Losses Fair Value Cash and Cash Equivalents Current Marketable Securities Non-Current Marketable Securities Cash $ 26,777 $ \u2014 $ \u2014 $ 26,777 $ 26,777 $ \u2014 $ \u2014 Level 1: Money market funds 7,840 \u2014 \u2014 7,840 7,840 \u2014 \u2014 Mutual funds 873 222 ( 1 ) 1,094 \u2014 1,094 \u2014 Subtotal 8,713 222 ( 1 ) 8,934 7,840 1,094 \u2014 Level 2 (1) : U.S. Treasury securities 20,398 11 ( 253 ) 20,156 735 4,034 15,387 U.S. agency securities 6,176 \u2014 ( 100 ) 6,076 988 2,898 2,190 Non-U.S. government securities 5,207 71 ( 349 ) 4,929 \u2014 299 4,630 Certificates of deposit and time deposits 3,025 \u2014 \u2014 3,025 2,521 504 \u2014 Commercial paper 3,828 \u2014 \u2014 3,828 683 3,145 \u2014 Corporate debt securities 49,679 121 ( 709 ) 49,091 \u2014 10,808 38,283 Mortgage- and asset-backed securities 24,828 65 ( 1,192 ) 23,701 \u2014 73 23,628 Subtotal 113,141 268 ( 2,603 ) 110,806 4,927 21,761 84,118 Total $ 148,631 $ 490 $ ( 2,604 ) $ 146,517 $ 39,544 $ 22,855 $ 84,118 Apple Inc. | Q3 2026 Form 10-Q | 7 September 27, 2025 Adjusted Cost Unrealized Gains Unrealized Losses Fair Value Cash and Cash Equivalents Current Marketable Securities Non-Current Marketable Securities Cash $ 28,267 $ \u2014 $ \u2014 $ 28,267 $ 28,267 $ \u2014 $ \u2014 Level 1: Money market funds 5,272 \u2014 \u2014 5,272 5,272 \u2014 \u2014 Mutual funds 679 177 ( 2 ) 854 \u2014 854 \u2014 Subtotal 5,951 177 ( 2 ) 6,126 5,272 854 \u2014 Level 2 (1) : U.S. Treasury securities 16,074 56 ( 282 ) 15,848 1,190 3,712 10,946 U.S. agency securities 5,269 \u2014 ( 149 ) 5,120 251 2,456 2,413 Non-U.S. government securities 6,586 111 ( 424 ) 6,273 \u2014 855 5,418 Certificates of deposit and time deposits 917 \u2014 \u2014 917 904 \u2014 13 Commercial paper 100 \u2014 \u2014 100 50 50 \u2014 Corporate debt securities 47,210 266 ( 916 ) 46,560 \u2014 10,623 35,937 Municipal securities 207 \u2014 ( 2 ) 205 \u2014 119 86 Mortgage- and asset-backed securities 24,130 126 ( 1,252 ) 23,004 \u2014 94 22,910 Subtotal 100,493 559 ( 3,025 ) 98,027 2,395 17,909 77,723 Total $ 134,711 $ 736 $ ( 3,027 ) $ 132,420 $ 35,934 $ 18,763 $ 77,723 (1) The valuation techniques used to measure the fair values of the Company\u2019s Level 2 financial instruments, which generally have counterparties with high credit ratings, are based on quoted market prices or model-driven valuations using significant inputs derived from or corroborated by observable market data. As of June 27, 2026, 81 % of the Company\u2019s non-current marketable debt securities other than mortgage- and asset-backed securities had maturities between 1 and 5 years, 16 % between 5 and 10 years, and 3 % greater than 10 years. As of June 27, 2026, 14 % of the Company\u2019s non-current mortgage- and asset-backed securities had maturities between 1 and 5 years, 21 % between 5 and 10 years, and 65 % greater than 10 years. Derivative Instruments and Hedging The Company may use derivative instruments to partially offset its business exposure to foreign exchange and interest rate risk. However, the Company may choose not to hedge certain exposures for a variety of reasons, including accounting considerations or the prohibitive economic cost of hedging particular exposures. There can be no assurance the hedges will offset more than a portion of the financial impact resulting from movements in foreign exchange or interest rates. Foreign Exchange Rate Risk To protect gross margins from fluctuations in foreign exchange rates, the Company may use forwards, options or other instruments, and may designate these instruments as cash flow hedges. The Company generally hedges portions of its forecasted foreign currency exposure associated with revenue and inventory purchases, typically for up to 12 months. To protect the Company\u2019s foreign currency\u2013denominated term debt or marketable securities from fluctuations in foreign exchange rates, the Company may use forwards, cross-currency swaps or other instruments. The Company designates these instruments as either cash flow or fair value hedges. As of June 27, 2026, the maximum length of time over which the Company is hedging its exposure to the variability in future cash flows for term debt\u2013related foreign currency transactions is 16 years. The Company may also use derivative instruments that are not designated as accounting hedges to protect gross margins from certain fluctuations in foreign exchange rates, as well as to offset a portion of the foreign currency gains and losses generated by the remeasurement of certain assets and liabilities denominated in non-functional currencies. Interest Rate Risk To protect the Company\u2019s term debt or marketable securities from fluctuations in interest rates, the Company may use interest rate swaps, options or other instruments. The Company designates these instruments as either cash flow or fair value hedges. Apple Inc. | Q3 2026 Form 10-Q | 8 The notional amounts of the Company\u2019s outstanding derivative instruments as of June 27, 2026 and September 27, 2025, were as follows (in millions): June 27, 2026 September 27, 2025 Derivative instruments designated as accounting hedges: Foreign exchange contracts $ 61,313 $ 62,647 Interest rate contracts $ 10,625 $ 12,875 Derivative instruments not designated as accounting hedges: Foreign exchange contracts $ 64,053 $ 109,079 As of June 27, 2026 and September 27, 2025, the carrying amount of the Company\u2019s current and non-current term debt subject to fair value hedges was $ 10.4 billion and $ 12.6 billion, respectively. Accounts Receivable Trade Receivables As of both June 27, 2026 and September 27, 2025, the Company had one customer that represented 10% or more of total trade receivables, which accounted for 18 % and 12 %, respectively. The Company\u2019s third-party cellular network carriers accounted for 27 % and 34 % of total trade receivables as of June 27, 2026 and September 27, 2025, respectively. The Company requires third-party credit support or collateral from certain customers to limit credit risk. Vendor Non-Trade Receivables The Company has non-trade receivables from certain of its manufacturing vendors resulting from the sale of components to these vendors who manufacture subassemblies or assemble final products for the Company. The Company purchases these components directly from suppliers. The Company does not reflect the sale of these components in products net sales. Rather, the Company recognizes any gain on these sales as a reduction of products cost of sales when the related final products are sold by the Company. As of June 27, 2026, the Company had two vendors that individually represented 10% or more of total vendor non-trade receivables, which accounted f or 47 % and 22 %. A s of September 27, 2025, the Company had two vendors that individually represented 10% or more of total vendor non-trade receivables, which accounted for 46 % and 23 %. Note 5 \u2013 Condensed Consolidated Financial Statement Details The following tables show the Company\u2019s condensed consolidated financial statement details as of June 27, 2026 and September 27, 2025 (in millions): Inventories June 27, 2026 September 27, 2025 Components $ 7,645 $ 2,124 Finished goods 3,447 3,594 Total inventories $ 11,092 $ 5,718 Property, Plant and Equipment, Net June 27, 2026 September 27, 2025 Gross property, plant and equipment $ 128,175 $ 125,848 Accumulated depreciation ( 76,744 ) ( 76,014 ) Total property, plant and equipment, net $ 51,431 $ 49,834 Apple Inc. | Q3 2026 Form 10-Q | 9 Intangible Assets, Net June 27, 2026 September 27, 2025 Gross intangible assets $ 38,220 $ 24,950 Accumulated amortization ( 12,803 ) ( 11,649 ) Total intangible assets, net 25,417 13,301 Less: Current portion of intangible assets, net ( 5,075 ) ( 2,208 ) Non-current portion of intangible assets, net $ 20,342 $ 11,"
+    },
+    "get_filing_text(max_chars=10000,section=Net Sales by Geographic Region,url=https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm)": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "section": "Net Sales by Geographic Region",
+      "section_found": false,
+      "total_chars": 82882,
+      "text": "aapl-20260627 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 10-Q (Mark One) \u2612 QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the quarterly period ended June 27, 2026 or \u2610 TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the transition period from to . Commission File Number: 001-36743 Apple Inc. (Exact name of Registrant as specified in its charter) California 94-2404110 (State or other jurisdiction of incorporation or organization) (I.R.S. Employer Identification No.) One Apple Park Way Cupertino , California 95014 (Address of principal executive offices) (Zip Code) ( 408 ) 996-1010 (Registrant\u2019s telephone number, including area code) Securities registered pursuant to Section 12(b) of the Act: Title of each class Trading symbol(s) Name of each exchange on which registered Common Stock, $0.00001 par value per share AAPL The Nasdaq Stock Market LLC 1.625% Notes due 2026 \u2014 The Nasdaq Stock Market LLC 2.000% Notes due 2027 \u2014 The Nasdaq Stock Market LLC 1.375% Notes due 2029 \u2014 The Nasdaq Stock Market LLC 3.050% Notes due 2029 \u2014 The Nasdaq Stock Market LLC 0.500% Notes due 2031 \u2014 The Nasdaq Stock Market LLC 3.600% Notes due 2042 \u2014 The Nasdaq Stock Market LLC Indicate by check mark whether the Registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the Registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes \u2612 No \u2610 Indicate by check mark whether the Registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (\u00a7232.405 of this chapter) during the preceding 12 months (or for such shorter period that the Registrant was required to submit such files). Yes \u2612 No \u2610 Indicate by check mark whether the Registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of \u201clarge accelerated filer,\u201d \u201caccelerated filer,\u201d \u201csmaller reporting company,\u201d and \u201cemerging growth company\u201d in Rule 12b-2 of the Exchange Act. Large accelerated filer \u2612 Accelerated filer \u2610 Non-accelerated filer \u2610 Smaller reporting company \u2610 Emerging growth company \u2610 If an emerging growth company, indicate by check mark if the Registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u2610 Indicate by check mark whether the Registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act). Yes \u2610 No \u2612 14,594,180,000 shares of common stock were issued and outstanding as of July 17, 2026 . Apple Inc. Form 10-Q For the Fiscal Quarter Ended June 27, 2026 TABLE OF CONTENTS Page Part I Item 1. Financial Statements 1 Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations 13 Item 3. Quantitative and Qualitative Disclosures About Market Risk 19 Item 4. Controls and Procedures 19 Part II Item 1. Legal Proceedings 20 Item 1A. Risk Factors 21 Item 2. Unregistered Sales of Equity Securities and Use of Proceeds 24 Item 3. Defaults Upon Senior Securities 24 Item 4. Mine Safety Disclosures 24 Item 5. Other Information 25 Item 6. Exhibits 25 PART I \u2014 FINANCIAL INFORMATION Item 1. Financial Statements Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net sales: Products $ 78,678 $ 66,613 $ 272,629 $ 233,287 Services 30,739 27,423 91,728 80,408 Total net sales 109,417 94,036 364,357 313,695 Cost of sales: Products 47,153 43,620 163,810 147,097 Services 7,494 6,698 21,765 19,738 Total cost of sales 54,647 50,318 185,575 166,835 Gross margin 54,770 43,718 178,782 146,860 Operating expenses: Research and development 11,729 8,866 34,035 25,684 Selling, general and administrative 7,346 6,650 22,315 20,553 Total operating expenses 19,075 15,516 56,350 46,237 Operating income 35,695 28,202 122,432 100,623 Other income/(expense), net 572 ( 171 ) 670 ( 698 ) Income before provision for income taxes 36,267 28,031 123,102 99,925 Provision for income taxes 6,478 4,597 21,638 15,381 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Earnings per share: Basic $ 2.03 $ 1.57 $ 6.91 $ 5.64 Diluted $ 2.02 $ 1.57 $ 6.88 $ 5.62 Shares used in computing earnings per share: Basic 14,656,110 14,902,886 14,692,515 14,992,898 Diluted 14,714,676 14,948,179 14,750,302 15,051,726 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 1 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Unaudited) (In millions) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Net income $ 29,789 $ 23,434 $ 101,464 $ 84,544 Other comprehensive income/(loss): Change in foreign currency translation, net of tax ( 24 ) 449 ( 116 ) ( 86 ) Change in unrealized gains/losses on derivative instruments, net of tax: Change in fair value of derivative instruments 356 ( 523 ) 729 810 Adjustment for net (gains)/losses realized and included in net income 67 ( 571 ) 348 ( 415 ) Total change in unrealized gains/losses on derivative instruments 423 ( 1,094 ) 1,077 395 Change in unrealized gains/losses on marketable debt securities, net of tax: Change in fair value of marketable debt securities 441 640 57 90 Adjustment for net (gains)/losses realized and included in net income 27 ( 1 ) 45 404 Total change in unrealized gains/losses on marketable debt securities 468 639 102 494 Total other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Total comprehensive income $ 30,656 $ 23,428 $ 102,527 $ 85,347 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 2 Apple Inc. CONDENSED CONSOLIDATED BALANCE SHEETS (Unaudited) (In millions, except number of shares, which are reflected in thousands, and par value) June 27, 2026 September 27, 2025 ASSETS: Current assets: Cash and cash equivalents $ 39,544 $ 35,934 Marketable securities 22,855 18,763 Accounts receivable, net 31,398 39,777 Vendor non-trade receivables 27,509 33,180 Inventories 11,092 5,718 Other current assets 17,420 14,585 Total current assets 149,818 147,957 Non-current assets: Marketable securities 84,118 77,723 Property, plant and equipment, net 51,431 49,834 Intangible assets, net 20,342 11,093 Other non-current assets 77,557 72,634 Total non-current assets 233,448 211,284 Total assets $ 383,266 $ 359,241 LIABILITIES AND SHAREHOLDERS\u2019 EQUITY: Current liabilities: Accounts payable $ 64,525 $ 69,860 Other current liabilities 62,259 66,387 Deferred revenue 9,538 9,055 Commercial paper 1,997 7,979 Term debt 11,007 12,350 Total current liabilities 149,326 165,631 Non-current liabilities: Term debt 71,340 78,328 Other non-current liabilities 55,080 41,549 Total non-current liabilities 126,420 119,877 Total liabilities 275,746 285,508 Commitments and contingencies Shareholders\u2019 equity: Common stock and additional paid-in capital, $ 0.00001 par value: 50,400,000 shares authorized; 14,608,963 and 14,773,260 shares issued and outstanding, respectively 100,702 93,568 Retained earnings/(Accumulated deficit) 11,326 ( 14,264 ) Accumulated other comprehensive loss ( 4,508 ) ( 5,571 ) Total shareholders\u2019 equity 107,520 73,733 Total liabilities and shareholders\u2019 equity $ 383,266 $ 359,241 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 3 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF SHAREHOLDERS\u2019 EQUITY (Unaudited) (In millions, except per-share amounts) Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 June 27, 2026 June 28, 2025 Total shareholders\u2019 equity, beginning balances $ 106,491 $ 66,796 $ 73,733 $ 56,950 Common stock and additional paid-in capital: Beginning balances 99,507 88,711 93,568 83,276 Common stock issued \u2014 \u2014 878 825 Common stock withheld related to net share settlement of equity awards ( 2,396 ) ( 2,163 ) ( 4,704 ) ( 4,260 ) Share-based compensation 3,591 3,258 10,960 9,965 Ending balances 100,702 89,806 100,702 89,806 Retained earnings/(Accumulated deficit): Beginning balances 12,359 ( 15,552 ) ( 14,264 ) ( 19,154 ) Net income 29,789 23,434 101,464 84,544 Dividends and dividend equivalents declared ( 3,998 ) ( 3,912 ) ( 11,733 ) ( 11,525 ) Common stock withheld related to net share settlement of equity awards ( 875 ) ( 411 ) ( 1,899 ) ( 1,598 ) Common stock repurchased ( 25,949 ) ( 21,166 ) ( 62,242 ) ( 69,874 ) Ending balances 11,326 ( 17,607 ) 11,326 ( 17,607 ) Accumulated other comprehensive loss: Beginning balances ( 5,375 ) ( 6,363 ) ( 5,571 ) ( 7,172 ) Other comprehensive income/(loss) 867 ( 6 ) 1,063 803 Ending balances ( 4,508 ) ( 6,369 ) ( 4,508 ) ( 6,369 ) Total shareholders\u2019 equity, ending balances $ 107,520 $ 65,830 $ 107,520 $ 65,830 Dividends and dividend equivalents declared per share or RSU $ 0.27 $ 0.26 $ 0.79 $ 0.76 See accompanying Notes to Condensed Consolidated Financial Statements. Apple Inc. | Q3 2026 Form 10-Q | 4 Apple Inc. CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited) (In millions) Nine Months Ended June 27, 2026 June 28, 2025 Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances $ 35,934 $ 29,943 Operating activities: Net income 101,464 84,544 Adjustments to reconcile net income to cash generated by operating activities: Depreciation and amortization 9,973 8,571 Share-based compensation expense 10,523 9,680 Other ( 2,037 ) ( 1,748 ) Changes in operating assets and liabilities: Accounts receivable, net 8,316 5,685 Vendor non-trad"
+    }
+  },
+  "coverage": {
+    "price": true,
+    "fundamentals": true,
+    "earnings": true,
+    "news": true,
+    "macro": true,
+    "filings": true
+  },
+  "drafts": [
+    {
+      "ticker": "AAPL",
+      "summary": "Apple delivered an 8-quarter earnings beat streak with 7.45% surprise on the latest quarter (ended June 27, 2026, reported July 30, 2026), driving 36.6% one-year total return to $343.46 as of October 16, 2026. The company's $5.01 trillion market capitalization reflects premium valuation (39.4x trailing P/E, 35.9x forward P/E), supported by strong iPhone Duo foldable demand and emerging AI services monetization, though execution risks and leadership transitions warrant caution.",
+      "key_facts": [
+        "last close: 343.46 (as of 2026-10-16)",
+        "1-year return: +36.6%",
+        "52-week range: 246.03 to 343.46",
+        "market cap: $5.01T",
+        "trailing P/E: 39.4",
+        "revenue growth (yoy): +16.4%",
+        "analyst mean target: 329.38 (39 analysts)",
+        "Effective federal funds rate (%): 3.75%",
+        "10-year Treasury yield (%): 5.1%",
+        "latest EPS: 2.02 vs 1.88 estimated (+7.45% surprise), quarter ending 2026-06-30"
+      ],
+      "investment_thesis": "Apple's consistent earnings delivery (100% beat rate, 4.78% average surprise across 8 quarters) and momentum in premium foldable hardware ($1,999 iPhone Duo sold out with January 2027 delivery slips) provide near-term upside, while services growth and AI monetization potential (Siri premium capabilities) offer structural offset to hardware cycles. Valuation remains elevated at 39.4x trailing and 35.9x forward P/E despite 16.4% revenue growth and 28.7% earnings growth, pricing in significant execution. New CEO John Ternus leadership transition and HomeView ecosystem fragmentation risks (app compatibility questions tied to $250M Siri settlement) create execution uncertainty and potential gross margin pressure.",
+      "recommendation": "Hold (medium conviction)",
+      "rating": "Hold",
+      "conviction": "medium",
+      "upside": [
+        "iPhone Duo foldable sold out at $1,999 with January 2027 deliveries, signaling strong premium demand and multi-quarter revenue visibility",
+        "Eight consecutive earnings beats with latest 7.45% surprise (Q3 FY2026, June 27, 2026 end) and year-over-year EPS growth from $1.57 to $2.02",
+        "Services revenue growth potential via premium Siri AI monetization ahead of November 2 earnings report, addressing hardware cycle dependency",
+        "JP Morgan raised price target to $360 despite iPhone demand concerns, providing 5% upside from October 16, 2026 close of $343.46"
+      ],
+      "risks": [
+        "Valuation premium at 39.4x trailing P/E and 35.9x forward P/E leaves limited margin for error; stock already at 52-week high of $343.46 as of October 16, 2026",
+        "HomeView device faces app compatibility questions and operates on Siri AI tied to $250M settlement, creating reputational and adoption headwinds",
+        "New CEO John Ternus leadership transition signals management uncertainty, with partner choice (Tim Cook's former rival) raising execution risk",
+        "10-year Treasury yield at 5.1% (up 1.05% year-over-year as of October 15, 2026) pressures discount rates and multiple compression risk despite 36.4% one-year return"
+      ],
+      "catalysts": [
+        "November 2, 2026 earnings report and forward guidance will clarify iPhone Duo production ramp, gross margins, and services monetization trajectory",
+        "January 2027 iPhone Duo delivery fulfillment and consumer demand validation post-launch; production volume guidance critical for Q1 FY2027 forecasts",
+        "Premium AI services pricing announcement and Siri upgrade adoption rates; $250M settlement resolution narrative critical for HomeView ecosystem credibility"
+      ],
+      "outlook": "Apple warrants a Hold rating with medium conviction given premium valuation (39.4x P/E) offsetting strong execution (8-quarter beat streak, iPhone Duo sellout) and emerging AI services growth, pending clarity on CEO Ternus leadership effectiveness and HomeView ecosystem viability by Q1 2027.",
+      "source": "llm"
+    },
+    {
+      "ticker": "AAPL",
+      "summary": "Apple delivered an 8-quarter earnings beat streak with 7.45% surprise on the latest quarter (ended June 27, 2026, reported July 30, 2026), driving 36.64% one-year total return to $343.46 as of October 16, 2026. The company's $5.01 trillion market capitalization reflects premium valuation (39.4x trailing P/E, 35.9x forward P/E), supported by strong iPhone Duo foldable demand and emerging AI services monetization, though leadership transition and HomeView ecosystem risks warrant caution.",
+      "key_facts": [
+        "last close: 343.46 (as of 2026-10-16)",
+        "1-year return: +36.6%",
+        "52-week range: 246.03 to 343.46",
+        "market cap: $5.01T",
+        "trailing P/E: 39.4",
+        "revenue growth (yoy): +16.4%",
+        "analyst mean target: 329.38 (39 analysts)",
+        "Effective federal funds rate (%): 3.75%",
+        "10-year Treasury yield (%): 5.1%",
+        "latest EPS: 2.02 vs 1.88 estimated (+7.45% surprise), quarter ending 2026-06-30"
+      ],
+      "investment_thesis": "Apple's consistent earnings delivery (100% beat rate, 4.78% average surprise across 8 quarters) and momentum in premium foldable hardware (iPhone Duo at $1,999 sold out with January 2027 delivery slips) provide near-term upside, while services growth and AI monetization potential (Siri premium capabilities) offer structural offset to hardware cycles. Valuation remains elevated at 39.4x trailing and 35.9x forward P/E despite 16.4% revenue growth and 28.7% earnings growth, pricing in significant execution. New CEO John Ternus leadership transition and HomeView ecosystem risks tied to $250M Siri settlement create execution uncertainty, though specific HomeView revenue exposure and margin impact data are not yet available to quantify materiality.",
+      "recommendation": "Hold (medium conviction)",
+      "rating": "Hold",
+      "conviction": "medium",
+      "upside": [
+        "iPhone Duo foldable sold out at $1,999 with January 2027 deliveries, signaling strong premium demand and multi-quarter revenue visibility",
+        "Eight consecutive earnings beats with latest 7.45% surprise (Q3 FY2026, ended June 27, 2026, reported July 30, 2026) and year-over-year EPS growth from $1.57 to $2.02",
+        "Services revenue growth potential via premium Siri AI monetization ahead of November 2, 2026 earnings report, addressing hardware cycle dependency",
+        "JP Morgan raised price target to $360, providing 5% upside from October 16, 2026 close of $343.46"
+      ],
+      "risks": [
+        "Valuation premium at 39.4x trailing P/E and 35.9x forward P/E leaves limited margin for error; stock already at 52-week high of $343.46 as of October 16, 2026",
+        "HomeView device faces app compatibility questions and operates on Siri AI tied to $250M settlement, creating adoption headwinds; specific HomeView revenue exposure data not available",
+        "New CEO John Ternus leadership transition signals management uncertainty, with partner choice (Tim Cook's former rival) raising execution risk",
+        "10-year Treasury yield at 5.1% as of October 15, 2026 (up 105 basis points year-over-year from 4.05%) pressures discount rates and multiple compression risk"
+      ],
+      "catalysts": [
+        "November 2, 2026 earnings report and forward guidance will clarify iPhone Duo production ramp, gross margins, and services monetization trajectory",
+        "January 2027 iPhone Duo delivery fulfillment and consumer demand validation post-launch; production volume guidance critical for Q1 FY2027 forecasts",
+        "Premium AI services pricing announcement and Siri upgrade adoption rates critical for HomeView ecosystem credibility narrative"
+      ],
+      "outlook": "Apple warrants a Hold rating with medium conviction given premium valuation (39.4x P/E) offsetting strong execution (8-quarter beat streak, iPhone Duo sellout) and emerging AI services growth, pending clarity on CEO Ternus leadership effectiveness and HomeView ecosystem viability.",
+      "source": "llm"
+    },
+    {
+      "ticker": "AAPL",
+      "summary": "Apple delivered an 8-quarter earnings beat streak with a 7.45% surprise on Q3 FY2026 (ended June 27, 2026, reported July 30, 2026), driving 36.64% one-year total return to $343.46 as of October 16, 2026. The $5.01 trillion market capitalization reflects elevated valuation (39.4x trailing P/E, 35.9x forward P/E) supported by strong iPhone Duo foldable demand and emerging AI services monetization, though leadership transition and early-stage HomeView ecosystem uncertainty warrant caution.",
+      "key_facts": [
+        "last close: 343.46 (as of 2026-10-16)",
+        "1-year return: +36.6%",
+        "52-week range: 246.03 to 343.46",
+        "market cap: $5.01T",
+        "trailing P/E: 39.4",
+        "revenue growth (yoy): +16.4%",
+        "analyst mean target: 329.38 (39 analysts)",
+        "Effective federal funds rate (%): 3.75%",
+        "10-year Treasury yield (%): 5.1%",
+        "latest EPS: 2.02 vs 1.88 estimated (+7.45% surprise), quarter ending 2026-06-30"
+      ],
+      "investment_thesis": "Apple's consistent earnings delivery (100% beat rate across 8 quarters, 4.78% average surprise) and momentum in premium foldable hardware (iPhone Duo at $1,999 sold out with January 2027 delivery slips) provide near-term upside, while services growth potential via premium AI capabilities offers structural offset to hardware cycles. Valuation remains elevated at 39.4x trailing and 35.9x forward P/E despite 16.4% revenue growth and 28.7% earnings growth (latest quarter EPS $2.02 vs. $1.57 year-ago), pricing in significant execution. CEO transition under John Ternus and HomeView ecosystem viability tied to early app compatibility questions create execution risk, though quantified revenue and margin impact data are not yet available.",
+      "recommendation": "Hold (medium conviction)",
+      "rating": "Hold",
+      "conviction": "medium",
+      "upside": [
+        "iPhone Duo foldable sold out at $1,999 with January 2027 deliveries, signaling strong premium demand and multi-quarter revenue visibility",
+        "Eight consecutive earnings beats with latest 7.45% surprise (Q3 FY2026, ended June 27, 2026, reported July 30, 2026) and year-over-year EPS growth from $1.57 to $2.02 (28.7% growth)",
+        "Services revenue growth potential via premium AI monetization, with 16.4% overall revenue growth providing structural offset to hardware cycles",
+        "JP Morgan raised price target to $360, providing 5% upside from October 16, 2026 close of $343.46"
+      ],
+      "risks": [
+        "Valuation premium at 39.4x trailing P/E and 35.9x forward P/E leaves limited margin for error; stock already at 52-week high of $343.46 as of October 16, 2026. Compare to 10-year Treasury yield at 5.1% as of October 15, 2026 (up 105 basis points year-over-year from 4.05%), increasing discount rate pressure.",
+        "HomeView device faces early-stage app compatibility questions per news digest; specific revenue exposure and margin impact data not yet available to quantify materiality",
+        "New CEO John Ternus leadership transition creates execution uncertainty; news digest references partnership with Tim Cook's former rival, but substantive details on organizational structure and decision-making impact are not available",
+        "Premium valuation offers no historical peer comparison data: trailing P/E of 39.4x relative to sector or Apple's historical average was not available in current facts"
+      ],
+      "catalysts": [
+        "November 2, 2026 earnings report and forward guidance will clarify iPhone Duo production ramp, gross margins, and services monetization trajectory",
+        "January 2027 iPhone Duo delivery fulfillment and consumer demand validation post-launch; production volume guidance critical for Q1 FY2027 forecasts",
+        "Premium AI services pricing announcement and Siri upgrade adoption rates critical for HomeView ecosystem credibility narrative"
+      ],
+      "outlook": "Apple warrants a Hold rating with medium conviction given premium valuation (39.4x P/E) offsetting strong execution (8-quarter beat streak, iPhone Duo sellout, 28.7% earnings growth) and emerging AI services potential, pending clarity on CEO Ternus leadership effectiveness and HomeView ecosystem viability.",
+      "source": "llm"
+    }
+  ],
+  "best_draft": 1,
+  "reflection_history": [
+    {
+      "score": 7.5,
+      "coverage_score": 7,
+      "evidence_score": 8,
+      "recency_score": 9,
+      "balance_score": 6,
+      "grounding": {
+        "ratio": 0.973,
+        "checked": 37,
+        "ungrounded": [
+          "36.4%"
+        ]
+      },
+      "feedback": "The report provides solid coverage of company performance, macro context, and market factors with well-cited recent data (Q3 FY2026 ended June 27, 2026). However, balance is undermined by heavy reliance on forward-looking product catalysts (iPhone Duo, HomeView, Siri monetization) that lack concrete revenue or margin impact data, and the Hold rating feels misaligned with 8-quarter perfect beats and 36.6% YTY returns.",
+      "gaps": [
+        "These numbers are not in the gathered facts; correct or remove them: 36.4%",
+        "Report states '36.4% one-year return' in outlook but earlier correctly cites '36.6% one-year total return'\u2014use consistent 36.6% figure from the facts.",
+        "Report claims 10-year Treasury yield 'up 1.05% year-over-year' but facts show change is +1.05 percentage points (5.1% now vs 4.05% a year ago)\u2014clarify this is a rate-level change, not 105 basis points percentage change.",
+        "Report emphasizes HomeView ecosystem risks but provides no actual revenue exposure or gross margin impact data; facts show HomeView settlement ($250M) but no HomeView product revenue figures. Needs quantification of HomeView revenue exposure to assess materiality of risk.",
+        "Report states analyst mean target $329.38 is below current price ($343.46), implying downside, but doesn't acknowledge this contradicts the 'Hold medium conviction' rating and bullish execution narrative\u2014should clarify rating logic vs consensus divergence.",
+        "iPhone Duo revenue contribution or unit shipment guidance for Q4 FY2026 and Q1 FY2027\u2014catalysts mention 'production volume guidance critical' but report lacks any revenue estimates for the $1,999 foldable.",
+        "Services revenue growth rate and gross margin by segment (Hardware vs Services)\u2014report highlights AI monetization potential but provides only blended 16.4% revenue growth and 28.7% earnings growth without services-specific metrics.",
+        "HomeView product revenue, units sold, or addressable market sizing\u2014report flags it as a risk but provides no financial materiality context (is it 1% of revenue or 10%?).",
+        "CEO John Ternus track record or prior roles\u2014report flags 'leadership transition' and 'partner choice (Tim Cook's former rival)' as execution risk but provides no biographical or performance data to substantiate concern.",
+        "Gross margin trend or guidance impact from Siri settlement or HomeView app compatibility issues\u2014report warns of 'potential gross margin pressure' but facts show no margin forecasts or historical margin trend."
+      ],
+      "fixable": [
+        "These numbers are not in the gathered facts; correct or remove them: 36.4%",
+        "Report states '36.4% one-year return' in outlook but earlier correctly cites '36.6% one-year total return'\u2014use consistent 36.6% figure from the facts.",
+        "Report claims 10-year Treasury yield 'up 1.05% year-over-year' but facts show change is +1.05 percentage points (5.1% now vs 4.05% a year ago)\u2014clarify this is a rate-level change, not 105 basis points percentage change.",
+        "Report emphasizes HomeView ecosystem risks but provides no actual revenue exposure or gross margin impact data; facts show HomeView settlement ($250M) but no HomeView product revenue figures. Needs quantification of HomeView revenue exposure to assess materiality of risk.",
+        "Report states analyst mean target $329.38 is below current price ($343.46), implying downside, but doesn't acknowledge this contradicts the 'Hold medium conviction' rating and bullish execution narrative\u2014should clarify rating logic vs consensus divergence."
+      ],
+      "needs_data": [
+        "iPhone Duo revenue contribution or unit shipment guidance for Q4 FY2026 and Q1 FY2027\u2014catalysts mention 'production volume guidance critical' but report lacks any revenue estimates for the $1,999 foldable.",
+        "Services revenue growth rate and gross margin by segment (Hardware vs Services)\u2014report highlights AI monetization potential but provides only blended 16.4% revenue growth and 28.7% earnings growth without services-specific metrics.",
+        "HomeView product revenue, units sold, or addressable market sizing\u2014report flags it as a risk but provides no financial materiality context (is it 1% of revenue or 10%?).",
+        "CEO John Ternus track record or prior roles\u2014report flags 'leadership transition' and 'partner choice (Tim Cook's former rival)' as execution risk but provides no biographical or performance data to substantiate concern.",
+        "Gross margin trend or guidance impact from Siri settlement or HomeView app compatibility issues\u2014report warns of 'potential gross margin pressure' but facts show no margin forecasts or historical margin trend."
+      ],
+      "draft": 0,
+      "revise": true
+    },
+    {
+      "score": 7.5,
+      "coverage_score": 7,
+      "evidence_score": 8,
+      "recency_score": 9,
+      "balance_score": 6,
+      "grounding": {
+        "ratio": 1.0,
+        "checked": 37,
+        "ungrounded": []
+      },
+      "feedback": "The report provides solid coverage of company performance, market position, and macro context with specific numbers and current facts (latest Q3 FY2026 ended June 27, 2026). However, balance tilts toward upside\u2014risks around HomeView and CEO transition lack specificity and quantification, while the Hold recommendation feels somewhat misaligned with the weight given to positive catalysts.",
+      "gaps": [
+        "Report claims 'leadership transition signals management uncertainty, with partner choice (Tim Cook's former rival) raising execution risk' but offers no evidence John Ternus partnered with a rival\u2014the news digest mentions this but without substantiation. Either provide details or soften the claim.",
+        "Report states 'HomeView device faces app compatibility questions' sourced from news digest, but this is vague rumor, not fact. The risk section should distinguish between substantiated product flaws vs. early-stage uncertainty.",
+        "Treasury yield context is strong (up 105 bps YoY to 5.1%), but report doesn't compare Apple's 39.4x P/E to historical averages or sector peers\u2014this would contextualize valuation severity.",
+        "HomeView revenue exposure, margin impact, and production volumes\u2014report explicitly notes 'specific HomeView revenue exposure and margin impact data are not yet available.' This gap undermines risk quantification.",
+        "iPhone Duo production volumes and gross margin impact\u2014report mentions sellout and January delivery slips but lacks unit guidance or margin contribution estimates needed to model upside.",
+        "CEO John Ternus track record and prior roles\u2014news digest mentions him but provides no operational history to assess execution capability vs. Tim Cook's 15-year tenure.",
+        "Services segment breakdown\u2014report cites 'premium Siri AI monetization' opportunity but lacks Services revenue %, growth rate, or pricing power history to validate thesis.",
+        "Analyst consensus rationale\u201439 analysts have mean target of $329.38 (below current $343.46), yet report highlights JP Morgan's $360 target. Missing: median target, conviction distribution, and analyst concerns driving the 4% downside consensus.",
+        "Historical P/E range for Apple\u201439.4x P/E is presented as 'premium' but lacks 5-year or 10-year context to show if this is at/above/below normal."
+      ],
+      "fixable": [
+        "Report claims 'leadership transition signals management uncertainty, with partner choice (Tim Cook's former rival) raising execution risk' but offers no evidence John Ternus partnered with a rival\u2014the news digest mentions this but without substantiation. Either provide details or soften the claim.",
+        "Report states 'HomeView device faces app compatibility questions' sourced from news digest, but this is vague rumor, not fact. The risk section should distinguish between substantiated product flaws vs. early-stage uncertainty.",
+        "Treasury yield context is strong (up 105 bps YoY to 5.1%), but report doesn't compare Apple's 39.4x P/E to historical averages or sector peers\u2014this would contextualize valuation severity."
+      ],
+      "needs_data": [
+        "HomeView revenue exposure, margin impact, and production volumes\u2014report explicitly notes 'specific HomeView revenue exposure and margin impact data are not yet available.' This gap undermines risk quantification.",
+        "iPhone Duo production volumes and gross margin impact\u2014report mentions sellout and January delivery slips but lacks unit guidance or margin contribution estimates needed to model upside.",
+        "CEO John Ternus track record and prior roles\u2014news digest mentions him but provides no operational history to assess execution capability vs. Tim Cook's 15-year tenure.",
+        "Services segment breakdown\u2014report cites 'premium Siri AI monetization' opportunity but lacks Services revenue %, growth rate, or pricing power history to validate thesis.",
+        "Analyst consensus rationale\u201439 analysts have mean target of $329.38 (below current $343.46), yet report highlights JP Morgan's $360 target. Missing: median target, conviction distribution, and analyst concerns driving the 4% downside consensus.",
+        "Historical P/E range for Apple\u201439.4x P/E is presented as 'premium' but lacks 5-year or 10-year context to show if this is at/above/below normal."
+      ],
+      "draft": 1,
+      "revise": true
+    },
+    {
+      "score": 7.5,
+      "coverage_score": 7,
+      "evidence_score": 8,
+      "recency_score": 9,
+      "balance_score": 6,
+      "grounding": {
+        "ratio": 1.0,
+        "checked": 41,
+        "ungrounded": []
+      },
+      "feedback": "The report addresses company fundamentals, macro factors, and market context well with specific numbers and recent data (Q3 FY2026 ended June 27, latest as of October 16, 2026). However, balance is skewed toward bullish narrative\u2014upside risks (iPhone Duo sellout, beat streak) receive concrete detail while downside risks (valuation, leadership transition, HomeView) remain largely qualitative and unquantified. Key macro risks like the 105bp rise in 10-year Treasury yield merit deeper analysis of valuation sustainability.",
+      "gaps": [
+        "Analyst target price (329.38) is below current price (343.46), contradicting the 'upside' narrative. Report claims '5% upside from October 16 close' but 329.38 / 343.46 = -4.1% downside. This should be corrected or explained.",
+        "The report cites '39.4x trailing P/E' as elevated but provides no peer or historical context. Facts show this is 39.4x; report should add that sector median or Apple's 5-year average would contextualize whether this is truly elevated.",
+        "Report states 'analyst mean target: 329.38' but simultaneously notes JP Morgan target of $360. Report should clarify that mean target suggests consensus is more cautious than single bull cases.",
+        "HomeView risks are mentioned but no revenue exposure estimate exists in facts; report acknowledges this gap but could strengthen by noting HomeView is not yet reflected in guidance, making impact purely speculative.",
+        "CEO transition risk lacks quantification; report could note that Ternus was COO before (per facts hint) and Apple's organizational track record, neither of which are detailed.",
+        "Apple's historical trailing P/E (5-year average and range) to evaluate whether 39.4x is truly premium vs. historical norms.",
+        "Technology sector median P/E and forward P/E to benchmark Apple's 39.4x and 35.9x multiples against peers.",
+        "Segment revenue breakdown (iPhone, Services, Mac, Wearables, Other) and iPhone Duo contribution to Q3 FY2026 to validate production ramp trajectory.",
+        "HomeView device expected launch date, initial unit volume guidance, and management commentary on margin assumptions.",
+        "John Ternus background, previous roles at Apple, and organizational structure changes post-CEO transition to assess execution risk materiality.",
+        "Services margin profile (gross margin %) vs. hardware to quantify structural offset claim.",
+        "iPhone Duo demand beyond sellout (pre-orders, waitlist size, production constraints) to validate multi-quarter revenue visibility claim.",
+        "Management guidance on FY2027 revenue and earnings to assess whether 16.4% revenue growth and 28.7% EPS growth are sustainable."
+      ],
+      "fixable": [
+        "Analyst target price (329.38) is below current price (343.46), contradicting the 'upside' narrative. Report claims '5% upside from October 16 close' but 329.38 / 343.46 = -4.1% downside. This should be corrected or explained.",
+        "The report cites '39.4x trailing P/E' as elevated but provides no peer or historical context. Facts show this is 39.4x; report should add that sector median or Apple's 5-year average would contextualize whether this is truly elevated.",
+        "Report states 'analyst mean target: 329.38' but simultaneously notes JP Morgan target of $360. Report should clarify that mean target suggests consensus is more cautious than single bull cases.",
+        "HomeView risks are mentioned but no revenue exposure estimate exists in facts; report acknowledges this gap but could strengthen by noting HomeView is not yet reflected in guidance, making impact purely speculative.",
+        "CEO transition risk lacks quantification; report could note that Ternus was COO before (per facts hint) and Apple's organizational track record, neither of which are detailed."
+      ],
+      "needs_data": [
+        "Apple's historical trailing P/E (5-year average and range) to evaluate whether 39.4x is truly premium vs. historical norms.",
+        "Technology sector median P/E and forward P/E to benchmark Apple's 39.4x and 35.9x multiples against peers.",
+        "Segment revenue breakdown (iPhone, Services, Mac, Wearables, Other) and iPhone Duo contribution to Q3 FY2026 to validate production ramp trajectory.",
+        "HomeView device expected launch date, initial unit volume guidance, and management commentary on margin assumptions.",
+        "John Ternus background, previous roles at Apple, and organizational structure changes post-CEO transition to assess execution risk materiality.",
+        "Services margin profile (gross margin %) vs. hardware to quantify structural offset claim.",
+        "iPhone Duo demand beyond sellout (pre-orders, waitlist size, production constraints) to validate multi-quarter revenue visibility claim.",
+        "Management guidance on FY2027 revenue and earnings to assess whether 16.4% revenue growth and 28.7% EPS growth are sustainable."
+      ],
+      "draft": 2,
+      "revise": true
+    }
+  ],
+  "notes_loaded": [
+    {
+      "date": "2026-10-18T15:00:00",
+      "note": "Prior view: Hold (medium conviction). Thesis: Apple's 8-quarter perfect earnings beat streak (averaging 4.78% surprises, latest beat 7.45% on June 30, 2026) and strong revenue growth of 16.4% year-over-year demonstrate operational excellence under current management.",
+      "category": "finding",
+      "scope": "ticker"
+    },
+    {
+      "date": "2026-10-18T15:00:00",
+      "note": "Prior key numbers: 1-year return: +36.6%; 52-week range: 246.03 to 343.46; market cap: $5.01T",
+      "category": "finding",
+      "scope": "ticker"
+    },
+    {
+      "date": "2026-10-18T15:00:00",
+      "note": "Earlier report gap: iPhone Duo pre-order numbers, initial production volume, and gross margin profile\u2014to quantify revenue and earnings upside from foldable momentum.",
+      "category": "lesson",
+      "scope": "ticker"
+    },
+    {
+      "date": "2026-10-18T15:00:00",
+      "note": "Earlier report gap: HomeView/AI services addressable market size and penetration rates\u2014to model services revenue contribution and offset iPhone hardware cycle dependency claims.",
+      "category": "lesson",
+      "scope": "ticker"
+    },
+    {
+      "date": "2026-10-18T15:00:00",
+      "note": "Earlier report gap: John Ternus' background, prior role at Apple, and sell-side analyst commentary on his appointment\u2014to contextualize leadership transition risk severity.",
+      "category": "lesson",
+      "scope": "ticker"
+    }
+  ],
+  "notes_saved": [
+    {
+      "date": "2026-10-18T15:01:46",
+      "note": "Prior view: Hold (medium conviction). Thesis: Apple's consistent earnings delivery (100% beat rate, 4.78% average surprise across 8 quarters) and momentum in premium foldable hardware (iPhone Duo at $1,999 sold out with January 2027 delivery slips) provide near-term upside, while services growth and AI monetization potential (Siri premium capabilities) offer structural offset to hardware cycles.",
+      "category": "finding"
+    },
+    {
+      "date": "2026-10-18T15:01:46",
+      "note": "Earlier report gap: HomeView revenue exposure, margin impact, and production volumes\u2014report explicitly notes 'specific HomeView revenue exposure and margin impact data are not yet available.' This gap undermines risk quantification.",
+      "category": "lesson"
+    },
+    {
+      "date": "2026-10-18T15:01:46",
+      "note": "Earlier report gap: iPhone Duo production volumes and gross margin impact\u2014report mentions sellout and January delivery slips but lacks unit guidance or margin contribution estimates needed to model upside.",
+      "category": "lesson"
+    },
+    {
+      "date": "2026-10-18T15:01:46",
+      "note": "Earlier report gap: CEO John Ternus track record and prior roles\u2014news digest mentions him but provides no operational history to assess execution capability vs. Tim Cook's 15-year tenure.",
+      "category": "lesson"
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "usage": {
+    "calls": 13,
+    "input_tokens": 96527,
+    "output_tokens": 8559
+  },
+  "timings": {
+    "plan": 9.32,
+    "tools": 28.39,
+    "report_and_reflect": 68.35,
+    "total": 106.06
+  },
+  "saved_to": "/Users/pranavdhinakar/Documents/NLP/AAI-520-NLP-Final-Team-Project-Group7/data/runs/agent_AAPL_20261018-150146.json"
+}

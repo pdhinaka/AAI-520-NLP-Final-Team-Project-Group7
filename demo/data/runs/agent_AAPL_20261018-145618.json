@@ -1,0 +1,5126 @@
+{
+  "ticker": "AAPL",
+  "summary": "Apple delivered strong earnings fundamentals with a perfect 8-for-8 beat track record and 36.6% one-year return as of October 16, 2026, but trades at a significant valuation premium (39.4x trailing P/E) relative to peers. The company faces macro headwinds from elevated Treasury yields and iPhone revenue pressure, offset partially by foldable iPhone momentum and Services monetization opportunities.",
+  "key_facts": [
+    "last close: 343.46 (as of 2026-10-16)",
+    "1-year return: +36.6%",
+    "52-week range: 246.03 to 343.46",
+    "market cap: $5.01T",
+    "trailing P/E: 39.4",
+    "revenue growth (yoy): +16.4%",
+    "analyst mean target: 329.38 (39 analysts)",
+    "latest EPS: 2.02 vs 1.88 estimated (+7.45% surprise), quarter ending 2026-06-30",
+    "Effective federal funds rate (%): 3.75%",
+    "10-year Treasury yield (%): 5.1%"
+  ],
+  "investment_thesis": "Apple's consistent earnings execution (7.4% latest beat, 4.78% average surprise rate reported July 30, 2026) and robust free cash flow of $98.8 billion (fiscal year ended September 30, 2025) support quality fundamentals. However, the 39.4x trailing P/E significantly exceeds Microsoft's 29.5x and Alphabet's 17.1x, while forward P/E of 35.9x remains elevated despite 28.7% earnings growth. The emerging foldable iPhone demand and potential Siri AI monetization provide near-term catalysts, but iPhone revenue decline of 1.6% and 10-year Treasury yields rising 105 basis points year-over-year (to 5.1% as of October 15, 2026) present meaningful headwinds.",
+  "recommendation": "Hold (medium conviction)",
+  "rating": "Hold",
+  "conviction": "medium",
+  "upside": [
+    "Foldable iPhone (iPhone Duo at $1,999) sold out with deliveries slipping to January 2027, indicating strong premium product demand not yet reflected in revenue",
+    "Services segment monetization opportunity through paid Siri AI capabilities, building on record Services close ahead of November 2 earnings",
+    "Six-month return of 27.3% and one-year return of 36.6% (as of October 16, 2026) demonstrate sustained price momentum despite macro uncertainty"
+  ],
+  "risks": [
+    "iPhone revenue declined 1.6% in the most recent period, signaling core product weakness that may persist despite foldable launch",
+    "Trailing P/E of 39.4x versus peer average (MSFT 29.5x, NVDA 27.1x, GOOGL 17.1x) leaves limited room for multiple expansion if macro conditions deteriorate",
+    "10-year Treasury yield rose 105 basis points year-over-year to 5.1% (as of October 15, 2026), pressuring high-multiple tech valuations and consumer spending",
+    "Siri AI reputational risk tied to $250 million settlement affecting HomeView device adoption and Services monetization credibility"
+  ],
+  "catalysts": [
+    "November 2, 2026 earnings report and forward guidance, following record close and foldable iPhone sellout signal",
+    "Foldable iPhone demand and January 2027 delivery ramp could validate premium product strategy and offset iPhone revenue decline",
+    "Paid Siri AI capabilities launch and pricing announcement could unlock incremental Services revenue stream in late 2026/2027"
+  ],
+  "outlook": "Apple remains operationally strong with pristine earnings quality, but elevated valuation multiples and near-term iPhone headwinds warrant a cautious stance until Services diversification and foldable demand demonstrate tangible revenue impact.",
+  "source": "llm",
+  "timestamp": "2026-10-18T14:56:18",
+  "reflection_score": 8.25,
+  "reflection_feedback": "This report demonstrates strong factual rigor with specific numbers backing virtually all claims, and data is clearly dated (October 16, 2026). Coverage addresses company fundamentals, peer comparison, and macro headwinds effectively. Balance is adequate but slightly favors risks over upside\u2014the upside catalysts (foldable momentum, Services AI) feel somewhat speculative compared to concrete downside concerns (valuation premium, iPhone decline).",
+  "plan": {
+    "steps": [
+      "Establish current price momentum and recent stock performance to assess technical position and validate the prior +36.6% 1-year return still holds",
+      "Review most recent earnings report to confirm continued earnings beat track record, assess iPhone revenue decline (-1.6% in June), and extract Services vs. Products segment breakdown with growth rates and margins",
+      "Gather current company fundamentals (free cash flow, balance sheet, profitability) and valuation metrics (trailing and forward P/E, PEG, price-to-sales) to build peer comparison",
+      "Conduct peer valuation analysis by pulling company info on Microsoft, Nvidia, and Google to compare P/E ratios (trailing and forward), PEG ratios, and price-to-sales against Apple's 39.4x trailing and 35.9x forward P/E to assess relative valuation positioning",
+      "Capture current macroeconomic backdrop including interest rates, inflation, tech spending cycles, and consumer demand trends to contextualize Apple's operating environment",
+      "Analyze recent news and sentiment to identify emerging catalysts (product launches, services growth, China exposure, regulatory risks) and assess market sentiment direction",
+      "Synthesize findings into a Buy/Hold/Sell recommendation by weighing earnings quality and FCF generation, valuation vs. peers, Services diversification opportunity, iPhone revenue sustainability, macro headwinds, and key catalysts/risks"
+    ],
+    "step_tools": [
+      [
+        "get_price_summary",
+        "get_price_history"
+      ],
+      [
+        "get_earnings",
+        "get_recent_filings",
+        "get_filing_text"
+      ],
+      [
+        "get_company_info",
+        "get_financials"
+      ],
+      [
+        "get_company_info"
+      ],
+      [
+        "get_macro_snapshot",
+        "get_series"
+      ],
+      [
+        "get_news",
+        "get_news_digest"
+      ],
+      []
+    ],
+    "memory_used": [
+      {
+        "note": "Earlier report gap: Peer valuation context - need to compare Apple's 39.4x trailing and 35.9x forward P/E to Microsoft, Nvidia, Google",
+        "effect": "Added Step 4 to pull company_info on peers (MSFT, NVDA, GOOGL) and build comparative valuation table with trailing P/E, forward P/E, and PEG ratios"
+      },
+      {
+        "note": "Earlier report gap: Services segment detail - record Services performance mentioned but no revenue, margins, or growth rate breakdown",
+        "effect": "Modified Step 2 to explicitly extract Services vs. Products segment metrics from recent filings (revenue, growth %, margin %) to assess diversification upside beyond iPhone dependency"
+      },
+      {
+        "note": "Earlier report gap: iPhone mix analysis - no foldable vs. standard iPhone ASP or unit sales breakdown to explain -1.6% June revenue decline",
+        "effect": "Modified Step 2 to search filing text for iPhone unit sales, ASP trends, and product mix commentary to determine if revenue decline is cyclical or structural"
+      },
+      {
+        "note": "Prior view was Hold with medium conviction and perfect earnings-beat track record over past two years",
+        "effect": "Added Step 2 emphasis on validating continued earnings beat streak in most recent quarter(s) and assessing whether prior strong execution momentum persists"
+      },
+      {
+        "note": "Prior key numbers included 1-year return +36.6% and 52-week range 246.03-343.46",
+        "effect": "Added Step 1 to confirm whether prior performance metrics still hold and check if stock remains near 52-week highs or if pullback has occurred since earlier report"
+      }
+    ],
+    "source": "llm",
+    "error": null
+  },
+  "trace": [
+    {
+      "turn": 1,
+      "tool": "get_price_summary",
+      "args": {
+        "ticker": "AAPL"
+      },
+      "ok": true,
+      "chars": 221,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 1,
+      "tool": "get_price_history",
+      "args": {
+        "ticker": "AAPL",
+        "period": "1y"
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    },
+    {
+      "turn": 1,
+      "tool": "get_company_info",
+      "args": {
+        "ticker": "AAPL"
+      },
+      "ok": true,
+      "chars": 1882,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 1,
+      "tool": "get_financials",
+      "args": {
+        "ticker": "AAPL",
+        "quarterly": false,
+        "periods": 4
+      },
+      "ok": true,
+      "chars": 2147,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 1,
+      "tool": "get_earnings",
+      "args": {
+        "ticker": "AAPL",
+        "quarters": 8
+      },
+      "ok": true,
+      "chars": 1246,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 1,
+      "tool": "get_macro_snapshot",
+      "args": {},
+      "ok": true,
+      "chars": 687,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "tool": "get_recent_filings",
+      "args": {
+        "ticker": "AAPL",
+        "form": "10-K,10-Q",
+        "limit": 3
+      },
+      "ok": true,
+      "chars": 690,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "tool": "get_company_info",
+      "args": {
+        "ticker": "MSFT"
+      },
+      "ok": true,
+      "chars": 1918,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "tool": "get_company_info",
+      "args": {
+        "ticker": "NVDA"
+      },
+      "ok": true,
+      "chars": 1899,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "tool": "get_company_info",
+      "args": {
+        "ticker": "GOOGL"
+      },
+      "ok": true,
+      "chars": 1909,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 2,
+      "tool": "get_news_digest",
+      "args": {
+        "ticker": "AAPL",
+        "days": 30,
+        "limit": 30
+      },
+      "ok": true,
+      "chars": 4472,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "tool": "get_filing_text",
+      "args": {
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+        "section": "Results of Operations",
+        "max_chars": 8000
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "tool": "get_series",
+      "args": {
+        "series_id": "FEDFUNDS",
+        "start": "2024-10-01"
+      },
+      "ok": true,
+      "chars": 1064,
+      "truncated": false,
+      "error": null
+    },
+    {
+      "turn": 3,
+      "tool": "get_series",
+      "args": {
+        "series_id": "DGS10",
+        "start": "2024-10-01"
+      },
+      "ok": true,
+      "chars": 6017,
+      "truncated": true,
+      "error": null
+    }
+  ],
+  "turns": 4,
+  "stopped": "model_finished",
+  "agent_note": "Perfect! Now I have comprehensive data. Let me compile the research report.\n\n---\n\n## **APPLE INC. (AAPL) \u2013 EQUITY RESEARCH REPORT**\n\n### **1. PRICE MOMENTUM & TECHNICAL POSITION**\n\n**Current Performance (as of October 16, 2026):**\n- **Last Close:** $343.46\n- **1-Year Return:** +36.64% \u2713 (confirms the +36.6% referenced)\n- **6-Month Return:** +27.33%\n- **3-Month Return:** +5.26%\n- **1-Month Return:** +1.92%\n- **52-Week Range:** $246.03 \u2013 $348.15 (ATH near current levels)\n- **Annualized Volatility:** 24.47%\n\n**Assessment:** Apple has delivered strong momentum throughout 2026, with the stock near 52-week highs. The stock has appreciation steadily from October 2025 lows (~$247) to current levels, indicating positive technical positioning. The recent consolidation in the $265\u2013$275 range (late 2025 through mid-2026) before the surge to $343 suggests institutional accumulation ahead of product cycles and earnings beat.\n\n---\n\n### **2. EARNINGS QUALITY & RECENT PERFORMANCE**\n\n**Earnings Beat Streak (Last 8 Quarters):**\nAll eight most recent quarters show positive EPS surprises:\n- **Q3 2026 (June 30, 2026):** Reported $2.02 vs. Est. $1.88 \u2192 **+7.4% surprise**\n- **Q2 2026 (March 31, 2026):** Reported $2.01 vs. Est. $1.94 \u2192 **+3.6% surprise**\n- **Q1 2026 (Dec 31, 2025):** Reported $2.84 vs. Est. $2.67 \u2192 **+6.4% surprise**\n- **Q4 2025 (Sept 30, 2025):** Reported $1.85 vs. Est. $1.77 \u2192 **+4.5% surprise**\n- All prior quarters also positive\n\n**Consistent Execution:** Apple has maintained a perfect earnings beat track record with an average surprise of **~5.7%**, demonstrating operational efficiency and guidance quality.\n\n**Revenue & Profitability Trend (FY2025 vs. FY2024 vs. FY2023):**\n| Metric | FY2025 | FY2024 | FY2023 | Growth |\n|--------|--------|--------|--------|---------|\n| Total Revenue | $416.2B | $391.0B | $383.3B | +6.4% YoY |\n| Gross Profit | $195.2B | $180.7B | $169.1B | +8.0% YoY |\n| Operating Income | $133.1B | $123.2B | $114.3B | +8.0% YoY |\n| Net Income | $112.0B | $93.7B | $97.0B | +19.5% YoY |\n| EPS (Diluted) | $7.46 | $6.08 | $6.13 | **+22.6% YoY** |\n\n**Key Observations:**\n- Strong net income growth (+19.5%) driven by operating leverage and mix shift\n- Gross margin improvement (~46.9% in FY2025 vs. 46.2% in FY2024)\n- EBITDA growth of +7.4% YoY shows core operational strength\n\n**iPhone Revenue Concern (Noted in Research Plan):**\nThe filing indicates iPhone revenue declined -1.6% in June quarter (Q3 2026), a headwind not fully reflected in overall revenue growth. This suggests:\n- Strong growth in non-iPhone categories offsetting device weakness\n- **Services as a buffer:** Recurring subscription revenue likely cushioned the impact\n- **Macro headwinds:** Tariffs (mentioned prominently in 10-Q) and currency impacts affecting unit demand\n\n**Services vs. Products Breakdown** (from 10-Q):\nWhile specific segment data wasn't fully extracted, the filing references:\n- Services as highest-margin business (gross margin > 68%)\n- Growing monetization from AI features (S",
+  "facts_used": [
+    "get_price_summary",
+    "get_price_history",
+    "get_company_info",
+    "get_financials",
+    "get_earnings",
+    "get_macro_snapshot",
+    "get_recent_filings",
+    "get_company_info(ticker=MSFT)",
+    "get_company_info(ticker=NVDA)",
+    "get_company_info(ticker=GOOGL)",
+    "get_news_digest",
+    "get_filing_text",
+    "get_series",
+    "get_series(series_id=DGS10,start=2024-10-01)"
+  ],
+  "facts": {
+    "get_price_summary": {
+      "ticker": "AAPL",
+      "as_of": "2026-10-16",
+      "last_close": 343.46,
+      "return_1m": 0.0192,
+      "return_3m": 0.0526,
+      "return_6m": 0.2733,
+      "return_1y": 0.3664,
+      "high_52w": 343.46,
+      "low_52w": 246.0303,
+      "volatility_annualized": 0.2447
+    },
+    "get_price_history": [
+      {
+        "date": "2025-10-17",
+        "open": 247.1072,
+        "high": 252.4475,
+        "low": 246.36,
+        "close": 251.3615,
+        "volume": 49147000
+      },
+      {
+        "date": "2025-10-20",
+        "open": 254.9482,
+        "high": 263.407,
+        "low": 254.6892,
+        "close": 261.2748,
+        "volume": 90483000
+      },
+      {
+        "date": "2025-10-21",
+        "open": 260.9162,
+        "high": 264.3136,
+        "low": 260.8663,
+        "close": 261.8029,
+        "volume": 46695900
+      },
+      {
+        "date": "2025-10-22",
+        "open": 261.6833,
+        "high": 261.8826,
+        "low": 254.4899,
+        "close": 257.4988,
+        "volume": 45015300
+      },
+      {
+        "date": "2025-10-23",
+        "open": 258.9833,
+        "high": 259.6608,
+        "low": 257.0604,
+        "close": 258.6246,
+        "volume": 32754900
+      },
+      {
+        "date": "2025-10-24",
+        "open": 260.2287,
+        "high": 263.1579,
+        "low": 258.2261,
+        "close": 261.8527,
+        "volume": 38253700
+      },
+      {
+        "date": "2025-10-27",
+        "open": 263.9051,
+        "high": 268.1295,
+        "low": 263.676,
+        "close": 267.8207,
+        "volume": 44888200
+      },
+      {
+        "date": "2025-10-28",
+        "open": 268.0,
+        "high": 268.8967,
+        "low": 267.1631,
+        "close": 268.0099,
+        "volume": 41534800
+      },
+      {
+        "date": "2025-10-29",
+        "open": 268.2889,
+        "high": 270.4111,
+        "low": 266.1269,
+        "close": 268.7074,
+        "volume": 51086700
+      },
+      {
+        "date": "2025-10-30",
+        "open": 270.989,
+        "high": 273.1311,
+        "low": 267.4919,
+        "close": 270.4012,
+        "volume": 69886500
+      },
+      {
+        "date": "2025-10-31",
+        "open": 275.9706,
+        "high": 276.2994,
+        "low": 268.1694,
+        "close": 269.3749,
+        "volume": 86167100
+      },
+      {
+        "date": "2025-11-03",
+        "open": 269.4248,
+        "high": 269.8532,
+        "low": 265.2701,
+        "close": 268.0598,
+        "volume": 50194600
+      },
+      {
+        "date": "2025-11-04",
+        "open": 267.3424,
+        "high": 270.4908,
+        "low": 266.6351,
+        "close": 269.0462,
+        "volume": 49274800
+      },
+      {
+        "date": "2025-11-05",
+        "open": 267.6214,
+        "high": 270.7001,
+        "low": 265.9476,
+        "close": 269.1458,
+        "volume": 43683100
+      },
+      {
+        "date": "2025-11-06",
+        "open": 266.9041,
+        "high": 272.3938,
+        "low": 266.9041,
+        "close": 268.7771,
+        "volume": 51204000
+      },
+      {
+        "date": "2025-11-07",
+        "open": 268.807,
+        "high": 271.2879,
+        "low": 265.7881,
+        "close": 267.4819,
+        "volume": 48227400
+      },
+      {
+        "date": "2025-11-10",
+        "open": 268.2299,
+        "high": 272.9869,
+        "low": 266.7339,
+        "close": 268.6986,
+        "volume": 41312400
+      },
+      {
+        "date": "2025-11-11",
+        "open": 269.0776,
+        "high": 275.161,
+        "low": 269.0676,
+        "close": 274.5028,
+        "volume": 46208300
+      },
+      {
+        "date": "2025-11-12",
+        "open": 274.2535,
+        "high": 274.9815,
+        "low": 270.9625,
+        "close": 272.7277,
+        "volume": 48398000
+      },
+      {
+        "date": "2025-11-13",
+        "open": 273.3659,
+        "high": 275.9489,
+        "low": 271.3514,
+        "close": 272.2091,
+        "volume": 49602800
+      },
+      {
+        "date": "2025-11-14",
+        "open": 270.3142,
+        "high": 275.2109,
+        "low": 268.8682,
+        "close": 271.6705,
+        "volume": 47431300
+      },
+      {
+        "date": "2025-11-17",
+        "open": 268.0903,
+        "high": 269.7558,
+        "low": 265.0087,
+        "close": 266.734,
+        "volume": 45018300
+      },
+      {
+        "date": "2025-11-18",
+        "open": 269.2571,
+        "high": 269.9751,
+        "low": 264.5997,
+        "close": 266.714,
+        "volume": 45677300
+      },
+      {
+        "date": "2025-11-19",
+        "open": 264.8092,
+        "high": 271.4711,
+        "low": 264.7793,
+        "close": 267.831,
+        "volume": 40424500
+      },
+      {
+        "date": "2025-11-20",
+        "open": 270.0948,
+        "high": 274.6823,
+        "low": 265.1982,
+        "close": 265.5273,
+        "volume": 45823600
+      },
+      {
+        "date": "2025-11-21",
+        "open": 265.2281,
+        "high": 272.588,
+        "low": 264.9488,
+        "close": 270.753,
+        "volume": 59030800
+      },
+      {
+        "date": "2025-11-24",
+        "open": 270.1646,
+        "high": 276.2481,
+        "low": 270.1646,
+        "close": 275.171,
+        "volume": 65585800
+      },
+      {
+        "date": "2025-11-25",
+        "open": 274.5227,
+        "high": 279.6189,
+        "low": 274.5028,
+        "close": 276.2181,
+        "volume": 46914200
+      },
+      {
+        "date": "2025-11-26",
+        "open": 276.2082,
+        "high": 278.7712,
+        "low": 275.8791,
+        "close": 276.7966,
+        "volume": 33431400
+      },
+      {
+        "date": "2025-11-28",
+        "open": 276.5074,
+        "high": 278.2426,
+        "low": 275.2408,
+        "close": 278.093,
+        "volume": 20135600
+      },
+      {
+        "date": "2025-12-01",
+        "open": 277.2553,
+        "high": 282.6506,
+        "low": 275.3904,
+        "close": 282.3315,
+        "volume": 46587700
+      },
+      {
+        "date": "2025-12-02",
+        "open": 282.2318,
+        "high": 286.6198,
+        "low": 281.8628,
+        "close": 285.4131,
+        "volume": 53669500
+      },
+      {
+        "date": "2025-12-03",
+        "open": 285.4231,
+        "high": 287.8365,
+        "low": 282.531,
+        "close": 283.3787,
+        "volume": 43538700
+      },
+      {
+        "date": "2025-12-04",
+        "open": 283.3288,
+        "high": 283.9571,
+        "low": 277.8338,
+        "close": 279.938,
+        "volume": 43989100
+      },
+      {
+        "date": "2025-12-05",
+        "open": 279.7785,
+        "high": 280.3768,
+        "low": 277.2952,
+        "close": 278.0232,
+        "volume": 47265800
+      },
+      {
+        "date": "2025-12-08",
+        "open": 277.375,
+        "high": 278.9108,
+        "low": 275.4004,
+        "close": 277.1357,
+        "volume": 38211800
+      },
+      {
+        "date": "2025-12-09",
+        "open": 277.4049,
+        "high": 279.2698,
+        "low": 276.1683,
+        "close": 276.4276,
+        "volume": 32193300
+      },
+      {
+        "date": "2025-12-10",
+        "open": 276.996,
+        "high": 278.9906,
+        "low": 275.6896,
+        "close": 278.0232,
+        "volume": 33038300
+      },
+      {
+        "date": "2025-12-11",
+        "open": 278.3423,
+        "high": 278.831,
+        "low": 273.0667,
+        "close": 277.2752,
+        "volume": 33248000
+      },
+      {
+        "date": "2025-12-12",
+        "open": 277.1456,
+        "high": 278.462,
+        "low": 276.0686,
+        "close": 277.5246,
+        "volume": 39532900
+      },
+      {
+        "date": "2025-12-15",
+        "open": 279.3895,
+        "high": 279.3895,
+        "low": 272.0993,
+        "close": 273.3659,
+        "volume": 50409100
+      },
+      {
+        "date": "2025-12-16",
+        "open": 272.0794,
+        "high": 274.7521,
+        "low": 271.0522,
+        "close": 273.8645,
+        "volume": 37648600
+      },
+      {
+        "date": "2025-12-17",
+        "open": 274.2635,
+        "high": 275.4104,
+        "low": 270.9026,
+        "close": 271.1021,
+        "volume": 50138700
+      },
+      {
+        "date": "2025-12-18",
+        "open": 272.8672,
+        "high": 272.8872,
+        "low": 266.2253,
+        "close": 271.4511,
+        "volume": 51630700
+      },
+      {
+        "date": "2025-12-19",
+        "open": 271.4113,
+        "high": 273.8546,
+        "low": 269.1674,
+        "close": 272.9272,
+        "volume": 144632000
+      },
+      {
+        "date": "2025-12-22",
+        "open": 272.1193,
+        "high": 273.1365,
+        "low": 269.7757,
+        "close": 270.2344,
+        "volume": 36571800
+      },
+      {
+        "date": "2025-12-23",
+        "open": 270.1048,
+        "high": 271.7603,
+        "low": 268.8283,
+        "close": 271.6207,
+        "volume": 29642000
+      },
+      {
+        "date": "2025-12-24",
+        "open": 271.6007,
+        "high": 274.6823,
+        "low": 271.4611,
+        "close": 273.0667,
+        "volume": 17910600
+      },
+      {
+        "date": "2025-12-26",
+        "open": 273.4158,
+        "high": 274.6225,
+        "low": 272.1193,
+        "close": 272.6578,
+        "volume": 21521800
+      },
+      {
+        "date": "2025-12-29",
+        "open": 271.9498,
+        "high": 273.6152,
+        "low": 271.6107,
+        "close": 273.0169,
+        "volume": 23715200
+      },
+      {
+        "date": "2025-12-30",
+        "open": 272.0694,
+        "high": 273.336,
+        "low": 271.5409,
+        "close": 272.3387,
+        "volume": 22139600
+      },
+      {
+        "date": "2025-12-31",
+        "open": 272.3188,
+        "high": 272.9371,
+        "low": 271.0123,
+        "close": 271.122,
+        "volume": 27293600
+      },
+      {
+        "date": "2026-01-02",
+        "open": 271.521,
+        "high": 277.0858,
+        "low": 268.2698,
+        "close": 270.2744,
+        "volume": 37838100
+      },
+      {
+        "date": "2026-01-05",
+        "open": 269.9054,
+        "high": 270.773,
+        "low": 265.4176,
+        "close": 266.5345,
+        "volume": 45647200
+      },
+      {
+        "date": "2026-01-06",
+        "open": 266.2752,
+        "high": 266.8237,
+        "low": 261.4084,
+        "close": 261.6478,
+        "volume": 52352100
+      },
+      {
+        "date": "2026-01-07",
+        "open": 262.4856,
+        "high": 262.9642,
+        "low": 259.1047,
+        "close": 259.6233,
+        "volume": 48309800
+      },
+      {
+        "date": "2026-01-08",
+        "open": 256.3223,
+        "high": 258.5862,
+        "low": 255.0059,
+        "close": 258.3369,
+        "volume": 50419300
+      },
+      {
+        "date": "2026-01-09",
+        "open": 258.3767,
+        "high": 259.5036,
+        "low": 255.5245,
+        "close": 258.6659,
+        "volume": 39997000
+      },
+      {
+        "date": "2026-01-12",
+        "open": 258.4565,
+        "high": 260.5907,
+        "low": 256.1029,
+        "close": 259.5435,
+        "volume": 45263800
+      },
+      {
+        "date": "2026-01-13",
+        "open": 258.0177,
+        "high": 261.0993,
+        "low": 257.6886,
+        "close": 260.3414,
+        "volume": 45730800
+      },
+      {
+        "date": "2026-01-14",
+        "open": 258.7856,
+        "high": 261.1093,
+        "low": 256.0132,
+        "close": 259.2543,
+        "volume": 40019400
+      },
+      {
+        "date": "2026-01-15",
+        "open": 259.9424,
+        "high": 260.3314,
+        "low": 256.3522,
+        "close": 257.5091,
+        "volume": 39388600
+      },
+      {
+        "date": "2026-01-16",
+        "open": 257.1999,
+        "high": 258.1972,
+        "low": 254.238,
+        "close": 254.8364,
+        "volume": 72142800
+      },
+      {
+        "date": "2026-01-20",
+        "open": 252.0439,
+        "high": 254.0984,
+        "low": 242.7592,
+        "close": 246.0303,
+        "volume": 80267500
+      },
+      {
+        "date": "2026-01-21",
+        "open": 248.0249,
+        "high": 250.8771,
+        "low": 244.5145,
+        "close": 246.9778,
+        "volume": 54641700
+      },
+      {
+        "date": "2026-01-22",
+        "open": 248.5235,
+        "high": 250.3186,
+        "low": 247.4764,
+        "close": 247.6758,
+        "volume": 39708300
+      },
+      {
+        "date": "2026-01-23",
+        "open": 246.6487,
+        "high": 248.733,
+        "low": 244.0158,
+        "close": 247.3667,
+        "volume": 41689000
+      },
+      {
+        "date": "2026-01-26",
+        "open": 250.7973,
+        "high": 255.8635,
+        "low": 249.1219,
+        "close": 254.7167,
+        "volume": 55969200
+      },
+      {
+        "date": "2026-01-27",
+        "open": 258.4665,
+        "high": 261.2389,
+        "low": 257.5091,
+        "close": 257.5689,
+        "volume": 49648300
+      },
+      {
+        "date": "2026-01-28",
+        "open": 256.9506,
+        "high": 258.1573,
+        "low": 253.8191,
+        "close": 255.7439,
+        "volume": 41288000
+      },
+      {
+        "date": "2026-01-29",
+        "open": 257.2996,
+        "high": 258.9451,
+        "low": 253.7194,
+        "close": 257.5789,
+        "volume": 67253000
+      },
+      {
+        "date": "2026-01-30",
+        "open": 254.4773,
+        "high": 261.189,
+        "low": 251.4954,
+        "close": 258.7756,
+        "volume": 92443400
+      },
+      {
+        "date": "2026-02-02",
+        "open": 259.3241,
+        "high": 269.7557,
+        "low": 258.5064,
+        "close": 269.2771,
+        "volume": 73913400
+      },
+      {
+        "date": "2026-02-03",
+        "open": 268.4693,
+        "high": 271.142,
+        "low": 266.8836,
+        "close": 268.7485,
+        "volume": 64394700
+      },
+      {
+        "date": "2026-02-04",
+        "open": 271.5509,
+        "high": 278.1928,
+        "low": 271.5509,
+        "close": 275.7394,
+        "volume": 90545700
+      },
+      {
+        "date": "2026-02-05",
+        "open": 277.375,
+        "high": 278.7413,
+        "low": 272.4883,
+        "close": 275.161,
+        "volume": 52977400
+      },
+      {
+        "date": "2026-02-06",
+        "open": 276.3678,
+        "high": 280.1475,
+        "low": 276.1783,
+        "close": 277.3651,
+        "volume": 50453400
+      },
+      {
+        "date": "2026-02-09",
+        "open": 277.4149,
+        "high": 277.7044,
+        "low": 271.216,
+        "close": 274.1308,
+        "volume": 44623400
+      },
+      {
+        "date": "2026-02-10",
+        "open": 274.4003,
+        "high": 274.8794,
+        "low": 272.4538,
+        "close": 273.1924,
+        "volume": 34376900
+      },
+      {
+        "date": "2026-02-11",
+        "open": 274.2107,
+        "high": 279.6809,
+        "low": 273.9611,
+        "close": 275.0092,
+        "volume": 51931300
+      },
+      {
+        "date": "2026-02-12",
+        "open": 275.0991,
+        "high": 275.2288,
+        "low": 259.7165,
+        "close": 261.2638,
+        "volume": 81077200
+      },
+      {
+        "date": "2026-02-13",
+        "open": 261.5433,
+        "high": 261.7629,
+        "low": 254.9949,
+        "close": 255.3244,
+        "volume": 56290700
+      },
+      {
+        "date": "2026-02-17",
+        "open": 257.5903,
+        "high": 265.8157,
+        "low": 255.0848,
+        "close": 263.4099,
+        "volume": 58469100
+      },
+      {
+        "date": "2026-02-18",
+        "open": 263.1305,
+        "high": 266.3447,
+        "low": 261.9825,
+        "close": 263.8791,
+        "volume": 34203300
+      },
+      {
+        "date": "2026-02-19",
+        "open": 262.1322,
+        "high": 264.0089,
+        "low": 259.5867,
+        "close": 260.1158,
+        "volume": 30845300
+      },
+      {
+        "date": "2026-02-20",
+        "open": 258.5087,
+        "high": 264.2784,
+        "low": 257.7001,
+        "close": 264.1087,
+        "volume": 42070500
+      },
+      {
+        "date": "2026-02-23",
+        "open": 263.0206,
+        "high": 268.95,
+        "low": 262.9108,
+        "close": 265.7058,
+        "volume": 37308200
+      },
+      {
+        "date": "2026-02-24",
+        "open": 267.3828,
+        "high": 274.4003,
+        "low": 267.2331,
+        "close": 271.6552,
+        "volume": 47014600
+      },
+      {
+        "date": "2026-02-25",
+        "open": 271.2959,
+        "high": 274.4502,
+        "low": 270.5672,
+        "close": 273.7415,
+        "volume": 33714300
+      },
+      {
+        "date": "2026-02-26",
+        "open": 274.4602,
+        "high": 275.6181,
+        "low": 270.3176,
+        "close": 272.4638,
+        "volume": 32345100
+      },
+      {
+        "date": "2026-02-27",
+        "open": 272.324,
+        "high": 272.324,
+        "low": 262.4217,
+        "close": 263.7094,
+        "volume": 72366500
+      },
+      {
+        "date": "2026-03-02",
+        "open": 261.9425,
+        "high": 266.0552,
+        "low": 259.7365,
+        "close": 264.2484,
+        "volume": 41827900
+      },
+      {
+        "date": "2026-03-03",
+        "open": 263.0107,
+        "high": 265.087,
+        "low": 259.6666,
+        "close": 263.2802,
+        "volume": 38568900
+      },
+      {
+        "date": "2026-03-04",
+        "open": 264.1785,
+        "high": 265.6759,
+        "low": 260.9543,
+        "close": 262.0523,
+        "volume": 39803100
+      },
+      {
+        "date": "2026-03-05",
+        "open": 260.3254,
+        "high": 261.0941,
+        "low": 256.7917,
+        "close": 259.8263,
+        "volume": 49658600
+      },
+      {
+        "date": "2026-03-06",
+        "open": 258.1693,
+        "high": 258.309,
+        "low": 253.9169,
+        "close": 257.0013,
+        "volume": 41120000
+      },
+      {
+        "date": "2026-03-09",
+        "open": 255.2345,
+        "high": 260.6848,
+        "low": 253.2281,
+        "close": 259.4171,
+        "volume": 38218500
+      },
+      {
+        "date": "2026-03-10",
+        "open": 257.191,
+        "high": 262.0124,
+        "low": 256.4923,
+        "close": 260.3654,
+        "volume": 30590800
+      },
+      {
+        "date": "2026-03-11",
+        "open": 260.6249,
+        "high": 261.6631,
+        "low": 259.0876,
+        "close": 260.3454,
+        "volume": 26218900
+      },
+      {
+        "date": "2026-03-12",
+        "open": 258.1992,
+        "high": 258.4887,
+        "low": 253.7272,
+        "close": 255.3044,
+        "volume": 40794000
+      },
+      {
+        "date": "2026-03-13",
+        "open": 255.0249,
+        "high": 255.8734,
+        "low": 249.0755,
+        "close": 249.6744,
+        "volume": 36930000
+      },
+      {
+        "date": "2026-03-16",
+        "open": 251.6609,
+        "high": 253.4377,
+        "low": 249.4349,
+        "close": 252.3696,
+        "volume": 32074200
+      },
+      {
+        "date": "2026-03-17",
+        "open": 252.5094,
+        "high": 254.6755,
+        "low": 251.7308,
+        "close": 253.7771,
+        "volume": 32361600
+      },
+      {
+        "date": "2026-03-18",
+        "open": 252.18,
+        "high": 254.4859,
+        "low": 248.5564,
+        "close": 249.4948,
+        "volume": 35757900
+      },
+      {
+        "date": "2026-03-19",
+        "open": 248.9557,
+        "high": 251.3814,
+        "low": 246.8595,
+        "close": 248.5165,
+        "volume": 34864100
+      },
+      {
+        "date": "2026-03-20",
+        "open": 247.5382,
+        "high": 248.7561,
+        "low": 245.5618,
+        "close": 247.5482,
+        "volume": 88331100
+      },
+      {
+        "date": "2026-03-23",
+        "open": 253.5176,
+        "high": 254.1465,
+        "low": 249.8342,
+        "close": 251.042,
+        "volume": 40546100
+      },
+      {
+        "date": "2026-03-24",
+        "open": 249.904,
+        "high": 254.376,
+        "low": 249.1055,
+        "close": 251.1917,
+        "volume": 45152300
+      },
+      {
+        "date": "2026-03-25",
+        "open": 253.6474,
+        "high": 254.5457,
+        "low": 251.1518,
+        "close": 252.17,
+        "volume": 28476700
+      },
+      {
+        "date": "2026-03-26",
+        "open": 251.6709,
+        "high": 256.5422,
+        "low": 250.3233,
+        "close": 252.4395,
+        "volume": 41796700
+      },
+      {
+        "date": "2026-03-27",
+        "open": 253.4477,
+        "high": 255.0349,
+        "low": 247.6281,
+        "close": 248.3568,
+        "volume": 47900000
+      },
+      {
+        "date": "2026-03-30",
+        "open": 249.6245,
+        "high": 250.4231,
+        "low": 245.0726,
+        "close": 246.1907,
+        "volume": 39446200
+      },
+      {
+        "date": "2026-03-31",
+        "open": 247.4684,
+        "high": 255.0249,
+        "low": 246.6598,
+        "close": 253.3379,
+        "volume": 49598100
+      },
+      {
+        "date": "2026-04-01",
+        "open": 253.6274,
+        "high": 255.7236,
+        "low": 252.8787,
+        "close": 255.1746,
+        "volume": 40059400
+      },
+      {
+        "date": "2026-04-02",
+        "open": 253.7472,
+        "high": 255.6737,
+        "low": 250.2035,
+        "close": 255.4641,
+        "volume": 31289400
+      },
+      {
+        "date": "2026-04-06",
+        "open": 256.0531,
+        "high": 261.693,
+        "low": 256.0031,
+        "close": 258.3989,
+        "volume": 29329900
+      },
+      {
+        "date": "2026-04-07",
+        "open": 255.7037,
+        "high": 255.7436,
+        "low": 245.2623,
+        "close": 253.0484,
+        "volume": 62148000
+      },
+      {
+        "date": "2026-04-08",
+        "open": 257.9896,
+        "high": 259.2873,
+        "low": 256.073,
+        "close": 258.4388,
+        "volume": 41032800
+      },
+      {
+        "date": "2026-04-09",
+        "open": 258.5386,
+        "high": 260.6549,
+        "low": 255.6139,
+        "close": 260.026,
+        "volume": 28121600
+      },
+      {
+        "date": "2026-04-10",
+        "open": 259.5169,
+        "high": 261.7229,
+        "low": 258.5586,
+        "close": 260.016,
+        "volume": 31291500
+      },
+      {
+        "date": "2026-04-13",
+        "open": 259.2673,
+        "high": 259.7165,
+        "low": 256.2028,
+        "close": 258.7383,
+        "volume": 36234700
+      },
+      {
+        "date": "2026-04-14",
+        "open": 258.7882,
+        "high": 261.4634,
+        "low": 256.7319,
+        "close": 258.3689,
+        "volume": 48370700
+      },
+      {
+        "date": "2026-04-15",
+        "open": 257.7001,
+        "high": 266.0852,
+        "low": 257.3507,
+        "close": 265.9554,
+        "volume": 49913500
+      },
+      {
+        "date": "2026-04-16",
+        "open": 266.3247,
+        "high": 266.6841,
+        "low": 260.8046,
+        "close": 262.9308,
+        "volume": 43323100
+      },
+      {
+        "date": "2026-04-17",
+        "open": 266.4844,
+        "high": 271.8149,
+        "low": 266.2449,
+        "close": 269.7486,
+        "volume": 61436200
+      },
+      {
+        "date": "2026-04-20",
+        "open": 269.8484,
+        "high": 273.7914,
+        "low": 269.8085,
+        "close": 272.5636,
+        "volume": 36590200
+      },
+      {
+        "date": "2026-04-21",
+        "open": 271.0164,
+        "high": 272.314,
+        "low": 264.9272,
+        "close": 265.6959,
+        "volume": 50209800
+      },
+      {
+        "date": "2026-04-22",
+        "open": 267.3429,
+        "high": 273.2524,
+        "low": 266.3946,
+        "close": 272.6834,
+        "volume": 43249200
+      },
+      {
+        "date": "2026-04-23",
+        "open": 274.56,
+        "high": 275.2787,
+        "low": 271.1661,
+        "close": 272.9429,
+        "volume": 33399600
+      },
+      {
+        "date": "2026-04-24",
+        "open": 272.2741,
+        "high": 272.5736,
+        "low": 269.1696,
+        "close": 270.5771,
+        "volume": 38157100
+      },
+      {
+        "date": "2026-04-27",
+        "open": 265.616,
+        "high": 267.8819,
+        "low": 264.5978,
+        "close": 267.1333,
+        "volume": 41466800
+      },
+      {
+        "date": "2026-04-28",
+        "open": 271.8549,
+        "high": 272.7433,
+        "low": 268.1814,
+        "close": 270.2278,
+        "volume": 40018900
+      },
+      {
+        "date": "2026-04-29",
+        "open": 267.0734,
+        "high": 270.5572,
+        "low": 266.5643,
+        "close": 269.6887,
+        "volume": 30047900
+      },
+      {
+        "date": "2026-04-30",
+        "open": 270.0181,
+        "high": 275.5083,
+        "low": 267.6624,
+        "close": 270.8666,
+        "volume": 91848200
+      },
+      {
+        "date": "2026-05-01",
+        "open": 278.3632,
+        "high": 286.7084,
+        "low": 277.8741,
+        "close": 279.641,
+        "volume": 79915400
+      },
+      {
+        "date": "2026-05-04",
+        "open": 279.1618,
+        "high": 280.1301,
+        "low": 274.3703,
+        "close": 276.3368,
+        "volume": 46668400
+      },
+      {
+        "date": "2026-05-05",
+        "open": 276.4367,
+        "high": 284.0631,
+        "low": 276.0075,
+        "close": 283.6738,
+        "volume": 49311700
+      },
+      {
+        "date": "2026-05-06",
+        "open": 281.4178,
+        "high": 287.5169,
+        "low": 280.5693,
+        "close": 286.9979,
+        "volume": 58336100
+      },
+      {
+        "date": "2026-05-07",
+        "open": 288.7547,
+        "high": 291.6096,
+        "low": 285.2709,
+        "close": 286.928,
+        "volume": 45224300
+      },
+      {
+        "date": "2026-05-08",
+        "open": 289.4934,
+        "high": 294.2349,
+        "low": 289.4834,
+        "close": 292.7975,
+        "volume": 52692800
+      },
+      {
+        "date": "2026-05-11",
+        "open": 291.7284,
+        "high": 293.6268,
+        "low": 289.9799,
+        "close": 292.4278,
+        "volume": 42247300
+      },
+      {
+        "date": "2026-05-12",
+        "open": 292.3079,
+        "high": 295.0156,
+        "low": 292.3079,
+        "close": 294.546,
+        "volume": 45748100
+      },
+      {
+        "date": "2026-05-13",
+        "open": 293.2471,
+        "high": 300.6607,
+        "low": 293.2471,
+        "close": 298.6125,
+        "volume": 52684300
+      },
+      {
+        "date": "2026-05-14",
+        "open": 299.5617,
+        "high": 300.1911,
+        "low": 295.1255,
+        "close": 297.953,
+        "volume": 35324900
+      },
+      {
+        "date": "2026-05-15",
+        "open": 297.6433,
+        "high": 302.9388,
+        "low": 296.2645,
+        "close": 299.9713,
+        "volume": 54862800
+      },
+      {
+        "date": "2026-05-18",
+        "open": 299.9813,
+        "high": 300.4009,
+        "low": 294.6559,
+        "close": 297.5833,
+        "volume": 34483000
+      },
+      {
+        "date": "2026-05-19",
+        "open": 296.7141,
+        "high": 300.2511,
+        "low": 296.0946,
+        "close": 298.7124,
+        "volume": 42243600
+      },
+      {
+        "date": "2026-05-20",
+        "open": 297.9231,
+        "high": 302.5391,
+        "low": 297.8231,
+        "close": 301.9896,
+        "volume": 38229800
+      },
+      {
+        "date": "2026-05-21",
+        "open": 300.8006,
+        "high": 305.2767,
+        "low": 300.1411,
+        "close": 304.7272,
+        "volume": 42965100
+      },
+      {
+        "date": "2026-05-22",
+        "open": 305.8562,
+        "high": 311.1317,
+        "low": 305.5765,
+        "close": 308.5539,
+        "volume": 43670200
+      },
+      {
+        "date": "2026-05-26",
+        "open": 309.2933,
+        "high": 311.5513,
+        "low": 307.4049,
+        "close": 308.0643,
+        "volume": 48000500
+      },
+      {
+        "date": "2026-05-27",
+        "open": 308.0643,
+        "high": 312.9901,
+        "low": 308.0343,
+        "close": 310.5822,
+        "volume": 50430900
+      },
+      {
+        "date": "2026-05-28",
+        "open": 310.4123,
+        "high": 312.5305,
+        "low": 309.3033,
+        "close": 312.2407,
+        "volume": 48220400
+      },
+      {
+        "date": "2026-05-29",
+        "open": 311.5113,
+        "high": 314.7286,
+        "low": 309.2633,
+        "close": 311.7911,
+        "volume": 70026800
+      },
+      {
+        "date": "2026-06-01",
+        "open": 309.3632,
+        "high": 310.6721,
+        "low": 304.7572,
+        "close": 306.0461,
+        "volume": 48849900
+      },
+      {
+        "date": "2026-06-02",
+        "open": 307.1951,
+        "high": 315.1782,
+        "low": 306.4257,
+        "close": 314.9284,
+        "volume": 44534700
+      },
+      {
+        "date": "2026-06-03",
+        "open": 313.9093,
+        "high": 316.6669,
+        "low": 308.5839,
+        "close": 309.9926,
+        "volume": 50836700
+      },
+      {
+        "date": "2026-06-04",
+        "open": 312.9601,
+        "high": 313.2698,
+        "low": 309.3832,
+        "close": 310.9618,
+        "volume": 44869100
+      },
+      {
+        "date": "2026-06-05",
+        "open": 312.5904,
+        "high": 314.8984,
+        "low": 306.8853,
+        "close": 307.0752,
+        "volume": 65310500
+      },
+      {
+        "date": "2026-06-08",
+        "open": 308.474,
+        "high": 317.1265,
+        "low": 300.9105,
+        "close": 301.2802,
+        "volume": 77949100
+      },
+      {
+        "date": "2026-06-09",
+        "open": 300.0212,
+        "high": 300.4908,
+        "low": 287.532,
+        "close": 290.2996,
+        "volume": 70108800
+      },
+      {
+        "date": "2026-06-10",
+        "open": 290.4895,
+        "high": 294.496,
+        "low": 287.1324,
+        "close": 291.3287,
+        "volume": 52793300
+      },
+      {
+        "date": "2026-06-11",
+        "open": 293.4669,
+        "high": 296.7441,
+        "low": 289.3404,
+        "close": 295.3752,
+        "volume": 42572500
+      },
+      {
+        "date": "2026-06-12",
+        "open": 295.7749,
+        "high": 296.884,
+        "low": 289.3704,
+        "close": 290.8792,
+        "volume": 38742100
+      },
+      {
+        "date": "2026-06-15",
+        "open": 293.8665,
+        "high": 297.5234,
+        "low": 291.4486,
+        "close": 296.1646,
+        "volume": 45732600
+      },
+      {
+        "date": "2026-06-16",
+        "open": 294.9956,
+        "high": 300.2211,
+        "low": 293.7167,
+        "close": 298.9821,
+        "volume": 39874400
+      },
+      {
+        "date": "2026-06-17",
+        "open": 300.5907,
+        "high": 301.8097,
+        "low": 294.1063,
+        "close": 295.695,
+        "volume": 42745100
+      },
+      {
+        "date": "2026-06-18",
+        "open": 297.8531,
+        "high": 300.311,
+        "low": 295.3652,
+        "close": 297.7532,
+        "volume": 85962200
+      },
+      {
+        "date": "2026-06-22",
+        "open": 297.0538,
+        "high": 302.1594,
+        "low": 296.5043,
+        "close": 296.7541,
+        "volume": 44879900
+      },
+      {
+        "date": "2026-06-23",
+        "open": 297.2836,
+        "high": 301.3801,
+        "low": 293.9265,
+        "close": 294.0464,
+        "volume": 52010900
+      },
+      {
+        "date": "2026-06-24",
+        "open": 295.1055,
+        "high": 299.4417,
+        "low": 292.6876,
+        "close": 292.8274,
+        "volume": 53081900
+      },
+      {
+        "date": "2026-06-25",
+        "open": 287.1523,
+        "high": 288.5511,
+        "low": 273.5141,
+        "close": 274.9129,
+        "volume": 107013700
+      },
+      {
+        "date": "2026-06-26",
+        "open": 274.763,
+        "high": 285.7036,
+        "low": 273.9737,
+        "close": 283.5355,
+        "volume": 261775500
+      },
+      {
+        "date": "2026-06-29",
+        "open": 286.4829,
+        "high": 288.1215,
+        "low": 279.6089,
+        "close": 281.4972,
+        "volume": 66427000
+      },
+      {
+        "date": "2026-06-30",
+        "open": 280.9277,
+        "high": 289.6902,
+        "low": 280.4581,
+        "close": 289.1107,
+        "volume": 65100200
+      },
+      {
+        "date": "2026-07-01",
+        "open": 293.1872,
+        "high": 296.3344,
+        "low": 288.9508,
+        "close": 294.1263,
+        "volume": 50164200
+      },
+      {
+        "date": "2026-07-02",
+        "open": 293.8665,
+        "high": 309.1534,
+        "low": 293.4269,
+        "close": 308.364,
+        "volume": 75352800
+      },
+      {
+        "date": "2026-07-06",
+        "open": 307.0951,
+        "high": 313.9293,
+        "low": 306.7355,
+        "close": 312.3906,
+        "volume": 53590000
+      },
+      {
+        "date": "2026-07-07",
+        "open": 315.0183,
+        "high": 315.2082,
+        "low": 309.8827,
+        "close": 310.3923,
+        "volume": 42490000
+      },
+      {
+        "date": "2026-07-08",
+        "open": 311.6412,
+        "high": 314.5487,
+        "low": 306.7854,
+        "close": 313.12,
+        "volume": 41323500
+      },
+      {
+        "date": "2026-07-09",
+        "open": 310.2424,
+        "high": 316.2572,
+        "low": 307.8945,
+        "close": 315.9475,
+        "volume": 48124500
+      },
+      {
+        "date": "2026-07-10",
+        "open": 314.4488,
+        "high": 316.6369,
+        "low": 311.901,
+        "close": 315.0483,
+        "volume": 34132300
+      },
+      {
+        "date": "2026-07-13",
+        "open": 316.7468,
+        "high": 323.1713,
+        "low": 315.5079,
+        "close": 317.0366,
+        "volume": 43257800
+      },
+      {
+        "date": "2026-07-14",
+        "open": 313.4897,
+        "high": 315.9176,
+        "low": 311.6412,
+        "close": 314.5887,
+        "volume": 36336800
+      },
+      {
+        "date": "2026-07-15",
+        "open": 317.3463,
+        "high": 328.4468,
+        "low": 317.0466,
+        "close": 327.2178,
+        "volume": 60957600
+      },
+      {
+        "date": "2026-07-16",
+        "open": 327.7274,
+        "high": 334.3916,
+        "low": 326.5084,
+        "close": 332.9728,
+        "volume": 62970600
+      },
+      {
+        "date": "2026-07-17",
+        "open": 331.6939,
+        "high": 334.7013,
+        "low": 328.7165,
+        "close": 333.4524,
+        "volume": 63407100
+      },
+      {
+        "date": "2026-07-20",
+        "open": 333.2226,
+        "high": 333.4224,
+        "low": 323.4011,
+        "close": 326.3086,
+        "volume": 53468000
+      },
+      {
+        "date": "2026-07-21",
+        "open": 322.8516,
+        "high": 329.316,
+        "low": 321.9423,
+        "close": 327.4576,
+        "volume": 41338900
+      },
+      {
+        "date": "2026-07-22",
+        "open": 327.5875,
+        "high": 328.7165,
+        "low": 323.0614,
+        "close": 325.6092,
+        "volume": 38755900
+      },
+      {
+        "date": "2026-07-23",
+        "open": 321.4528,
+        "high": 323.0214,
+        "low": 319.0748,
+        "close": 321.3828,
+        "volume": 40840800
+      },
+      {
+        "date": "2026-07-24",
+        "open": 321.5127,
+        "high": 334.0819,
+        "low": 321.3429,
+        "close": 332.733,
+        "volume": 47489400
+      },
+      {
+        "date": "2026-07-27",
+        "open": 334.2517,
+        "high": 339.2774,
+        "low": 333.7322,
+        "close": 336.6197,
+        "volume": 49604300
+      },
+      {
+        "date": "2026-07-28",
+        "open": 339.737,
+        "high": 342.5945,
+        "low": 335.3108,
+        "close": 339.7869,
+        "volume": 51859000
+      },
+      {
+        "date": "2026-07-29",
+        "open": 339.4373,
+        "high": 344.2731,
+        "low": 337.0593,
+        "close": 337.8986,
+        "volume": 56090800
+      },
+      {
+        "date": "2026-07-30",
+        "open": 332.813,
+        "high": 334.4615,
+        "low": 329.306,
+        "close": 333.1427,
+        "volume": 74817800
+      },
+      {
+        "date": "2026-07-31",
+        "open": 304.5474,
+        "high": 310.4223,
+        "low": 299.7415,
+        "close": 308.6438,
+        "volume": 132489100
+      },
+      {
+        "date": "2026-08-03",
+        "open": 309.3132,
+        "high": 311.5313,
+        "low": 302.2993,
+        "close": 303.1586,
+        "volume": 75052000
+      },
+      {
+        "date": "2026-08-04",
+        "open": 302.4691,
+        "high": 310.1525,
+        "low": 301.0604,
+        "close": 309.1134,
+        "volume": 68001000
+      },
+      {
+        "date": "2026-08-05",
+        "open": 309.0934,
+        "high": 311.4414,
+        "low": 305.4066,
+        "close": 310.732,
+        "volume": 49438800
+      },
+      {
+        "date": "2026-08-06",
+        "open": 314.0691,
+        "high": 316.0175,
+        "low": 308.9636,
+        "close": 312.1408,
+        "volume": 46139900
+      },
+      {
+        "date": "2026-08-07",
+        "open": 311.1816,
+        "high": 314.5387,
+        "low": 310.4722,
+        "close": 313.06,
+        "volume": 34437200
+      },
+      {
+        "date": "2026-08-10",
+        "open": 306.83,
+        "high": 308.26,
+        "low": 304.61,
+        "close": 308.26,
+        "volume": 44812500
+      },
+      {
+        "date": "2026-08-11",
+        "open": 307.75,
+        "high": 309.97,
+        "low": 302.79,
+        "close": 304.91,
+        "volume": 37476700
+      },
+      {
+        "date": "2026-08-12",
+        "open": 305.1,
+        "high": 305.66,
+        "low": 300.57,
+        "close": 302.25,
+        "volume": 41657800
+      },
+      {
+        "date": "2026-08-13",
+        "open": 304.21,
+        "high": 306.0,
+        "low": 302.05,
+        "close": 305.26,
+        "volume": 40349300
+      },
+      {
+        "date": "2026-08-14",
+        "open": 306.0,
+        "high": 307.49,
+        "low": 304.3,
+        "close": 305.93,
+        "volume": 28229400
+      },
+      {
+        "date": "2026-08-17",
+        "open": 306.21,
+        "high": 307.66,
+        "low": 302.94,
+        "close": 305.59,
+        "volume": 38169300
+      },
+      {
+        "date": "2026-08-18",
+        "open": 307.58,
+        "high": 311.49,
+        "low": 305.74,
+        "close": 310.03,
+        "volume": 53424500
+      },
+      {
+        "date": "2026-08-19",
+        "open": 310.14,
+        "high": 319.28,
+        "low": 309.6,
+        "close": 316.83,
+        "volume": 50505600
+      },
+      {
+        "date": "2026-08-20",
+        "open": 317.46,
+        "high": 320.28,
+        "low": 310.65,
+        "close": 311.3,
+        "volume": 40959200
+      },
+      {
+        "date": "2026-08-21",
+        "open": 312.05,
+        "high": 312.38,
+        "low": 307.01,
+        "close": 309.35,
+        "volume": 46876800
+      },
+      {
+        "date": "2026-08-24",
+        "open": 311.47,
+        "high": 313.36,
+        "low": 309.97,
+        "close": 310.34,
+        "volume": 34673600
+      },
+      {
+        "date": "2026-08-25",
+        "open": 310.79,
+        "high": 313.59,
+        "low": 308.21,
+        "close": 309.9,
+        "volume": 25869800
+      },
+      {
+        "date": "2026-08-26",
+        "open": 310.3,
+        "high": 315.43,
+        "low": 308.8,
+        "close": 313.45,
+        "volume": 34024500
+      },
+      {
+        "date": "2026-08-27",
+        "open": 310.55,
+        "high": 315.4,
+        "low": 309.4,
+        "close": 314.58,
+        "volume": 32419200
+      },
+      {
+        "date": "2026-08-28",
+        "open": 316.85,
+        "high": 322.37,
+        "low": 315.45,
+        "close": 319.7,
+        "volume": 38649400
+      },
+      {
+        "date": "2026-08-31",
+        "open": 319.6,
+        "high": 321.24,
+        "low": 312.8,
+        "close": 316.85,
+        "volume": 41242700
+      },
+      {
+        "date": "2026-09-01",
+        "open": 316.98,
+        "high": 327.3,
+        "low": 314.73,
+        "close": 325.13,
+        "volume": 53167400
+      },
+      {
+        "date": "2026-09-02",
+        "open": 326.87,
+        "high": 328.4,
+        "low": 323.53,
+        "close": 324.96,
+        "volume": 33776400
+      },
+      {
+        "date": "2026-09-03",
+        "open": 324.87,
+        "high": 330.81,
+        "low": 324.11,
+        "close": 328.21,
+        "volume": 37225800
+      },
+      {
+        "date": "2026-09-04",
+        "open": 328.31,
+        "high": 328.93,
+        "low": 317.86,
+        "close": 319.97,
+        "volume": 39606900
+      },
+      {
+        "date": "2026-09-08",
+        "open": 317.1,
+        "high": 320.7,
+        "low": 314.9,
+        "close": 316.22,
+        "volume": 35477100
+      },
+      {
+        "date": "2026-09-09",
+        "open": 315.49,
+        "high": 319.15,
+        "low": 309.9,
+        "close": 315.34,
+        "volume": 65640000
+      },
+      {
+        "date": "2026-09-10",
+        "open": 316.67,
+        "high": 326.74,
+        "low": 316.51,
+        "close": 326.57,
+        "volume": 70011900
+      },
+      {
+        "date": "2026-09-11",
+        "open": 327.45,
+        "high": 336.22,
+        "low": 326.3,
+        "close": 332.27,
+        "volume": 50716900
+      },
+      {
+        "date": "2026-09-14",
+        "open": 334.79,
+        "high": 335.5,
+        "low": 331.34,
+        "close": 333.08,
+        "volume": 39269100
+      },
+      {
+        "date": "2026-09-15",
+        "open": 330.14,
+        "high": 331.78,
+        "low": 328.35,
+        "close": 331.34,
+        "volume": 31748200
+      },
+      {
+        "date": "2026-09-16",
+        "open": 332.53,
+        "high": 335.48,
+        "low": 330.7,
+        "close": 332.41,
+        "volume": 35981000
+      },
+      {
+        "date": "2026-09-17",
+        "open": 334.77,
+        "high": 338.34,
+        "low": 330.18,
+        "close": 337.0,
+        "volume": 36700200
+      },
+      {
+        "date": "2026-09-18",
+        "open": 337.91,
+        "high": 338.49,
+        "low": 332.53,
+        "close": 336.13,
+        "volume": 86588200
+      },
+      {
+        "date": "2026-09-21",
+        "open": 335.28,
+        "high": 339.64,
+        "low": 333.05,
+        "close": 338.98,
+        "volume": 34999200
+      },
+      {
+        "date": "2026-09-22",
+        "open": 340.14,
+        "high": 345.34,
+        "low": 338.75,
+        "close": 339.75,
+        "volume": 40711800
+      },
+      {
+        "date": "2026-09-23",
+        "open": 341.08,
+        "high": 341.8,
+        "low": 335.5,
+        "close": 337.02,
+        "volume": 31658800
+      },
+      {
+        "date": "2026-09-24",
+        "open": 336.72,
+        "high": 338.91,
+        "low": 334.3,
+        "close": 335.92,
+        "volume": 24733100
+      },
+      {
+        "date": "2026-09-25",
+        "open": 336.04,
+        "high": 341.67,
+        "low": 334.53,
+        "close": 341.07,
+        "volume": 30002500
+      },
+      {
+        "date": "2026-09-28",
+        "open": 340.37,
+        "high": 342.99,
+        "low": 338.04,
+        "close": 338.4,
+        "volume": 32820800
+      },
+      {
+        "date": "2026-09-29",
+        "open": 336.97,
+        "high": 337.09,
+        "low": 328.7,
+        "close": 329.4,
+        "volume": 38478000
+      },
+      {
+        "date": "2026-09-30",
+        "open": 330.8,
+        "high": 339.5,
+        "low": 330.14,
+        "close": 333.02,
+        "volume": 49988600
+      },
+      {
+        "date": "2026-10-01",
+        "open": 330.0,
+        "high": 332.48,
+        "low": 325.81,
+        "close": 330.32,
+        "volume": 36306300
+      },
+      {
+        "date": "2026-10-02",
+        "open": 333.26,
+        "high": 334.54,
+        "low": 330.61,
+        "close": 333.69,
+        "volume": 33278600
+      },
+      {
+        "date": "2026-10-05",
+        "open": 332.82,
+        "high": 336.21,
+        "low": 331.65,
+        "close": 332.89,
+        "volume": 34400900
+      },
+      {
+        "date": "2026-10-06",
+        "open": 332.28,
+        "high": 334.38,
+        "low": 330.62,
+        "close": 333.63,
+        "volume": 30449000
+      },
+      {
+        "date": "2026-10-07",
+        "open": 336.96,
+        "high": 338.67,
+        "low": 332.78,
+        "close": 336.67,
+        "volume": 34147900
+      },
+      {
+        "date": "2026-10-08",
+        "open": 336.82,
+        "high": 341.57,
+        "low": 335.9,
+        "close": 340.42,
+        "volume": 35332400
+      },
+      {
+        "date": "2026-10-09",
+        "open": 331.7,
+        "high": 338.61,
+        "low": 330.7,
+        "close": 336.64,
+        "volume": 37881200
+      },
+      {
+        "date": "2026-10-12",
+        "open": 338.22,
+        "high": 342.63,
+        "low": 337.6,
+        "close": 340.97,
+        "volume": 25900600
+      },
+      {
+        "date": "2026-10-13",
+        "open": 344.67,
+        "high": 348.15,
+        "low": 340.74,
+        "close": 341.27,
+        "volume": 38983800
+      },
+      {
+        "date": "2026-10-14",
+        "open": 344.61,
+        "high": 347.09,
+        "low": 341.72,
+        "close": 342.96,
+        "volume": 50061100
+      },
+      {
+        "date": "2026-10-15",
+        "open": 346.95,
+        "high": 347.85,
+        "low": 341.6,
+        "close": 342.0,
+        "volume": 39767300
+      },
+      {
+        "date": "2026-10-16",
+        "open": 346.09,
+        "high": 347.82,
+        "low": 340.46,
+        "close": 343.46,
+        "volume": 59895300
+      }
+    ],
+    "get_company_info": {
+      "shortName": "Apple Inc.",
+      "longName": "Apple Inc.",
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "country": "United States",
+      "website": "https://www.apple.com",
+      "currency": "USD",
+      "marketCap": 5012516765696,
+      "enterpriseValue": 5034461888512,
+      "fullTimeEmployees": 150000,
+      "trailingPE": 39.3876,
+      "forwardPE": 35.8598,
+      "priceToBook": 46.6658,
+      "dividendYield": 0.31,
+      "beta": 1.069,
+      "profitMargins": 0.2762,
+      "revenueGrowth": 0.164,
+      "earningsGrowth": 0.287,
+      "debtToEquity": 78.445,
+      "fiftyTwoWeekHigh": 348.15,
+      "fiftyTwoWeekLow": 243.42,
+      "recommendationKey": "buy",
+      "targetMeanPrice": 329.3759,
+      "numberOfAnalystOpinions": 39.0,
+      "longBusinessSummary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download applications and digital content, such as books, music, video, games, and podcasts, as well as advertising services include third-party licensing arrangements and its own advertising platforms. In addition, the company offers various subscription-based services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV, which offers original content and live sports; Apple Card, a co-branded credit card; and A",
+      "ticker": "AAPL"
+    },
+    "get_financials": {
+      "ticker": "AAPL",
+      "quarterly": false,
+      "income_statement": {
+        "2025-09-30": {
+          "Total Revenue": 416161000000,
+          "Gross Profit": 195201000000,
+          "Operating Income": 133050000000,
+          "Net Income": 112010000000,
+          "Diluted EPS": 7.46,
+          "EBITDA": 144748000000
+        },
+        "2024-09-30": {
+          "Total Revenue": 391035000000,
+          "Gross Profit": 180683000000,
+          "Operating Income": 123216000000,
+          "Net Income": 93736000000,
+          "Diluted EPS": 6.08,
+          "EBITDA": 134661000000
+        },
+        "2023-09-30": {
+          "Total Revenue": 383285000000,
+          "Gross Profit": 169148000000,
+          "Operating Income": 114301000000,
+          "Net Income": 96995000000,
+          "Diluted EPS": 6.13,
+          "EBITDA": 125820000000
+        },
+        "2022-09-30": {
+          "Total Revenue": 394328000000,
+          "Gross Profit": 170782000000,
+          "Operating Income": 119437000000,
+          "Net Income": 99803000000,
+          "Diluted EPS": 6.11,
+          "EBITDA": 130541000000
+        }
+      },
+      "balance_sheet": {
+        "2025-09-30": {
+          "Total Assets": 359241000000,
+          "Total Liabilities Net Minority Interest": 285508000000,
+          "Stockholders Equity": 73733000000,
+          "Cash And Cash Equivalents": 35934000000,
+          "Total Debt": 98657000000
+        },
+        "2024-09-30": {
+          "Total Assets": 364980000000,
+          "Total Liabilities Net Minority Interest": 308030000000,
+          "Stockholders Equity": 56950000000,
+          "Cash And Cash Equivalents": 29943000000,
+          "Total Debt": 106629000000
+        },
+        "2023-09-30": {
+          "Total Assets": 352583000000,
+          "Total Liabilities Net Minority Interest": 290437000000,
+          "Stockholders Equity": 62146000000,
+          "Cash And Cash Equivalents": 29965000000,
+          "Total Debt": 111088000000
+        },
+        "2022-09-30": {
+          "Total Assets": 352755000000,
+          "Total Liabilities Net Minority Interest": 302083000000,
+          "Stockholders Equity": 50672000000,
+          "Cash And Cash Equivalents": 23646000000,
+          "Total Debt": 132480000000
+        }
+      },
+      "cash_flow": {
+        "2025-09-30": {
+          "Operating Cash Flow": 111482000000,
+          "Capital Expenditure": -12715000000,
+          "Free Cash Flow": 98767000000
+        },
+        "2024-09-30": {
+          "Operating Cash Flow": 118254000000,
+          "Capital Expenditure": -9447000000,
+          "Free Cash Flow": 108807000000
+        },
+        "2023-09-30": {
+          "Operating Cash Flow": 110543000000,
+          "Capital Expenditure": -10959000000,
+          "Free Cash Flow": 99584000000
+        },
+        "2022-09-30": {
+          "Operating Cash Flow": 122151000000,
+          "Capital Expenditure": -10708000000,
+          "Free Cash Flow": 111443000000
+        }
+      }
+    },
+    "get_earnings": [
+      {
+        "fiscal_date_ending": "2026-06-30",
+        "reported_date": "2026-07-30",
+        "reported_eps": 2.02,
+        "estimated_eps": 1.88,
+        "surprise": 0.14,
+        "surprise_pct": 7.4468
+      },
+      {
+        "fiscal_date_ending": "2026-03-31",
+        "reported_date": "2026-04-30",
+        "reported_eps": 2.01,
+        "estimated_eps": 1.94,
+        "surprise": 0.07,
+        "surprise_pct": 3.6082
+      },
+      {
+        "fiscal_date_ending": "2025-12-31",
+        "reported_date": "2026-01-29",
+        "reported_eps": 2.84,
+        "estimated_eps": 2.67,
+        "surprise": 0.17,
+        "surprise_pct": 6.367
+      },
+      {
+        "fiscal_date_ending": "2025-09-30",
+        "reported_date": "2025-10-30",
+        "reported_eps": 1.85,
+        "estimated_eps": 1.77,
+        "surprise": 0.08,
+        "surprise_pct": 4.5198
+      },
+      {
+        "fiscal_date_ending": "2025-06-30",
+        "reported_date": "2025-07-31",
+        "reported_eps": 1.57,
+        "estimated_eps": 1.43,
+        "surprise": 0.14,
+        "surprise_pct": 9.7902
+      },
+      {
+        "fiscal_date_ending": "2025-03-31",
+        "reported_date": "2025-05-01",
+        "reported_eps": 1.65,
+        "estimated_eps": 1.62,
+        "surprise": 0.03,
+        "surprise_pct": 1.8519
+      },
+      {
+        "fiscal_date_ending": "2024-12-31",
+        "reported_date": "2025-01-30",
+        "reported_eps": 2.4,
+        "estimated_eps": 2.34,
+        "surprise": 0.06,
+        "surprise_pct": 2.5641
+      },
+      {
+        "fiscal_date_ending": "2024-09-30",
+        "reported_date": "2024-10-31",
+        "reported_eps": 0.97,
+        "estimated_eps": 0.95,
+        "surprise": 0.02,
+        "surprise_pct": 2.1053
+      }
+    ],
+    "get_macro_snapshot": {
+      "FEDFUNDS": {
+        "label": "Effective federal funds rate (%)",
+        "latest": 3.75,
+        "as_of": "2026-09-01",
+        "year_ago": 4.22,
+        "change_vs_year_ago": -0.47
+      },
+      "DGS10": {
+        "label": "10-year Treasury yield (%)",
+        "latest": 5.1,
+        "as_of": "2026-10-15",
+        "year_ago": 4.05,
+        "change_vs_year_ago": 1.05
+      },
+      "CPIAUCSL": {
+        "label": "CPI, all urban consumers (index)",
+        "latest": 336.298,
+        "as_of": "2026-09-01",
+        "year_ago": 324.245,
+        "yoy_pct_change": 3.72
+      },
+      "UNRATE": {
+        "label": "Unemployment rate (%)",
+        "latest": 4.2,
+        "as_of": "2026-09-01",
+        "year_ago": 4.4,
+        "change_vs_year_ago": -0.2
+      },
+      "VIXCLS": {
+        "label": "VIX volatility index",
+        "latest": 16.46,
+        "as_of": "2026-10-15",
+        "year_ago": 20.64,
+        "change_vs_year_ago": -4.18
+      }
+    },
+    "get_recent_filings": [
+      {
+        "form": "10-Q",
+        "filing_date": "2026-07-31",
+        "report_date": "2026-06-27",
+        "accession": "0000320193-26-000020",
+        "description": "10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+      },
+      {
+        "form": "10-Q",
+        "filing_date": "2026-05-01",
+        "report_date": "2026-03-28",
+        "accession": "0000320193-26-000013",
+        "description": "10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm"
+      },
+      {
+        "form": "10-Q",
+        "filing_date": "2026-01-30",
+        "report_date": "2025-12-27",
+        "accession": "0000320193-26-000006",
+        "description": "10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000006/aapl-20251227.htm"
+      }
+    ],
+    "get_company_info(ticker=MSFT)": {
+      "shortName": "Microsoft Corporation",
+      "longName": "Microsoft Corporation",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "country": "United States",
+      "website": "https://www.microsoft.com",
+      "currency": "USD",
+      "marketCap": 3928485003264,
+      "enterpriseValue": 3980454789120,
+      "fullTimeEmployees": 223000,
+      "trailingPE": 29.4735,
+      "forwardPE": 22.3029,
+      "priceToBook": 8.8819,
+      "dividendYield": 0.74,
+      "beta": 1.099,
+      "profitMargins": 0.4031,
+      "revenueGrowth": 0.177,
+      "earningsGrowth": 0.317,
+      "debtToEquity": 29.118,
+      "fiftyTwoWeekHigh": 553.72,
+      "fiftyTwoWeekLow": 349.2,
+      "recommendationKey": "strong_buy",
+      "targetMeanPrice": 599.2376,
+      "numberOfAnalystOpinions": 53.0,
+      "longBusinessSummary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft 365 Copilot, and Windows Commercial on-premises and Office licensed on-premises. This segment also provides Microsoft 365 Consumer products and cloud services; LinkedIn, including talent solutions, marketing solutions, subscriptions, and sales solutions; Dynamics 365, a set of cloud-based applications; and on-premises ERP and CRM applications. Its Intelligent Cloud segment offers server products and cloud services; cloud and AI consumption-based services, GitHub cloud services, health and life sciences cloud services, as well as vi",
+      "ticker": "MSFT"
+    },
+    "get_company_info(ticker=NVDA)": {
+      "shortName": "NVIDIA Corporation",
+      "longName": "NVIDIA Corporation",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "country": "United States",
+      "website": "https://www.nvidia.com",
+      "currency": "USD",
+      "marketCap": 5170596937728,
+      "enterpriseValue": 5136924016640,
+      "fullTimeEmployees": 42000,
+      "trailingPE": 27.0708,
+      "forwardPE": 13.4549,
+      "priceToBook": 22.5804,
+      "dividendYield": 0.47,
+      "beta": 2.216,
+      "profitMargins": 0.6366,
+      "revenueGrowth": 1.059,
+      "earningsGrowth": 1.278,
+      "debtToEquity": 16.971,
+      "fiftyTwoWeekHigh": 243.37,
+      "fiftyTwoWeekLow": 164.27,
+      "recommendationKey": "strong_buy",
+      "targetMeanPrice": 328.7169,
+      "numberOfAnalystOpinions": 59.0,
+      "longBusinessSummary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. It has a collaboration with Cisco to develop Ultra-Dense Small Form Factor Pluggable (USFP), a high-density optical module pluggable transceiver. It has a collaboration with ChipAgents to dev",
+      "ticker": "NVDA"
+    },
+    "get_company_info(ticker=GOOGL)": {
+      "shortName": "Alphabet Inc.",
+      "longName": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "country": "United States",
+      "website": "https://abc.xyz",
+      "currency": "USD",
+      "marketCap": 4165393448960,
+      "enterpriseValue": 4061755604992,
+      "fullTimeEmployees": 198933,
+      "trailingPE": 17.0893,
+      "forwardPE": 22.276,
+      "priceToBook": 6.6919,
+      "dividendYield": 0.26,
+      "beta": 1.211,
+      "profitMargins": 0.5477,
+      "revenueGrowth": 0.242,
+      "earningsGrowth": 2.94,
+      "debtToEquity": 18.859,
+      "fiftyTwoWeekHigh": 408.61,
+      "fiftyTwoWeekLow": 244.15,
+      "recommendationKey": "strong_buy",
+      "targetMeanPrice": 430.5111,
+      "numberOfAnalystOpinions": 54.0,
+      "longBusinessSummary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is",
+      "ticker": "GOOGL"
+    },
+    "get_news_digest": {
+      "ticker": "AAPL",
+      "n_articles": 12,
+      "headline": "Apple reaches record valuations and sells out premium foldables, but faces product execution risks as new CEO takes helm.",
+      "summary": "- **Valuation & Stock Performance**: Apple achieved $5 trillion market valuation under Tim Cook's 15-year tenure and continues hitting record highs, positioning favorably against competitors like Nvidia [1][2][4]. JP Morgan raised its price target to $360 despite iPhone demand concerns [15].\n- **Product Momentum**: The $1,999 Foldable iPhone (iPhone Duo) sold out in minutes with deliveries slipping to January/late January 2027, indicating strong consumer demand [9][14]. The iPhone Duo features a 5.4-inch outer and 7.6-inch inner display with Touch ID [11].\n- **AI & Services**: Apple hit record close ahead of November 2 earnings report, with potential monetization from charging for extra Siri AI capabilities [10]. However, the new HomeView device uses the same Siri AI technology tied to a $250 million iPhone settlement [5].\n- **Operational Challenges**: HomeView faces app compatibility questions [13], and new CEO John Ternus has partnered with Tim Cook's former rival, signaling leadership transitions [4][6].",
+      "catalysts": [
+        "Foldable iPhone demand surge and production sellout [9][14]",
+        "Premium AI services monetization potential from Siri upgrades [10]",
+        "November 2 earnings report and forward guidance [10]",
+        "Historical 14x valuation growth trajectory continuation [4]",
+        "JP Morgan $360 price target despite production concerns [15]"
+      ],
+      "risks": [
+        "Siri AI reputational risk tied to $250M settlement affecting HomeView adoption [5]",
+        "HomeView app ecosystem fragmentation and compatibility issues [13]",
+        "iPhone demand concerns despite analyst optimism [15]",
+        "Leadership transition uncertainty under new CEO John Ternus [4][6]"
+      ],
+      "sentiment_counts": {
+        "positive": 8,
+        "neutral": 3,
+        "negative": 1
+      },
+      "topic_counts": {
+        "product": 6,
+        "analyst_rating": 4,
+        "other": 2
+      },
+      "sources": [
+        {
+          "id": 1,
+          "title": "The $5 Trillion Club: Which Is the Better Stock to Own, Apple or Nvidia?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/5-trillion-club-better-stock-202000459.html"
+        },
+        {
+          "id": 2,
+          "title": "Apple Keeps Hitting Record Highs. Bitcoin Hasn\u2019t Set One All Year. Which Is the Better Buy?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-keeps-hitting-record-highs-180002614.html"
+        },
+        {
+          "id": 4,
+          "title": "Apple's Market Value Grew From $350 Billion to $5 Trillion During Tim Cook's 15 Years as CEO. Here's What That Growth Curve Means for Apple's Next Chapter Under John Ternus.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apples-market-value-grew-350-200700602.html"
+        },
+        {
+          "id": 5,
+          "title": "Apple bets on the same Siri AI technology with new HomeView device that led to a $250M settlement for iPhone users",
+          "url": "https://finance.yahoo.com/technology/ai/articles/apple-bets-same-siri-ai-183000417.html"
+        },
+        {
+          "id": 6,
+          "title": "Apple's new CEO just teamed up with Tim Cook's old rival",
+          "url": "https://finance.yahoo.com/technology/ai/articles/apples-ceo-just-teamed-tim-161700129.html"
+        },
+        {
+          "id": 7,
+          "title": "$10,000 Invested in Apple Could Be Worth This Much by 2031",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/10-000-invested-apple-could-154902770.html"
+        },
+        {
+          "id": 9,
+          "title": "Apple\u2019s $1,999 Foldable iPhone Sold Out in Minutes. Deliveries Now Slip to January",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-1-999-foldable-iphone-145018158.html"
+        },
+        {
+          "id": 10,
+          "title": "Apple Hit a Record Close Ahead of Its November 2 Report. Here\u2019s What Charging for Extra Siri AI Could Mean for the Stock",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-hit-record-close-ahead-144812244.html"
+        },
+        {
+          "id": 11,
+          "title": "All the news about the iPhone Duo",
+          "url": "https://www.theverge.com/tech/1010131/apple-iphone-duo-news-announcements"
+        },
+        {
+          "id": 13,
+          "title": "Apple\u2019s HomeView has an app problem",
+          "url": "https://www.theverge.com/podcast/1012911/apple-homeview-apps-carplay-vergecast"
+        },
+        {
+          "id": 14,
+          "title": "iPhone Duo orders are already delayed into 2027",
+          "url": "https://www.theverge.com/tech/1012805/apple-iphone-duo-preorder-delay"
+        },
+        {
+          "id": 15,
+          "title": "Apple gets a $360 price target from JP Morgan despite iPhone demand concerns",
+          "url": "https://9to5mac.com/2026/10/12/apple-gets-a-360-price-target-from-jp-morgan-despite-iphone-demand-concerns/"
+        }
+      ],
+      "unknown_citations": []
+    },
+    "get_filing_text": {
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "section": "Results of Operations",
+      "section_found": true,
+      "total_chars": 82882,
+      "text": "Results of Operations This Item and other sections of this Quarterly Report on Form 10-Q (\u201cForm 10-Q\u201d) contain forward-looking statements, within the meaning of the Private Securities Litigation Reform Act of 1995, that involve risks and uncertainties. Forward-looking statements provide current expectations of future events based on certain assumptions and include any statement that does not directly relate to any historical or current fact. For example, statements in this Form 10-Q regarding the potential future impact of macroeconomic conditions and tariffs and other measures on the Company\u2019s business and results of operations are forward-looking statements . Forward-looking statements can also be identified by words such as \u201cfuture,\u201d \u201canticipates,\u201d \u201cbelieves,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cplans,\u201d \u201cpredicts,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201ccould,\u201d \u201ccan,\u201d \u201cmay,\u201d and similar terms. Forward-looking statements are not guarantees of future performance and the Company\u2019s actual results may differ significantly from the results discussed in the forward-looking statements. Factors that might cause such differences include, but are not limited to, those discussed in Part I, Item 1A of the 2025 Form 10-K and Part II, Item 1A of this Form 10-Q, in each case under the heading \u201cRisk Factors.\u201d The Company assumes no obligation to revise or update any forward-looking statements for any reason, except as required by law. Unless otherwise stated, all information presented herein is based on the Company\u2019s fiscal calendar, and references to particular years, quarters, months or periods refer to the Company\u2019s fiscal years ended in September and the associated quarters, months and periods of those fiscal years. The following discussion should be read in conjunction with the 2025 Form 10-K filed with the U.S. Securities and Exchange Commission (\u201cSEC\u201d) and the condensed consolidated financial statements and accompanying notes included in Part I, Item 1 of this Form 10-Q. Available Information The Company periodically provides certain information for investors on its corporate website, www.apple.com, and its investor relations website, investor.apple.com. This includes press releases and other information about financial performance, information on corporate governance, and details related to the Company\u2019s annual meeting of shareholders. The information contained on the websites referenced in this Form 10-Q is not incorporated by reference into this filing. Further, the Company\u2019s references to website URLs are intended to be inactive textual references only. Business Seasonality and Product Introductions The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand. Additionally, new product and service introductions can significantly impact net sales, cost of sales and operating expenses. The timing of product introductions can also impact the Company\u2019s net sales to its indirect distribution channels as these channels are filled with new inventory following a product launch, and channel inventory of an older product often declines as the launch of a newer product approaches. Net sales can also be affected when consumers and distributors anticipate a product introduction. During the third quarter of 2026, the Company announced iOS 27, macOS \u00ae 27 Golden Gate, iPadOS \u00ae 27, watchOS \u00ae 27, visionOS \u00ae 27 and tvOS \u00ae 27, and introduced Siri AI. Macroeconomic Conditions Macroeconomic conditions, including inflation, interest rates, component pricing and currency fluctuations, have directly and indirectly impacted, and could in the future materially impact, the Company\u2019s results of operations and financial condition. The Company is experiencing a period of supply constraints and increasing costs for components driven by factors such as industry supply-demand imbalances for components, including advanced semiconductors, storage (NAND) and memory (DRAM). The Company expects these trends to intensify, which may materially negatively impact the Company\u2019s revenue, costs, gross margin, results of operations and financial condition. Actions, such as price increases, that have been and may in the future be taken by the Company may not effectively mitigate these negative impacts, and may also reduce demand for the Company\u2019s products and materially adversely affect the Company\u2019s revenue, costs, gross margin, results of operations and financial condition. Apple Inc. | Q3 2026 Form 10-Q | 13 Tariffs and Other Measures Beginning in the second quarter of 2025, new tariffs were announced on imports to the U.S., including additional tariffs on imports from China, India, Japan, South Korea, Taiwan, Vietnam and the European Union (\u201cEU\u201d), among others. In response, several countries have imposed, or threatened to impose, reciprocal tariffs on imports from the U.S. and other retaliatory measures. On January 14, 2026, initial results were published of the previously announced U.S. Department of Commerce investigation under Section 232 of the Trade Expansion Act of 1962, as amended, into imports of semiconductors, semiconductor manufacturing equipment, and their derivative products, including downstream products that contain semiconductors. The announcement of the initial results of the investigation did not impose any additional tariffs affecting the Company\u2019s products. Separately, on February 20, 2026, the U.S. Supreme Court (\u201cSupreme Court\u201d) issued a ruling striking down certain tariffs previously imposed under the International Emergency Economic Powers Act of 1977. The Company has applied for a refund of tariffs paid, following the processes established by U.S. Customs and Border Protection, and has recognized any refunds received as a reduction of products cost of sales. Various modifications to U.S. tariffs have been announced, including the recent imposition of tariffs under Section 301 of the Trade Act of 1974, and further changes could be made in the future, which may include additional measures under the Section 232 semiconductor sector investigation, additional sector-based tariffs, further actions under Section 301, or other measures. Tariffs and other measures that are applied to the Company\u2019s products or their components can have a material adverse impact on the Company\u2019s business, results of operations and financial condition, including impacting the Company\u2019s supply chain, the availability of rare earths and other raw materials and components, pricing and gross margin. The ultimate impact remains uncertain and will depend on several factors, including whether additional or incremental U.S. tariffs or other measures are announced or imposed, to what extent other countries implement tariffs or other retaliatory measures in response, and the overall magnitude and duration of these measures. Trade and other international disputes can have an adverse impact on the overall macroeconomic environment and result in shifts and reductions in consumer spending and negative consumer sentiment for the Company\u2019s products and services, all of which can further adversely affect the Company\u2019s business and results of operations. Segment Operating Performance The following table shows net sales by reportable segment for the three- and nine-month periods ended June 27, 2026 and June 28, 2025 (dollars in millions): Three Months Ended Nine Months Ended June 27, 2026 June 28, 2025 Change June 27, 2026 June 28, 2025 Change Americas $ 45,781 $ 41,198 11% $ 149,403 $ 134,161 11% Europe 29,395 24,014 22% 95,596 82,329 16% Greater China 18,816 15,369 22% 64,839 49,884 30% Japan 6,554 5,782 13% 24,368 22,067 10% Rest of Asia Pacific 8,871 7,673 16% 30,151 25,254 19% Total net sales $ 109,417 $ 94,036 16% $ 364,357 $ 313,695 16% Americas Americas net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher net sales of iPhone, Services and Mac. Eur"
+    },
+    "get_series": {
+      "series_id": "FEDFUNDS",
+      "title": "Federal Funds Effective Rate",
+      "units": "Percent",
+      "frequency": "Monthly",
+      "observations": [
+        {
+          "date": "2024-10-01",
+          "value": 4.83
+        },
+        {
+          "date": "2024-11-01",
+          "value": 4.64
+        },
+        {
+          "date": "2024-12-01",
+          "value": 4.48
+        },
+        {
+          "date": "2025-01-01",
+          "value": 4.33
+        },
+        {
+          "date": "2025-02-01",
+          "value": 4.33
+        },
+        {
+          "date": "2025-03-01",
+          "value": 4.33
+        },
+        {
+          "date": "2025-04-01",
+          "value": 4.33
+        },
+        {
+          "date": "2025-05-01",
+          "value": 4.33
+        },
+        {
+          "date": "2025-06-01",
+          "value": 4.33
+        },
+        {
+          "date": "2025-07-01",
+          "value": 4.33
+        },
+        {
+          "date": "2025-08-01",
+          "value": 4.33
+        },
+        {
+          "date": "2025-09-01",
+          "value": 4.22
+        },
+        {
+          "date": "2025-10-01",
+          "value": 4.09
+        },
+        {
+          "date": "2025-11-01",
+          "value": 3.88
+        },
+        {
+          "date": "2025-12-01",
+          "value": 3.72
+        },
+        {
+          "date": "2026-01-01",
+          "value": 3.64
+        },
+        {
+          "date": "2026-02-01",
+          "value": 3.64
+        },
+        {
+          "date": "2026-03-01",
+          "value": 3.64
+        },
+        {
+          "date": "2026-04-01",
+          "value": 3.64
+        },
+        {
+          "date": "2026-05-01",
+          "value": 3.63
+        },
+        {
+          "date": "2026-06-01",
+          "value": 3.63
+        },
+        {
+          "date": "2026-07-01",
+          "value": 3.63
+        },
+        {
+          "date": "2026-08-01",
+          "value": 3.63
+        },
+        {
+          "date": "2026-09-01",
+          "value": 3.75
+        }
+      ]
+    },
+    "get_series(series_id=DGS10,start=2024-10-01)": {
+      "series_id": "DGS10",
+      "title": "Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity, Quoted on an Investment Basis",
+      "units": "Percent",
+      "frequency": "Daily",
+      "observations": [
+        {
+          "date": "2024-10-01",
+          "value": 3.74
+        },
+        {
+          "date": "2024-10-02",
+          "value": 3.79
+        },
+        {
+          "date": "2024-10-03",
+          "value": 3.85
+        },
+        {
+          "date": "2024-10-04",
+          "value": 3.98
+        },
+        {
+          "date": "2024-10-07",
+          "value": 4.03
+        },
+        {
+          "date": "2024-10-08",
+          "value": 4.04
+        },
+        {
+          "date": "2024-10-09",
+          "value": 4.06
+        },
+        {
+          "date": "2024-10-10",
+          "value": 4.09
+        },
+        {
+          "date": "2024-10-11",
+          "value": 4.08
+        },
+        {
+          "date": "2024-10-14",
+          "value": null
+        },
+        {
+          "date": "2024-10-15",
+          "value": 4.03
+        },
+        {
+          "date": "2024-10-16",
+          "value": 4.02
+        },
+        {
+          "date": "2024-10-17",
+          "value": 4.09
+        },
+        {
+          "date": "2024-10-18",
+          "value": 4.08
+        },
+        {
+          "date": "2024-10-21",
+          "value": 4.19
+        },
+        {
+          "date": "2024-10-22",
+          "value": 4.2
+        },
+        {
+          "date": "2024-10-23",
+          "value": 4.24
+        },
+        {
+          "date": "2024-10-24",
+          "value": 4.21
+        },
+        {
+          "date": "2024-10-25",
+          "value": 4.25
+        },
+        {
+          "date": "2024-10-28",
+          "value": 4.28
+        },
+        {
+          "date": "2024-10-29",
+          "value": 4.28
+        },
+        {
+          "date": "2024-10-30",
+          "value": 4.29
+        },
+        {
+          "date": "2024-10-31",
+          "value": 4.28
+        },
+        {
+          "date": "2024-11-01",
+          "value": 4.37
+        },
+        {
+          "date": "2024-11-04",
+          "value": 4.31
+        },
+        {
+          "date": "2024-11-05",
+          "value": 4.26
+        },
+        {
+          "date": "2024-11-06",
+          "value": 4.42
+        },
+        {
+          "date": "2024-11-07",
+          "value": 4.31
+        },
+        {
+          "date": "2024-11-08",
+          "value": 4.3
+        },
+        {
+          "date": "2024-11-11",
+          "value": null
+        },
+        {
+          "date": "2024-11-12",
+          "value": 4.43
+        },
+        {
+          "date": "2024-11-13",
+          "value": 4.44
+        },
+        {
+          "date": "2024-11-14",
+          "value": 4.43
+        },
+        {
+          "date": "2024-11-15",
+          "value": 4.43
+        },
+        {
+          "date": "2024-11-18",
+          "value": 4.42
+        },
+        {
+          "date": "2024-11-19",
+          "value": 4.39
+        },
+        {
+          "date": "2024-11-20",
+          "value": 4.41
+        },
+        {
+          "date": "2024-11-21",
+          "value": 4.43
+        },
+        {
+          "date": "2024-11-22",
+          "value": 4.41
+        },
+        {
+          "date": "2024-11-25",
+          "value": 4.27
+        },
+        {
+          "date": "2024-11-26",
+          "value": 4.3
+        },
+        {
+          "date": "2024-11-27",
+          "value": 4.25
+        },
+        {
+          "date": "2024-11-28",
+          "value": null
+        },
+        {
+          "date": "2024-11-29",
+          "value": 4.18
+        },
+        {
+          "date": "2024-12-02",
+          "value": 4.19
+        },
+        {
+          "date": "2024-12-03",
+          "value": 4.23
+        },
+        {
+          "date": "2024-12-04",
+          "value": 4.19
+        },
+        {
+          "date": "2024-12-05",
+          "value": 4.17
+        },
+        {
+          "date": "2024-12-06",
+          "value": 4.15
+        },
+        {
+          "date": "2024-12-09",
+          "value": 4.2
+        },
+        {
+          "date": "2024-12-10",
+          "value": 4.22
+        },
+        {
+          "date": "2024-12-11",
+          "value": 4.26
+        },
+        {
+          "date": "2024-12-12",
+          "value": 4.32
+        },
+        {
+          "date": "2024-12-13",
+          "value": 4.4
+        },
+        {
+          "date": "2024-12-16",
+          "value": 4.39
+        },
+        {
+          "date": "2024-12-17",
+          "value": 4.4
+        },
+        {
+          "date": "2024-12-18",
+          "value": 4.5
+        },
+        {
+          "date": "2024-12-19",
+          "value": 4.57
+        },
+        {
+          "date": "2024-12-20",
+          "value": 4.52
+        },
+        {
+          "date": "2024-12-23",
+          "value": 4.59
+        },
+        {
+          "date": "2024-12-24",
+          "value": 4.59
+        },
+        {
+          "date": "2024-12-25",
+          "value": null
+        },
+        {
+          "date": "2024-12-26",
+          "value": 4.58
+        },
+        {
+          "date": "2024-12-27",
+          "value": 4.62
+        },
+        {
+          "date": "2024-12-30",
+          "value": 4.55
+        },
+        {
+          "date": "2024-12-31",
+          "value": 4.58
+        },
+        {
+          "date": "2025-01-01",
+          "value": null
+        },
+        {
+          "date": "2025-01-02",
+          "value": 4.57
+        },
+        {
+          "date": "2025-01-03",
+          "value": 4.6
+        },
+        {
+          "date": "2025-01-06",
+          "value": 4.62
+        },
+        {
+          "date": "2025-01-07",
+          "value": 4.67
+        },
+        {
+          "date": "2025-01-08",
+          "value": 4.67
+        },
+        {
+          "date": "2025-01-09",
+          "value": 4.68
+        },
+        {
+          "date": "2025-01-10",
+          "value": 4.77
+        },
+        {
+          "date": "2025-01-13",
+          "value": 4.79
+        },
+        {
+          "date": "2025-01-14",
+          "value": 4.78
+        },
+        {
+          "date": "2025-01-15",
+          "value": 4.66
+        },
+        {
+          "date": "2025-01-16",
+          "value": 4.61
+        },
+        {
+          "date": "2025-01-17",
+          "value": 4.61
+        },
+        {
+          "date": "2025-01-20",
+          "value": null
+        },
+        {
+          "date": "2025-01-21",
+          "value": 4.57
+        },
+        {
+          "date": "2025-01-22",
+          "value": 4.6
+        },
+        {
+          "date": "2025-01-23",
+          "value": 4.65
+        },
+        {
+          "date": "2025-01-24",
+          "value": 4.63
+        },
+        {
+          "date": "2025-01-27",
+          "value": 4.53
+        },
+        {
+          "date": "2025-01-28",
+          "value": 4.55
+        },
+        {
+          "date": "2025-01-29",
+          "value": 4.55
+        },
+        {
+          "date": "2025-01-30",
+          "value": 4.52
+        },
+        {
+          "date": "2025-01-31",
+          "value": 4.58
+        },
+        {
+          "date": "2025-02-03",
+          "value": 4.54
+        },
+        {
+          "date": "2025-02-04",
+          "value": 4.52
+        },
+        {
+          "date": "2025-02-05",
+          "value": 4.43
+        },
+        {
+          "date": "2025-02-06",
+          "value": 4.45
+        },
+        {
+          "date": "2025-02-07",
+          "value": 4.49
+        },
+        {
+          "date": "2025-02-10",
+          "value": 4.51
+        },
+        {
+          "date": "2025-02-11",
+          "value": 4.54
+        },
+        {
+          "date": "2025-02-12",
+          "value": 4.62
+        },
+        {
+          "date": "2025-02-13",
+          "value": 4.52
+        },
+        {
+          "date": "2025-02-14",
+          "value": 4.47
+        },
+        {
+          "date": "2025-02-17",
+          "value": null
+        },
+        {
+          "date": "2025-02-18",
+          "value": 4.55
+        },
+        {
+          "date": "2025-02-19",
+          "value": 4.53
+        },
+        {
+          "date": "2025-02-20",
+          "value": 4.5
+        },
+        {
+          "date": "2025-02-21",
+          "value": 4.42
+        },
+        {
+          "date": "2025-02-24",
+          "value": 4.4
+        },
+        {
+          "date": "2025-02-25",
+          "value": 4.3
+        },
+        {
+          "date": "2025-02-26",
+          "value": 4.25
+        },
+        {
+          "date": "2025-02-27",
+          "value": 4.29
+        },
+        {
+          "date": "2025-02-28",
+          "value": 4.24
+        },
+        {
+          "date": "2025-03-03",
+          "value": 4.16
+        },
+        {
+          "date": "2025-03-04",
+          "value": 4.22
+        },
+        {
+          "date": "2025-03-05",
+          "value": 4.28
+        },
+        {
+          "date": "2025-03-06",
+          "value": 4.29
+        },
+        {
+          "date": "2025-03-07",
+          "value": 4.32
+        },
+        {
+          "date": "2025-03-10",
+          "value": 4.22
+        },
+        {
+          "date": "2025-03-11",
+          "value": 4.28
+        },
+        {
+          "date": "2025-03-12",
+          "value": 4.32
+        },
+        {
+          "date": "2025-03-13",
+          "value": 4.27
+        },
+        {
+          "date": "2025-03-14",
+          "value": 4.31
+        },
+        {
+          "date": "2025-03-17",
+          "value": 4.31
+        },
+        {
+          "date": "2025-03-18",
+          "value": 4.29
+        },
+        {
+          "date": "2025-03-19",
+          "value": 4.25
+        },
+        {
+          "date": "2025-03-20",
+          "value": 4.24
+        },
+        {
+          "date": "2025-03-21",
+          "value": 4.25
+        },
+        {
+          "date": "2025-03-24",
+          "value": 4.34
+        },
+        {
+          "date": "2025-03-25",
+          "value": 4.31
+        },
+        {
+          "date": "2025-03-26",
+          "value": 4.35
+        },
+        {
+          "date": "2025-03-27",
+          "value": 4.38
+        },
+        {
+          "date": "2025-03-28",
+          "value": 4.27
+        },
+        {
+          "date": "2025-03-31",
+          "value": 4.23
+        },
+        {
+          "date": "2025-04-01",
+          "value": 4.17
+        },
+        {
+          "date": "2025-04-02",
+          "value": 4.2
+        },
+        {
+          "date": "2025-04-03",
+          "value": 4.06
+        },
+        {
+          "date": "2025-04-04",
+          "value": 4.01
+        },
+        {
+          "date": "2025-04-07",
+          "value": 4.15
+        },
+        {
+          "date": "2025-04-08",
+          "value": 4.26
+        },
+        {
+          "date": "2025-04-09",
+          "value": 4.34
+        },
+        {
+          "date": "2025-04-10",
+          "value": 4.4
+        },
+        {
+          "date": "2025-04-11",
+          "value": 4.48
+        },
+        {
+          "date": "2025-04-14",
+          "value": 4.38
+        },
+        {
+          "date": "2025-04-15",
+          "value": 4.35
+        },
+        {
+          "date": "2025-04-16",
+          "value": 4.29
+        },
+        {
+          "date": "2025-04-17",
+          "value": 4.34
+        },
+        {
+          "date": "2025-04-18",
+          "value": null
+        },
+        {
+          "date": "2025-04-21",
+          "value": 4.42
+        },
+        {
+          "date": "2025-04-22",
+          "value": 4.41
+        },
+        {
+          "date": "2025-04-23",
+          "value": 4.4
+        },
+        {
+          "date": "2025-04-24",
+          "value": 4.32
+        },
+        {
+          "date": "2025-04-25",
+          "value": 4.29
+        },
+        {
+          "date": "2025-04-28",
+          "value": 4.23
+        },
+        {
+          "date": "2025-04-29",
+          "value": 4.19
+        },
+        {
+          "date": "2025-04-30",
+          "value": 4.17
+        },
+        {
+          "date": "2025-05-01",
+          "value": 4.25
+        },
+        {
+          "date": "2025-05-02",
+          "value": 4.33
+        },
+        {
+          "date": "2025-05-05",
+          "value": 4.36
+        },
+        {
+          "date": "2025-05-06",
+          "value": 4.3
+        },
+        {
+          "date": "2025-05-07",
+          "value": 4.26
+        },
+        {
+          "date": "2025-05-08",
+          "value": 4.37
+        },
+        {
+          "date": "2025-05-09",
+          "value": 4.37
+        },
+        {
+          "date": "2025-05-12",
+          "value": 4.45
+        },
+        {
+          "date": "2025-05-13",
+          "value": 4.49
+        },
+        {
+          "date": "2025-05-14",
+          "value": 4.53
+        },
+        {
+          "date": "2025-05-15",
+          "value": 4.45
+        },
+        {
+          "date": "2025-05-16",
+          "value": 4.43
+        },
+        {
+          "date": "2025-05-19",
+          "value": 4.46
+        },
+        {
+          "date": "2025-05-20",
+          "value": 4.48
+        },
+        {
+          "date": "2025-05-21",
+          "value": 4.58
+        },
+        {
+          "date": "2025-05-22",
+          "value": 4.54
+        },
+        {
+          "date": "2025-05-23",
+          "value": 4.51
+        },
+        {
+          "date": "2025-05-26",
+          "value": null
+        },
+        {
+          "date": "2025-05-27",
+          "value": 4.43
+        },
+        {
+          "date": "2025-05-28",
+          "value": 4.47
+        },
+        {
+          "date": "2025-05-29",
+          "value": 4.43
+        },
+        {
+          "date": "2025-05-30",
+          "value": 4.41
+        },
+        {
+          "date": "2025-06-02",
+          "value": 4.46
+        },
+        {
+          "date": "2025-06-03",
+          "value": 4.46
+        },
+        {
+          "date": "2025-06-04",
+          "value": 4.37
+        },
+        {
+          "date": "2025-06-05",
+          "value": 4.4
+        },
+        {
+          "date": "2025-06-06",
+          "value": 4.51
+        },
+        {
+          "date": "2025-06-09",
+          "value": 4.49
+        },
+        {
+          "date": "2025-06-10",
+          "value": 4.47
+        },
+        {
+          "date": "2025-06-11",
+          "value": 4.41
+        },
+        {
+          "date": "2025-06-12",
+          "value": 4.36
+        },
+        {
+          "date": "2025-06-13",
+          "value": 4.41
+        },
+        {
+          "date": "2025-06-16",
+          "value": 4.46
+        },
+        {
+          "date": "2025-06-17",
+          "value": 4.39
+        },
+        {
+          "date": "2025-06-18",
+          "value": 4.38
+        },
+        {
+          "date": "2025-06-19",
+          "value": null
+        },
+        {
+          "date": "2025-06-20",
+          "value": 4.38
+        },
+        {
+          "date": "2025-06-23",
+          "value": 4.34
+        },
+        {
+          "date": "2025-06-24",
+          "value": 4.3
+        },
+        {
+          "date": "2025-06-25",
+          "value": 4.29
+        },
+        {
+          "date": "2025-06-26",
+          "value": 4.26
+        },
+        {
+          "date": "2025-06-27",
+          "value": 4.29
+        },
+        {
+          "date": "2025-06-30",
+          "value": 4.24
+        },
+        {
+          "date": "2025-07-01",
+          "value": 4.26
+        },
+        {
+          "date": "2025-07-02",
+          "value": 4.3
+        },
+        {
+          "date": "2025-07-03",
+          "value": 4.35
+        },
+        {
+          "date": "2025-07-04",
+          "value": null
+        },
+        {
+          "date": "2025-07-07",
+          "value": 4.4
+        },
+        {
+          "date": "2025-07-08",
+          "value": 4.42
+        },
+        {
+          "date": "2025-07-09",
+          "value": 4.34
+        },
+        {
+          "date": "2025-07-10",
+          "value": 4.35
+        },
+        {
+          "date": "2025-07-11",
+          "value": 4.43
+        },
+        {
+          "date": "2025-07-14",
+          "value": 4.43
+        },
+        {
+          "date": "2025-07-15",
+          "value": 4.5
+        },
+        {
+          "date": "2025-07-16",
+          "value": 4.46
+        },
+        {
+          "date": "2025-07-17",
+          "value": 4.47
+        },
+        {
+          "date": "2025-07-18",
+          "value": 4.44
+        },
+        {
+          "date": "2025-07-21",
+          "value": 4.38
+        },
+        {
+          "date": "2025-07-22",
+          "value": 4.35
+        },
+        {
+          "date": "2025-07-23",
+          "value": 4.4
+        },
+        {
+          "date": "2025-07-24",
+          "value": 4.43
+        },
+        {
+          "date": "2025-07-25",
+          "value": 4.4
+        },
+        {
+          "date": "2025-07-28",
+          "value": 4.42
+        },
+        {
+          "date": "2025-07-29",
+          "value": 4.34
+        },
+        {
+          "date": "2025-07-30",
+          "value": 4.38
+        },
+        {
+          "date": "2025-07-31",
+          "value": 4.37
+        },
+        {
+          "date": "2025-08-01",
+          "value": 4.23
+        },
+        {
+          "date": "2025-08-04",
+          "value": 4.22
+        },
+        {
+          "date": "2025-08-05",
+          "value": 4.22
+        },
+        {
+          "date": "2025-08-06",
+          "value": 4.22
+        },
+        {
+          "date": "2025-08-07",
+          "value": 4.23
+        },
+        {
+          "date": "2025-08-08",
+          "value": 4.27
+        },
+        {
+          "date": "2025-08-11",
+          "value": 4.27
+        },
+        {
+          "date": "2025-08-12",
+          "value": 4.29
+        },
+        {
+          "date": "2025-08-13",
+          "value": 4.24
+        },
+        {
+          "date": "2025-08-14",
+          "value": 4.29
+        },
+        {
+          "date": "2025-08-15",
+          "value": 4.33
+        },
+        {
+          "date": "2025-08-18",
+          "value": 4.34
+        },
+        {
+          "date": "2025-08-19",
+          "value": 4.3
+        },
+        {
+          "date": "2025-08-20",
+          "value": 4.29
+        },
+        {
+          "date": "2025-08-21",
+          "value": 4.33
+        },
+        {
+          "date": "2025-08-22",
+          "value": 4.26
+        },
+        {
+          "date": "2025-08-25",
+          "value": 4.28
+        },
+        {
+          "date": "2025-08-26",
+          "value": 4.26
+        },
+        {
+          "date": "2025-08-27",
+          "value": 4.24
+        },
+        {
+          "date": "2025-08-28",
+          "value": 4.22
+        },
+        {
+          "date": "2025-08-29",
+          "value": 4.23
+        },
+        {
+          "date": "2025-09-01",
+          "value": null
+        },
+        {
+          "date": "2025-09-02",
+          "value": 4.28
+        },
+        {
+          "date": "2025-09-03",
+          "value": 4.22
+        },
+        {
+          "date": "2025-09-04",
+          "value": 4.17
+        },
+        {
+          "date": "2025-09-05",
+          "value": 4.1
+        },
+        {
+          "date": "2025-09-08",
+          "value": 4.05
+        },
+        {
+          "date": "2025-09-09",
+          "value": 4.08
+        },
+        {
+          "date": "2025-09-10",
+          "value": 4.04
+        },
+        {
+          "date": "2025-09-11",
+          "value": 4.01
+        },
+        {
+          "date": "2025-09-12",
+          "value": 4.06
+        },
+        {
+          "date": "2025-09-15",
+          "value": 4.05
+        },
+        {
+          "date": "2025-09-16",
+          "value": 4.04
+        },
+        {
+          "date": "2025-09-17",
+          "value": 4.06
+        },
+        {
+          "date": "2025-09-18",
+          "value": 4.11
+        },
+        {
+          "date": "2025-09-19",
+          "value": 4.14
+        },
+        {
+          "date": "2025-09-22",
+          "value": 4.15
+        },
+        {
+          "date": "2025-09-23",
+          "value": 4.12
+        },
+        {
+          "date": "2025-09-24",
+          "value": 4.16
+        },
+        {
+          "date": "2025-09-25",
+          "value": 4.18
+        },
+        {
+          "date": "2025-09-26",
+          "value": 4.2
+        },
+        {
+          "date": "2025-09-29",
+          "value": 4.15
+        },
+        {
+          "date": "2025-09-30",
+          "value": 4.16
+        },
+        {
+          "date": "2025-10-01",
+          "value": 4.12
+        },
+        {
+          "date": "2025-10-02",
+          "value": 4.1
+        },
+        {
+          "date": "2025-10-03",
+          "value": 4.13
+        },
+        {
+          "date": "2025-10-06",
+          "value": 4.18
+        },
+        {
+          "date": "2025-10-07",
+          "value": 4.14
+        },
+        {
+          "date": "2025-10-08",
+          "value": 4.13
+        },
+        {
+          "date": "2025-10-09",
+          "value": 4.14
+        },
+        {
+          "date": "2025-10-10",
+          "value": 4.05
+        },
+        {
+          "date": "2025-10-13",
+          "value": null
+        },
+        {
+          "date": "2025-10-14",
+          "value": 4.03
+        },
+        {
+          "date": "2025-10-15",
+          "value": 4.05
+        },
+        {
+          "date": "2025-10-16",
+          "value": 3.99
+        },
+        {
+          "date": "2025-10-17",
+          "value": 4.02
+        },
+        {
+          "date": "2025-10-20",
+          "value": 4.0
+        },
+        {
+          "date": "2025-10-21",
+          "value": 3.98
+        },
+        {
+          "date": "2025-10-22",
+          "value": 3.97
+        },
+        {
+          "date": "2025-10-23",
+          "value": 4.01
+        },
+        {
+          "date": "2025-10-24",
+          "value": 4.02
+        },
+        {
+          "date": "2025-10-27",
+          "value": 4.01
+        },
+        {
+          "date": "2025-10-28",
+          "value": 3.99
+        },
+        {
+          "date": "2025-10-29",
+          "value": 4.08
+        },
+        {
+          "date": "2025-10-30",
+          "value": 4.11
+        },
+        {
+          "date": "2025-10-31",
+          "value": 4.11
+        },
+        {
+          "date": "2025-11-03",
+          "value": 4.13
+        },
+        {
+          "date": "2025-11-04",
+          "value": 4.1
+        },
+        {
+          "date": "2025-11-05",
+          "value": 4.17
+        },
+        {
+          "date": "2025-11-06",
+          "value": 4.11
+        },
+        {
+          "date": "2025-11-07",
+          "value": 4.11
+        },
+        {
+          "date": "2025-11-10",
+          "value": 4.13
+        },
+        {
+          "date": "2025-11-11",
+          "value": null
+        },
+        {
+          "date": "2025-11-12",
+          "value": 4.08
+        },
+        {
+          "date": "2025-11-13",
+          "value": 4.11
+        },
+        {
+          "date": "2025-11-14",
+          "value": 4.14
+        },
+        {
+          "date": "2025-11-17",
+          "value": 4.13
+        },
+        {
+          "date": "2025-11-18",
+          "value": 4.12
+        },
+        {
+          "date": "2025-11-19",
+          "value": 4.13
+        },
+        {
+          "date": "2025-11-20",
+          "value": 4.1
+        },
+        {
+          "date": "2025-11-21",
+          "value": 4.06
+        },
+        {
+          "date": "2025-11-24",
+          "value": 4.04
+        },
+        {
+          "date": "2025-11-25",
+          "value": 4.01
+        },
+        {
+          "date": "2025-11-26",
+          "value": 4.0
+        },
+        {
+          "date": "2025-11-27",
+          "value": null
+        },
+        {
+          "date": "2025-11-28",
+          "value": 4.02
+        },
+        {
+          "date": "2025-12-01",
+          "value": 4.09
+        },
+        {
+          "date": "2025-12-02",
+          "value": 4.09
+        },
+        {
+          "date": "2025-12-03",
+          "value": 4.06
+        },
+        {
+          "date": "2025-12-04",
+          "value": 4.11
+        },
+        {
+          "date": "2025-12-05",
+          "value": 4.14
+        },
+        {
+          "date": "2025-12-08",
+          "value": 4.17
+        },
+        {
+          "date": "2025-12-09",
+          "value": 4.18
+        },
+        {
+          "date": "2025-12-10",
+          "value": 4.13
+        },
+        {
+          "date": "2025-12-11",
+          "value": 4.14
+        },
+        {
+          "date": "2025-12-12",
+          "value": 4.19
+        },
+        {
+          "date": "2025-12-15",
+          "value": 4.18
+        },
+        {
+          "date": "2025-12-16",
+          "value": 4.15
+        },
+        {
+          "date": "2025-12-17",
+          "value": 4.16
+        },
+        {
+          "date": "2025-12-18",
+          "value": 4.12
+        },
+        {
+          "date": "2025-12-19",
+          "value": 4.16
+        },
+        {
+          "date": "2025-12-22",
+          "value": 4.17
+        },
+        {
+          "date": "2025-12-23",
+          "value": 4.18
+        },
+        {
+          "date": "2025-12-24",
+          "value": 4.15
+        },
+        {
+          "date": "2025-12-25",
+          "value": null
+        },
+        {
+          "date": "2025-12-26",
+          "value": 4.14
+        },
+        {
+          "date": "2025-12-29",
+          "value": 4.12
+        },
+        {
+          "date": "2025-12-30",
+          "value": 4.14
+        },
+        {
+          "date": "2025-12-31",
+          "value": 4.18
+        },
+        {
+          "date": "2026-01-01",
+          "value": null
+        },
+        {
+          "date": "2026-01-02",
+          "value": 4.19
+        },
+        {
+          "date": "2026-01-05",
+          "value": 4.17
+        },
+        {
+          "date": "2026-01-06",
+          "value": 4.18
+        },
+        {
+          "date": "2026-01-07",
+          "value": 4.15
+        },
+        {
+          "date": "2026-01-08",
+          "value": 4.19
+        },
+        {
+          "date": "2026-01-09",
+          "value": 4.18
+        },
+        {
+          "date": "2026-01-12",
+          "value": 4.19
+        },
+        {
+          "date": "2026-01-13",
+          "value": 4.18
+        },
+        {
+          "date": "2026-01-14",
+          "value": 4.15
+        },
+        {
+          "date": "2026-01-15",
+          "value": 4.17
+        },
+        {
+          "date": "2026-01-16",
+          "value": 4.24
+        },
+        {
+          "date": "2026-01-19",
+          "value": null
+        },
+        {
+          "date": "2026-01-20",
+          "value": 4.3
+        },
+        {
+          "date": "2026-01-21",
+          "value": 4.26
+        },
+        {
+          "date": "2026-01-22",
+          "value": 4.26
+        },
+        {
+          "date": "2026-01-23",
+          "value": 4.24
+        },
+        {
+          "date": "2026-01-26",
+          "value": 4.22
+        },
+        {
+          "date": "2026-01-27",
+          "value": 4.24
+        },
+        {
+          "date": "2026-01-28",
+          "value": 4.26
+        },
+        {
+          "date": "2026-01-29",
+          "value": 4.24
+        },
+        {
+          "date": "2026-01-30",
+          "value": 4.26
+        },
+        {
+          "date": "2026-02-02",
+          "value": 4.29
+        },
+        {
+          "date": "2026-02-03",
+          "value": 4.28
+        },
+        {
+          "date": "2026-02-04",
+          "value": 4.29
+        },
+        {
+          "date": "2026-02-05",
+          "value": 4.21
+        },
+        {
+          "date": "2026-02-06",
+          "value": 4.22
+        },
+        {
+          "date": "2026-02-09",
+          "value": 4.22
+        },
+        {
+          "date": "2026-02-10",
+          "value": 4.16
+        },
+        {
+          "date": "2026-02-11",
+          "value": 4.18
+        },
+        {
+          "date": "2026-02-12",
+          "value": 4.09
+        },
+        {
+          "date": "2026-02-13",
+          "value": 4.04
+        },
+        {
+          "date": "2026-02-16",
+          "value": null
+        },
+        {
+          "date": "2026-02-17",
+          "value": 4.05
+        },
+        {
+          "date": "2026-02-18",
+          "value": 4.09
+        },
+        {
+          "date": "2026-02-19",
+          "value": 4.08
+        },
+        {
+          "date": "2026-02-20",
+          "value": 4.08
+        },
+        {
+          "date": "2026-02-23",
+          "value": 4.03
+        },
+        {
+          "date": "2026-02-24",
+          "value": 4.04
+        },
+        {
+          "date": "2026-02-25",
+          "value": 4.05
+        },
+        {
+          "date": "2026-02-26",
+          "value": 4.02
+        },
+        {
+          "date": "2026-02-27",
+          "value": 3.97
+        },
+        {
+          "date": "2026-03-02",
+          "value": 4.05
+        },
+        {
+          "date": "2026-03-03",
+          "value": 4.06
+        },
+        {
+          "date": "2026-03-04",
+          "value": 4.09
+        },
+        {
+          "date": "2026-03-05",
+          "value": 4.13
+        },
+        {
+          "date": "2026-03-06",
+          "value": 4.15
+        },
+        {
+          "date": "2026-03-09",
+          "value": 4.12
+        },
+        {
+          "date": "2026-03-10",
+          "value": 4.15
+        },
+        {
+          "date": "2026-03-11",
+          "value": 4.21
+        },
+        {
+          "date": "2026-03-12",
+          "value": 4.27
+        },
+        {
+          "date": "2026-03-13",
+          "value": 4.28
+        },
+        {
+          "date": "2026-03-16",
+          "value": 4.23
+        },
+        {
+          "date": "2026-03-17",
+          "value": 4.2
+        },
+        {
+          "date": "2026-03-18",
+          "value": 4.26
+        },
+        {
+          "date": "2026-03-19",
+          "value": 4.25
+        },
+        {
+          "date": "2026-03-20",
+          "value": 4.39
+        },
+        {
+          "date": "2026-03-23",
+          "value": 4.34
+        },
+        {
+          "date": "2026-03-24",
+          "value": 4.39
+        },
+        {
+          "date": "2026-03-25",
+          "value": 4.33
+        },
+        {
+          "date": "2026-03-26",
+          "value": 4.42
+        },
+        {
+          "date": "2026-03-27",
+          "value": 4.44
+        },
+        {
+          "date": "2026-03-30",
+          "value": 4.35
+        },
+        {
+          "date": "2026-03-31",
+          "value": 4.3
+        },
+        {
+          "date": "2026-04-01",
+          "value": 4.33
+        },
+        {
+          "date": "2026-04-02",
+          "value": 4.31
+        },
+        {
+          "date": "2026-04-03",
+          "value": 4.35
+        },
+        {
+          "date": "2026-04-06",
+          "value": 4.34
+        },
+        {
+          "date": "2026-04-07",
+          "value": 4.33
+        },
+        {
+          "date": "2026-04-08",
+          "value": 4.29
+        },
+        {
+          "date": "2026-04-09",
+          "value": 4.29
+        },
+        {
+          "date": "2026-04-10",
+          "value": 4.31
+        },
+        {
+          "date": "2026-04-13",
+          "value": 4.3
+        },
+        {
+          "date": "2026-04-14",
+          "value": 4.26
+        },
+        {
+          "date": "2026-04-15",
+          "value": 4.29
+        },
+        {
+          "date": "2026-04-16",
+          "value": 4.32
+        },
+        {
+          "date": "2026-04-17",
+          "value": 4.26
+        },
+        {
+          "date": "2026-04-20",
+          "value": 4.26
+        },
+        {
+          "date": "2026-04-21",
+          "value": 4.3
+        },
+        {
+          "date": "2026-04-22",
+          "value": 4.3
+        },
+        {
+          "date": "2026-04-23",
+          "value": 4.34
+        },
+        {
+          "date": "2026-04-24",
+          "value": 4.31
+        },
+        {
+          "date": "2026-04-27",
+          "value": 4.35
+        },
+        {
+          "date": "2026-04-28",
+          "value": 4.36
+        },
+        {
+          "date": "2026-04-29",
+          "value": 4.42
+        },
+        {
+          "date": "2026-04-30",
+          "value": 4.4
+        },
+        {
+          "date": "2026-05-01",
+          "value": 4.39
+        },
+        {
+          "date": "2026-05-04",
+          "value": 4.45
+        },
+        {
+          "date": "2026-05-05",
+          "value": 4.43
+        },
+        {
+          "date": "2026-05-06",
+          "value": 4.36
+        },
+        {
+          "date": "2026-05-07",
+          "value": 4.41
+        },
+        {
+          "date": "2026-05-08",
+          "value": 4.38
+        },
+        {
+          "date": "2026-05-11",
+          "value": 4.42
+        },
+        {
+          "date": "2026-05-12",
+          "value": 4.46
+        },
+        {
+          "date": "2026-05-13",
+          "value": 4.46
+        },
+        {
+          "date": "2026-05-14",
+          "value": 4.47
+        },
+        {
+          "date": "2026-05-15",
+          "value": 4.59
+        },
+        {
+          "date": "2026-05-18",
+          "value": 4.61
+        },
+        {
+          "date": "2026-05-19",
+          "value": 4.67
+        },
+        {
+          "date": "2026-05-20",
+          "value": 4.57
+        },
+        {
+          "date": "2026-05-21",
+          "value": 4.57
+        },
+        {
+          "date": "2026-05-22",
+          "value": 4.56
+        },
+        {
+          "date": "2026-05-25",
+          "value": null
+        },
+        {
+          "date": "2026-05-26",
+          "value": 4.5
+        },
+        {
+          "date": "2026-05-27",
+          "value": 4.48
+        },
+        {
+          "date": "2026-05-28",
+          "value": 4.45
+        },
+        {
+          "date": "2026-05-29",
+          "value": 4.45
+        },
+        {
+          "date": "2026-06-01",
+          "value": 4.47
+        },
+        {
+          "date": "2026-06-02",
+          "value": 4.46
+        },
+        {
+          "date": "2026-06-03",
+          "value": 4.49
+        },
+        {
+          "date": "2026-06-04",
+          "value": 4.47
+        },
+        {
+          "date": "2026-06-05",
+          "value": 4.55
+        },
+        {
+          "date": "2026-06-08",
+          "value": 4.56
+        },
+        {
+          "date": "2026-06-09",
+          "value": 4.53
+        },
+        {
+          "date": "2026-06-10",
+          "value": 4.55
+        },
+        {
+          "date": "2026-06-11",
+          "value": 4.45
+        },
+        {
+          "date": "2026-06-12",
+          "value": 4.48
+        },
+        {
+          "date": "2026-06-15",
+          "value": 4.47
+        },
+        {
+          "date": "2026-06-16",
+          "value": 4.43
+        },
+        {
+          "date": "2026-06-17",
+          "value": 4.49
+        },
+        {
+          "date": "2026-06-18",
+          "value": 4.46
+        },
+        {
+          "date": "2026-06-19",
+          "value": null
+        },
+        {
+          "date": "2026-06-22",
+          "value": 4.51
+        },
+        {
+          "date": "2026-06-23",
+          "value": 4.5
+        },
+        {
+          "date": "2026-06-24",
+          "value": 4.41
+        },
+        {
+          "date": "2026-06-25",
+          "value": 4.4
+        },
+        {
+          "date": "2026-06-26",
+          "value": 4.38
+        },
+        {
+          "date": "2026-06-29",
+          "value": 4.38
+        },
+        {
+          "date": "2026-06-30",
+          "value": 4.44
+        },
+        {
+          "date": "2026-07-01",
+          "value": 4.48
+        },
+        {
+          "date": "2026-07-02",
+          "value": 4.49
+        },
+        {
+          "date": "2026-07-03",
+          "value": null
+        },
+        {
+          "date": "2026-07-06",
+          "value": 4.48
+        },
+        {
+          "date": "2026-07-07",
+          "value": 4.55
+        },
+        {
+          "date": "2026-07-08",
+          "value": 4.56
+        },
+        {
+          "date": "2026-07-09",
+          "value": 4.54
+        },
+        {
+          "date": "2026-07-10",
+          "value": 4.56
+        },
+        {
+          "date": "2026-07-13",
+          "value": 4.62
+        },
+        {
+          "date": "2026-07-14",
+          "value": 4.58
+        },
+        {
+          "date": "2026-07-15",
+          "value": 4.55
+        },
+        {
+          "date": "2026-07-16",
+          "value": 4.57
+        },
+        {
+          "date": "2026-07-17",
+          "value": 4.55
+        },
+        {
+          "date": "2026-07-20",
+          "value": 4.6
+        },
+        {
+          "date": "2026-07-21",
+          "value": 4.63
+        },
+        {
+          "date": "2026-07-22",
+          "value": 4.67
+        },
+        {
+          "date": "2026-07-23",
+          "value": 4.71
+        },
+        {
+          "date": "2026-07-24",
+          "value": 4.69
+        },
+        {
+          "date": "2026-07-27",
+          "value": 4.65
+        },
+        {
+          "date": "2026-07-28",
+          "value": 4.61
+        },
+        {
+          "date": "2026-07-29",
+          "value": 4.67
+        },
+        {
+          "date": "2026-07-30",
+          "value": 4.68
+        },
+        {
+          "date": "2026-07-31",
+          "value": 4.75
+        },
+        {
+          "date": "2026-08-03",
+          "value": 4.7
+        },
+        {
+          "date": "2026-08-04",
+          "value": 4.63
+        },
+        {
+          "date": "2026-08-05",
+          "value": 4.63
+        },
+        {
+          "date": "2026-08-06",
+          "value": 4.69
+        },
+        {
+          "date": "2026-08-07",
+          "value": 4.65
+        },
+        {
+          "date": "2026-08-10",
+          "value": 4.72
+        },
+        {
+          "date": "2026-08-11",
+          "value": 4.7
+        },
+        {
+          "date": "2026-08-12",
+          "value": 4.68
+        },
+        {
+          "date": "2026-08-13",
+          "value": 4.63
+        },
+        {
+          "date": "2026-08-14",
+          "value": 4.68
+        },
+        {
+          "date": "2026-08-17",
+          "value": 4.72
+        },
+        {
+          "date": "2026-08-18",
+          "value": 4.71
+        },
+        {
+          "date": "2026-08-19",
+          "value": 4.65
+        },
+        {
+          "date": "2026-08-20",
+          "value": 4.69
+        },
+        {
+          "date": "2026-08-21",
+          "value": 4.74
+        },
+        {
+          "date": "2026-08-24",
+          "value": 4.7
+        },
+        {
+          "date": "2026-08-25",
+          "value": 4.64
+        },
+        {
+          "date": "2026-08-26",
+          "value": 4.66
+        },
+        {
+          "date": "2026-08-27",
+          "value": 4.67
+        },
+        {
+          "date": "2026-08-28",
+          "value": 4.73
+        },
+        {
+          "date": "2026-08-31",
+          "value": 4.75
+        },
+        {
+          "date": "2026-09-01",
+          "value": 4.79
+        },
+        {
+          "date": "2026-09-02",
+          "value": 4.79
+        },
+        {
+          "date": "2026-09-03",
+          "value": 4.77
+        },
+        {
+          "date": "2026-09-04",
+          "value": 4.78
+        },
+        {
+          "date": "2026-09-07",
+          "value": null
+        },
+        {
+          "date": "2026-09-08",
+          "value": 4.8
+        },
+        {
+          "date": "2026-09-09",
+          "value": 4.83
+        },
+        {
+          "date": "2026-09-10",
+          "value": 4.95
+        },
+        {
+          "date": "2026-09-11",
+          "value": 4.96
+        },
+        {
+          "date": "2026-09-14",
+          "value": 4.97
+        },
+        {
+          "date": "2026-09-15",
+          "value": 5.0
+        },
+        {
+          "date": "2026-09-16",
+          "value": 5.01
+        },
+        {
+          "date": "2026-09-17",
+          "value": 4.94
+        },
+        {
+          "date": "2026-09-18",
+          "value": 5.01
+        },
+        {
+          "date": "2026-09-21",
+          "value": 4.96
+        },
+        {
+          "date": "2026-09-22",
+          "value": 4.96
+        },
+        {
+          "date": "2026-09-23",
+          "value": 5.11
+        },
+        {
+          "date": "2026-09-24",
+          "value": 5.18
+        },
+        {
+          "date": "2026-09-25",
+          "value": 5.17
+        },
+        {
+          "date": "2026-09-28",
+          "value": 5.24
+        },
+        {
+          "date": "2026-09-29",
+          "value": 5.26
+        },
+        {
+          "date": "2026-09-30",
+          "value": 5.29
+        },
+        {
+          "date": "2026-10-01",
+          "value": 5.24
+        },
+        {
+          "date": "2026-10-02",
+          "value": 5.28
+        },
+        {
+          "date": "2026-10-05",
+          "value": 5.31
+        },
+        {
+          "date": "2026-10-06",
+          "value": 5.27
+        },
+        {
+          "date": "2026-10-07",
+          "value": 5.28
+        },
+        {
+          "date": "2026-10-08",
+          "value": 5.22
+        },
+        {
+          "date": "2026-10-09",
+          "value": 5.24
+        },
+        {
+          "date": "2026-10-12",
+          "value": null
+        },
+        {
+          "date": "2026-10-13",
+          "value": 5.21
+        },
+        {
+          "date": "2026-10-14",
+          "value": 5.19
+        },
+        {
+          "date": "2026-10-15",
+          "value": 5.1
+        }
+      ]
+    }
+  },
+  "coverage": {
+    "price": true,
+    "fundamentals": true,
+    "earnings": true,
+    "news": true,
+    "macro": true,
+    "filings": true
+  },
+  "drafts": [
+    {
+      "ticker": "AAPL",
+      "summary": "Apple delivered strong earnings fundamentals with a perfect 8-for-8 beat track record and 36.6% one-year return as of October 16, 2026, but trades at a significant valuation premium (39.4x trailing P/E) relative to peers. The company faces macro headwinds from elevated Treasury yields and iPhone revenue pressure, offset partially by foldable iPhone momentum and Services monetization opportunities.",
+      "key_facts": [
+        "last close: 343.46 (as of 2026-10-16)",
+        "1-year return: +36.6%",
+        "52-week range: 246.03 to 343.46",
+        "market cap: $5.01T",
+        "trailing P/E: 39.4",
+        "revenue growth (yoy): +16.4%",
+        "analyst mean target: 329.38 (39 analysts)",
+        "latest EPS: 2.02 vs 1.88 estimated (+7.45% surprise), quarter ending 2026-06-30",
+        "Effective federal funds rate (%): 3.75%",
+        "10-year Treasury yield (%): 5.1%"
+      ],
+      "investment_thesis": "Apple's consistent earnings execution (7.4% latest beat, 4.78% average surprise rate reported July 30, 2026) and robust free cash flow of $98.8 billion (fiscal year ended September 30, 2025) support quality fundamentals. However, the 39.4x trailing P/E significantly exceeds Microsoft's 29.5x and Alphabet's 17.1x, while forward P/E of 35.9x remains elevated despite 28.7% earnings growth. The emerging foldable iPhone demand and potential Siri AI monetization provide near-term catalysts, but iPhone revenue decline of 1.6% and 10-year Treasury yields rising 105 basis points year-over-year (to 5.1% as of October 15, 2026) present meaningful headwinds.",
+      "recommendation": "Hold (medium conviction)",
+      "rating": "Hold",
+      "conviction": "medium",
+      "upside": [
+        "Foldable iPhone (iPhone Duo at $1,999) sold out with deliveries slipping to January 2027, indicating strong premium product demand not yet reflected in revenue",
+        "Services segment monetization opportunity through paid Siri AI capabilities, building on record Services close ahead of November 2 earnings",
+        "Six-month return of 27.3% and one-year return of 36.6% (as of October 16, 2026) demonstrate sustained price momentum despite macro uncertainty"
+      ],
+      "risks": [
+        "iPhone revenue declined 1.6% in the most recent period, signaling core product weakness that may persist despite foldable launch",
+        "Trailing P/E of 39.4x versus peer average (MSFT 29.5x, NVDA 27.1x, GOOGL 17.1x) leaves limited room for multiple expansion if macro conditions deteriorate",
+        "10-year Treasury yield rose 105 basis points year-over-year to 5.1% (as of October 15, 2026), pressuring high-multiple tech valuations and consumer spending",
+        "Siri AI reputational risk tied to $250 million settlement affecting HomeView device adoption and Services monetization credibility"
+      ],
+      "catalysts": [
+        "November 2, 2026 earnings report and forward guidance, following record close and foldable iPhone sellout signal",
+        "Foldable iPhone demand and January 2027 delivery ramp could validate premium product strategy and offset iPhone revenue decline",
+        "Paid Siri AI capabilities launch and pricing announcement could unlock incremental Services revenue stream in late 2026/2027"
+      ],
+      "outlook": "Apple remains operationally strong with pristine earnings quality, but elevated valuation multiples and near-term iPhone headwinds warrant a cautious stance until Services diversification and foldable demand demonstrate tangible revenue impact.",
+      "source": "llm"
+    }
+  ],
+  "best_draft": 0,
+  "reflection_history": [
+    {
+      "score": 8.25,
+      "coverage_score": 8,
+      "evidence_score": 9,
+      "recency_score": 9,
+      "balance_score": 7,
+      "grounding": {
+        "ratio": 1.0,
+        "checked": 30,
+        "ungrounded": []
+      },
+      "feedback": "This report demonstrates strong factual rigor with specific numbers backing virtually all claims, and data is clearly dated (October 16, 2026). Coverage addresses company fundamentals, peer comparison, and macro headwinds effectively. Balance is adequate but slightly favors risks over upside\u2014the upside catalysts (foldable momentum, Services AI) feel somewhat speculative compared to concrete downside concerns (valuation premium, iPhone decline).",
+      "gaps": [
+        "Services segment revenue growth rate and margin trends\u2014report mentions 'record Services close' and monetization opportunity but lacks historical growth metrics to quantify the opportunity size",
+        "Foldable iPhone unit sales or revenue contribution forecast\u2014sellout signals demand but no financial projections or market size estimates are provided",
+        "iPhone revenue decline context\u2014the 1.6% decline is noted but lacks comparison to guidance, historical trends, or geography/product mix breakdown to assess severity",
+        "Competitive positioning on AI Services\u2014report mentions Siri AI monetization but doesn't compare Apple's pricing or feature advantage versus Microsoft Copilot Pro ($20/month) or other AI subscriptions",
+        "Consumer sentiment or demand indicators beyond the foldable sellout\u2014no data on iPhone upgrade cycles, carrier inventory, or consumer surveys to contextualize the core product weakness"
+      ],
+      "draft": 0,
+      "revise": false
+    }
+  ],
+  "notes_loaded": [
+    {
+      "date": "2026-10-18T14:55:33",
+      "note": "Prior view: Hold (medium conviction). Thesis: Apple demonstrates exceptional execution quality with perfect earnings-beat track record over the past two years and robust free cash flow generation of $31.9 billion in the June 2026 quarter.",
+      "category": "finding",
+      "scope": "ticker"
+    },
+    {
+      "date": "2026-10-18T14:55:33",
+      "note": "Prior key numbers: 1-year return: +36.6%; 52-week range: 246.03 to 343.46; market cap: $5.01T",
+      "category": "finding",
+      "scope": "ticker"
+    },
+    {
+      "date": "2026-10-18T14:55:33",
+      "note": "Earlier report gap: Peer valuation context: How do Apple's 39.4x trailing P/E and 35.9x forward P/E compare to historical peers (Microsoft, Nvidia, Google)? This would strengthen the valuation assessment.",
+      "category": "lesson",
+      "scope": "ticker"
+    },
+    {
+      "date": "2026-10-18T14:55:33",
+      "note": "Earlier report gap: Services segment detail: Report mentions 'record Services performance' but provides no specific revenue, margins, or growth rate for Services vs. Products, limiting evaluation of diversification upside.",
+      "category": "lesson",
+      "scope": "ticker"
+    },
+    {
+      "date": "2026-10-18T14:55:33",
+      "note": "Earlier report gap: iPhone mix analysis: No breakdown of foldable vs. standard iPhone ASP or unit sales expectations, making it hard to assess whether -1.6% June revenue decline is temporary or structural.",
+      "category": "lesson",
+      "scope": "ticker"
+    }
+  ],
+  "notes_saved": [
+    {
+      "date": "2026-10-18T14:56:18",
+      "note": "Prior view: Hold (medium conviction). Thesis: Apple's consistent earnings execution (7.4% latest beat, 4.78% average surprise rate reported July 30, 2026) and robust free cash flow of $98.8 billion (fiscal year ended September 30, 2025) support quality fundamentals.",
+      "category": "finding"
+    },
+    {
+      "date": "2026-10-18T14:56:18",
+      "note": "Earlier report gap: Services segment revenue growth rate and margin trends\u2014report mentions 'record Services close' and monetization opportunity but lacks historical growth metrics to quantify the opportunity size",
+      "category": "lesson"
+    },
+    {
+      "date": "2026-10-18T14:56:18",
+      "note": "Earlier report gap: Foldable iPhone unit sales or revenue contribution forecast\u2014sellout signals demand but no financial projections or market size estimates are provided",
+      "category": "lesson"
+    },
+    {
+      "date": "2026-10-18T14:56:18",
+      "note": "Earlier report gap: iPhone revenue decline context\u2014the 1.6% decline is noted but lacks comparison to guidance, historical trends, or geography/product mix breakdown to assess severity",
+      "category": "lesson"
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "usage": {
+    "calls": 7,
+    "input_tokens": 50673,
+    "output_tokens": 3980
+  },
+  "timings": {
+    "plan": 9.31,
+    "tools": 21.75,
+    "report_and_reflect": 13.91,
+    "total": 44.97
+  },
+  "saved_to": "/Users/pranavdhinakar/Documents/NLP/AAI-520-NLP-Final-Team-Project-Group7/data/runs/agent_AAPL_20261018-145618.json"
+}

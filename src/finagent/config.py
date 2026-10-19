@@ -6,6 +6,7 @@ each key.
 """
 
 import os
+from datetime import date
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -37,6 +38,17 @@ SEC_USER_AGENT = os.getenv("SEC_USER_AGENT", "")
 CACHE_MODE = os.getenv("CACHE_MODE", "normal").lower()
 
 HTTP_TIMEOUT = 20
+
+# Pins "today" for the tools that build date windows (NewsAPI "from",
+# FRED start), so their cache keys don't change from one day to the
+# next and an offline replay on a later day still hits the cache.
+# Empty means the real date. Format YYYY-MM-DD.
+AS_OF_DATE = os.getenv("AS_OF_DATE", "")
+
+
+def today() -> date:
+    """AS_OF_DATE if set, otherwise the real date."""
+    return date.fromisoformat(AS_OF_DATE) if AS_OF_DATE else date.today()
 
 
 class MissingKeyError(RuntimeError):

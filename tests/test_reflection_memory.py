@@ -10,7 +10,9 @@ def test_reflection_flags_missing_thesis_and_catalysts(monkeypatch):
             "evidence_score": 6,
             "recency_score": 8,
             "balance_score": 5,
-            "feedback": "The report is weak on the investment thesis and catalysts.",
+            "feedback": (
+                "The report is weak on the investment thesis and catalysts."
+            ),
             "gaps": [],
         }
 
@@ -28,13 +30,15 @@ def test_reflection_flags_missing_thesis_and_catalysts(monkeypatch):
 
     result = reflection.reflect(report)
 
-    assert result["score"] > 0
+    assert result["score"] == (7 + 6 + 8 + 5) / 4  # 0-10, mean of four
+    assert result["balance_score"] == 5
+    assert result["grounding"] is None  # no facts given
     assert any("thesis" in gap.lower() for gap in result["gaps"])
     assert any("catalyst" in gap.lower() for gap in result["gaps"])
 
 
 def test_memory_persists_and_deduplicates_ticker_notes(tmp_path, monkeypatch):
-    """Memory should be durable and avoid repeating the same lesson across runs."""
+    """Memory should be durable and not repeat a lesson across runs."""
 
     monkeypatch.setattr(memory, "MEMORY_DIR", tmp_path)
 
@@ -45,3 +49,5 @@ def test_memory_persists_and_deduplicates_ticker_notes(tmp_path, monkeypatch):
 
     assert notes == ["First note", "Second note", "Third note"]
     assert (tmp_path / "AAPL.json").exists()
+    records = memory.load_records("AAPL")
+    assert {r["category"] for r in records} == {"finding"}

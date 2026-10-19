@@ -152,3 +152,44 @@ def test_one_weak_criterion_blocks_passing(monkeypatch):
     review = {"overall": 0.9, "scores": {"evidence": 3, "clarity": 5}}
     assert not eo.passes(review, threshold=0.8, min_score=4)
     assert eo.passes(review, threshold=0.8, min_score=3)
+
+
+def test_revision_is_graded_against_previous_feedback(monkeypatch):
+    prompts = []
+
+    def grader(prompt, system=None, **kwargs):
+        prompts.append(prompt)
+        return {"scores": {c: 4 for c in eo.CRITERIA},
+                "feedback": ["give the sell trigger a level"]}
+
+    monkeypatch.setattr(llm, "complete_json", grader)
+    eo.evaluate(DRAFTS[1], CONTEXT)
+    eo.evaluate(DRAFTS[2], CONTEXT,
+                previous=["give the sell trigger a level"])
+    assert "This is a revision" not in prompts[0]
+    assert "This is a revision" in prompts[1]
+    assert "- give the sell trigger a level" in prompts[1]
+
+
+def test_loop_passes_previous_feedback(fake_llm, monkeypatch):
+    seen = []
+    real = eo.evaluate
+
+    def spy(analysis, context, model=None, previous=None):
+        seen.append(previous)
+        return real(analysis, context, model=model, previous=previous)
+
+    fake_llm((3, 5, 5))
+    monkeypatch.setattr(eo, "evaluate", spy)
+    eo.run_loop(CONTEXT, max_iters=3, threshold=0.95, save=False)
+    assert seen[0] is None
+    assert seen[1][-1] == "fix 4"  # the first review's feedback, capped
+
+
+def test_feedback_dicts_become_text(monkeypatch):
+    monkeypatch.setattr(llm, "complete_json", lambda *a, **k: {
+        "scores": {c: 5 for c in eo.CRITERIA},
+        "feedback": [{"type": "optional", "text": "add one sentence"},
+                     "plain fix"]})
+    review = eo.evaluate(DRAFTS[3], CONTEXT)
+    assert review["feedback"] == ["add one sentence", "plain fix"]

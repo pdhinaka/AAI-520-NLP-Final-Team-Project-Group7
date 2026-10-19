@@ -9,11 +9,12 @@ Final Team Project.
 
 ## Project summary
 
-We are building an autonomous Investment Research Agent that takes a stock
+We built an autonomous Investment Research Agent that takes a stock
 symbol, plans its research, calls financial data tools, critiques its own
-output, and keeps notes that improve later runs. The system also has to
-demonstrate three agentic workflow patterns: prompt chaining, routing, and
-evaluator-optimizer.
+output, and keeps notes that improve later runs. The system also
+demonstrates three agentic workflow patterns: prompt chaining, routing, and
+evaluator-optimizer. The executed notebook is exported to
+`reports/final_notebook.pdf`.
 
 The graded deliverable is a single code notebook exported to PDF (preferred)
 or HTML. It must include a link to this repository and comments that explain
@@ -39,17 +40,24 @@ and iteration.
 ├── scripts/
 │   ├── check_setup.py      # verifies your keys and every data source
 │   ├── run_chain.py        # runs the prompt chain, prints each step
-│   └── run_workflows.py    # runs routing + evaluator-optimizer
+│   ├── run_workflows.py    # runs routing + evaluator-optimizer
+│   ├── run_all.py          # agent + all three workflows end to end
+│   ├── restore_demo_data.py  # copies demo/data/ into data/
+│   └── export_pdf.py       # executed notebook -> reports/*.pdf
 ├── src/finagent/
 │   ├── config.py           # settings and API key loading (reads .env)
 │   ├── llm.py              # single entry point for Claude calls
 │   ├── cache.py            # disk cache for API responses
 │   ├── schemas.py          # shared data shapes (Article, NewsDigest)
+│   ├── pipeline.py         # run_all: agent, then the three workflows
 │   ├── tools/              # Workstream A: data sources + registry
 │   ├── workflows/          # Workstreams A and C: the three patterns
 │   └── agent/              # Workstream B: the research agent
 ├── notebooks/
 │   └── final_notebook.ipynb  # the graded deliverable
+├── reports/
+│   └── final_notebook.pdf  # the notebook exported to PDF
+├── demo/data/              # replay snapshot for running without keys
 ├── data/                   # API cache and local datasets (git-ignored)
 ├── memory/                 # agent notes across runs (git-ignored)
 └── tests/                  # offline tests, no keys needed
@@ -100,8 +108,9 @@ should never list `.env`.
 Yahoo Finance (prices, financials, and news) needs no key.
 
 For Anthropic, set a monthly spend limit in the console so a runaway
-loop can't run up a bill. `LLM_MODEL` defaults to `claude-haiku-4-5`
-for development; switch to `claude-sonnet-5` for the final run.
+loop can't run up a bill. `LLM_MODEL` defaults to `claude-haiku-4-5`,
+the model the final notebook ran with. Changing it changes every LLM
+cache key, so an offline replay would miss.
 
 If the setup check fails with "This API key is not scoped to a
 workspace", either create a new key from inside a workspace in the
@@ -126,15 +135,57 @@ python -m pytest -q
 API responses are cached as JSON under `data/cache/` so repeated runs
 don't burn free-tier limits. Delete that folder to force fresh data.
 Set `CACHE_MODE=offline` in `.env` to read only from the cache, which
-is what we will use for the final notebook run so the numbers don't
-change between runs. LLM replies made through
+is how the final notebook was executed, so the numbers don't change
+between runs. `AS_OF_DATE` (YYYY-MM-DD) pins the date the news and FRED
+tools count back from, because those dates are part of their cache
+keys; the notebook pins it to 2026-10-18, the day of the live run. LLM replies made through
 `llm.complete_json_cached` are cached too (under `data/cache/llm/`),
 so an offline run replays them exactly.
+
+### Replay without API keys
+
+`demo/data/` holds a snapshot of every cached API and LLM reply the
+notebook needs, plus the saved runs it reads, from our live AAPL run on
+2026-10-18 (about 3 MB, no keys or personal data). With it you can
+execute the notebook offline, with no real keys and no network calls,
+and get the same outputs as the PDF:
+
+```bash
+cp .env.example .env    # then put any non-empty value in each key
+python scripts/restore_demo_data.py    # copies demo/data/ into data/
+CACHE_MODE=offline jupyter nbconvert --to notebook --execute \
+    --inplace notebooks/final_notebook.ipynb
+```
+
+The keys must be non-empty placeholders such as `ANTHROPIC_API_KEY=x`,
+`NEWSAPI_KEY=x`, `FRED_API_KEY=x` and `ALPHAVANTAGE_API_KEY=x`. Offline
+mode never sends them anywhere, but the data tools check that a key is
+set before they look in the cache (and the news tool skips NewsAPI when
+its key is empty), so empty keys change the results and miss the cache.
+The restore script never overwrites files already in `data/`.
 
 To use a Kaggle financial news dataset as an offline fallback, save it
 as `data/local_news.csv`. It needs a `title` (or `headline`) column and
 a date column; `text`, `source`, `url`, and `ticker` columns are used if
 present.
+
+## Run it
+
+With the environment active and `.env` filled in (real keys for a live
+run, placeholders plus `scripts/restore_demo_data.py` for a replay):
+
+```bash
+python scripts/run_all.py AAPL --offline   # agent + all three workflows
+CACHE_MODE=offline jupyter nbconvert --to notebook --execute \
+    --inplace notebooks/final_notebook.ipynb
+python scripts/export_pdf.py               # -> reports/final_notebook.pdf
+```
+
+Drop `--offline` and `CACHE_MODE=offline` to run live; anything not in
+the cache is fetched and saved. `scripts/run_chain.py` and
+`scripts/run_workflows.py` run the prompt chain and routing plus
+evaluator-optimizer on their own. The PDF export needs a TeX install
+with `xelatex`.
 
 ## How we work
 
@@ -142,7 +193,8 @@ present.
 2. Branch off `main` for each task: `git checkout -b a/news-tool`
    (prefix with the workstream letter).
 3. Commit small and often. GitHub history is how contribution is measured.
-4. Open a pull request into `main` and ask one teammate to review.
+4. Open a pull request into `main`. No review is required; say what
+   changed and why in the description.
 5. Tick the checkbox in this README in the same PR that finishes the task.
 6. Run `ruff check .` and `python -m pytest -q` before pushing.
 
@@ -152,20 +204,20 @@ notebook. The course requires disclosure and explanation of AI-assisted work.
 ## Decisions to make first
 
 - [x] Pick the LLM backend: Anthropic Claude, wired
-      up in `src/finagent/llm.py` (Haiku 4.5 for development, Sonnet 5
-      for the final run)
-- [ ] Decide whether each of us uses our own Anthropic key or we share
-      Pranav's
-- [ ] Pick an agent framework, or agree to write plain Python
-      (LangGraph, smolagents, CrewAI, and so on)
-- [ ] Pick 2 or 3 demo tickers everyone tests against (for example AAPL,
-      NVDA, JPM)
+      up in `src/finagent/llm.py` (Haiku 4.5 for development and the
+      final run)
+- [x] Decide whether each of us uses our own Anthropic key or we share
+      Pranav's (the final run used Pranav's)
+- [x] Pick an agent framework, or agree to write plain Python
+      (plain Python)
+- [x] Pick 2 or 3 demo tickers everyone tests against (AAPL in the
+      notebook; NVDA and JPM as smoke tests)
 - [ ] Everyone: get API keys (see Setup) and pass `check_setup.py`
       (Pranav done; Eric and Nolan to do)
 - [ ] Agree on shared result shapes. Started in `src/finagent/schemas.py`
       (`Article`); add report and evaluation shapes there
-- [ ] Choose a team representative for the Module 4 status update and the
-      final submission
+- [x] Choose a team representative for the Module 4 status update and the
+      final submission (Pranav)
 
 ## Workstreams
 
@@ -210,21 +262,23 @@ Try it with `python scripts/run_chain.py AAPL`. Each run is saved to
 
 **Owner:** Eric Hernandez
 
-Covers all four Agent Functions (120 pts).
+Covers all four Agent Functions (120 pts). The structure here was
+reworked during the final consolidation so all four functions run on
+real tool output; the PR description lists what changed.
 
-- [ ] `planner.py`: given a ticker, the LLM writes a list of research
+- [x] `planner.py`: given a ticker, the LLM writes a list of research
       steps before doing anything
-- [ ] `research_agent.py`: loop that executes the plan and chooses which
+- [x] `research_agent.py`: loop that executes the plan and chooses which
       tool to call at each step based on what it has so far
-- [ ] `reflection.py`: after drafting the report, the agent scores its own
+- [x] `reflection.py`: after drafting the report, the agent scores its own
       output against a checklist (coverage, evidence, recency, balance) and
       lists gaps
-- [ ] `memory.py`: save short notes after each run (what worked, what was
+- [x] `memory.py`: save short notes after each run (what worked, what was
       missing, ticker-specific facts) to `memory/` and load them at the
       start of the next run
-- [ ] Show a second run on the same ticker that visibly uses the memory
+- [x] Show a second run on the same ticker that visibly uses the memory
       from the first
-- [ ] Final output is a structured research report (dict or markdown)
+- [x] Final output is a structured research report (dict or markdown)
 
 ### Workstream C: Routing, evaluator-optimizer, and the final notebook
 
@@ -255,22 +309,22 @@ specialist views and `evaluator_optimizer.run_loop(context)` to polish
 its final report.
 
 Final notebook (`notebooks/final_notebook.ipynb`)
-- [ ] Section per requirement with markdown explaining design choices
-- [ ] Visualizations: agent flow diagram, price chart, routing
-      distribution, evaluator scores across iterations (all but the
-      flow diagram are in the notebook)
+- [x] Section per requirement with markdown explaining design choices
+- [x] Visualizations: agent flow diagram, price chart, routing
+      distribution, evaluator scores across iterations, agent tool
+      calls, reflection scores, run 1 vs run 2
 - [x] Repository link at the top
-- [ ] Clean top-to-bottom run, then export to PDF
-- [ ] Final PEP 8 / ruff pass on the whole repo
+- [x] Clean top-to-bottom run, then export to PDF
+- [x] Final PEP 8 / ruff pass on the whole repo
 
 ## Shared tasks (everyone)
 
 - [ ] Module 4: Team Project Status Update Form submitted by the
       representative
-- [ ] Integration run: agent calls the chain, router, and evaluator on one
-      ticker end to end
+- [x] Integration run: agent calls the chain, router, and evaluator on one
+      ticker end to end (`pipeline.run_all`, notebook Section 8)
 - [ ] Each member reviews at least one PR from each other member
-- [ ] AI tool usage disclosed in the notebook
+- [x] AI tool usage disclosed in the notebook (Section 10)
 - [ ] Final notebook PDF submitted to Canvas by one representative
 - [ ] Each member submits their individual Peer Evaluation (Module 7)
 

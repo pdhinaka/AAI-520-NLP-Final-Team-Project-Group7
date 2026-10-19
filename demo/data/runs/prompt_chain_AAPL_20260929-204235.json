@@ -1,0 +1,1018 @@
+{
+  "ticker": "AAPL",
+  "model": "claude-haiku-4-5",
+  "run_at": "2026-09-30T03:42:35+00:00",
+  "digest": {
+    "ticker": "AAPL",
+    "n_articles": 9,
+    "headline": "Apple faces mixed news with strong content momentum offset by security vulnerability and renewed UK antitrust proceedings.",
+    "summary": "- **Content & Services Momentum**: Apple TV reached record-breaking weekly viewership following 28-29 Emmy wins and recent releases including Ted Lasso and Mayday [7, 10].\n- **Product Updates**: watchOS 27.0.1 released for all compatible Apple Watch models with a restart bug fix [4].\n- **Security Concern**: A remote code execution vulnerability (CVE-2026-86950) was identified in Apple Products that could be exploited in sophisticated attacks [2].\n- **Legal Headwinds**: A UK tribunal allowed part of a renewed antitrust lawsuit against Apple and Amazon to proceed over allegations of restricting competition for Apple and Beats products [8]. However, the Federal Circuit affirmed cancellation of all six claims of Zentian's speech-recognition patent in a case against Apple [14].",
+    "catalysts": [
+      "Apple TV viewership growth and content strategy success [7, 10]",
+      "Patent litigation victory against Zentian [14]",
+      "Continued product ecosystem releases and updates [4]"
+    ],
+    "risks": [
+      "Remote code execution vulnerability in Apple Products requiring remediation [2]",
+      "UK antitrust lawsuit proceeding against Apple and Amazon over competitive practices [8]"
+    ],
+    "sentiment_counts": {
+      "positive": 4,
+      "neutral": 3,
+      "negative": 2
+    },
+    "topic_counts": {
+      "product": 6,
+      "legal": 3
+    },
+    "sources": [
+      {
+        "id": 2,
+        "title": "Apple Products Remote Code Execution Vulnerability",
+        "url": "https://www.hkcert.org/security-bulletin/apple-products-remote-code-execution-vulnerability_20260929"
+      },
+      {
+        "id": 4,
+        "title": "watchOS 27.0.1 is now available for all compatible Apple Watch models - 9to5Mac",
+        "url": "https://slashdot.org/firehose.pl?op=view&amp;id=185893768"
+      },
+      {
+        "id": 5,
+        "title": "Apple AirPods Pro 2 with Magsafe Case USB-C $199.99 Delivered @ Costco (Membership Required)",
+        "url": "https://www.ozbargain.com.au/node/976901"
+      },
+      {
+        "id": 6,
+        "title": "[Prime] Apple Watch Ultra 3 (GPS + Cellular, 49mm) Smartwatch with Black Band $949 Delivered @ Amazon AU",
+        "url": "https://www.ozbargain.com.au/node/976897"
+      },
+      {
+        "id": 7,
+        "title": "Emmy wins and recent premieres help Apple TV reach highest weekly viewership ever",
+        "url": "https://9to5mac.com/2026/09/28/emmy-wins-and-recent-premieres-help-apple-tv-reach-highest-weekly-viewership-ever/"
+      },
+      {
+        "id": 8,
+        "title": "Apple and Amazon face renewed UK antitrust lawsuit",
+        "url": "https://9to5mac.com/2026/09/28/apple-and-amazon-face-renewed-uk-antitrust-lawsuit/"
+      },
+      {
+        "id": 10,
+        "title": "Apple TV Claims Largest Weekly Viewership Ever With \u2018Mayday\u2019, \u2018Ted Lasso\u2019 And Post-Emmys Bump For \u2018Widow\u2019s Bay\u2019 & \u2018Pluribus\u2019",
+        "url": "http://deadline.com/2026/09/apple-tv-viewership-record-ted-lasso-mayday-widows-bay-1237115696/"
+      },
+      {
+        "id": 14,
+        "title": "This Is Not a Feature Vector: Zentian v. Apple",
+        "url": "https://patentlyo.com/patent/2026/09/this-is-not-a-feature-vector-zentian-v-apple.html"
+      },
+      {
+        "id": 15,
+        "title": "Apple Pencil (USB-C) $107 (RRP $139) Delivered @ Amazon AU (Excl. NT)",
+        "url": "https://www.ozbargain.com.au/node/976863"
+      }
+    ],
+    "unknown_citations": []
+  },
+  "steps": {
+    "ingest": [
+      {
+        "title": "VeloxQuant-MLX 0.91.16",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T03:09:14Z",
+        "url": "https://pypi.org/project/veloxquant-mlx/0.91.16/",
+        "text": "Fast KV-cache quantization for Apple Silicon (MLX) \u2014 43 research-adapted compression methods, from TurboQuant and KIVI to A2ATS, with Metal kernels A required part of this site couldnt load. This may be due to a browser\r\n extension, network issues, or browser settings. Please check your\r\n connection, disable any ad blockers, or try using a diffe\u2026 [+12 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Nothing Headphone 1 Pro launched with 68 hours battery life, triple drivers and a physical Flat EQ switch, check price, specs and rivals",
+        "source": "The Times of India",
+        "published_at": "2026-09-29T02:50:39Z",
+        "url": "https://economictimes.indiatimes.com/news/new-updates/nothing-headphone-1-pro-launched-with-68-hours-battery-life-triple-drivers-and-a-physical-flat-eq-switch-check-price-specs-and-rivals/articleshow/134554402.cms",
+        "text": "Nothing Headphone 1 Pro: Nothing has launched its 399 dollar flagship headphones, the Headphone 1 Pro, built around a triple driver setup and a studio inspired Flat EQ switch. The headphones also bring 68 hours of battery life, high resolution audio support a\u2026 Nothing has unveiled its new flagship over ear headphones, the Headphone 1 Pro, priced at 399 dollars. The launch comes after the company found success with the Headphone A at 199 dollars and the Ear\u2026 [+3943 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple Products Remote Code Execution Vulnerability",
+        "source": "Hkcert.org",
+        "published_at": "2026-09-29T02:40:12Z",
+        "url": "https://www.hkcert.org/security-bulletin/apple-products-remote-code-execution-vulnerability_20260929",
+        "text": "A vulnerability has been identified in Apple Products. A remote attacker could exploit this vulnerability to trigger remote code execution on the targeted system.    Note:  CVE-2026-86950\u00a0is being\u00a0exploited in an extremely sophisticated attack against spe A vulnerability has been identified in Apple Products. A remote attacker could exploit this vulnerability to trigger remote code execution on the targeted system.\r\nNote:\r\nCVE-2026-86950\u00a0is being\u00a0expl\u2026 [+235 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "mojolearn 0.8.25",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T02:24:42Z",
+        "url": "https://pypi.org/project/mojolearn/0.8.25/",
+        "text": "GPU machine learning in Mojo for Apple silicon Metal, NVIDIA CUDA, and AMD HIP, with fast, deterministic, and cross-vendor identical modes for certified configurations A required part of this site couldnt load. This may be due to a browser\r\n extension, network issues, or browser settings. Please check your\r\n connection, disable any ad blockers, or try using a diffe\u2026 [+12 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "watchOS 27.0.1 is now available for all compatible Apple Watch models - 9to5Mac",
+        "source": "Slashdot.org",
+        "published_at": "2026-09-29T02:12:40Z",
+        "url": "https://slashdot.org/firehose.pl?op=view&amp;id=185893768",
+        "text": "watchOS 27.0.1 is now available for all compatible Apple Watch models9to5Mac Apple Releases watchOS 27.0.1 for Additional Modelsmacrumors.com Apple Releases watchOS 27.0.1 With Fix for Restart Bugmacrumors.com Rebooting Issue On Apple Watch Ultra 4 and Apple \u2026 The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way.",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple AirPods Pro 2 with Magsafe Case USB-C $199.99 Delivered @ Costco (Membership Required)",
+        "source": "Ozbargain.com.au",
+        "published_at": "2026-09-29T02:03:39Z",
+        "url": "https://www.ozbargain.com.au/node/976901",
+        "text": "Looks like ATL on the Airpods Pro 2 (Launched in September 2022). Still an option for many who have fit issues with regular airpods. Compare airpods here All trademarks are owned by their respective owners.OzBargain is an independent community website which has no association with nor endorsement by the respective trademark owners.\r\nCopyright \u00a9 2006-2\u2026 [+32 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "[Prime] Apple Watch Ultra 3 (GPS + Cellular, 49mm) Smartwatch with Black Band $949 Delivered @ Amazon AU",
+        "source": "Ozbargain.com.au",
+        "published_at": "2026-09-29T01:47:51Z",
+        "url": "https://www.ozbargain.com.au/node/976897",
+        "text": "Lightning deal, ends in 8 hours and a bit. $50 less than Prime Day. Features: RUGGED AND READY TO GO \u2014 The ultimate sports and adventure watch is built to last with an extremely tough \u2026 All trademarks are owned by their respective owners.OzBargain is an independent community website which has no association with nor endorsement by the respective trademark owners.\r\nCopyright \u00a9 2006-2\u2026 [+32 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Emmy wins and recent premieres help Apple TV reach highest weekly viewership ever",
+        "source": "9to5Mac",
+        "published_at": "2026-09-29T01:44:04Z",
+        "url": "https://9to5mac.com/2026/09/28/emmy-wins-and-recent-premieres-help-apple-tv-reach-highest-weekly-viewership-ever/",
+        "text": "Deadline reports that Apple TV recently recorded its biggest week ever for viewership, fueled by its 29 Emmy wins and recent releases such as Ted Lasso and Mayday. Here are the details.\n\n\n\n more\u2026 Deadline reports that Apple TV recently recorded its biggest week ever for viewership, fueled by its 29 Emmy wins and recent releases such as Ted Lasso and Mayday. Here are the details.\r\nA few weeks \u2026 [+2195 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple and Amazon face renewed UK antitrust lawsuit",
+        "source": "9to5Mac",
+        "published_at": "2026-09-29T01:21:23Z",
+        "url": "https://9to5mac.com/2026/09/28/apple-and-amazon-face-renewed-uk-antitrust-lawsuit/",
+        "text": "A UK tribunal has allowed part of a renewed antitrust lawsuit against Apple and Amazon to move forward, over allegations that the companies restricted competition for Apple and Beats products sold on Amazon. Here are the details.\n\n\n\n more\u2026 A UK tribunal has allowed part of a renewed antitrust lawsuit against Apple and Amazon to move forward, over allegations that the companies restricted competition for Apple and Beats products sold on\u2026 [+3649 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "This website lets you explore nearly 30 years of Apple product colors",
+        "source": "9to5Mac",
+        "published_at": "2026-09-29T01:01:54Z",
+        "url": "https://9to5mac.com/2026/09/28/this-website-lets-you-explore-nearly-30-years-of-apple-product-colors/",
+        "text": "The folks at sheets.works are back at it again, this time with an interactive archive of 341 Apple product colors spanning nearly three decades. Here are the details.\n\n\n\n more\u2026 The folks at sheets.works are back at it again, this time with an interactive archive of 341 Apple product colors spanning nearly three decades. Here are the details.\r\nWeve covered some of sheets.wor\u2026 [+1217 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple TV Claims Largest Weekly Viewership Ever With \u2018Mayday\u2019, \u2018Ted Lasso\u2019 And Post-Emmys Bump For \u2018Widow\u2019s Bay\u2019 & \u2018Pluribus\u2019",
+        "source": "Deadline",
+        "published_at": "2026-09-29T01:00:11Z",
+        "url": "http://deadline.com/2026/09/apple-tv-viewership-record-ted-lasso-mayday-widows-bay-1237115696/",
+        "text": "Apple TV had a record-breaking 2026 Emmys with 28 Emmys (29 if you include the commercials win), the most for the streamer ever and the most for any platform this year. Apple TV\u2019s big night at the Emmys on Sept. 14 was followed by a big week \u2014 the biggest in \u2026 Apple TVhad a record-breaking 2026 Emmys with 28 Emmys (29 if you include the commercials win), the most for the streamer ever and the most for any platform this year. Apple TV\u2019s big night at the Emm\u2026 [+3602 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "No, NPR, Climate Change Is Not Challenging New York\u2019s Apple Growers",
+        "source": "Wattsupwiththat.com",
+        "published_at": "2026-09-29T01:00:00Z",
+        "url": "https://wattsupwiththat.com/2026/09/28/no-npr-climate-change-is-not-challenging-new-yorks-apple-growers/",
+        "text": "NPR\u2019s affiliate station in New York is promoting a lot of nonsense in this story, in line with standard climate alarmist propaganda. One bad season for apples on certain farms can\u2019t be blamed on climate change, that\u2019s the truth the data shows and nothing but.\u2026 From ClimateREALISM\r\nBy Linnea Lueken\r\nA recent interview from NPR affiliate WAMC Northeast Public Radios Northeast Notebook titled Apple growers confront climate change, fuel challenges for 2026 har\u2026 [+2993 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "voltry-mac 0.0.1",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T00:48:36Z",
+        "url": "https://pypi.org/project/voltry-mac/0.0.1/",
+        "text": "Name reserved by Voltry for voltry-mac, a hardware report for Apple silicon Macs. This placeholder installs nothing. A required part of this site couldnt load. This may be due to a browser\r\n extension, network issues, or browser settings. Please check your\r\n connection, disable any ad blockers, or try using a diffe\u2026 [+12 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "voltry-mac added to PyPI",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T00:48:27Z",
+        "url": "https://pypi.org/project/voltry-mac/",
+        "text": "Name reserved by Voltry for voltry-mac, a hardware report for Apple silicon Macs. This placeholder installs nothing. A required part of this site couldnt load. This may be due to a browser\r\n extension, network issues, or browser settings. Please check your\r\n connection, disable any ad blockers, or try using a diffe\u2026 [+12 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "This Is Not a Feature Vector: Zentian v. Apple",
+        "source": "Patentlyo.com",
+        "published_at": "2026-09-29T00:46:42Z",
+        "url": "https://patentlyo.com/patent/2026/09/this-is-not-a-feature-vector-zentian-v-apple.html",
+        "text": "Federal Circuit affirms cancellation of Zentian's speech-recognition patent, rejecting a Magritte analogy that codewords aren't feature vectors.\nContinue reading this post on Patently-O. by Dennis Crouch\r\n\nThe Federal Circuit has affirmed the PTAB's cancellation of all six claims of Zentian's speech-recognition patent in a short nonprecedential opinion. Zentian Ltd. v. Apple Inc., No\u2026 [+2260 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "Apple Pencil (USB-C) $107 (RRP $139) Delivered @ Amazon AU (Excl. NT)",
+        "source": "Ozbargain.com.au",
+        "published_at": "2026-09-29T00:22:00Z",
+        "url": "https://www.ozbargain.com.au/node/976863",
+        "text": "Looks like Amazon is price matching Digi-direct at $107 for the USB-C pencil. As noted below, the Apple Pencil (USB-C) is compatible with a wider range of iPads (vs Pencil Pro), and the upcoming \u2026 This post contains affiliate links. OzBargain might earn commissions when you click through and make purchases. Please see this page for more information.\r\nLooks like Amazon is price matching Digi-di\u2026 [+831 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "mlx-cuda-13 0.32.3",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T00:14:52Z",
+        "url": "https://pypi.org/project/mlx-cuda-13/0.32.3/",
+        "text": "A framework for machine learning on Apple silicon. A required part of this site couldnt load. This may be due to a browser\r\n extension, network issues, or browser settings. Please check your\r\n connection, disable any ad blockers, or try using a diffe\u2026 [+12 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "mlx 0.32.3",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T00:14:41Z",
+        "url": "https://pypi.org/project/mlx/0.32.3/",
+        "text": "A framework for machine learning on Apple silicon. A required part of this site couldnt load. This may be due to a browser\r\n extension, network issues, or browser settings. Please check your\r\n connection, disable any ad blockers, or try using a diffe\u2026 [+12 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      },
+      {
+        "title": "mlx-cuda-12 0.32.3",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T00:14:32Z",
+        "url": "https://pypi.org/project/mlx-cuda-12/0.32.3/",
+        "text": "A framework for machine learning on Apple silicon. A required part of this site couldnt load. This may be due to a browser\r\n extension, network issues, or browser settings. Please check your\r\n connection, disable any ad blockers, or try using a diffe\u2026 [+12 chars]",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {}
+      }
+    ],
+    "preprocess": {
+      "company": "Apple",
+      "articles": [
+        {
+          "title": "VeloxQuant-MLX 0.91.16",
+          "source": "Pypi.org",
+          "published_at": "2026-09-29T03:09:14Z",
+          "url": "https://pypi.org/project/veloxquant-mlx/0.91.16/",
+          "text": "Fast KV-cache quantization for Apple Silicon (MLX) \u2014 43 research-adapted compression methods, from TurboQuant and KIVI to A2ATS, with Metal kernels A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 1
+        },
+        {
+          "title": "Apple Products Remote Code Execution Vulnerability",
+          "source": "Hkcert.org",
+          "published_at": "2026-09-29T02:40:12Z",
+          "url": "https://www.hkcert.org/security-bulletin/apple-products-remote-code-execution-vulnerability_20260929",
+          "text": "A vulnerability has been identified in Apple Products. A remote attacker could exploit this vulnerability to trigger remote code execution on the targeted system. Note: CVE-2026-86950 is being exploited in an extremely sophisticated attack against spe A vulnerability has been identified in Apple Products. A remote attacker could exploit this vulnerability to trigger remote code execution on the targeted system. Note: CVE-2026-86950 is being expl\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 2
+        },
+        {
+          "title": "mojolearn 0.8.25",
+          "source": "Pypi.org",
+          "published_at": "2026-09-29T02:24:42Z",
+          "url": "https://pypi.org/project/mojolearn/0.8.25/",
+          "text": "GPU machine learning in Mojo for Apple silicon Metal, NVIDIA CUDA, and AMD HIP, with fast, deterministic, and cross-vendor identical modes for certified configurations A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 3
+        },
+        {
+          "title": "watchOS 27.0.1 is now available for all compatible Apple Watch models - 9to5Mac",
+          "source": "Slashdot.org",
+          "published_at": "2026-09-29T02:12:40Z",
+          "url": "https://slashdot.org/firehose.pl?op=view&amp;id=185893768",
+          "text": "watchOS 27.0.1 is now available for all compatible Apple Watch models9to5Mac Apple Releases watchOS 27.0.1 for Additional Modelsmacrumors.com Apple Releases watchOS 27.0.1 With Fix for Restart Bugmacrumors.com Rebooting Issue On Apple Watch Ultra 4 and Apple \u2026 The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way.",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 4
+        },
+        {
+          "title": "Apple AirPods Pro 2 with Magsafe Case USB-C $199.99 Delivered @ Costco (Membership Required)",
+          "source": "Ozbargain.com.au",
+          "published_at": "2026-09-29T02:03:39Z",
+          "url": "https://www.ozbargain.com.au/node/976901",
+          "text": "Looks like ATL on the Airpods Pro 2 (Launched in September 2022). Still an option for many who have fit issues with regular airpods. Compare airpods here All trademarks are owned by their respective owners.OzBargain is an independent community website which has no association with nor endorsement by the respective trademark owners. Copyright \u00a9 2006-2\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 5
+        },
+        {
+          "title": "[Prime] Apple Watch Ultra 3 (GPS + Cellular, 49mm) Smartwatch with Black Band $949 Delivered @ Amazon AU",
+          "source": "Ozbargain.com.au",
+          "published_at": "2026-09-29T01:47:51Z",
+          "url": "https://www.ozbargain.com.au/node/976897",
+          "text": "Lightning deal, ends in 8 hours and a bit. $50 less than Prime Day. Features: RUGGED AND READY TO GO \u2014 The ultimate sports and adventure watch is built to last with an extremely tough \u2026 All trademarks are owned by their respective owners.OzBargain is an independent community website which has no association with nor endorsement by the respective trademark owners. Copyright \u00a9 2006-2\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 6
+        },
+        {
+          "title": "Emmy wins and recent premieres help Apple TV reach highest weekly viewership ever",
+          "source": "9to5Mac",
+          "published_at": "2026-09-29T01:44:04Z",
+          "url": "https://9to5mac.com/2026/09/28/emmy-wins-and-recent-premieres-help-apple-tv-reach-highest-weekly-viewership-ever/",
+          "text": "Deadline reports that Apple TV recently recorded its biggest week ever for viewership, fueled by its 29 Emmy wins and recent releases such as Ted Lasso and Mayday. Here are the details. more\u2026 Deadline reports that Apple TV recently recorded its biggest week ever for viewership, fueled by its 29 Emmy wins and recent releases such as Ted Lasso and Mayday. Here are the details. A few weeks \u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 7
+        },
+        {
+          "title": "Apple and Amazon face renewed UK antitrust lawsuit",
+          "source": "9to5Mac",
+          "published_at": "2026-09-29T01:21:23Z",
+          "url": "https://9to5mac.com/2026/09/28/apple-and-amazon-face-renewed-uk-antitrust-lawsuit/",
+          "text": "A UK tribunal has allowed part of a renewed antitrust lawsuit against Apple and Amazon to move forward, over allegations that the companies restricted competition for Apple and Beats products sold on Amazon. Here are the details. more\u2026 A UK tribunal has allowed part of a renewed antitrust lawsuit against Apple and Amazon to move forward, over allegations that the companies restricted competition for Apple and Beats products sold on\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 8
+        },
+        {
+          "title": "This website lets you explore nearly 30 years of Apple product colors",
+          "source": "9to5Mac",
+          "published_at": "2026-09-29T01:01:54Z",
+          "url": "https://9to5mac.com/2026/09/28/this-website-lets-you-explore-nearly-30-years-of-apple-product-colors/",
+          "text": "The folks at sheets.works are back at it again, this time with an interactive archive of 341 Apple product colors spanning nearly three decades. Here are the details. more\u2026 The folks at sheets.works are back at it again, this time with an interactive archive of 341 Apple product colors spanning nearly three decades. Here are the details. Weve covered some of sheets.wor\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 9
+        },
+        {
+          "title": "Apple TV Claims Largest Weekly Viewership Ever With \u2018Mayday\u2019, \u2018Ted Lasso\u2019 And Post-Emmys Bump For \u2018Widow\u2019s Bay\u2019 & \u2018Pluribus\u2019",
+          "source": "Deadline",
+          "published_at": "2026-09-29T01:00:11Z",
+          "url": "http://deadline.com/2026/09/apple-tv-viewership-record-ted-lasso-mayday-widows-bay-1237115696/",
+          "text": "Apple TV had a record-breaking 2026 Emmys with 28 Emmys (29 if you include the commercials win), the most for the streamer ever and the most for any platform this year. Apple TV\u2019s big night at the Emmys on Sept. 14 was followed by a big week \u2014 the biggest in \u2026 Apple TVhad a record-breaking 2026 Emmys with 28 Emmys (29 if you include the commercials win), the most for the streamer ever and the most for any platform this year. Apple TV\u2019s big night at the Emm\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 10
+        },
+        {
+          "title": "No, NPR, Climate Change Is Not Challenging New York\u2019s Apple Growers",
+          "source": "Wattsupwiththat.com",
+          "published_at": "2026-09-29T01:00:00Z",
+          "url": "https://wattsupwiththat.com/2026/09/28/no-npr-climate-change-is-not-challenging-new-yorks-apple-growers/",
+          "text": "NPR\u2019s affiliate station in New York is promoting a lot of nonsense in this story, in line with standard climate alarmist propaganda. One bad season for apples on certain farms can\u2019t be blamed on climate change, that\u2019s the truth the data shows and nothing but.\u2026 From ClimateREALISM By Linnea Lueken A recent interview from NPR affiliate WAMC Northeast Public Radios Northeast Notebook titled Apple growers confront climate change, fuel challenges for 2026 har\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 11
+        },
+        {
+          "title": "voltry-mac 0.0.1",
+          "source": "Pypi.org",
+          "published_at": "2026-09-29T00:48:36Z",
+          "url": "https://pypi.org/project/voltry-mac/0.0.1/",
+          "text": "Name reserved by Voltry for voltry-mac, a hardware report for Apple silicon Macs. This placeholder installs nothing. A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 12
+        },
+        {
+          "title": "voltry-mac added to PyPI",
+          "source": "Pypi.org",
+          "published_at": "2026-09-29T00:48:27Z",
+          "url": "https://pypi.org/project/voltry-mac/",
+          "text": "Name reserved by Voltry for voltry-mac, a hardware report for Apple silicon Macs. This placeholder installs nothing. A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 13
+        },
+        {
+          "title": "This Is Not a Feature Vector: Zentian v. Apple",
+          "source": "Patentlyo.com",
+          "published_at": "2026-09-29T00:46:42Z",
+          "url": "https://patentlyo.com/patent/2026/09/this-is-not-a-feature-vector-zentian-v-apple.html",
+          "text": "Federal Circuit affirms cancellation of Zentian's speech-recognition patent, rejecting a Magritte analogy that codewords aren't feature vectors. Continue reading this post on Patently-O. by Dennis Crouch The Federal Circuit has affirmed the PTAB's cancellation of all six claims of Zentian's speech-recognition patent in a short nonprecedential opinion. Zentian Ltd. v. Apple Inc., No\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 14
+        },
+        {
+          "title": "Apple Pencil (USB-C) $107 (RRP $139) Delivered @ Amazon AU (Excl. NT)",
+          "source": "Ozbargain.com.au",
+          "published_at": "2026-09-29T00:22:00Z",
+          "url": "https://www.ozbargain.com.au/node/976863",
+          "text": "Looks like Amazon is price matching Digi-direct at $107 for the USB-C pencil. As noted below, the Apple Pencil (USB-C) is compatible with a wider range of iPads (vs Pencil Pro), and the upcoming \u2026 This post contains affiliate links. OzBargain might earn commissions when you click through and make purchases. Please see this page for more information. Looks like Amazon is price matching Digi-di\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 15
+        },
+        {
+          "title": "mlx-cuda-13 0.32.3",
+          "source": "Pypi.org",
+          "published_at": "2026-09-29T00:14:52Z",
+          "url": "https://pypi.org/project/mlx-cuda-13/0.32.3/",
+          "text": "A framework for machine learning on Apple silicon. A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 16
+        },
+        {
+          "title": "mlx 0.32.3",
+          "source": "Pypi.org",
+          "published_at": "2026-09-29T00:14:41Z",
+          "url": "https://pypi.org/project/mlx/0.32.3/",
+          "text": "A framework for machine learning on Apple silicon. A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+          "ticker": "AAPL",
+          "provider": "newsapi",
+          "labels": {},
+          "id": 17
+        }
+      ],
+      "dropped": [
+        {
+          "title": "Nothing Headphone 1 Pro launched with 68 hours battery life, triple drivers and a physical Flat EQ switch, check price, specs and rivals",
+          "reason": "does not mention the company"
+        },
+        {
+          "title": "mlx-cuda-12 0.32.3",
+          "reason": "duplicate title"
+        }
+      ]
+    },
+    "classify": [
+      {
+        "title": "VeloxQuant-MLX 0.91.16",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T03:09:14Z",
+        "url": "https://pypi.org/project/veloxquant-mlx/0.91.16/",
+        "text": "Fast KV-cache quantization for Apple Silicon (MLX) \u2014 43 research-adapted compression methods, from TurboQuant and KIVI to A2ATS, with Metal kernels A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Article is about a third-party ML optimization tool for Apple Silicon, not about AAPL itself."
+        },
+        "id": 1
+      },
+      {
+        "title": "Apple Products Remote Code Execution Vulnerability",
+        "source": "Hkcert.org",
+        "published_at": "2026-09-29T02:40:12Z",
+        "url": "https://www.hkcert.org/security-bulletin/apple-products-remote-code-execution-vulnerability_20260929",
+        "text": "A vulnerability has been identified in Apple Products. A remote attacker could exploit this vulnerability to trigger remote code execution on the targeted system. Note: CVE-2026-86950 is being exploited in an extremely sophisticated attack against spe A vulnerability has been identified in Apple Products. A remote attacker could exploit this vulnerability to trigger remote code execution on the targeted system. Note: CVE-2026-86950 is being expl\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "legal",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "A remote code execution vulnerability in Apple Products poses security risks to users and potential liability."
+        },
+        "id": 2
+      },
+      {
+        "title": "mojolearn 0.8.25",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T02:24:42Z",
+        "url": "https://pypi.org/project/mojolearn/0.8.25/",
+        "text": "GPU machine learning in Mojo for Apple silicon Metal, NVIDIA CUDA, and AMD HIP, with fast, deterministic, and cross-vendor identical modes for certified configurations A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Article is about a third-party ML framework that supports Apple silicon, not about AAPL operations."
+        },
+        "id": 3
+      },
+      {
+        "title": "watchOS 27.0.1 is now available for all compatible Apple Watch models - 9to5Mac",
+        "source": "Slashdot.org",
+        "published_at": "2026-09-29T02:12:40Z",
+        "url": "https://slashdot.org/firehose.pl?op=view&amp;id=185893768",
+        "text": "watchOS 27.0.1 is now available for all compatible Apple Watch models9to5Mac Apple Releases watchOS 27.0.1 for Additional Modelsmacrumors.com Apple Releases watchOS 27.0.1 With Fix for Restart Bugmacrumors.com Rebooting Issue On Apple Watch Ultra 4 and Apple \u2026 The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way.",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "positive",
+          "relevant": true,
+          "reason": "watchOS update demonstrates ongoing product support and fixes for Apple Watch issues."
+        },
+        "id": 4
+      },
+      {
+        "title": "Apple AirPods Pro 2 with Magsafe Case USB-C $199.99 Delivered @ Costco (Membership Required)",
+        "source": "Ozbargain.com.au",
+        "published_at": "2026-09-29T02:03:39Z",
+        "url": "https://www.ozbargain.com.au/node/976901",
+        "text": "Looks like ATL on the Airpods Pro 2 (Launched in September 2022). Still an option for many who have fit issues with regular airpods. Compare airpods here All trademarks are owned by their respective owners.OzBargain is an independent community website which has no association with nor endorsement by the respective trademark owners. Copyright \u00a9 2006-2\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": true,
+          "reason": "Article reports a promotional pricing on existing AirPods Pro 2 product at retail."
+        },
+        "id": 5
+      },
+      {
+        "title": "[Prime] Apple Watch Ultra 3 (GPS + Cellular, 49mm) Smartwatch with Black Band $949 Delivered @ Amazon AU",
+        "source": "Ozbargain.com.au",
+        "published_at": "2026-09-29T01:47:51Z",
+        "url": "https://www.ozbargain.com.au/node/976897",
+        "text": "Lightning deal, ends in 8 hours and a bit. $50 less than Prime Day. Features: RUGGED AND READY TO GO \u2014 The ultimate sports and adventure watch is built to last with an extremely tough \u2026 All trademarks are owned by their respective owners.OzBargain is an independent community website which has no association with nor endorsement by the respective trademark owners. Copyright \u00a9 2006-2\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": true,
+          "reason": "Article reports a promotional pricing on existing Apple Watch Ultra 3 product at retail."
+        },
+        "id": 6
+      },
+      {
+        "title": "Emmy wins and recent premieres help Apple TV reach highest weekly viewership ever",
+        "source": "9to5Mac",
+        "published_at": "2026-09-29T01:44:04Z",
+        "url": "https://9to5mac.com/2026/09/28/emmy-wins-and-recent-premieres-help-apple-tv-reach-highest-weekly-viewership-ever/",
+        "text": "Deadline reports that Apple TV recently recorded its biggest week ever for viewership, fueled by its 29 Emmy wins and recent releases such as Ted Lasso and Mayday. Here are the details. more\u2026 Deadline reports that Apple TV recently recorded its biggest week ever for viewership, fueled by its 29 Emmy wins and recent releases such as Ted Lasso and Mayday. Here are the details. A few weeks \u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "positive",
+          "relevant": true,
+          "reason": "Apple TV reaches record-breaking weekly viewership fueled by Emmy wins and strong content performance."
+        },
+        "id": 7
+      },
+      {
+        "title": "Apple and Amazon face renewed UK antitrust lawsuit",
+        "source": "9to5Mac",
+        "published_at": "2026-09-29T01:21:23Z",
+        "url": "https://9to5mac.com/2026/09/28/apple-and-amazon-face-renewed-uk-antitrust-lawsuit/",
+        "text": "A UK tribunal has allowed part of a renewed antitrust lawsuit against Apple and Amazon to move forward, over allegations that the companies restricted competition for Apple and Beats products sold on Amazon. Here are the details. more\u2026 A UK tribunal has allowed part of a renewed antitrust lawsuit against Apple and Amazon to move forward, over allegations that the companies restricted competition for Apple and Beats products sold on\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "legal",
+          "sentiment": "negative",
+          "relevant": true,
+          "reason": "UK antitrust lawsuit against Apple and Amazon over alleged anticompetitive practices moves forward."
+        },
+        "id": 8
+      },
+      {
+        "title": "This website lets you explore nearly 30 years of Apple product colors",
+        "source": "9to5Mac",
+        "published_at": "2026-09-29T01:01:54Z",
+        "url": "https://9to5mac.com/2026/09/28/this-website-lets-you-explore-nearly-30-years-of-apple-product-colors/",
+        "text": "The folks at sheets.works are back at it again, this time with an interactive archive of 341 Apple product colors spanning nearly three decades. Here are the details. more\u2026 The folks at sheets.works are back at it again, this time with an interactive archive of 341 Apple product colors spanning nearly three decades. Here are the details. Weve covered some of sheets.wor\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Article is about a fan-created website documenting Apple product colors, not material to shareholders."
+        },
+        "id": 9
+      },
+      {
+        "title": "Apple TV Claims Largest Weekly Viewership Ever With \u2018Mayday\u2019, \u2018Ted Lasso\u2019 And Post-Emmys Bump For \u2018Widow\u2019s Bay\u2019 & \u2018Pluribus\u2019",
+        "source": "Deadline",
+        "published_at": "2026-09-29T01:00:11Z",
+        "url": "http://deadline.com/2026/09/apple-tv-viewership-record-ted-lasso-mayday-widows-bay-1237115696/",
+        "text": "Apple TV had a record-breaking 2026 Emmys with 28 Emmys (29 if you include the commercials win), the most for the streamer ever and the most for any platform this year. Apple TV\u2019s big night at the Emmys on Sept. 14 was followed by a big week \u2014 the biggest in \u2026 Apple TVhad a record-breaking 2026 Emmys with 28 Emmys (29 if you include the commercials win), the most for the streamer ever and the most for any platform this year. Apple TV\u2019s big night at the Emm\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "positive",
+          "relevant": true,
+          "reason": "Apple TV achieves record-breaking viewership with 29 Emmy wins, demonstrating strong content strategy success."
+        },
+        "id": 10
+      },
+      {
+        "title": "No, NPR, Climate Change Is Not Challenging New York\u2019s Apple Growers",
+        "source": "Wattsupwiththat.com",
+        "published_at": "2026-09-29T01:00:00Z",
+        "url": "https://wattsupwiththat.com/2026/09/28/no-npr-climate-change-is-not-challenging-new-yorks-apple-growers/",
+        "text": "NPR\u2019s affiliate station in New York is promoting a lot of nonsense in this story, in line with standard climate alarmist propaganda. One bad season for apples on certain farms can\u2019t be blamed on climate change, that\u2019s the truth the data shows and nothing but.\u2026 From ClimateREALISM By Linnea Lueken A recent interview from NPR affiliate WAMC Northeast Public Radios Northeast Notebook titled Apple growers confront climate change, fuel challenges for 2026 har\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Article discusses fruit growers and climate change, not related to AAPL the company."
+        },
+        "id": 11
+      },
+      {
+        "title": "voltry-mac 0.0.1",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T00:48:36Z",
+        "url": "https://pypi.org/project/voltry-mac/0.0.1/",
+        "text": "Name reserved by Voltry for voltry-mac, a hardware report for Apple silicon Macs. This placeholder installs nothing. A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Article is about a third-party hardware reporting tool for Apple silicon Macs, not about AAPL itself."
+        },
+        "id": 12
+      },
+      {
+        "title": "voltry-mac added to PyPI",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T00:48:27Z",
+        "url": "https://pypi.org/project/voltry-mac/",
+        "text": "Name reserved by Voltry for voltry-mac, a hardware report for Apple silicon Macs. This placeholder installs nothing. A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Article is about a third-party hardware reporting tool for Apple silicon Macs, not about AAPL itself."
+        },
+        "id": 13
+      },
+      {
+        "title": "This Is Not a Feature Vector: Zentian v. Apple",
+        "source": "Patentlyo.com",
+        "published_at": "2026-09-29T00:46:42Z",
+        "url": "https://patentlyo.com/patent/2026/09/this-is-not-a-feature-vector-zentian-v-apple.html",
+        "text": "Federal Circuit affirms cancellation of Zentian's speech-recognition patent, rejecting a Magritte analogy that codewords aren't feature vectors. Continue reading this post on Patently-O. by Dennis Crouch The Federal Circuit has affirmed the PTAB's cancellation of all six claims of Zentian's speech-recognition patent in a short nonprecedential opinion. Zentian Ltd. v. Apple Inc., No\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "legal",
+          "sentiment": "positive",
+          "relevant": true,
+          "reason": "Federal Circuit affirms cancellation of Zentian's speech-recognition patent, favorable outcome for Apple."
+        },
+        "id": 14
+      },
+      {
+        "title": "Apple Pencil (USB-C) $107 (RRP $139) Delivered @ Amazon AU (Excl. NT)",
+        "source": "Ozbargain.com.au",
+        "published_at": "2026-09-29T00:22:00Z",
+        "url": "https://www.ozbargain.com.au/node/976863",
+        "text": "Looks like Amazon is price matching Digi-direct at $107 for the USB-C pencil. As noted below, the Apple Pencil (USB-C) is compatible with a wider range of iPads (vs Pencil Pro), and the upcoming \u2026 This post contains affiliate links. OzBargain might earn commissions when you click through and make purchases. Please see this page for more information. Looks like Amazon is price matching Digi-di\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "product",
+          "sentiment": "neutral",
+          "relevant": true,
+          "reason": "Article reports promotional pricing on Apple Pencil product at retail."
+        },
+        "id": 15
+      },
+      {
+        "title": "mlx-cuda-13 0.32.3",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T00:14:52Z",
+        "url": "https://pypi.org/project/mlx-cuda-13/0.32.3/",
+        "text": "A framework for machine learning on Apple silicon. A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Article is about a third-party ML framework for Apple silicon, not about AAPL itself."
+        },
+        "id": 16
+      },
+      {
+        "title": "mlx 0.32.3",
+        "source": "Pypi.org",
+        "published_at": "2026-09-29T00:14:41Z",
+        "url": "https://pypi.org/project/mlx/0.32.3/",
+        "text": "A framework for machine learning on Apple silicon. A required part of this site couldnt load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a diffe\u2026",
+        "ticker": "AAPL",
+        "provider": "newsapi",
+        "labels": {
+          "topic": "other",
+          "sentiment": "neutral",
+          "relevant": false,
+          "reason": "Article is about a third-party ML framework for Apple silicon, not about AAPL itself."
+        },
+        "id": 17
+      }
+    ],
+    "extract": [
+      {
+        "id": 2,
+        "ticker": "AAPL",
+        "title": "Apple Products Remote Code Execution Vulnerability",
+        "source": "Hkcert.org",
+        "published_at": "2026-09-29T02:40:12Z",
+        "url": "https://www.hkcert.org/security-bulletin/apple-products-remote-code-execution-vulnerability_20260929",
+        "topic": "legal",
+        "sentiment": "negative",
+        "companies": [
+          "Apple"
+        ],
+        "people": [],
+        "products": [
+          "Apple Products"
+        ],
+        "figures": [],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "A remote code execution vulnerability (CVE-2026-86950) was identified in Apple Products that could be exploited in sophisticated attacks."
+      },
+      {
+        "id": 4,
+        "ticker": "AAPL",
+        "title": "watchOS 27.0.1 is now available for all compatible Apple Watch models - 9to5Mac",
+        "source": "Slashdot.org",
+        "published_at": "2026-09-29T02:12:40Z",
+        "url": "https://slashdot.org/firehose.pl?op=view&amp;id=185893768",
+        "topic": "product",
+        "sentiment": "positive",
+        "companies": [
+          "Apple"
+        ],
+        "people": [],
+        "products": [
+          "watchOS 27.0.1",
+          "Apple Watch",
+          "Apple Watch Ultra 4"
+        ],
+        "figures": [],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "Apple released watchOS 27.0.1 for all compatible Apple Watch models with a fix for a restart bug."
+      },
+      {
+        "id": 5,
+        "ticker": "AAPL",
+        "title": "Apple AirPods Pro 2 with Magsafe Case USB-C $199.99 Delivered @ Costco (Membership Required)",
+        "source": "Ozbargain.com.au",
+        "published_at": "2026-09-29T02:03:39Z",
+        "url": "https://www.ozbargain.com.au/node/976901",
+        "topic": "product",
+        "sentiment": "neutral",
+        "companies": [
+          "Apple",
+          "Costco"
+        ],
+        "people": [],
+        "products": [
+          "AirPods Pro 2 with Magsafe Case USB-C"
+        ],
+        "figures": [
+          {
+            "value": "$199.99",
+            "context": "AirPods Pro 2 price"
+          }
+        ],
+        "dates": [
+          "2026-09-29",
+          "September 2022"
+        ],
+        "event": "AirPods Pro 2 with USB-C Magsafe Case was offered at Costco for $199.99."
+      },
+      {
+        "id": 6,
+        "ticker": "AAPL",
+        "title": "[Prime] Apple Watch Ultra 3 (GPS + Cellular, 49mm) Smartwatch with Black Band $949 Delivered @ Amazon AU",
+        "source": "Ozbargain.com.au",
+        "published_at": "2026-09-29T01:47:51Z",
+        "url": "https://www.ozbargain.com.au/node/976897",
+        "topic": "product",
+        "sentiment": "neutral",
+        "companies": [
+          "Apple",
+          "Amazon"
+        ],
+        "people": [],
+        "products": [
+          "Apple Watch Ultra 3 (GPS + Cellular, 49mm)"
+        ],
+        "figures": [
+          {
+            "value": "$949",
+            "context": "Apple Watch Ultra 3 price"
+          }
+        ],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "Apple Watch Ultra 3 was listed as a Lightning deal on Amazon AU for $949 delivered."
+      },
+      {
+        "id": 7,
+        "ticker": "AAPL",
+        "title": "Emmy wins and recent premieres help Apple TV reach highest weekly viewership ever",
+        "source": "9to5Mac",
+        "published_at": "2026-09-29T01:44:04Z",
+        "url": "https://9to5mac.com/2026/09/28/emmy-wins-and-recent-premieres-help-apple-tv-reach-highest-weekly-viewership-ever/",
+        "topic": "product",
+        "sentiment": "positive",
+        "companies": [
+          "Apple"
+        ],
+        "people": [],
+        "products": [
+          "Apple TV",
+          "Ted Lasso",
+          "Mayday"
+        ],
+        "figures": [
+          {
+            "value": "29",
+            "context": "Emmy wins"
+          }
+        ],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "Apple TV reached its highest weekly viewership ever, boosted by 29 Emmy wins and recent releases including Ted Lasso and Mayday."
+      },
+      {
+        "id": 8,
+        "ticker": "AAPL",
+        "title": "Apple and Amazon face renewed UK antitrust lawsuit",
+        "source": "9to5Mac",
+        "published_at": "2026-09-29T01:21:23Z",
+        "url": "https://9to5mac.com/2026/09/28/apple-and-amazon-face-renewed-uk-antitrust-lawsuit/",
+        "topic": "legal",
+        "sentiment": "negative",
+        "companies": [
+          "Apple",
+          "Amazon"
+        ],
+        "people": [],
+        "products": [
+          "Apple products",
+          "Beats products"
+        ],
+        "figures": [],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "A UK tribunal allowed part of a renewed antitrust lawsuit against Apple and Amazon to proceed over allegations they restricted competition for Apple and Beats products on Amazon."
+      },
+      {
+        "id": 10,
+        "ticker": "AAPL",
+        "title": "Apple TV Claims Largest Weekly Viewership Ever With \u2018Mayday\u2019, \u2018Ted Lasso\u2019 And Post-Emmys Bump For \u2018Widow\u2019s Bay\u2019 & \u2018Pluribus\u2019",
+        "source": "Deadline",
+        "published_at": "2026-09-29T01:00:11Z",
+        "url": "http://deadline.com/2026/09/apple-tv-viewership-record-ted-lasso-mayday-widows-bay-1237115696/",
+        "topic": "product",
+        "sentiment": "positive",
+        "companies": [
+          "Apple"
+        ],
+        "people": [],
+        "products": [
+          "Apple TV",
+          "Mayday",
+          "Ted Lasso",
+          "Widow's Bay",
+          "Pluribus"
+        ],
+        "figures": [
+          {
+            "value": "28",
+            "context": "Emmy wins"
+          },
+          {
+            "value": "29",
+            "context": "Emmy wins including commercials"
+          }
+        ],
+        "dates": [
+          "2026-09-29",
+          "Sept. 14"
+        ],
+        "event": "Apple TV achieved record-breaking viewership with 28-29 Emmy wins at the 2026 Emmys, followed by its biggest week ever."
+      },
+      {
+        "id": 14,
+        "ticker": "AAPL",
+        "title": "This Is Not a Feature Vector: Zentian v. Apple",
+        "source": "Patentlyo.com",
+        "published_at": "2026-09-29T00:46:42Z",
+        "url": "https://patentlyo.com/patent/2026/09/this-is-not-a-feature-vector-zentian-v-apple.html",
+        "topic": "legal",
+        "sentiment": "positive",
+        "companies": [
+          "Apple"
+        ],
+        "people": [
+          "Dennis Crouch"
+        ],
+        "products": [
+          "speech-recognition patent"
+        ],
+        "figures": [
+          {
+            "value": "6",
+            "context": "patent claims canceled"
+          }
+        ],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "The Federal Circuit affirmed cancellation of all six claims of Zentian's speech-recognition patent in a case against Apple."
+      },
+      {
+        "id": 15,
+        "ticker": "AAPL",
+        "title": "Apple Pencil (USB-C) $107 (RRP $139) Delivered @ Amazon AU (Excl. NT)",
+        "source": "Ozbargain.com.au",
+        "published_at": "2026-09-29T00:22:00Z",
+        "url": "https://www.ozbargain.com.au/node/976863",
+        "topic": "product",
+        "sentiment": "neutral",
+        "companies": [
+          "Apple",
+          "Amazon",
+          "Amazon AU",
+          "Digi-direct",
+          "OzBargain"
+        ],
+        "people": [],
+        "products": [
+          "Apple Pencil (USB-C)"
+        ],
+        "figures": [
+          {
+            "value": "$107",
+            "context": "Apple Pencil (USB-C) price at Amazon AU"
+          },
+          {
+            "value": "$139",
+            "context": "Apple Pencil (USB-C) RRP"
+          }
+        ],
+        "dates": [
+          "2026-09-29"
+        ],
+        "event": "Amazon AU is price matching Digi-direct selling the Apple Pencil (USB-C) at $107, down from the recommended retail price of $139."
+      }
+    ]
+  },
+  "timings": {
+    "ingest": 0.22,
+    "preprocess": 0.0,
+    "classify": 7.37,
+    "extract": 8.19,
+    "summarize": 3.82
+  },
+  "usage": {
+    "calls": 4,
+    "input_tokens": 6361,
+    "output_tokens": 2574
+  },
+  "saved_to": "/Users/pranavdhinakar/Documents/NLP/AAI-520-NLP-Final-Team-Project-Group7/data/runs/prompt_chain_AAPL_20260929-204235.json"
+}

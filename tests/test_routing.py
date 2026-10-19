@@ -195,3 +195,23 @@ def test_run_routing_end_to_end(fake_llm, fake_tools, monkeypatch,
     assert result["saved_to"].startswith(str(tmp_path))
     # one router call plus one call per specialist
     assert len(fake_llm.calls) == 4
+
+
+def test_bank_financials_leave_out_free_cash_flow():
+    statements = {
+        "income_statement": {"2025-12-31": {"Total Revenue": 181.8,
+                                            "Net Income": 57.0}},
+        "cash_flow": {"2025-12-31": {"Free Cash Flow": -147.8}},
+    }
+    items = [
+        {"id": "company_info", "kind": "company_info",
+         "data": {"sector": "Financial Services"}},
+        {"id": "financials", "kind": "financials", "data": statements},
+    ]
+    rt._tag_financial_sector(items)
+    facts = rt.earnings_facts([items[1]])["fundamentals"]
+    assert facts["free_cash_flow"] is None
+    assert "not meaningful" in facts["note"]
+    # a non-financial company keeps it
+    other = rt._fundamental_facts(statements)
+    assert other["free_cash_flow"] == -147.8 and "note" not in other
